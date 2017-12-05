@@ -15,3 +15,6 @@ main:
         
   - title: "Latest"
     url: /year-archive/
+
+  - title: "Talks"
+    url: /talks/
