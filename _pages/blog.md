@@ -7,9 +7,12 @@ customjs:
 ---
 
 [Go to full blog](http://parsimoniouspursuits.blogspot.com)
-<script src="http://feeds.feedburner.com/ParsimoniousPursuits?format=sigpro" type="text/javascript" ></script>
+<script src="http://feeds.feedburner.com/ParsimoniousPursuits?format=sigpro" type="text/javascript" >
+</script>
 
 <!-- Custom JavaScript files set in YAML front matter -->
 {% for js in page.customjs %}
 <script async type="text/javascript" src="{{ js }}"></script>
 {% endfor %}
+
+test
