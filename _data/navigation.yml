@@ -1,0 +1,17 @@
+# main links links
+main:
+
+  - title: "CV"
+    url: /files/Holmes_CV.pdf
+    
+  - title: "Publications"
+    url: /publications/
+
+  - title: "Projects"
+    url: /projects/
+    
+  - title: "Teaching"
+    url: /teaching/    
+        
+  - title: "Latest"
+    url: /year-archive/
