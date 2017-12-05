@@ -2,6 +2,7 @@
 title: "Publications"
 permalink: /publications/
 author_profile: true
+encoding: UTF-8
 ---
 
 0. Ferguson, L., M. Srinivasan, E. Oleson, S. Hayes, S.K. Brown, R. Angliss, J. Carretta, **E. Holmes**, E. Ward, J. Kocik, K. Mullin, R. Dean, and J. Davis (eds.). 2017. Proceedings of the First National Protected Species Assessment Workshop. U.S. Dept. of Commer., NOAA. NOAA Technical Memorandum NMFS-F/SPO-172, 92 p. [PDF](http://spo.nmfs.noaa.gov/sites/default/files/TMSPO172.pdf)
@@ -16,7 +17,7 @@ author_profile: true
 
 0. Ruhí, A., **E. E. Holmes**, J. N. Rinne, and J. L. Sabo. 2015. Anomalous droughts, not invasion, decrease persistence of native fishes in a desert river. Global Change Biology 21:1482-1496. [html](http://onlinelibrary.wiley.com/doi/10.1111/gcb.12780/full) [PDF](files/Ruhietal2015)
 
-0. Francis, T. B., E. M. Wolkovich, M. D. Scheuerell, S. L. Katz, **E. E. Holmes**, and S. E. Hampton. 2014. Shifting Regimes and Changing Interactions in the Lake Washington, USA, Plankton Community from 1962-1994." PlosOne e110363. [PDF](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0110363)
+0. Francis, T. B., E. M. Wolkovich, M. D. Scheuerell, S. L. Katz, **E. E. Holmes**, and S. E. Hampton. 2014. Shifting Regimes and Changing Interactions in the Lake Washington, USA, Plankton Community from 1962-1994. PlosOne e110363. [PDF](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0110363)
 
 0. Holmes, E. E. 2014. Computation of standardized residuals for (MARSS) models. Technical Report. arXiv:1411.0045 [PDF](https://arxiv.org/abs/1411.0045)
 
@@ -52,7 +53,7 @@ author_profile: true
 
 0. **Holmes, E. E.**, J. L. Sabo, S. V. Viscido, and W. Fagan.  2007. A statistical approach to quasi-extinction forecasting. Ecology Letters 10:1182–1198 [PDF](files/Holmesetal2007) [List of data sets used](files/Holmesetal2007_Appendix_S1.pdf)
 
-0. **Holmes, E. E.**, L. Fritz, A. York and K. Sweeney.  2007. Age-structured modeling reveals long-term declines in the natality of western Steller sea lions.  Ecological Applications 17:2214–2232. [PDF](files/Holmesetal2007_SSL_smaller.pdf) [Appendices](http://esapubs.org/archive/appl/A017/091/default.htm)  *In earlier versions of this paper, we had longer appendices which discussed why we feel that sightability and sex-ratios have not changed sufficiently to explain the dropping pup to nonpup ratio.  This was cut during the 2nd revision process.* [Early draft of appendices](files/Holmes-Suppl-Info.pdf) [Code to get lambda and scaled Leslie matrices](files/get_max_eig_for_scaled_life_table.m)
+0. **Holmes, E. E.**, L. Fritz, A. York and K. Sweeney.  2007. Age-structured modeling reveals long-term declines in the natality of western Steller sea lions.  Ecological Applications 17:2214-2232. [PDF](files/Holmesetal2007_SSL_smaller.pdf) [Appendices](http://esapubs.org/archive/appl/A017/091/default.htm)  *In earlier versions of this paper, we had longer appendices which discussed why we feel that sightability and sex-ratios have not changed sufficiently to explain the dropping pup to nonpup ratio.  This was cut during the 2nd revision process.* [Early draft of appendices](files/Holmes-Suppl-Info.pdf) [Code to get lambda and scaled Leslie matrices](files/get_max_eig_for_scaled_life_table.m)
 
 0. Hauser, D., G. VanBlaricom, **E. Holmes**, and R. Osbourne. 2006. Evaluating the use of whalewatch data in determining killer whale (Orcinus orca) distribution patterns. Journal of Cetacean Research and Management 8: 273-281. [PDF](files/Hauseretal2007.pdf) 
 
