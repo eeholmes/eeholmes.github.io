@@ -13,9 +13,10 @@ test1
 src="http://feeds.feedburner.com/ParsimoniousPursuits?format=sigpro" type="text/javascript" >
 </script>
 
-<!-- Custom JavaScript files set in YAML front matter -->
+<!-- Custom JavaScript files set in YAML front matter 
 {% for js in page.customjs %}
 <script async type="text/javascript" src="{{ js }}"></script>
 {% endfor %}
+-->
 
 test2
