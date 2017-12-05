@@ -7,14 +7,15 @@ main:
   - title: "Publications"
     url: /publications/
 
-  - title: "Blog"
-    url: /blog/
-    
   - title: "Teaching"
     url: /teaching/    
         
+  - title: "Open Notebook"
+    url: /blog/
+    
+  - title: "Talks"
+    url: /talks/
+
   - title: "Latest"
     url: /year-archive/
 
-  - title: "Talks"
-    url: /talks/
