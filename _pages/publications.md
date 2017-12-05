@@ -15,7 +15,7 @@ encoding: UTF-8
 
 0. See, K. E. and **E. E. Holmes**. 2015. Reducing bias and improving precision in species extinction forecasts. Ecological Applications 25: 1157-1165.  [PDF](files/SeeHolmes2015)
 
-0. Ruhí, A., **E. E. Holmes**, J. N. Rinne, and J. L. Sabo. 2015. Anomalous droughts, not invasion, decrease persistence of native fishes in a desert river. Global Change Biology 21:1482-1496. [html](http://onlinelibrary.wiley.com/doi/10.1111/gcb.12780/full) [PDF](files/Ruhietal2015)
+0. Ruhi, A., **E. E. Holmes**, J. N. Rinne, and J. L. Sabo. 2015. Anomalous droughts, not invasion, decrease persistence of native fishes in a desert river. Global Change Biology 21:1482-1496. [html](http://onlinelibrary.wiley.com/doi/10.1111/gcb.12780/full) [PDF](files/Ruhietal2015)
 
 0. Francis, T. B., E. M. Wolkovich, M. D. Scheuerell, S. L. Katz, **E. E. Holmes**, and S. E. Hampton. 2014. Shifting Regimes and Changing Interactions in the Lake Washington, USA, Plankton Community from 1962-1994. PlosOne e110363. [PDF](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0110363)
 
@@ -47,11 +47,11 @@ encoding: UTF-8
 
 0. Ward, E. J., **E.E. Holmes**, K. Parsons, K. C. Balcomb, and J. K. B. Ford. 2009. The role of menopause and reproductive senescence in a long-lived social mammal. Frontiers in Zoology 6(4). [PDF](files/Wardetal2009b)
 
-0. Ellner, S. P. and **E. E. Holmes**. 2008. Resolving the debate on when extinction risk is predictable. Ecology Letters 11: E1–E5. [PDF](files/EllnerHolmes2008.pdf)
+0. Ellner, S. P. and **E. E. Holmes**. 2008. Resolving the debate on when extinction risk is predictable. Ecology Letters 11: E1-E5. [PDF](files/EllnerHolmes2008.pdf)
 
 0. Hauser, D. D. W., M. G. Logsdon, **E. E. Holmes**, G. R. VanBlaricom, R. W. Osborne. 2007. Summer distribution patterns of Southern Resident killer whales (Orcinus orca): core areas and spatial segregation of social groups. Marine Ecology Progress Series 351: 301-310. [Abstract](http://www.int-res.com/abstracts/meps/v351/p301-310/)
 
-0. **Holmes, E. E.**, J. L. Sabo, S. V. Viscido, and W. Fagan.  2007. A statistical approach to quasi-extinction forecasting. Ecology Letters 10:1182–1198 [PDF](files/Holmesetal2007) [List of data sets used](files/Holmesetal2007_Appendix_S1.pdf)
+0. **Holmes, E. E.**, J. L. Sabo, S. V. Viscido, and W. Fagan.  2007. A statistical approach to quasi-extinction forecasting. Ecology Letters 10:1182-1198 [PDF](files/Holmesetal2007) [List of data sets used](files/Holmesetal2007_Appendix_S1.pdf)
 
 0. **Holmes, E. E.**, L. Fritz, A. York and K. Sweeney.  2007. Age-structured modeling reveals long-term declines in the natality of western Steller sea lions.  Ecological Applications 17:2214-2232. [PDF](files/Holmesetal2007_SSL_smaller.pdf) [Appendices](http://esapubs.org/archive/appl/A017/091/default.htm)  *In earlier versions of this paper, we had longer appendices which discussed why we feel that sightability and sex-ratios have not changed sufficiently to explain the dropping pup to nonpup ratio.  This was cut during the 2nd revision process.* [Early draft of appendices](files/Holmes-Suppl-Info.pdf) [Code to get lambda and scaled Leslie matrices](files/get_max_eig_for_scaled_life_table.m)
 
