@@ -7,7 +7,7 @@ encoding: UTF-8
 
 0. Ferguson, L., M. Srinivasan, E. Oleson, S. Hayes, S.K. Brown, R. Angliss, J. Carretta, **E. Holmes**, E. Ward, J. Kocik, K. Mullin, R. Dean, and J. Davis (eds.). 2017. Proceedings of the First National Protected Species Assessment Workshop. U.S. Dept. of Commer., NOAA. NOAA Technical Memorandum NMFS-F/SPO-172, 92 p. [PDF](http://spo.nmfs.noaa.gov/sites/default/files/TMSPO172.pdf)
 
-0. Tolimieri, N., E. E. Holmes, G. D. Williams, R. Pacunski, and D. Lowry.  2017. Population assessment using multivariate time-series analysis: A case study of rockfishes in Puget Sound. Ecology and Evolution 7(8): 2045-7758. [Link](http://onlinelibrary.wiley.com/doi/10.1002/ece3.2901/full) [PDF]( http://onlinelibrary.wiley.com/doi/10.1002/ece3.2901/epdf)
+0. Tolimieri, N., **E. E. Holmes**, G. D. Williams, R. Pacunski, and D. Lowry.  2017. Population assessment using multivariate time-series analysis: A case study of rockfishes in Puget Sound. Ecology and Evolution 7(8): 2045-7758. [PDF]( http://onlinelibrary.wiley.com/doi/10.1002/ece3.2901/epdf)
 
 0. Ford, M. J., K. Barnas, T. Cooney, L. G. Crozier, M. Diaz, J. J. Hard, **E. E. Holmes**, D. M. Holzer, R. G. Kope, P. W. Lawson, M. Liermann, J. M. Myers, M. Rowse, D. J. Teel, D. M. Van Doornik, T. C. Wainwright, L. A. Weitkamp, M. Williams. 2015. Status Review Update for Pacific Salmon and Steelhead Listed under the Endangered Species Act:  Pacific Northwest. Nationa Marine Fisheries Service, Northwest Fisheries Science Center. [PDF](https://www.nwfsc.noaa.gov/assets/11/8623_03072016_124156_Ford-NWSalmonBioStatusReviewUpdate-Dec%2021-2015%20v2.pdf)
 
@@ -19,15 +19,15 @@ encoding: UTF-8
 
 0. Francis, T. B., E. M. Wolkovich, M. D. Scheuerell, S. L. Katz, **E. E. Holmes**, and S. E. Hampton. 2014. Shifting Regimes and Changing Interactions in the Lake Washington, USA, Plankton Community from 1962-1994. PlosOne e110363. [PDF](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0110363)
 
-0. Holmes, E. E. 2014. Computation of standardized residuals for (MARSS) models. Technical Report. arXiv:1411.0045 [PDF](https://arxiv.org/abs/1411.0045)
+0. **Holmes, E. E.** 2014. Computation of standardized residuals for (MARSS) models. Technical Report. arXiv:1411.0045 [PDF](https://arxiv.org/abs/1411.0045)
 
 0. Ward, E.J., **E.E. Holmes**, J.T. Thorson, and B. Collen. 2014. Complexity is costly: a meta-analysis of parametric and non-parametric methods for short-term population forecasting. Oikos, 123(6): 652-661. *Selected for Editor's Choice June 2014*. [PDF](http://onlinelibrary.wiley.com/doi/10.1111/j.1600-0706.2014.00916.x/epdf)
 
-0. Hampton, S.E., **E.E. Holmes**, D.E. Pendleton, L.P. Scheef, M.D. Scheuerell, and E.J. Ward. 2013. Quantifying effects of abiotic and biotic drivers on community dynamics with multivariate autoregressive (MAR) models. Ecology 94(12): 2663-2669. *Recommended by Faculty of 1000 Biology* [link](https://cereo.wsu.edu/wp-content/uploads/sites/95/2014/11/Hampton_Ecology_MAR_w_supplement_2013.pdf)
+0. Hampton, S.E., **E.E. Holmes**, D.E. Pendleton, L.P. Scheef, M.D. Scheuerell, and E.J. Ward. 2013. Quantifying effects of abiotic and biotic drivers on community dynamics with multivariate autoregressive (MAR) models. Ecology 94(12): 2663-2669. *Recommended by Faculty of 1000 Biology* [PDF](https://cereo.wsu.edu/wp-content/uploads/sites/95/2014/11/Hampton_Ecology_MAR_w_supplement_2013.pdf)
 
 0. **Holmes, E. E.** 2013. Derivation of the EM algorithm for constrained and unconstrained multivariate autoregressive state-space (MARSS) models. Technical Report. arXiv:1302.3919 [PDF](http://arxiv.org/abs/1302.3919) *Multivariate autoregressive state-space models go by different names in different fields. Dynamic linear models,vector autoregressive models, dynamic factor analysis models, multivariate discrete time Gompertz models and multivariate regression models with ARMA errors, are some of the many types of discrete time multivariate time-series models that can be written in MARSS form.*
 
-0. Mongillo, T. M., **E. E. Holmes**, D. P. Noren, G. R. VanBlaricom, A. E. Punt, S. M. O'Neill, G. M. Ylitalo, M. B. Hanson, P. S. Ross. 2012. Predicted polybrominated diphenyl ether (PBDE) and polychlorinated biphenyl (PCB) accumulation in southern resident killer whales. Marine Ecology Progress Series 453:263-277. [Link to PDF](http://www.int-res.com/abstracts/meps/v453/p263-277/)
+0. Mongillo, T. M., **E. E. Holmes**, D. P. Noren, G. R. VanBlaricom, A. E. Punt, S. M. O'Neill, G. M. Ylitalo, M. B. Hanson, P. S. Ross. 2012. Predicted polybrominated diphenyl ether (PBDE) and polychlorinated biphenyl (PCB) accumulation in southern resident killer whales. Marine Ecology Progress Series 453:263-277. [PDF](http://www.int-res.com/abstracts/meps/v453/p263-277/)
 
 0. **Holmes, E.E.**, E.J. Ward, and K. Wills. 2012. MARSS: multivariate autoregressive state-space models for analyzing time series data. R Journal 4(1): 11-19. [PDF](https://journal.r-project.org/archive/2012-1/RJournal_2012-1_Holmes~et~al.pdf)
 
