@@ -4,7 +4,8 @@ permalink: /blog/
 author_profile: true
 ---
 
-[Go to full blog](http://parsimoniouspursuits.blogspot.com)
+I am very slowly converting my open notebook on blogger to GitHub blog and markdown.  For now, it is still all on blogger:
+[Parsimonious Pursuits](http://parsimoniouspursuits.blogspot.com)
 
 <script
 src="http://feeds.feedburner.com/ParsimoniousPursuits?format=sigpro&nItems=40" type="text/javascript" >
@@ -44,6 +45,3 @@ button.code-folding-btn:focus {
 </div>
 
 
-
-
-</body>
