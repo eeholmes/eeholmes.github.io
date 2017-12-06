@@ -1,355 +1,27 @@
----
-title: "Baccalaureate Origins of Sloan Fellows: Liberal Arts Colleges Versus Research Universities"
-author: "EE Holmes"
-date: 2017-5-17
-permalink: /posts/2017/5/sloan-fellow-1/
-tags:
-  - college_mobility
-  - STEM
----
+Baccalaureate Origins of Sloan Fellows: Liberal Arts Colleges Versus Research Universities
+================
+EE Holmes
 
-Analysis of the baccalaureate origins of Sloan fellows in the hard sciences: standardized by SAT.
+Analysis of the baccalaureate origins of Sloan fellows in the hard sciences using SAT tiers.
 
-The [Sloan Fellowship](https://sloan.org/fellowships/) is a prestigious award for early career scientists at U.S. and Canadian academic institutions. Each year 126 scientists are recognized. From the Sloan Fellowship website: "These 126 early-career scholars represent the most promising scientific researchers working today. Their achievements and potential place them among the next generation of scientific leaders in the U.S. and Canada." Forty-three Sloan Fellows have gone on to win a Nobel Prize and 16 have won the Fields Medal in mathematics.
+The [Sloan Fellowship](https://sloan.org/fellowships/) is a prestigious award for early career scientists at U.S. and Canadian academic institutions. The data sets I am using is one I assembled on the Baccalaureate origins of the Sloan Fellows along with data on the undergraduate institutions from the [Scorecard database](https://collegescorecard.ed.gov/data/) on U.S. Baccalaureate institutions. See the part 1 post for more details.
 
-I looked up the CVs for Sloan Fellowship winners from 2017-2011 in Math, Physics, Chemistry, Neuroscience and Ocean Sciences. I noted the school where the awardee got their undergraduate degree. Here I analyze the patterns of the undergraduate institutions of those awardees who received their undergraduate degree in the United States (about 50% of awardees).
+For these analyses, I look at the production of future Sloan fellows per 1000 undergraduates with **SAT math scores 700-800**. I am standardizing by the SAT math scores at a school. Harvard produces many Sloan fellows, but perhaps this is just because they have an abundance of undergraduates with very high SAT math scores, which correlates with STEM talent. This analysis removes the effect of number of high SATH math scorers.
 
-The data sets I am using is one I assembled on the Baccalaureate origins of the Sloan Fellows along the [Scorecard database](https://collegescorecard.ed.gov/data/) on U.S. Baccalaureate institutions.
+I will be showing a series of cumulative plots where I look at the Sloan production within *groups* of schools. I am not concerned with individual schools, but rather the production within a whole group of schools. Cumulative plots help one see patterns when one is looking at rare events, like Sloan fellows. Within a group, I sort by size of school (this is step is not important), and then take the cumulative sum of school size and number of Sloan fellows. I then plot cumulative sum of size (enrollment) against cumulative number of Sloan fellows.
 
-    ## character(0)
+### Summary of the results
 
-Analysis using the Equality of Opportunity 'Tiers'
---------------------------------------------------
+Standardizing by the SAT math scores does not completely remove the selectivity effect---the effect that more selective schools have a higher production of future Sloan fellows. However it removes much of the effect. The most striking result is that Liberal Arts Colleges (LACs) produce an unusually high number of future Sloan fellows given their enrollment size. This is particularly seen in the fields other than math and physics. In these non-math, non-physics fields, LACs have a higher per capita production of future Sloan fellows than the elite private schools (which includes the Ivies). Production of future Sloan fellows is not restricted to 'elite' LACs. The mid-tier LACs also have higher production than the elite private schools.
 
-For the first analysis, I used the tiers defined by the [Equality of Opportunity Project](http://www.equality-of-opportunity.org/) (EOP) . These tiers include a relatively small set of schools (relative to all the private and public schools). I'm not sure how this set was defined, but certainly not using number of future Sloan Fellows. Notice the mean upper 75% ACT scores are similar across the groups within a tier (elite or highly selective). The EOP did not separate out the Liberal Arts colleges. I have to create separate tiers for these colleges. I did not use the EOP 'highly selective public' group since there are too many name differences between the EOP and Scorecard databases.
+That small Liberal Arts Schools produce unusually high number of PhDs in STEM is well-known and has been reported in other studies. What my analysis indicates is that this higher than expected production is also seen when we look at a select group of highly productive research scientists in academia. This is a rarified group of those with PhDs in STEM, and represents the unusually productive research scientists (within academia).
 
-### EOP Ivy Plus group
-
-Mean upper 75% ACT is 34.4615385.
-
-    ##  [1] "brown university"                     
-    ##  [2] "columbia university"                  
-    ##  [3] "cornell university"                   
-    ##  [4] "dartmouth college"                    
-    ##  [5] "duke university"                      
-    ##  [6] "harvard university"                   
-    ##  [7] "princeton university"                 
-    ##  [8] "stanford university"                  
-    ##  [9] "university of chicago"                
-    ## [10] "university of pennsylvania"           
-    ## [11] "yale university"                      
-    ## [12] "massachusetts institute of technology"
-    ## [13] "california institute of technology"
-
-### EOP Elite Private group, no LACs
-
-Mean upper 75% ACT is 33.1052632.
-
-    ##  [1] "boston college"                   
-    ##  [2] "brandeis university"              
-    ##  [3] "carnegie mellon university"       
-    ##  [4] "case western reserve university"  
-    ##  [5] "emory university"                 
-    ##  [6] "georgetown university"            
-    ##  [7] "johns hopkins university"         
-    ##  [8] "lehigh university"                
-    ##  [9] "new york university"              
-    ## [10] "northeastern university"          
-    ## [11] "northwestern university"          
-    ## [12] "rice university"                  
-    ## [13] "tufts university"                 
-    ## [14] "tulane university"                
-    ## [15] "university of miami"              
-    ## [16] "university of notre dame"         
-    ## [17] "university of rochester"          
-    ## [18] "university of southern california"
-    ## [19] "vanderbilt university"            
-    ## [20] "wake forest university"           
-    ## [21] "washington university in st louis"
-
-### EOP Elite Public group
-
-Mean upper 75% ACT is 33.
-
-    ## [1] "college of william and mary"                
-    ## [2] "university of california-berkeley"          
-    ## [3] "university of california-los angeles"       
-    ## [4] "university of michigan-ann arbor"           
-    ## [5] "university of north carolina at chapel hill"
-    ## [6] "university of virginia-main campus"
-
-### EOP Elite group, only Liberal Arts colleges
-
-Mean upper 75% ACT is 32.53125.
-
-    ##  [1] "amherst college"               "barnard college"              
-    ##  [3] "bates college"                 "bowdoin college"              
-    ##  [5] "bryn mawr college"             "bucknell university"          
-    ##  [7] "carleton college"              "claremont mckenna college"    
-    ##  [9] "colby college"                 "colgate university"           
-    ## [11] "college of the holy cross"     "colorado college"             
-    ## [13] "davidson college"              "franklin and marshall college"
-    ## [15] "grinnell college"              "hamilton college"             
-    ## [17] "haverford college"             "illinois wesleyan university" 
-    ## [19] "kenyon college"                "macalester college"           
-    ## [21] "middlebury college"            "oberlin college"              
-    ## [23] "pomona college"                "reed college"                 
-    ## [25] "scripps college"               "swarthmore college"           
-    ## [27] "vassar college"                "washington and lee university"
-    ## [29] "wellesley college"             "wesleyan university"          
-    ## [31] "whitman college"               "williams college"
-
-### EOP Highly Selective private, no LACs
-
-Mean upper 75% ACT is NA.
-
-    ##  [1] "american university"           "baylor university"            
-    ##  [3] "boston university"             "chapman university"           
-    ##  [5] "college of new jersey"         "elon university"              
-    ##  [7] "emerson college"               "fordham university"           
-    ##  [9] "george washington university"  "gonzaga university"           
-    ## [11] "loyola university chicago"     "loyola university maryland"   
-    ## [13] "loyola university new orleans" "marquette university"         
-    ## [15] "pepperdine university"         "providence college"           
-    ## [17] "quinnipiac university"         "santa clara university"       
-    ## [19] "southern methodist university" "syracuse university"          
-    ## [21] "texas christian university"    "university of richmond"       
-    ## [23] "university of san diego"       "university of tulsa"          
-    ## [25] "villanova university"
-
-### EOP Highly Selective private, LACs only
-
-Mean upper 75% ACT is NA.
-
-    ##  [1] "american university"           "baylor university"            
-    ##  [3] "boston university"             "chapman university"           
-    ##  [5] "college of new jersey"         "elon university"              
-    ##  [7] "emerson college"               "fordham university"           
-    ##  [9] "george washington university"  "gonzaga university"           
-    ## [11] "loyola university chicago"     "loyola university maryland"   
-    ## [13] "loyola university new orleans" "marquette university"         
-    ## [15] "pepperdine university"         "providence college"           
-    ## [17] "quinnipiac university"         "santa clara university"       
-    ## [19] "southern methodist university" "syracuse university"          
-    ## [21] "texas christian university"    "university of richmond"       
-    ## [23] "university of san diego"       "university of tulsa"          
-    ## [25] "villanova university"
-
-Sloan Fellows Produced in Math and Physics
-------------------------------------------
-
-This uses the Equality of Opportunity Project (EOP) tiers of schools. The 'Ivy Plus' group outproduced future Sloan Fellows in Math and Physics. The x-axis is the total number of undergraduates, so if the line is higher it means the per capita production is higher.
-
-![](/blog_files/sloan_sat_files/figure-markdown_github/sloan.by.type-1.png)
-
-Math and Physics Data
----------------------
-
-### EOP Ivy Plus group
-
-| School                                |  Fellows|   Size|
-|:--------------------------------------|--------:|------:|
-| brown university                      |        5|   6264|
-| california institute of technology    |       12|    983|
-| columbia university                   |        6|   8100|
-| cornell university                    |        4|  14195|
-| dartmouth college                     |        1|   4184|
-| duke university                       |        1|   6480|
-| harvard university                    |       23|   7236|
-| massachusetts institute of technology |        9|   4476|
-| princeton university                  |       22|   5258|
-| stanford university                   |        9|   7018|
-| university of chicago                 |        9|   5729|
-| university of pennsylvania            |        1|  10678|
-| yale university                       |        8|   5473|
-
-### EOP Elite private group, no LACs
-
-| School                            |  Fellows|   Size|
-|:----------------------------------|--------:|------:|
-| boston college                    |        0|   9483|
-| brandeis university               |        0|   3715|
-| carnegie mellon university        |        2|   5819|
-| case western reserve university   |        1|   4807|
-| emory university                  |        0|   7730|
-| georgetown university             |        0|   7211|
-| johns hopkins university          |        1|   6039|
-| lehigh university                 |        0|   5034|
-| new york university               |        2|  24539|
-| northeastern university           |        0|  13492|
-| northwestern university           |        1|   8725|
-| rice university                   |        4|   3888|
-| tufts university                  |        0|   5143|
-| tulane university                 |        0|   7892|
-| university of miami               |        0|  10828|
-| university of notre dame          |        1|   8427|
-| university of rochester           |        0|   6074|
-| university of southern california |        0|  18392|
-| vanderbilt university             |        0|   6818|
-| wake forest university            |        0|   4861|
-| washington university in st louis |        4|   6913|
-
-### EOP Elite private group, only LACs
-
-| School                        |  Fellows|  Size|
-|:------------------------------|--------:|-----:|
-| amherst college               |        0|  1792|
-| barnard college               |        0|  2556|
-| bates college                 |        1|  1773|
-| bowdoin college               |        0|  1797|
-| bryn mawr college             |        0|  1303|
-| bucknell university           |        0|  3528|
-| carleton college              |        2|  2042|
-| claremont mckenna college     |        0|  1293|
-| colby college                 |        0|  1847|
-| colgate university            |        1|  2865|
-| college of the holy cross     |        0|  2754|
-| colorado college              |        1|  2036|
-| davidson college              |        0|  1765|
-| franklin and marshall college |        0|  2182|
-| grinnell college              |        0|  1670|
-| hamilton college              |        0|  1890|
-| haverford college             |        0|  1187|
-| illinois wesleyan university  |        0|  1883|
-| kenyon college                |        0|  1651|
-| macalester college            |        1|  2053|
-| middlebury college            |        0|  2498|
-| oberlin college               |        0|  2961|
-| pomona college                |        0|  1635|
-| reed college                  |        1|  1335|
-| scripps college               |        0|   962|
-| swarthmore college            |        1|  1530|
-| vassar college                |        0|  2389|
-| washington and lee university |        0|  1880|
-| wellesley college             |        0|  2172|
-| wesleyan university           |        1|  2907|
-| whitman college               |        1|  1480|
-| williams college              |        0|  2019|
-
-### EOP Elite public group
-
-| School                                      |  Fellows|   Size|
-|:--------------------------------------------|--------:|------:|
-| college of william and mary                 |        0|   6256|
-| university of california-berkeley           |        9|  27126|
-| university of california-los angeles        |        1|  29627|
-| university of michigan-ann arbor            |        3|  28217|
-| university of north carolina at chapel hill |        0|  17908|
-| university of virginia-main campus          |        4|  15515|
-
-Sloan Fellows Produced in Neuroscience, Ocean Sciences, and Chemistry
----------------------------------------------------------------------
-
-Again the 'Ivy Plus' group is outproducing Sloan Fellows. However, for these fields, the 'Elite' Liberal Arts colleges have a higher per capita (per undergraduate) production of future Sloan Fellows than the 'Elite' private and public schools.
-
-![](sloan_sat_files/figure-markdown_github/sloan.bio-1.png)
-
-Neuroscience and Ocean Sciences Data
-------------------------------------
-
-### Ivy Plus
-
-| School                                |  Fellows|   Size|
-|:--------------------------------------|--------:|------:|
-| brown university                      |        5|   6264|
-| california institute of technology    |        9|    983|
-| columbia university                   |        3|   8100|
-| cornell university                    |        5|  14195|
-| dartmouth college                     |        6|   4184|
-| duke university                       |        2|   6480|
-| harvard university                    |       16|   7236|
-| massachusetts institute of technology |       14|   4476|
-| princeton university                  |        9|   5258|
-| stanford university                   |        7|   7018|
-| university of chicago                 |        2|   5729|
-| university of pennsylvania            |        2|  10678|
-| yale university                       |        3|   5473|
-
-### Elite private
-
-| School                            |  Fellows|   Size|
-|:----------------------------------|--------:|------:|
-| boston college                    |        1|   9483|
-| brandeis university               |        3|   3715|
-| carnegie mellon university        |        1|   5819|
-| case western reserve university   |        0|   4807|
-| emory university                  |        1|   7730|
-| georgetown university             |        0|   7211|
-| johns hopkins university          |        2|   6039|
-| lehigh university                 |        1|   5034|
-| new york university               |        3|  24539|
-| northeastern university           |        0|  13492|
-| northwestern university           |        1|   8725|
-| rice university                   |        2|   3888|
-| tufts university                  |        2|   5143|
-| tulane university                 |        0|   7892|
-| university of miami               |        0|  10828|
-| university of notre dame          |        1|   8427|
-| university of rochester           |        3|   6074|
-| university of southern california |        3|  18392|
-| vanderbilt university             |        0|   6818|
-| wake forest university            |        0|   4861|
-| washington university in st louis |        6|   6913|
-
-### Elite private LAC
-
-| School                        |  Fellows|  Size|
-|:------------------------------|--------:|-----:|
-| amherst college               |        0|  1792|
-| barnard college               |        0|  2556|
-| bates college                 |        1|  1773|
-| bowdoin college               |        1|  1797|
-| bryn mawr college             |        1|  1303|
-| bucknell university           |        0|  3528|
-| carleton college              |        1|  2042|
-| claremont mckenna college     |        0|  1293|
-| colby college                 |        1|  1847|
-| colgate university            |        1|  2865|
-| college of the holy cross     |        0|  2754|
-| colorado college              |        0|  2036|
-| davidson college              |        0|  1765|
-| franklin and marshall college |        0|  2182|
-| grinnell college              |        0|  1670|
-| hamilton college              |        1|  1890|
-| haverford college             |        0|  1187|
-| illinois wesleyan university  |        1|  1883|
-| kenyon college                |        0|  1651|
-| macalester college            |        4|  2053|
-| middlebury college            |        3|  2498|
-| oberlin college               |        1|  2961|
-| pomona college                |        1|  1635|
-| reed college                  |        2|  1335|
-| scripps college               |        0|   962|
-| swarthmore college            |        3|  1530|
-| vassar college                |        0|  2389|
-| washington and lee university |        0|  1880|
-| wellesley college             |        1|  2172|
-| wesleyan university           |        2|  2907|
-| whitman college               |        0|  1480|
-| williams college              |        4|  2019|
-
-### EOP Elite public group
-
-| School                                      |  Fellows|   Size|
-|:--------------------------------------------|--------:|------:|
-| college of william and mary                 |        4|   6256|
-| university of california-berkeley           |        8|  27126|
-| university of california-los angeles        |        5|  29627|
-| university of michigan-ann arbor            |        4|  28217|
-| university of north carolina at chapel hill |        3|  17908|
-| university of virginia-main campus          |        3|  15515|
-
-Liberal Arts Schools
---------------------
-
-This uses the Equality of Opportunity Project 'elite private' and 'highly selective private' tiers, but only looks at the Liberal Arts colleges. Mean upper 75% ACT for the 'elite' Liberal Arts colleges is 32.53125 and the mean for the 'highly selective' schools is 30.35.
-
-![](sloan_sat_files/figure-markdown_github/sloan.lac.elite.vs.high-1.png)
+The other big take-home is that within math and physics, however, the elite privates dominate. The next analysis shows that this is due to Harvard and Princeton within the elite private group.
 
 Analysis using upper 75% SAT Math tiers and Carnegie School Classifications
 ---------------------------------------------------------------------------
 
-For the rest of the analysis, I abandon the Equality of Opportunity Project tier groups and I switch to defining tiers using just the upper 75% SAT Math and the Carnegie School Classifications.
+For this analysis, I abandon the Equality of Opportunity Project tier groups and I switch to defining tiers using just the upper 75% SAT Math and the Carnegie School Classifications.
 
 I will be using these Carnegie Classifications
 
@@ -367,14 +39,14 @@ Sloan Fellows by ACT brackets, regardless of school type
 
 Before comparing Liberal Arts colleges to research universities, I will look at the correlation between the upper 75% ACT score at the school versus the number of future Sloan Fellows. Conclusion, clearly the upper 75% ACT is a predictor for the number of future Sloan Fellows.
 
-![](sloan_sat_files/figure-markdown_github/sloan.by.act-1.png)
+![](/blog_posts/2017-5-20-sloan-sat_files/figure-markdown_github/sloan.by.act-1.png)
 
 Sloan Fellows for schools with upper 75% ACT = 34 or 33 broken out by type of school
 ------------------------------------------------------------------------------------
 
-The ACT = 35 is a rarefied group. Let's look just at ACT = 34 and 33 together. Scroll below the plot to see the schools in each group.
+The ACT = 35 is a rarefied group. Let's look just at ACT = 34 and 33 together. Scroll below the plot to see the schools in each group. This plot shows that within this very high ACT group, LACs and private elite schools have similar per capitat Sloan production but public schools are lower even with the same mean ACT.
 
-![](sloan_sat_files/figure-markdown_github/sloan.by.act34.type-1.png)
+![](/blog_posts/2017-5-20-sloan-sat_files/figure-markdown_github/sloan.by.act34.type-1.png)
 
 ### act34.33.private
 
@@ -424,7 +96,7 @@ The ACT = 35 is a rarefied group. Let's look just at ACT = 34 and 33 together. S
 <!--
 ## Sloan Fellows for schools with upper 75% ACT = 32 and 33 broken out by type of school
 
-![](sloan_sat_files/figure-markdown_github/sloan.by.act32.33.type-1.png)
+![](/blog_posts/2017-5-20-sloan-sat_files/figure-markdown_github/sloan.by.act32.33.type-1.png)
 -->
 Future Sloan Fellows By Carnegie Classification and Public/Private
 ------------------------------------------------------------------
@@ -448,20 +120,44 @@ In the bar-plots, the label "T1" is technical institute in ACT band 1, "Pr2" is 
 Math and Physics future Sloan Fellows By Carnegie Classification and Public/Private
 -----------------------------------------------------------------------------------
 
-The number of undergraduates (in thousands) in each bar is shown in parentheses below the number of Sloan Fellows. The bottom bar plot shows the per capita (per 1000 of undergraduates) production of future Sloan Fellows. The y-axis has been capped at 0.8; note that the per capita for the "T1" group (technical institutes in the highest ACT band) is much higher than 0.8.
+The large font number on each bar is the number of Sloan fellows total in the tier group. The number of undergraduates (in thousands) in each bar is shown below the number of Sloan Fellows as n=x. The number of institutions is shown as i=x. The bottom bar plot shows the per capita (per 1000 of undergraduates) production of future Sloan Fellows. The y-axis has been capped at 0.8; note that the per capita for the "T1" group (technical institutes in the highest ACT band) is much higher than 0.8. The data for each institution is given at the end of the post.
 
-![](sloan_sat_files/figure-markdown_github/barplot1-1.png)
-
-Math and Physics future Sloan Fellows By Carnegie Classification and ACT band
------------------------------------------------------------------------------
+![](/blog_posts/2017-5-20-sloan-sat_files/figure-markdown_github/barplot1-1.png)
 
 Production of Math and Physics future Sloan Fellows (top bar-plot) is numerically highest (103) in the private research universities with ACT 35-34; this group is the Ivies, Stanford, Univ of Chicago and a handful of other elite universities. Numerically, the next highest number of future Sloan Fellows comes from the public research universities (49) with the public universities in the lower ACT band (31-28) producing the most of the public universities. This tier ("Pu3") has many more undergraduates than the other tiers.
 
 However when we look at the per capita production, the picture is a bit different. The per-capita production of Math and Physics future Sloan Fellows (bottom bar-plot) is much (much, much) higher in the technical institutes with ACT 35-34: MIT and Caltech. After that the highest is in the private research universities with ACT 35-34. The Liberal Arts colleges have a per capita production of future Math and Physics Sloan Fellows that is higher than the public research universities in both ACT band 1 and band 2.
 
-### Data
+Neuroscience, Chemistry, and Ocean Sciences future Sloan Fellows
+----------------------------------------------------------------
 
-This shows the institutions in each group along with the number of Sloan Fellows. I've added the SAT Math upper 75% score for each school and the 6-yr graduation rates.
+This shows the same bar-plot for Neuroscience, Chemistry, and Ocean Sciences. The number of undergraduates (n in thousands) and number of institutions (i) is shown below the number of Sloan Fellows for each bar. The data for each institution is given at the end of the post.
+
+![](/blog_posts/2017-5-20-sloan-sat_files/figure-markdown_github/barplot3-1.png)
+
+Numerically, the overall picture is the same. Production of future Sloan Fellows (top bar-plot) is numerically highest (81) in the private research universities with ACT 35-34 and the next highest number of future Sloan Fellows comes from the public research universities (78). Within the top two ACT bands, the Liberal Arts colleges produce the same number of future Sloan Fellows as the public research universities, although the total number of undergraduates in these "L1" and "L2" groups is much lower.
+
+When we look at the per-capita production, we see again that the per-capita production of future Sloan Fellows (bottom bar-plot) is much (much, much) higher in the "T1" group: MIT and Caltech. However, in contrast to what we saw for Math and Physics, the Liberal Arts colleges outproduce both the private and public research universities within every ACT bracket.
+
+Number of Fellows by ACT
+------------------------
+
+This shows that Physics has an unusually high number of Sloan Fellows coming from institutions with the highest ACT scores.
+
+![](/blog_posts/2017-5-20-sloan-sat_files/figure-markdown_github/num.by.act-1.png)
+
+The public institutions are being penalized for low grad rates
+--------------------------------------------------------------
+
+In my per-capita calculations, I divide by the number of undergraduates. However the public institutions have lower 6-year graduations rates, so I am inflating the size of the undergraduate pool by dividing by the number of undergraduates. I need to somehow adjust for lower graduation rates. Ideally, I would use the number of degrees awarded each year or number awarded in a 5-year period.
+
+Data
+====
+
+Math and Physics
+----------------
+
+This shows the institutions in each group along with the number of Sloan Fellows. I've added the SAT Math upper 75% score for each school. The tot.size is the undergraduate enrollment and 'size' is the estimated number of undergraduates with an SAT score of 700-800.
 
 #### T1
 
@@ -762,23 +458,7 @@ This shows the institutions in each group along with the number of Sloan Fellows
 | willamette university           |      2009|   199|        0|         650|         0.10|   30|
 | wofford college                 |      1654|   131|        0|         640|         0.08|   30|
 
-Neuroscience, Chemistry, and Ocean Sciences future Sloan Fellows
-----------------------------------------------------------------
-
-This shows the same bar-plot for Neuroscience, Chemistry, and Ocean Sciences. The number of undergraduates (n in thousands) and number of institutions (i) is shown below the number of Sloan Fellows for each bar.
-
-![](sloan_sat_files/figure-markdown_github/barplot2-1.png)
-
-Neuroscience, Chemistry, and Ocean Sciences future Sloan Fellows By Carnegie Classification and Public/Private
---------------------------------------------------------------------------------------------------------------
-
-Numerically, the overall picture is the same. Production of future Sloan Fellows (top bar-plot) is numerically highest (81) in the private research universities with ACT 35-34 and the next highest number of future Sloan Fellows comes from the public research universities (78). Within the top two ACT bands, the Liberal Arts colleges produce the same number of future Sloan Fellows as the public research universities, although the total number of undergraduates in these "L1" and "L2" groups is much lower.
-
-When we look at the per-capita production, we see again that the per-capita production of future Sloan Fellows (bottom bar-plot) is much (much, much) higher in the "T1" group: MIT and Caltech. However, in contrast to what we saw for Math and Physics, the Liberal Arts colleges outproduce both the private and public research universities within every ACT bracket.
-
-### Data
-
-This shows the institutions in each group along with the number of Sloan Fellows. I've added the SAT Math upper 75% score for each school and the 6-yr graduation rates.
+### Neurobiology, Chemistry, Ocean Sciences
 
 #### T1
 
@@ -1078,15 +758,3 @@ This shows the institutions in each group along with the number of Sloan Fellows
 | wheaton college of norton, ma   |      1575|   219|        0|         665|         0.14|   30|
 | willamette university           |      2009|   199|        0|         650|         0.10|   30|
 | wofford college                 |      1654|   131|        0|         640|         0.08|   30|
-
-The public institutions are being penalized for low grad rates
---------------------------------------------------------------
-
-In my per-capita calculations, I divide by the number of undergraduates. However the public institutions have lower 6-year graduations rates, so I am inflating the size of the undergraduate pool by dividing by the number of undergraduates. I need to somehow adjust for lower graduation rates. Ideally, I would use the number of degrees awarded each year or number awarded in a 5-year period.
-
-Number of Fellows by ACT
-------------------------
-
-This shows that Physics has an unusually high number of Sloan Fellows coming from institutions with the highest ACT scores.
-
-![](sloan_sat_files/figure-markdown_github/num.by.act-1.png)
