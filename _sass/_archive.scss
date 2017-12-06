@@ -33,9 +33,8 @@
 }
 
 .archive__item-title {
-  margin-bottom: 0em;
+  margin-bottom: 0.25em;
   font-family: $sans-serif-narrow;
-  font-size: $type-size-6;
 
   a + a {
     opacity: 0.5;
@@ -46,8 +45,9 @@
 .page__content {
 
   .archive__item-title {
-    margin-top: 1em;
+    margin-top: 0em;
     border-bottom: none;
+    font-size: $type-size-6;
   }
 }
 
