@@ -1,6 +1,6 @@
 ---
 title: 'Baccalaureate Origins of Sloan Fellows: Liberal Arts Colleges Versus Research Universities, part 2'
-date: 2015-05-20
+date: 2017-05-20
 permalink: /posts/2017/05/sloan-2/
 tags:
   - STEM

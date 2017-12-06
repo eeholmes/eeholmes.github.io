@@ -1,6 +1,6 @@
 ---
 title: 'Baccalaureate Origins of Sloan Fellows, part 1'
-date: 2015-05-17
+date: 2017-05-17
 permalink: /posts/2017/05/sloan-1/
 tags:
   - STEM
