@@ -197,7 +197,6 @@ defaults:
       share: true
       related: true
       date: false
-      excerpt: false
   # _pages
   - scope:
       path: ""
