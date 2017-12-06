@@ -1,6 +1,12 @@
-Baccalaureate Origins of Sloan Fellows: Liberal Arts Colleges Versus Research Universities
-================
-EE Holmes
+---
+title: 'Baccalaureate Origins of Sloan Fellows: Liberal Arts Colleges Versus Research Universities, part 2'
+date: 2015-05-17
+permalink: /posts/2017/05/sloan-2/
+tags:
+  - STEM
+  - Liberal Arts Colleges
+  - Education
+---
 
 Analysis of the baccalaureate origins of Sloan fellows in the hard sciences using SAT tiers.
 

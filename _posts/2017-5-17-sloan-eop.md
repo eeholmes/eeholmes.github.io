@@ -1,6 +1,12 @@
-Baccalaureate Origins of Sloan Fellows, part 1
-================
-EE Holmes
+---
+title: 'Baccalaureate Origins of Sloan Fellows, part 1'
+date: 2015-05-17
+permalink: /posts/2017/05/sloan-1/
+tags:
+  - STEM
+  - Liberal Arts Colleges
+  - Education
+---
 
 Analysis of the baccalaureate origins of Sloan fellows in the hard sciences across the Equality of Opportunity tiers of institutions.
 
