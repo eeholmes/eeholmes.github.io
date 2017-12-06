@@ -45,8 +45,9 @@
 .page__content {
 
   .archive__item-title {
-    margin-top: 1em;
+    margin-top: 0em;
     border-bottom: none;
+    font-size: $type-size-6;
   }
 }
 
