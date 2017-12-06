@@ -10,12 +10,12 @@ main:
   - title: "Teaching"
     url: /teaching/    
         
-  - title: "Open Notebook"
-    url: /blog/
-    
   - title: "Talks"
     url: /talks/
 
-  - title: "Latest"
+  - title: "Open Notebook Older"
+    url: /blog/
+    
+  - title: "Open Notebook Newer"
     url: /year-archive/
 
