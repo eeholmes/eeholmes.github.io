@@ -190,12 +190,14 @@ defaults:
       path: ""
       type: posts
     values:
-      layout: archive
+      layout: single
       author_profile: false
       read_time: false
       comments: true
       share: true
       related: true
+      date: false
+      excerpt: false
   # _pages
   - scope:
       path: ""
