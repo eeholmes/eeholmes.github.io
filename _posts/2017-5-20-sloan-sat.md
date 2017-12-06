@@ -1,5 +1,5 @@
 ---
-title: 'Baccalaureate Origins of Sloan Fellows: Liberal Arts Colleges Versus Research Universities, part 2'
+title: 'Baccalaureate Origins of Sloan Fellows, part 2: Liberal Arts Colleges Versus Research Universities'
 date: 2017-05-20
 permalink: /posts/2017/05/sloan-2/
 tags:
@@ -10,152 +10,124 @@ tags:
 
 Analysis of the baccalaureate origins of Sloan fellows in the hard sciences using SAT tiers.
 
-The [Sloan Fellowship](https://sloan.org/fellowships/) is a prestigious award for early career scientists at U.S. and Canadian academic institutions. The data sets I am using is one I assembled on the Baccalaureate origins of the Sloan Fellows along with data on the undergraduate institutions from the [Scorecard database](https://collegescorecard.ed.gov/data/) on U.S. Baccalaureate institutions. See the part 1 post for more details.
+The [Sloan Fellowship](https://sloan.org/fellowships/) is a prestigious award for early career STEM scientists at U.S. and Canadian academic institutions. The data set I am using is one I assembled on the Baccalaureate origins of the Sloan Fellows who received their undergraduate education in the U.S., which was approximately 50% of the fellows. The data were collected by looking up the CVs of the fellows, the names of which are posted in the Sloan Foundation press releases. I combined the Bacculaureate origin data with data on the undergraduate institutions from the [Scorecard database](https://collegescorecard.ed.gov/data/) on U.S. Baccalaureate institutions.
 
-For these analyses, I look at the production of future Sloan fellows per 1000 undergraduates with **SAT math scores 700-800**. I am standardizing by the SAT math scores at a school. Harvard produces many Sloan fellows, but perhaps this is just because they have an abundance of undergraduates with very high SAT math scores, which correlates with STEM talent. This analysis removes the effect of number of high SATH math scorers.
+The data were then filtered to only include fellows who received their undergraduate degree in the **U.S.** and from either a **research** university or a liberal arts college (LAC). This is important to understand when looking at the results---the liberal arts colleges are being compared to research universities. This filtering only excluded a handful of fellows who received their undergraduate degrees in the U.S.; basically all Sloan fellows received their undergraduate degrees at a research university or liberal arts college.
 
-I will be showing a series of cumulative plots where I look at the Sloan production within *groups* of schools. I am not concerned with individual schools, but rather the production within a whole group of schools. Cumulative plots help one see patterns when one is looking at rare events, like Sloan fellows. Within a group, I sort by size of school (this is step is not important), and then take the cumulative sum of school size and number of Sloan fellows. I then plot cumulative sum of size (enrollment) against cumulative number of Sloan fellows.
+This is my second attempt at this analysis. In my first attempt, I used the Equality of Opportunity tier groups (e.g. 'Highly selective private') and also tiers based on ACT scores (31, 32, etc). The most important difference is that I used total undergraduate enrollment as the 'size' of the school. I realized that the number of students with high SAT Math scores would be a better 'size' to use. The nature of Sloan Fellowships means that it is unlikely that the awardee would have had an SAT Math score under 700 as an undergraduate. These are people went to graduate school in fields that require quantitative skills. This second analysis uses the number of undergraduates with an SAT Math score between 700-800.
+
+I will be showing a series of barplots where I look at the Sloan production within *groups* of schools. I am not concerned with individual schools, but rather the production within a whole group of schools.
 
 ### Summary of the results
 
-Standardizing by the SAT math scores does not completely remove the selectivity effect---the effect that more selective schools have a higher production of future Sloan fellows. However it removes much of the effect. The most striking result is that Liberal Arts Colleges (LACs) produce an unusually high number of future Sloan fellows given their enrollment size. This is particularly seen in the fields other than math and physics. In these non-math, non-physics fields, LACs have a higher per capita production of future Sloan fellows than the elite private schools (which includes the Ivies). Production of future Sloan fellows is not restricted to 'elite' LACs. The mid-tier LACs also have higher production than the elite private schools.
+Standardizing by the SAT math scores does not completely remove the selectivity effect---the effect that more selective schools have a higher production of future Sloan fellows. However it removes much of the effect.
 
-That small Liberal Arts Schools produce unusually high number of PhDs in STEM is well-known and has been reported in other studies. What my analysis indicates is that this higher than expected production is also seen when we look at a select group of highly productive research scientists in academia. This is a rarified group of those with PhDs in STEM, and represents the unusually productive research scientists (within academia).
+Four schools have produced the lion's share of the future Sloan fellows: MIT, CalTech, Harvard and Princeton. This is particularly the case in math, physics and economics where 36% of Sloan fellows received their undergraduate degrees from these four schools. In the other fields, 20% received their undergraduate degrees from these schools. Because these groups have an outsized effect on the results for their 'group', I removed them for the rest of the analysis and looked at where the other Sloan fellows received their undergraduate education.
 
-The other big take-home is that within math and physics, however, the elite privates dominate. The next analysis shows that this is due to Harvard and Princeton within the elite private group.
+The most striking result with these four outlier institutions removed is that Liberal Arts Colleges (LACs) produce an unusually high number of future Sloan fellows given their enrollment size. Approximately 25% of future Sloan fellows in math, physics and economics get their undergraduate degrees at a LAC (8% if we include the four outlier schools). Similarly in the other fields, 25% of future Sloan fellows went to a LAC as an undergraduate (15% if we include the four outlier schools). This is a high percentage if we consider the enrollment size of LACs. LACs have a higher per capita production of future Sloan fellows than the elite private schools (which includes the Ivies minus Harvard and Princeton). Production of future Sloan fellows is not restricted to 'elite' LACs. The mid-tier LACs also have higher production than the elite private schools, which are considerably more selective.
 
-Analysis using upper 75% SAT Math tiers and Carnegie School Classifications
----------------------------------------------------------------------------
+That small Liberal Arts Schools produce unusually high number graduates who go on to get PhDs in STEM is well-known and has been reported in other studies. What my analysis indicates is that this higher than expected production is also seen when we look at a select group of highly productive early-career research scientists in academia. These individuals are many years past their undergraduate education: they have finished a PhD, finished post-doctoral training, gained an academic position, and published ground-breaking research. For those in neuroscience, chemistry, and ocean science, they will have also successfully established a productive research group ('lab') of students and post-doctoral researchers.
 
-For this analysis, I abandon the Equality of Opportunity Project tier groups and I switch to defining tiers using just the upper 75% SAT Math and the Carnegie School Classifications.
+The other big take-home is public institutions, even the very selective ones with similar SAT scores as the private schools, have low production of future Sloan fellows in all of the fields. Across the board, Liberals Arts Colleges outproduce on this metric. However, public institutions do outproduce the less selective private research universities across the board. In fact the less selective private research universities by and large do not produce future Sloan fellows.
 
-I will be using these Carnegie Classifications
+Carnegie School Classifications
+-------------------------------
+
+This analysis focuses on comparting Liberal Arts colleges to research universities. The idea is to examine whether there is a difference in the production of future Sloan Fellows based on the type of institution (research university versus undergraduate institution).
+
+I used these Carnegie Classifications
 
 -   15 = Doctoral Universities: Highest Research Activity
 -   16 = Doctoral Universities: Higher Research Activity
 -   18 = Master's Colleges & Universities: Larger Programs
 -   21 = Baccalaureate Colleges: Arts & Sciences Focus
 
-The idea is to examine whether there is a difference in the production of future Sloan Fellows based on the type of institution (research university versus undergraduate institution).
+I labelled each institution by type: Liberal Arts colleges, technical research universities, and research universities but not a technical institute. The research universities were further separated into public and private, but the technical institutes were not. Only private Liberal Arts colleges were included in the analysis as there were too few public Liberal Arts colleges with data.
 
-This analysis uses any school in the Scorecard database with an upper 75% SAT Math at the specified values. Some Liberal Arts colleges were missing values and I filled those in from www.collegedata.com.
+SAT Math Score Bands
+--------------------
 
-Sloan Fellows by ACT brackets, regardless of school type
---------------------------------------------------------
+I divided schools into three SAT Math score bands based on the upper 75% math scores.
 
-Before comparing Liberal Arts colleges to research universities, I will look at the correlation between the upper 75% ACT score at the school versus the number of future Sloan Fellows. Conclusion, clearly the upper 75% ACT is a predictor for the number of future Sloan Fellows.
+-   sat1: SAT Math upper 75% 760-800
+-   sat2: SAT Math upper 75% 690-759
+-   sat3: SAT Math upper 75% 640-689
 
-![](/blog_posts/2017-5-20-sloan-sat_files/figure-markdown_github/sloan.by.act-1.png)
+Some Liberal Arts colleges were missing SAT data in the Scorecard database and I filled those in from www.collegedata.com.
 
-Sloan Fellows for schools with upper 75% ACT = 34 or 33 broken out by type of school
-------------------------------------------------------------------------------------
+Tier Groups
+-----------
 
-The ACT = 35 is a rarefied group. Let's look just at ACT = 34 and 33 together. Scroll below the plot to see the schools in each group. This plot shows that within this very high ACT group, LACs and private elite schools have similar per capitat Sloan production but public schools are lower even with the same mean ACT.
+I created 'tiers' based on the Carnegie Classifications and the SAT Math bands.
 
-![](/blog_posts/2017-5-20-sloan-sat_files/figure-markdown_github/sloan.by.act34.type-1.png)
+-   T1, T2, T3: technical institutes in the SAT1, SAT2, and SAT3 bands
+-   Pr1, Pr2, Pr3: private research universities in the 3 SAT bands
+-   Pu1, Pu2, Pu3: public research universities in the 3 SAT bands
+-   L1, L2, L3: Liberal Arts colleges in the 3 SAT bands
 
-### act34.33.private
+Number of undergraduates with SAT Math 700-800
+----------------------------------------------
 
-    ##  [1] "northwestern university"          
-    ##  [2] "university of notre dame"         
-    ##  [3] "johns hopkins university"         
-    ##  [4] "washington university in st louis"
-    ##  [5] "dartmouth college"                
-    ##  [6] "columbia university"              
-    ##  [7] "cornell university"               
-    ##  [8] "duke university"                  
-    ##  [9] "carnegie mellon university"       
-    ## [10] "university of pennsylvania"       
-    ## [11] "brown university"                 
-    ## [12] "vanderbilt university"            
-    ## [13] "rice university"                  
-    ## [14] "stanford university"              
-    ## [15] "university of southern california"
-    ## [16] "georgetown university"            
-    ## [17] "boston college"                   
-    ## [18] "brandeis university"              
-    ## [19] "northeastern university"          
-    ## [20] "tufts university"                 
-    ## [21] "case western reserve university"
+The number of undergraduates with SAT Math 700-800 ('Size') was estimated by multiplying the total undergraduate enrollment ('Tot.Size') by the fraction of incoming freshman with SAT Math scores between 700-800 ('SAT.700.800').
 
-### act34.33.public
+|                                 |  Size|  Tot.Size|  SAT.700.800|
+|---------------------------------|-----:|---------:|------------:|
+| brandeis university             |  2129|      3715|         0.57|
+| case western reserve university |  2662|      4807|         0.55|
+| dartmouth college               |  2703|      4184|         0.65|
+| rice university                 |  3112|      3888|         0.80|
+| tufts university                |  3250|      5143|         0.63|
 
-    ## [1] "university of california-berkeley"          
-    ## [2] "university of california-los angeles"       
-    ## [3] "georgia institute of technology-main campus"
-    ## [4] "university of michigan-ann arbor"           
-    ## [5] "college of william and mary"                
-    ## [6] "university of virginia-main campus"
+When I compute the per-capita rate of Sloan Fellow production, I will be dividing the number of Fellows by the 'Size' column. This is to attempt to compare 'apples to apples'. Yes, more Sloan Fellows attended Princeton as undergraduates. Is this something about Princeton, or simply that Princeton has an unusually high fraction of undergraduates who are strong academically, esp. in math.
 
-### act34.33.lac
-
-    ##  [1] "pomona college"                "amherst college"              
-    ##  [3] "williams college"              "haverford college"            
-    ##  [5] "swarthmore college"            "claremont mckenna college"    
-    ##  [7] "scripps college"               "wesleyan university"          
-    ##  [9] "grinnell college"              "bowdoin college"              
-    ## [11] "wellesley college"             "carleton college"             
-    ## [13] "hamilton college"              "vassar college"               
-    ## [15] "reed college"                  "middlebury college"           
-    ## [17] "washington and lee university"
-
-<!--
-## Sloan Fellows for schools with upper 75% ACT = 32 and 33 broken out by type of school
-
-![](/blog_posts/2017-5-20-sloan-sat_files/figure-markdown_github/sloan.by.act32.33.type-1.png)
--->
-Future Sloan Fellows By Carnegie Classification and Public/Private
-------------------------------------------------------------------
-
-For the next analyses, I will divide schools into three ACT bands based on the upper 75% ACT scores.
-
--   sat1: SAT Math upper 75% 770-800
--   sat2: SAT Math upper 75% 720-769
--   sat3: SAT Math upper 75% 640-719
-
-I will divide the types of schools into Liberal Arts colleges. technical research universities and research universities that are not technical institutes.
-
--   Liberal Arts college: Carnegie Classification = 21
--   Highly productive research university: Carnegie Classification 15, 16 or 18. The latter (18) are Masters universities with high research output. Dartmouth is in this category for example. The technical institutes are excluded.
--   Technical institutes: Carnegie Classification 15, 16 or 18 and their name has either "institute of technology" or "polytechnical" in it.
-
-The research universities are separated into public and private, but the technical institutes are not. The Liberal Arts colleges are exclusively private.
-
-In the bar-plots, the label "T1" is technical institute in ACT band 1, "Pr2" is private research university in ACT band 2, etc.
-
-Math and Physics future Sloan Fellows By Carnegie Classification and Public/Private
------------------------------------------------------------------------------------
-
-The large font number on each bar is the number of Sloan fellows total in the tier group. The number of undergraduates (in thousands) in each bar is shown below the number of Sloan Fellows as n=x. The number of institutions is shown as i=x. The bottom bar plot shows the per capita (per 1000 of undergraduates) production of future Sloan Fellows. The y-axis has been capped at 0.8; note that the per capita for the "T1" group (technical institutes in the highest ACT band) is much higher than 0.8. The data for each institution is given at the end of the post.
-
-![](/blog_posts/2017-5-20-sloan-sat_files/figure-markdown_github/barplot1-1.png)
-
-Production of Math and Physics future Sloan Fellows (top bar-plot) is numerically highest (103) in the private research universities with ACT 35-34; this group is the Ivies, Stanford, Univ of Chicago and a handful of other elite universities. Numerically, the next highest number of future Sloan Fellows comes from the public research universities (49) with the public universities in the lower ACT band (31-28) producing the most of the public universities. This tier ("Pu3") has many more undergraduates than the other tiers.
-
-However when we look at the per capita production, the picture is a bit different. The per-capita production of Math and Physics future Sloan Fellows (bottom bar-plot) is much (much, much) higher in the technical institutes with ACT 35-34: MIT and Caltech. After that the highest is in the private research universities with ACT 35-34. The Liberal Arts colleges have a per capita production of future Math and Physics Sloan Fellows that is higher than the public research universities in both ACT band 1 and band 2.
-
-Neuroscience, Chemistry, and Ocean Sciences future Sloan Fellows
+Bacculareate origin of Math, Physics and Economics Sloan Fellows
 ----------------------------------------------------------------
 
-This shows the same bar-plot for Neuroscience, Chemistry, and Ocean Sciences. The number of undergraduates (n in thousands) and number of institutions (i) is shown below the number of Sloan Fellows for each bar. The data for each institution is given at the end of the post.
+The number of undergraduates (in thousands) in each bar is shown in parentheses below the number of Sloan Fellows. The bottom bar plot shows the per capita production of future Sloan Fellows.
 
-![](/blog_posts/2017-5-20-sloan-sat_files/figure-markdown_github/barplot3-1.png)
+![](\blog_files\2017-5-20-sloan-sat_files/figure-markdown_github/barplot1-1.png)
 
-Numerically, the overall picture is the same. Production of future Sloan Fellows (top bar-plot) is numerically highest (81) in the private research universities with ACT 35-34 and the next highest number of future Sloan Fellows comes from the public research universities (78). Within the top two ACT bands, the Liberal Arts colleges produce the same number of future Sloan Fellows as the public research universities, although the total number of undergraduates in these "L1" and "L2" groups is much lower.
+The T1 and Pr1 groups are dominated by a handful of institutions
+----------------------------------------------------------------
 
-When we look at the per-capita production, we see again that the per-capita production of future Sloan Fellows (bottom bar-plot) is much (much, much) higher in the "T1" group: MIT and Caltech. However, in contrast to what we saw for Math and Physics, the Liberal Arts colleges outproduce both the private and public research universities within every ACT bracket.
+The T1 and Pr1 groups have the highest per-capita production of future Sloan Fellows, but these groups are dominated by a few institutions, namely MIT, CalTech, Harvard and Princeton. These four institutions produce 35.8 percent of the future Sloan fellows in math, physics and economics.
 
-Number of Fellows by ACT
-------------------------
+![](\blog_files\2017-5-20-sloan-sat_files/figure-markdown_github/pie.math-1.png)
 
-This shows that Physics has an unusually high number of Sloan Fellows coming from institutions with the highest ACT scores.
+Math, Physics and Economics future Sloan Fellows with MIT, Caltech, Harvard and Princeton removed
+-------------------------------------------------------------------------------------------------
 
-![](/blog_posts/2017-5-20-sloan-sat_files/figure-markdown_github/num.by.act-1.png)
+What about the other 64.2 percent of Sloan fellows? To look at this, I remove MIT, CalTech, Harvard and Princeton. With these four outlier schools removed, the Liberal Arts colleges have the highest per-capita production in all SAT Math bands compared to research universities (private or public) in the same SAT Math band.
 
-The public institutions are being penalized for low grad rates
---------------------------------------------------------------
+![](\blog_files\2017-5-20-sloan-sat_files/figure-markdown_github/barplot.math2-1.png)
 
-In my per-capita calculations, I divide by the number of undergraduates. However the public institutions have lower 6-year graduations rates, so I am inflating the size of the undergraduate pool by dividing by the number of undergraduates. I need to somehow adjust for lower graduation rates. Ideally, I would use the number of degrees awarded each year or number awarded in a 5-year period.
+Neuroscience, Chemistry, Computational Biology and Ocean Science future Sloan Fellows
+-------------------------------------------------------------------------------------
+
+This shows the same bar-plot for Neuroscience, Chemistry, and Ocean Sciences. The number of undergraduates (n in thousands) and number of institutions (i) is shown below the number of Sloan Fellows for each bar.
+
+![](\blog_files\2017-5-20-sloan-sat_files/figure-markdown_github/barplot2-1.png)
+
+Again the majority of Sloan Fellows come from the same four schools
+-------------------------------------------------------------------
+
+MIT, CalTech, Harvard and Princeton produce 21.5 percent of the future Sloan fellows in neuroscience, chemistry, computational biology and ocean science.
+
+![](\blog_files\2017-5-20-sloan-sat_files/figure-markdown_github/pie.neuro-1.png)
+
+To an extent this is true for the Liberal Arts Colleges also
+------------------------------------------------------------
+
+However the sample sizes are small (only 13 fellows in the L1 group on the left), and the difference between 2 versus 3 Sloan Fellows looks large in the pie but can occur due the chance. Williams and Swarthmore are schools which one would expect to have more Sloan Fellows, but one would also expect Amherst and Bowdoin to be similarly high.
+
+![](\blog_files\2017-5-20-sloan-sat_files/figure-markdown_github/pie.neuro2-1.png)
+
+Neuroscience, Chemistry, Computational Biology and Ocean Sciences future Sloan Fellows with MIT, Caltech, Harvard and Princeton removed
+---------------------------------------------------------------------------------------------------------------------------------------
+
+With these 4 schools removed, the Liberal Arts colleges have the highest per-capita production in all SAT Math bands.
+
+![](\blog_files\2017-5-20-sloan-sat_files/figure-markdown_github/barplot.neuro.2-1.png)
 
 Data
 ====
@@ -163,604 +135,605 @@ Data
 Math and Physics
 ----------------
 
-This shows the institutions in each group along with the number of Sloan Fellows. I've added the SAT Math upper 75% score for each school. The tot.size is the undergraduate enrollment and 'size' is the estimated number of undergraduates with an SAT score of 700-800.
+This shows the institutions in each group along with the number of Sloan Fellows. I've added the SAT Math upper 75% score for each school. The Tot.Size is the undergraduate enrollment and 'Size' is the estimated number of undergraduates with an SAT score of 700-800.
 
 #### T1
 
-|                                             |  Tot.Size|  Size|  Fellows|  SAT.Math75|  SAT.700.800|  ACT|
-|---------------------------------------------|---------:|-----:|--------:|-----------:|------------:|----:|
-| california institute of technology          |       983|   983|       12|         800|         1.00|   35|
-| georgia institute of technology-main campus |     13996|  9043|        2|         770|         0.65|   33|
-| massachusetts institute of technology       |      4476|  4217|        9|         800|         0.94|   35|
-| rensselaer polytechnic institute            |      5557|  3590|        2|         770|         0.65|   32|
-
-#### Pr1
-
-|                                   |  Tot.Size|   Size|  Fellows|  SAT.Math75|  SAT.700.800|  ACT|
-|-----------------------------------|---------:|------:|--------:|-----------:|------------:|----:|
-| brandeis university               |      3715|   2129|        0|         770|         0.57|   33|
-| brown university                  |      6264|   3886|        5|         780|         0.62|   34|
-| carnegie mellon university        |      5819|   4364|        2|         800|         0.75|   34|
-| case western reserve university   |      4807|   2662|        1|         760|         0.55|   33|
-| columbia university               |      8100|   6075|        6|         790|         0.75|   34|
-| cornell university                |     14195|   9171|        4|         770|         0.65|   34|
-| dartmouth college                 |      4184|   2703|        1|         770|         0.65|   34|
-| duke university                   |      6480|   4860|        1|         790|         0.75|   34|
-| georgetown university             |      7211|   3993|        0|         760|         0.55|   33|
-| harvard university                |      7236|   5753|       23|         800|         0.80|   35|
-| johns hopkins university          |      6039|   4188|        1|         770|         0.69|   34|
-| northeastern university           |     13492|   8527|        0|         760|         0.63|   33|
-| northwestern university           |      8725|   6544|        1|         790|         0.75|   34|
-| princeton university              |      5258|   4181|       22|         800|         0.80|   35|
-| rice university                   |      3888|   3112|        4|         790|         0.80|   34|
-| stanford university               |      7018|   5264|        9|         790|         0.75|   34|
-| tufts university                  |      5143|   3250|        0|         760|         0.63|   33|
-| university of chicago             |      5729|   4694|        9|         800|         0.82|   35|
-| university of notre dame          |      8427|   5445|        1|         770|         0.65|   34|
-| university of pennsylvania        |     10678|   7476|        1|         780|         0.70|   34|
-| university of southern california |     18392|  10184|        0|         760|         0.55|   33|
-| vanderbilt university             |      6818|   5756|        0|         800|         0.84|   34|
-| washington university in st louis |      6913|   5836|        4|         800|         0.84|   34|
-| yale university                   |      5473|   4105|        8|         800|         0.75|   35|
-
-#### Pu1
-
-|                                            |  Tot.Size|   Size|  Fellows|  SAT.Math75|  SAT.700.800|  ACT|
-|--------------------------------------------|---------:|------:|--------:|-----------:|------------:|----:|
-| university of california-berkeley          |     27126|  14125|        9|         770|         0.52|   34|
-| university of california-san diego         |     24801|  11887|        2|         760|         0.48|   32|
-| university of illinois at urbana-champaign |     31875|  23906|        2|         790|         0.75|   32|
-| university of michigan-ann arbor           |     28217|  15624|        3|         760|         0.55|   33|
-
-#### L1
-
-|                              |  Tot.Size|  Size|  Fellows|  SAT.Math75|  SAT.700.800|  ACT|
-|------------------------------|---------:|-----:|--------:|-----------:|------------:|----:|
-| amherst college              |      1792|  1158|        0|         770|         0.65|   34|
-| bowdoin college              |      1797|  1202|        0|         770|         0.67|   33|
-| carleton college             |      2042|  1131|        2|         760|         0.55|   33|
-| claremont mckenna college    |      1293|   897|        0|         770|         0.69|   33|
-| grinnell college             |      1670|   925|        0|         760|         0.55|   33|
-| harvey mudd college          |       802|   756|        2|         800|         0.94|   35|
-| illinois wesleyan university |      1883|  1043|        0|         760|         0.55|   30|
-| pomona college               |      1635|  1134|        0|         770|         0.69|   34|
-| swarthmore college           |      1530|   989|        1|         770|         0.65|   34|
-| williams college             |      2019|  1224|        0|         770|         0.61|   34|
+|                                             |  Fellows|  Tot.Size|  Size|  SAT.Math75|  SAT.700.800|
+|---------------------------------------------|--------:|---------:|-----:|-----------:|------------:|
+| california institute of technology          |       12|       983|   983|         800|         1.00|
+| georgia institute of technology-main campus |        2|     13996|  9043|         770|         0.65|
+| massachusetts institute of technology       |       10|      4476|  4217|         800|         0.94|
+| rensselaer polytechnic institute            |        2|      5557|  3590|         770|         0.65|
 
 #### T2
 
-|                                  |  Tot.Size|  Size|  Fellows|  SAT.Math75|  SAT.700.800|  ACT|
-|----------------------------------|---------:|-----:|--------:|-----------:|------------:|----:|
-| colorado school of mines         |      4383|  1613|        0|         720|         0.37|   32|
-| illinois institute of technology |      3046|  1359|        0|         740|         0.45|   31|
-| stevens institute of technology  |      2842|  1466|        0|         745|         0.52|   32|
-
-#### Pr2
-
-|                               |  Tot.Size|   Size|  Fellows|  SAT.Math75|  SAT.700.800|  ACT|
-|-------------------------------|---------:|------:|--------:|-----------:|------------:|----:|
-| bentley university            |      4190|    836|        0|         690|         0.20|   30|
-| boston college                |      9483|   4232|        0|         740|         0.45|   33|
-| boston university             |     16457|   6247|        0|         730|         0.38|   31|
-| emory university              |      7730|   3865|        0|         750|         0.50|   32|
-| george washington university  |     10433|   2608|        0|         700|         0.25|   31|
-| lehigh university             |      5034|   2247|        0|         740|         0.45|   32|
-| new york university           |     24539|  10478|        2|         740|         0.43|   32|
-| santa clara university        |      5447|   1634|        0|         710|         0.30|   32|
-| southern methodist university |      6340|   1901|        0|         710|         0.30|   31|
-| tulane university             |      7892|   1973|        0|         700|         0.25|   32|
-| university of miami           |     10828|   4110|        0|         730|         0.38|   32|
-| university of tulsa           |      3441|    860|        0|         700|         0.25|   32|
-
-#### Pu2
-
-|                                               |  Tot.Size|   Size|  Fellows|  SAT.Math75|  SAT.700.800|  ACT|
-|-----------------------------------------------|---------:|------:|--------:|-----------:|------------:|----:|
-| college of william and mary                   |      6256|   2671|        0|         740|         0.43|   33|
-| cuny bernard m baruch college                 |     14420|   2955|        0|         690|         0.20|   30|
-| michigan state university                     |     38395|   8535|        1|         690|         0.22|   28|
-| missouri university of science and technology |      6418|   1604|        0|         700|         0.25|   31|
-| ohio state university-main campus             |     43733|  16601|        0|         730|         0.38|   31|
-| purdue university-main campus                 |     29977|   7494|        0|         700|         0.25|   30|
-| rutgers university-new brunswick              |     34094|   8524|        1|         700|         0.25|   31|
-| stony brook university                        |     16170|   4765|        1|         710|         0.29|   30|
-| suny at binghamton                            |     13372|   3343|        0|         700|         0.25|   30|
-| university of california-davis                |     27547|   6887|        0|         700|         0.25|   31|
-| university of california-irvine               |     24474|   5394|        0|         690|         0.22|   29|
-| university of california-los angeles          |     29627|  12550|        1|         750|         0.42|   33|
-| university of california-santa barbara        |     20237|   5699|        3|         710|         0.28|   31|
-| university of connecticut                     |     18016|   3767|        0|         690|         0.21|   30|
-| university of florida                         |     31879|   6666|        2|         690|         0.21|   31|
-| university of iowa                            |     21486|   5372|        2|         700|         0.25|   28|
-| university of maryland-college park           |     26532|  10072|        3|         730|         0.38|   32|
-| university of minnesota-twin cities           |     30135|  13205|        2|         750|         0.44|   30|
-| university of north carolina at chapel hill   |     17908|   6141|        0|         720|         0.34|   32|
-| university of pittsburgh-pittsburgh campus    |     18474|   3785|        0|         690|         0.20|   31|
-| university of texas at austin                 |     38914|  12705|        4|         720|         0.33|   32|
-| university of texas at dallas                 |     14300|   3575|        0|         700|         0.25|   31|
-| university of virginia-main campus            |     15515|   6625|        4|         740|         0.43|   33|
-| university of washington-seattle campus       |     29468|   7367|        0|         700|         0.25|   31|
-| university of wisconsin-madison               |     29302|  12046|        1|         740|         0.41|   31|
-
-#### L2
-
-|                                  |  Tot.Size|  Size|  Fellows|  SAT.Math75|  SAT.700.800|  ACT|
-|----------------------------------|---------:|-----:|--------:|-----------:|------------:|----:|
-| augustana college                |      2469|   560|        0|         690|         0.23|   29|
-| barnard college                  |      2556|   767|        0|         710|         0.30|   32|
-| bates college                    |      1773|   466|        1|         703|         0.26|   32|
-| bryn mawr college                |      1303|   467|        0|         730|         0.36|   31|
-| bucknell university              |      3528|  1210|        0|         720|         0.34|   32|
-| colby college                    |      1847|   633|        0|         720|         0.34|   32|
-| colgate university               |      2865|  1432|        1|         750|         0.50|   32|
-| college of the holy cross        |      2754|   531|        0|         690|         0.19|   31|
-| colorado college                 |      2036|   611|        1|         710|         0.30|   32|
-| connecticut college              |      1875|   469|        0|         700|         0.25|   31|
-| davidson college                 |      1765|   605|        0|         720|         0.34|   32|
-| dickinson college                |      2315|   579|        0|         700|         0.25|   31|
-| franklin and marshall college    |      2182|   859|        0|         730|         0.39|   31|
-| hamilton college                 |      1890|   945|        0|         740|         0.50|   33|
-| haverford college                |      1187|   594|        0|         740|         0.50|   34|
-| kalamazoo college                |      1431|   315|        0|         690|         0.22|   30|
-| kenyon college                   |      1651|   330|        0|         690|         0.20|   32|
-| lafayette college                |      2471|   847|        0|         720|         0.34|   31|
-| lawrence university              |      1483|   546|        1|         730|         0.37|   32|
-| macalester college               |      2053|   844|        1|         735|         0.41|   32|
-| middlebury college               |      2498|  1067|        0|         740|         0.43|   33|
-| mount holyoke college            |      2161|   828|        0|         735|         0.38|   32|
-| oberlin college                  |      2961|  1015|        0|         720|         0.34|   32|
-| occidental college               |      2023|   506|        0|         700|         0.25|   31|
-| pitzer college                   |      1076|   381|        0|         720|         0.35|   32|
-| reed college                     |      1335|   526|        1|         730|         0.39|   33|
-| rhodes college                   |      2007|   411|        0|         690|         0.20|   31|
-| scripps college                  |       962|   289|        0|         710|         0.30|   33|
-| smith college                    |      2563|   879|        0|         720|         0.34|   32|
-| soka university of america       |       411|   118|        0|         710|         0.29|   29|
-| st olaf college                  |      2990|   645|        0|         690|         0.22|   32|
-| trinity college                  |      2262|   566|        0|         700|         0.25|   31|
-| union college of schenectady, ny |      2204|   780|        0|         720|         0.35|   31|
-| university of richmond           |      3223|  1105|        0|         720|         0.34|   32|
-| vassar college                   |      2389|  1123|        0|         740|         0.47|   33|
-| washington and lee university    |      1880|   868|        0|         730|         0.46|   33|
-| wellesley college                |      2172|   969|        0|         740|         0.45|   33|
-| wesleyan university              |      2907|  1241|        1|         740|         0.43|   33|
-| wheaton college of wheaton, il   |      2402|   600|        0|         700|         0.25|   32|
-| whitman college                  |      1480|   430|        1|         710|         0.29|   32|
+|                                  |  Fellows|  Tot.Size|  Size|  SAT.Math75|  SAT.700.800|
+|----------------------------------|--------:|---------:|-----:|-----------:|------------:|
+| colorado school of mines         |        0|      4383|  1613|         720|         0.37|
+| illinois institute of technology |        0|      3046|  1359|         740|         0.45|
+| stevens institute of technology  |        0|      2842|  1466|         745|         0.52|
 
 #### T3
 
-|                                                         |  Tot.Size|  Size|  Fellows|  SAT.Math75|  SAT.700.800|  ACT|
-|---------------------------------------------------------|---------:|-----:|--------:|-----------:|------------:|----:|
-| california polytechnic state university-san luis obispo |     19177|  3308|        0|         680|         0.17|   30|
-| florida institute of technology                         |      3348|   462|        0|         660|         0.14|   30|
-| lawrence technological university                       |      2798|   277|        0|         650|         0.10|   28|
-| michigan technological university                       |      5576|   997|        0|         680|         0.18|   30|
-| new jersey institute of technology                      |      6748|  1003|        0|         670|         0.15|   29|
-| virginia polytechnic institute and state university     |     24191|  4325|        0|         680|         0.18|   30|
+|                                                         |  Fellows|  Tot.Size|  Size|  SAT.Math75|  SAT.700.800|
+|---------------------------------------------------------|--------:|---------:|-----:|-----------:|------------:|
+| california polytechnic state university-san luis obispo |        0|     19177|  3308|         680|         0.17|
+| florida institute of technology                         |        0|      3348|   462|         660|         0.14|
+| lawrence technological university                       |        0|      2798|   277|         650|         0.10|
+| michigan technological university                       |        0|      5576|   997|         680|         0.18|
+| new jersey institute of technology                      |        0|      6748|  1003|         670|         0.15|
+| virginia polytechnic institute and state university     |        0|     24191|  4325|         680|         0.18|
+
+#### Pr1
+
+|                                   |  Fellows|  Tot.Size|   Size|  SAT.Math75|  SAT.700.800|
+|-----------------------------------|--------:|---------:|------:|-----------:|------------:|
+| brandeis university               |        1|      3715|   2129|         770|         0.57|
+| brown university                  |        6|      6264|   3886|         780|         0.62|
+| carnegie mellon university        |        2|      5819|   4364|         800|         0.75|
+| case western reserve university   |        1|      4807|   2662|         760|         0.55|
+| columbia university               |        7|      8100|   6075|         790|         0.75|
+| cornell university                |        4|     14195|   9171|         770|         0.65|
+| dartmouth college                 |        2|      4184|   2703|         770|         0.65|
+| duke university                   |        2|      6480|   4860|         790|         0.75|
+| georgetown university             |        1|      7211|   3993|         760|         0.55|
+| harvard university                |       33|      7236|   5753|         800|         0.80|
+| johns hopkins university          |        1|      6039|   4188|         770|         0.69|
+| northeastern university           |        0|     13492|   8527|         760|         0.63|
+| northwestern university           |        1|      8725|   6544|         790|         0.75|
+| princeton university              |       27|      5258|   4181|         800|         0.80|
+| rice university                   |        5|      3888|   3112|         790|         0.80|
+| stanford university               |       11|      7018|   5264|         790|         0.75|
+| tufts university                  |        0|      5143|   3250|         760|         0.63|
+| university of chicago             |       12|      5729|   4694|         800|         0.82|
+| university of notre dame          |        1|      8427|   5445|         770|         0.65|
+| university of pennsylvania        |        2|     10678|   7476|         780|         0.70|
+| university of southern california |        0|     18392|  10184|         760|         0.55|
+| vanderbilt university             |        0|      6818|   5756|         800|         0.84|
+| washington university in st louis |        4|      6913|   5836|         800|         0.84|
+| yale university                   |        8|      5473|   4105|         800|         0.75|
+
+#### Pr2
+
+|                               |  Fellows|  Tot.Size|   Size|  SAT.Math75|  SAT.700.800|
+|-------------------------------|--------:|---------:|------:|-----------:|------------:|
+| bentley university            |        0|      4190|    836|         690|         0.20|
+| boston college                |        0|      9483|   4232|         740|         0.45|
+| boston university             |        0|     16457|   6247|         730|         0.38|
+| emory university              |        0|      7730|   3865|         750|         0.50|
+| george washington university  |        0|     10433|   2608|         700|         0.25|
+| lehigh university             |        0|      5034|   2247|         740|         0.45|
+| new york university           |        2|     24539|  10478|         740|         0.43|
+| santa clara university        |        0|      5447|   1634|         710|         0.30|
+| southern methodist university |        0|      6340|   1901|         710|         0.30|
+| tulane university             |        0|      7892|   1973|         700|         0.25|
+| university of miami           |        0|     10828|   4110|         730|         0.38|
+| university of tulsa           |        0|      3441|    860|         700|         0.25|
 
 #### Pr3
 
-|                                |  Tot.Size|  Size|  Fellows|  SAT.Math75|  SAT.700.800|  ACT|
-|--------------------------------|---------:|-----:|--------:|-----------:|------------:|----:|
-| american university            |      7094|   797|        0|         660|         0.11|   30|
-| baylor university              |     13801|  1936|        0|         670|         0.14|   30|
-| bethel university-saint paul   |      2936|   260|        0|         640|         0.09|   28|
-| brigham young university-provo |     27163|  4686|        0|         680|         0.17|   31|
-| butler university              |      4013|   434|        0|         650|         0.11|   29|
-| chapman university             |      6211|   479|        0|         650|         0.08|   29|
-| creighton university           |      3977|   553|        0|         665|         0.14|   29|
-| drake university               |      3290|   551|        0|         670|         0.17|   30|
-| drexel university              |     16681|  2340|        0|         670|         0.14|   27|
-| emerson college                |      3757|   290|        0|         650|         0.08|   30|
-| fordham university             |      8485|  1464|        0|         680|         0.17|   30|
-| gonzaga university             |      4754|   367|        0|         650|         0.08|   29|
-| loyola marymount university    |      6064|   682|        0|         660|         0.11|   30|
-| marquette university           |      8212|   634|        0|         650|         0.08|   29|
-| rockhurst university           |      1671|   233|        0|         650|         0.14|   28|
-| rollins college                |      2670|   313|        0|         660|         0.12|   29|
-| saint louis university         |      7822|  1162|        0|         670|         0.15|   30|
-| seattle university             |      4415|   350|        0|         640|         0.08|   29|
-| spring arbor university        |      2632|   327|        0|         645|         0.12|   25|
-| syracuse university            |     14768|  1802|        0|         660|         0.12|   29|
-| texas christian university     |      8600|   763|        0|         650|         0.09|   30|
-| university of dallas           |      1324|   105|        0|         640|         0.08|   30|
-| university of dayton           |      8305|   658|        0|         640|         0.08|   29|
-| university of denver           |      5629|   633|        0|         660|         0.11|   30|
-| university of detroit mercy    |      2677|   481|        0|         670|         0.18|   26|
-| yeshiva university             |      2814|   518|        0|         680|         0.18|   29|
+|                                |  Fellows|  Tot.Size|  Size|  SAT.Math75|  SAT.700.800|
+|--------------------------------|--------:|---------:|-----:|-----------:|------------:|
+| american university            |        0|      7094|   797|         660|         0.11|
+| baylor university              |        0|     13801|  1936|         670|         0.14|
+| bethel university-saint paul   |        0|      2936|   260|         640|         0.09|
+| brigham young university-provo |        0|     27163|  4686|         680|         0.17|
+| butler university              |        0|      4013|   434|         650|         0.11|
+| chapman university             |        0|      6211|   479|         650|         0.08|
+| creighton university           |        0|      3977|   553|         665|         0.14|
+| drake university               |        0|      3290|   551|         670|         0.17|
+| drexel university              |        0|     16681|  2340|         670|         0.14|
+| emerson college                |        0|      3757|   290|         650|         0.08|
+| fordham university             |        0|      8485|  1464|         680|         0.17|
+| gonzaga university             |        0|      4754|   367|         650|         0.08|
+| loyola marymount university    |        0|      6064|   682|         660|         0.11|
+| marquette university           |        0|      8212|   634|         650|         0.08|
+| rockhurst university           |        0|      1671|   233|         650|         0.14|
+| rollins college                |        0|      2670|   313|         660|         0.12|
+| saint louis university         |        0|      7822|  1162|         670|         0.15|
+| seattle university             |        0|      4415|   350|         640|         0.08|
+| spring arbor university        |        0|      2632|   327|         645|         0.12|
+| syracuse university            |        0|     14768|  1802|         660|         0.12|
+| texas christian university     |        0|      8600|   763|         650|         0.09|
+| university of dallas           |        0|      1324|   105|         640|         0.08|
+| university of dayton           |        0|      8305|   658|         640|         0.08|
+| university of denver           |        0|      5629|   633|         660|         0.11|
+| university of detroit mercy    |        0|      2677|   481|         670|         0.18|
+| yeshiva university             |        0|      2814|   518|         680|         0.18|
+
+#### Pu1
+
+|                                            |  Fellows|  Tot.Size|   Size|  SAT.Math75|  SAT.700.800|
+|--------------------------------------------|--------:|---------:|------:|-----------:|------------:|
+| university of california-berkeley          |        9|     27126|  14125|         770|         0.52|
+| university of california-san diego         |        2|     24801|  11887|         760|         0.48|
+| university of illinois at urbana-champaign |        2|     31875|  23906|         790|         0.75|
+| university of michigan-ann arbor           |        3|     28217|  15624|         760|         0.55|
+
+#### Pu2
+
+|                                               |  Fellows|  Tot.Size|   Size|  SAT.Math75|  SAT.700.800|
+|-----------------------------------------------|--------:|---------:|------:|-----------:|------------:|
+| college of william and mary                   |        0|      6256|   2671|         740|         0.43|
+| cuny bernard m baruch college                 |        0|     14420|   2955|         690|         0.20|
+| michigan state university                     |        1|     38395|   8535|         690|         0.22|
+| missouri university of science and technology |        0|      6418|   1604|         700|         0.25|
+| ohio state university-main campus             |        0|     43733|  16601|         730|         0.38|
+| purdue university-main campus                 |        0|     29977|   7494|         700|         0.25|
+| rutgers university-new brunswick              |        1|     34094|   8524|         700|         0.25|
+| stony brook university                        |        1|     16170|   4765|         710|         0.29|
+| suny at binghamton                            |        0|     13372|   3343|         700|         0.25|
+| university of california-davis                |        0|     27547|   6887|         700|         0.25|
+| university of california-irvine               |        0|     24474|   5394|         690|         0.22|
+| university of california-los angeles          |        1|     29627|  12550|         750|         0.42|
+| university of california-santa barbara        |        3|     20237|   5699|         710|         0.28|
+| university of connecticut                     |        0|     18016|   3767|         690|         0.21|
+| university of florida                         |        2|     31879|   6666|         690|         0.21|
+| university of iowa                            |        2|     21486|   5372|         700|         0.25|
+| university of maryland-college park           |        3|     26532|  10072|         730|         0.38|
+| university of minnesota-twin cities           |        2|     30135|  13205|         750|         0.44|
+| university of north carolina at chapel hill   |        0|     17908|   6141|         720|         0.34|
+| university of pittsburgh-pittsburgh campus    |        0|     18474|   3785|         690|         0.20|
+| university of texas at austin                 |        5|     38914|  12705|         720|         0.33|
+| university of texas at dallas                 |        0|     14300|   3575|         700|         0.25|
+| university of virginia-main campus            |        6|     15515|   6625|         740|         0.43|
+| university of washington-seattle campus       |        0|     29468|   7367|         700|         0.25|
+| university of wisconsin-madison               |        1|     29302|  12046|         740|         0.41|
 
 #### Pu3
 
-|                                            |  Tot.Size|  Size|  Fellows|  SAT.Math75|  SAT.700.800|  ACT|
-|--------------------------------------------|---------:|-----:|--------:|-----------:|------------:|----:|
-| arizona state university-tempe             |     39316|  3487|        0|         640|         0.09|   28|
-| auburn university                          |     20514|  1918|        0|         645|         0.09|   30|
-| clemson university                         |     17083|  2819|        0|         680|         0.16|   31|
-| college of new jersey                      |      6407|   899|        0|         670|         0.14|   29|
-| cuny city college                          |     12175|  1680|        0|         660|         0.14|   29|
-| cuny hunter college                        |     15778|  1560|        0|         650|         0.10|   28|
-| florida state university                   |     32432|  1489|        0|         640|         0.05|   29|
-| indiana university-bloomington             |     32252|  4209|        0|         660|         0.13|   30|
-| iowa state university                      |     28336|  5568|        2|         680|         0.20|   29|
-| miami university-oxford                    |     15454|  2763|        0|         680|         0.18|   30|
-| mississippi state university               |     15800|  1662|        0|         640|         0.11|   28|
-| north carolina state university at raleigh |     22925|  3572|        0|         680|         0.16|   30|
-| north dakota state university-main campus  |     11763|  1981|        0|         665|         0.17|   26|
-| pennsylvania state university-main campus  |     39958|  5938|        2|         670|         0.15|   29|
-| southern illinois university-carbondale    |     13171|  1480|        0|         640|         0.11|   26|
-| texas a and m university-college station   |     46941|  6975|        0|         670|         0.15|   30|
-| university at buffalo                      |     19488|  1729|        0|         650|         0.09|   29|
-| university of alabama at birmingham        |     11383|  1279|        0|         640|         0.11|   27|
-| university of alabama in huntsville        |      5451|   589|        0|         650|         0.11|   30|
-| university of california-riverside         |     18784|  2186|        1|         650|         0.12|   27|
-| university of california-santa cruz        |     16277|  2015|        0|         650|         0.12|   29|
-| university of central florida              |     52280|  3022|        0|         640|         0.06|   28|
-| university of cincinnati-main campus       |     23795|  3284|        0|         660|         0.14|   28|
-| university of colorado boulder             |     25873|  3376|        0|         660|         0.13|   30|
-| university of delaware                     |     18222|  2223|        0|         660|         0.12|   29|
-| university of georgia                      |     26738|  3751|        0|         670|         0.14|   30|
-| university of houston                      |     31643|  2180|        0|         640|         0.07|   27|
-| university of illinois at chicago          |     16635|  2296|        0|         660|         0.14|   27|
-| university of kentucky                     |     21725|  2114|        0|         640|         0.10|   28|
-| university of maryland-baltimore county    |     11274|  1582|        0|         670|         0.14|   30|
-| university of massachusetts-amherst        |     21864|  3068|        0|         670|         0.14|   30|
-| university of massachusetts-lowell         |     12190|   840|        0|         640|         0.07|   28|
-| university of michigan-dearborn            |      6906|   945|        0|         658|         0.14|   27|
-| university of michigan-flint               |      6565|  1304|        0|         680|         0.20|   24|
-| university of minnesota-duluth             |      9120|   887|        0|         640|         0.10|   26|
-| university of missouri-columbia            |     27276|  3764|        1|         660|         0.14|   28|
-| university of missouri-kansas city         |      8127|  1645|        0|         680|         0.20|   28|
-| university of missouri-st louis            |      8936|  1435|        0|         660|         0.16|   27|
-| university of nebraska-lincoln             |     19979|  2889|        0|         660|         0.14|   28|
-| university of new orleans                  |      6742|  1218|        0|         670|         0.18|   25|
-| university of north carolina wilmington    |     12686|   582|        0|         640|         0.05|   26|
-| university of oklahoma-norman campus       |     20538|  3329|        0|         670|         0.16|   29|
-| university of puerto rico-rio piedras      |     12086|  2179|        0|         673|         0.18|   29|
-| university of south carolina-columbia      |     24623|  2494|        0|         660|         0.10|   29|
-| university of tennessee-knoxville          |     21396|  1695|        1|         640|         0.08|   29|
-| university of utah                         |     22804|  2654|        1|         650|         0.12|   28|
-| university of vermont                      |      9958|   985|        0|         650|         0.10|   29|
+|                                            |  Fellows|  Tot.Size|  Size|  SAT.Math75|  SAT.700.800|
+|--------------------------------------------|--------:|---------:|-----:|-----------:|------------:|
+| arizona state university-tempe             |        0|     39316|  3487|         640|         0.09|
+| auburn university                          |        0|     20514|  1918|         645|         0.09|
+| clemson university                         |        0|     17083|  2819|         680|         0.16|
+| college of new jersey                      |        0|      6407|   899|         670|         0.14|
+| cuny city college                          |        0|     12175|  1680|         660|         0.14|
+| cuny hunter college                        |        0|     15778|  1560|         650|         0.10|
+| florida state university                   |        0|     32432|  1489|         640|         0.05|
+| indiana university-bloomington             |        0|     32252|  4209|         660|         0.13|
+| iowa state university                      |        2|     28336|  5568|         680|         0.20|
+| miami university-oxford                    |        0|     15454|  2763|         680|         0.18|
+| mississippi state university               |        0|     15800|  1662|         640|         0.11|
+| north carolina state university at raleigh |        0|     22925|  3572|         680|         0.16|
+| north dakota state university-main campus  |        0|     11763|  1981|         665|         0.17|
+| pennsylvania state university-main campus  |        2|     39958|  5938|         670|         0.15|
+| southern illinois university-carbondale    |        0|     13171|  1480|         640|         0.11|
+| texas a and m university-college station   |        0|     46941|  6975|         670|         0.15|
+| university at buffalo                      |        0|     19488|  1729|         650|         0.09|
+| university of alabama at birmingham        |        0|     11383|  1279|         640|         0.11|
+| university of alabama in huntsville        |        0|      5451|   589|         650|         0.11|
+| university of california-riverside         |        1|     18784|  2186|         650|         0.12|
+| university of california-santa cruz        |        0|     16277|  2015|         650|         0.12|
+| university of central florida              |        0|     52280|  3022|         640|         0.06|
+| university of cincinnati-main campus       |        0|     23795|  3284|         660|         0.14|
+| university of colorado boulder             |        0|     25873|  3376|         660|         0.13|
+| university of delaware                     |        0|     18222|  2223|         660|         0.12|
+| university of georgia                      |        0|     26738|  3751|         670|         0.14|
+| university of houston                      |        0|     31643|  2180|         640|         0.07|
+| university of illinois at chicago          |        0|     16635|  2296|         660|         0.14|
+| university of kentucky                     |        0|     21725|  2114|         640|         0.10|
+| university of maryland-baltimore county    |        0|     11274|  1582|         670|         0.14|
+| university of massachusetts-amherst        |        0|     21864|  3068|         670|         0.14|
+| university of massachusetts-lowell         |        0|     12190|   840|         640|         0.07|
+| university of michigan-dearborn            |        0|      6906|   945|         658|         0.14|
+| university of michigan-flint               |        0|      6565|  1304|         680|         0.20|
+| university of minnesota-duluth             |        0|      9120|   887|         640|         0.10|
+| university of missouri-columbia            |        1|     27276|  3764|         660|         0.14|
+| university of missouri-kansas city         |        0|      8127|  1645|         680|         0.20|
+| university of missouri-st louis            |        0|      8936|  1435|         660|         0.16|
+| university of nebraska-lincoln             |        0|     19979|  2889|         660|         0.14|
+| university of new orleans                  |        0|      6742|  1218|         670|         0.18|
+| university of north carolina wilmington    |        0|     12686|   582|         640|         0.05|
+| university of oklahoma-norman campus       |        0|     20538|  3329|         670|         0.16|
+| university of puerto rico-rio piedras      |        0|     12086|  2179|         673|         0.18|
+| university of south carolina-columbia      |        0|     24623|  2494|         660|         0.10|
+| university of tennessee-knoxville          |        1|     21396|  1695|         640|         0.08|
+| university of utah                         |        1|     22804|  2654|         650|         0.12|
+| university of vermont                      |        0|      9958|   985|         650|         0.10|
+
+#### L1
+
+|                              |  Fellows|  Tot.Size|  Size|  SAT.Math75|  SAT.700.800|
+|------------------------------|--------:|---------:|-----:|-----------:|------------:|
+| amherst college              |        1|      1792|  1158|         770|         0.65|
+| bowdoin college              |        0|      1797|  1202|         770|         0.67|
+| carleton college             |        2|      2042|  1131|         760|         0.55|
+| claremont mckenna college    |        0|      1293|   897|         770|         0.69|
+| grinnell college             |        0|      1670|   925|         760|         0.55|
+| harvey mudd college          |        2|       802|   756|         800|         0.94|
+| illinois wesleyan university |        0|      1883|  1043|         760|         0.55|
+| pomona college               |        0|      1635|  1134|         770|         0.69|
+| swarthmore college           |        1|      1530|   989|         770|         0.65|
+| williams college             |        0|      2019|  1224|         770|         0.61|
+
+#### L2
+
+|                                  |  Fellows|  Tot.Size|  Size|  SAT.Math75|  SAT.700.800|
+|----------------------------------|--------:|---------:|-----:|-----------:|------------:|
+| augustana college                |        0|      2469|   560|         690|         0.23|
+| barnard college                  |        0|      2556|   767|         710|         0.30|
+| bates college                    |        1|      1773|   466|         703|         0.26|
+| bryn mawr college                |        0|      1303|   467|         730|         0.36|
+| bucknell university              |        0|      3528|  1210|         720|         0.34|
+| colby college                    |        0|      1847|   633|         720|         0.34|
+| colgate university               |        2|      2865|  1432|         750|         0.50|
+| college of the holy cross        |        0|      2754|   531|         690|         0.19|
+| colorado college                 |        1|      2036|   611|         710|         0.30|
+| connecticut college              |        0|      1875|   469|         700|         0.25|
+| davidson college                 |        0|      1765|   605|         720|         0.34|
+| dickinson college                |        0|      2315|   579|         700|         0.25|
+| franklin and marshall college    |        0|      2182|   859|         730|         0.39|
+| hamilton college                 |        0|      1890|   945|         740|         0.50|
+| haverford college                |        0|      1187|   594|         740|         0.50|
+| kalamazoo college                |        0|      1431|   315|         690|         0.22|
+| kenyon college                   |        0|      1651|   330|         690|         0.20|
+| lafayette college                |        0|      2471|   847|         720|         0.34|
+| lawrence university              |        1|      1483|   546|         730|         0.37|
+| macalester college               |        2|      2053|   844|         735|         0.41|
+| middlebury college               |        0|      2498|  1067|         740|         0.43|
+| mount holyoke college            |        0|      2161|   828|         735|         0.38|
+| oberlin college                  |        0|      2961|  1015|         720|         0.34|
+| occidental college               |        0|      2023|   506|         700|         0.25|
+| pitzer college                   |        0|      1076|   381|         720|         0.35|
+| reed college                     |        1|      1335|   526|         730|         0.39|
+| rhodes college                   |        0|      2007|   411|         690|         0.20|
+| scripps college                  |        0|       962|   289|         710|         0.30|
+| smith college                    |        0|      2563|   879|         720|         0.34|
+| soka university of america       |        0|       411|   118|         710|         0.29|
+| st olaf college                  |        0|      2990|   645|         690|         0.22|
+| trinity college                  |        0|      2262|   566|         700|         0.25|
+| union college of schenectady, ny |        0|      2204|   780|         720|         0.35|
+| university of richmond           |        0|      3223|  1105|         720|         0.34|
+| vassar college                   |        1|      2389|  1123|         740|         0.47|
+| washington and lee university    |        0|      1880|   868|         730|         0.46|
+| wellesley college                |        0|      2172|   969|         740|         0.45|
+| wesleyan university              |        1|      2907|  1241|         740|         0.43|
+| wheaton college of wheaton, il   |        0|      2402|   600|         700|         0.25|
+| whitman college                  |        1|      1480|   430|         710|         0.29|
 
 #### L3
 
-|                                 |  Tot.Size|  Size|  Fellows|  SAT.Math75|  SAT.700.800|  ACT|
-|---------------------------------|---------:|-----:|--------:|-----------:|------------:|----:|
-| agnes scott college             |       802|    78|        0|         640|         0.10|   29|
-| albion college                  |      1249|   111|        0|         640|         0.09|   27|
-| austin college                  |      1272|   126|        0|         650|         0.10|   27|
-| bard college                    |      2021|   361|        0|         680|         0.18|   29|
-| beloit college                  |      1225|   102|        0|         645|         0.08|   30|
-| centre college                  |      1379|   254|        0|         680|         0.18|   31|
-| college of wooster              |      2029|   302|        0|         670|         0.15|   30|
-| concordia college at moorhead   |      2296|    49|        0|         660|         0.02|   28|
-| cornell college                 |      1082|   126|        0|         650|         0.12|   30|
-| denison university              |      2265|   391|        0|         680|         0.17|   31|
-| depauw university               |      2185|   246|        0|         660|         0.11|   29|
-| earlham college                 |       942|   162|        0|         680|         0.17|   31|
-| furman university               |      2796|   341|        0|         660|         0.12|   30|
-| gettysburg college              |      2437|   352|        0|         680|         0.14|   29|
-| gordon college                  |      1703|   166|        0|         640|         0.10|   29|
-| gustavus adolphus college       |      2455|   447|        0|         675|         0.18|   30|
-| hendrix college                 |      1322|   173|        0|         660|         0.13|   31|
-| hobart william smith colleges   |      2344|   247|        0|         670|         0.11|   30|
-| hope college                    |      3312|   358|        0|         650|         0.11|   29|
-| knox college                    |      1376|   102|        0|         660|         0.07|   29|
-| lewis and clark college         |      2039|   242|        0|         670|         0.12|   31|
-| luther college                  |      2326|   226|        0|         640|         0.10|   28|
-| muhlenberg college              |      2332|   262|        0|         660|         0.11|   31|
-| ripon college                   |       820|   173|        0|         680|         0.21|   27|
-| sarah lawrence college          |      1366|   258|        0|         680|         0.19|   31|
-| sewanee-university of the south |      1616|   125|        0|         650|         0.08|   30|
-| skidmore college                |      2612|   467|        0|         680|         0.18|   30|
-| st john's college               |       429|    77|        0|         680|         0.18|   31|
-| st lawrence university          |      2282|   278|        0|         660|         0.12|   30|
-| thomas aquinas college          |       378|    17|        0|         640|         0.05|   31|
-| transylvania university         |      1014|   140|        0|         660|         0.14|   30|
-| university of puget sound       |      2550|   226|        0|         650|         0.09|   30|
-| wabash college                  |       923|    82|        0|         640|         0.09|   27|
-| washington college              |      1408|    97|        0|         640|         0.07|   28|
-| westmont college                |      1297|   115|        1|         640|         0.09|   29|
-| wheaton college of norton, ma   |      1575|   219|        0|         665|         0.14|   30|
-| willamette university           |      2009|   199|        0|         650|         0.10|   30|
-| wofford college                 |      1654|   131|        0|         640|         0.08|   30|
+|                                 |  Fellows|  Tot.Size|  Size|  SAT.Math75|  SAT.700.800|
+|---------------------------------|--------:|---------:|-----:|-----------:|------------:|
+| agnes scott college             |        0|       802|    78|         640|         0.10|
+| albion college                  |        0|      1249|   111|         640|         0.09|
+| austin college                  |        0|      1272|   126|         650|         0.10|
+| bard college                    |        0|      2021|   361|         680|         0.18|
+| beloit college                  |        0|      1225|   102|         645|         0.08|
+| centre college                  |        0|      1379|   254|         680|         0.18|
+| college of wooster              |        0|      2029|   302|         670|         0.15|
+| concordia college at moorhead   |        0|      2296|    49|         660|         0.02|
+| cornell college                 |        0|      1082|   126|         650|         0.12|
+| denison university              |        0|      2265|   391|         680|         0.17|
+| depauw university               |        0|      2185|   246|         660|         0.11|
+| earlham college                 |        0|       942|   162|         680|         0.17|
+| furman university               |        0|      2796|   341|         660|         0.12|
+| gettysburg college              |        0|      2437|   352|         680|         0.14|
+| gordon college                  |        0|      1703|   166|         640|         0.10|
+| gustavus adolphus college       |        0|      2455|   447|         675|         0.18|
+| hendrix college                 |        0|      1322|   173|         660|         0.13|
+| hobart william smith colleges   |        0|      2344|   247|         670|         0.11|
+| hope college                    |        0|      3312|   358|         650|         0.11|
+| knox college                    |        0|      1376|   102|         660|         0.07|
+| lewis and clark college         |        0|      2039|   242|         670|         0.12|
+| luther college                  |        0|      2326|   226|         640|         0.10|
+| muhlenberg college              |        0|      2332|   262|         660|         0.11|
+| ripon college                   |        0|       820|   173|         680|         0.21|
+| sarah lawrence college          |        0|      1366|   258|         680|         0.19|
+| sewanee-university of the south |        0|      1616|   125|         650|         0.08|
+| skidmore college                |        0|      2612|   467|         680|         0.18|
+| st john's college               |        0|       429|    77|         680|         0.18|
+| st lawrence university          |        0|      2282|   278|         660|         0.12|
+| thomas aquinas college          |        0|       378|    17|         640|         0.05|
+| transylvania university         |        0|      1014|   140|         660|         0.14|
+| university of puget sound       |        0|      2550|   226|         650|         0.09|
+| wabash college                  |        0|       923|    82|         640|         0.09|
+| washington college              |        0|      1408|    97|         640|         0.07|
+| westmont college                |        1|      1297|   115|         640|         0.09|
+| wheaton college of norton, ma   |        0|      1575|   219|         665|         0.14|
+| willamette university           |        0|      2009|   199|         650|         0.10|
+| wofford college                 |        0|      1654|   131|         640|         0.08|
 
-### Neurobiology, Chemistry, Ocean Sciences
+Neuroscience, Chemistry, Computational Biology and Ocean Sciences
+-----------------------------------------------------------------
 
 #### T1
 
-|                                             |  Tot.Size|  Size|  Fellows|  SAT.Math75|  SAT.700.800|  ACT|
-|---------------------------------------------|---------:|-----:|--------:|-----------:|------------:|----:|
-| california institute of technology          |       983|   983|        9|         800|         1.00|   35|
-| georgia institute of technology-main campus |     13996|  9043|        0|         770|         0.65|   33|
-| massachusetts institute of technology       |      4476|  4217|       14|         800|         0.94|   35|
-| rensselaer polytechnic institute            |      5557|  3590|        0|         770|         0.65|   32|
-
-#### Pr1
-
-|                                   |  Tot.Size|   Size|  Fellows|  SAT.Math75|  SAT.700.800|  ACT|
-|-----------------------------------|---------:|------:|--------:|-----------:|------------:|----:|
-| brandeis university               |      3715|   2129|        3|         770|         0.57|   33|
-| brown university                  |      6264|   3886|        5|         780|         0.62|   34|
-| carnegie mellon university        |      5819|   4364|        1|         800|         0.75|   34|
-| case western reserve university   |      4807|   2662|        0|         760|         0.55|   33|
-| columbia university               |      8100|   6075|        3|         790|         0.75|   34|
-| cornell university                |     14195|   9171|        5|         770|         0.65|   34|
-| dartmouth college                 |      4184|   2703|        6|         770|         0.65|   34|
-| duke university                   |      6480|   4860|        2|         790|         0.75|   34|
-| georgetown university             |      7211|   3993|        0|         760|         0.55|   33|
-| harvard university                |      7236|   5753|       16|         800|         0.80|   35|
-| johns hopkins university          |      6039|   4188|        2|         770|         0.69|   34|
-| northeastern university           |     13492|   8527|        0|         760|         0.63|   33|
-| northwestern university           |      8725|   6544|        1|         790|         0.75|   34|
-| princeton university              |      5258|   4181|        9|         800|         0.80|   35|
-| rice university                   |      3888|   3112|        2|         790|         0.80|   34|
-| stanford university               |      7018|   5264|        7|         790|         0.75|   34|
-| tufts university                  |      5143|   3250|        2|         760|         0.63|   33|
-| university of chicago             |      5729|   4694|        2|         800|         0.82|   35|
-| university of notre dame          |      8427|   5445|        1|         770|         0.65|   34|
-| university of pennsylvania        |     10678|   7476|        2|         780|         0.70|   34|
-| university of southern california |     18392|  10184|        3|         760|         0.55|   33|
-| vanderbilt university             |      6818|   5756|        0|         800|         0.84|   34|
-| washington university in st louis |      6913|   5836|        6|         800|         0.84|   34|
-| yale university                   |      5473|   4105|        3|         800|         0.75|   35|
-
-#### Pu1
-
-|                                            |  Tot.Size|   Size|  Fellows|  SAT.Math75|  SAT.700.800|  ACT|
-|--------------------------------------------|---------:|------:|--------:|-----------:|------------:|----:|
-| university of california-berkeley          |     27126|  14125|        8|         770|         0.52|   34|
-| university of california-san diego         |     24801|  11887|        0|         760|         0.48|   32|
-| university of illinois at urbana-champaign |     31875|  23906|        4|         790|         0.75|   32|
-| university of michigan-ann arbor           |     28217|  15624|        4|         760|         0.55|   33|
-
-#### L1
-
-|                              |  Tot.Size|  Size|  Fellows|  SAT.Math75|  SAT.700.800|  ACT|
-|------------------------------|---------:|-----:|--------:|-----------:|------------:|----:|
-| amherst college              |      1792|  1158|        0|         770|         0.65|   34|
-| bowdoin college              |      1797|  1202|        1|         770|         0.67|   33|
-| carleton college             |      2042|  1131|        1|         760|         0.55|   33|
-| claremont mckenna college    |      1293|   897|        0|         770|         0.69|   33|
-| grinnell college             |      1670|   925|        0|         760|         0.55|   33|
-| harvey mudd college          |       802|   756|        1|         800|         0.94|   35|
-| illinois wesleyan university |      1883|  1043|        1|         760|         0.55|   30|
-| pomona college               |      1635|  1134|        1|         770|         0.69|   34|
-| swarthmore college           |      1530|   989|        3|         770|         0.65|   34|
-| williams college             |      2019|  1224|        4|         770|         0.61|   34|
+|                                             |  Fellows|  Tot.Size|  Size|  SAT.Math75|  SAT.700.800|
+|---------------------------------------------|--------:|---------:|-----:|-----------:|------------:|
+| california institute of technology          |        9|       983|   983|         800|         1.00|
+| georgia institute of technology-main campus |        0|     13996|  9043|         770|         0.65|
+| massachusetts institute of technology       |       21|      4476|  4217|         800|         0.94|
+| rensselaer polytechnic institute            |        0|      5557|  3590|         770|         0.65|
 
 #### T2
 
-|                                  |  Tot.Size|  Size|  Fellows|  SAT.Math75|  SAT.700.800|  ACT|
-|----------------------------------|---------:|-----:|--------:|-----------:|------------:|----:|
-| colorado school of mines         |      4383|  1613|        0|         720|         0.37|   32|
-| illinois institute of technology |      3046|  1359|        0|         740|         0.45|   31|
-| stevens institute of technology  |      2842|  1466|        0|         745|         0.52|   32|
-
-#### Pr2
-
-|                               |  Tot.Size|   Size|  Fellows|  SAT.Math75|  SAT.700.800|  ACT|
-|-------------------------------|---------:|------:|--------:|-----------:|------------:|----:|
-| bentley university            |      4190|    836|        0|         690|         0.20|   30|
-| boston college                |      9483|   4232|        1|         740|         0.45|   33|
-| boston university             |     16457|   6247|        0|         730|         0.38|   31|
-| emory university              |      7730|   3865|        1|         750|         0.50|   32|
-| george washington university  |     10433|   2608|        0|         700|         0.25|   31|
-| lehigh university             |      5034|   2247|        1|         740|         0.45|   32|
-| new york university           |     24539|  10478|        3|         740|         0.43|   32|
-| santa clara university        |      5447|   1634|        0|         710|         0.30|   32|
-| southern methodist university |      6340|   1901|        1|         710|         0.30|   31|
-| tulane university             |      7892|   1973|        0|         700|         0.25|   32|
-| university of miami           |     10828|   4110|        0|         730|         0.38|   32|
-| university of tulsa           |      3441|    860|        0|         700|         0.25|   32|
-
-#### Pu2
-
-|                                               |  Tot.Size|   Size|  Fellows|  SAT.Math75|  SAT.700.800|  ACT|
-|-----------------------------------------------|---------:|------:|--------:|-----------:|------------:|----:|
-| college of william and mary                   |      6256|   2671|        4|         740|         0.43|   33|
-| cuny bernard m baruch college                 |     14420|   2955|        0|         690|         0.20|   30|
-| michigan state university                     |     38395|   8535|        2|         690|         0.22|   28|
-| missouri university of science and technology |      6418|   1604|        0|         700|         0.25|   31|
-| ohio state university-main campus             |     43733|  16601|        2|         730|         0.38|   31|
-| purdue university-main campus                 |     29977|   7494|        0|         700|         0.25|   30|
-| rutgers university-new brunswick              |     34094|   8524|        1|         700|         0.25|   31|
-| stony brook university                        |     16170|   4765|        0|         710|         0.29|   30|
-| suny at binghamton                            |     13372|   3343|        0|         700|         0.25|   30|
-| university of california-davis                |     27547|   6887|        1|         700|         0.25|   31|
-| university of california-irvine               |     24474|   5394|        1|         690|         0.22|   29|
-| university of california-los angeles          |     29627|  12550|        5|         750|         0.42|   33|
-| university of california-santa barbara        |     20237|   5699|        0|         710|         0.28|   31|
-| university of connecticut                     |     18016|   3767|        0|         690|         0.21|   30|
-| university of florida                         |     31879|   6666|        1|         690|         0.21|   31|
-| university of iowa                            |     21486|   5372|        1|         700|         0.25|   28|
-| university of maryland-college park           |     26532|  10072|        5|         730|         0.38|   32|
-| university of minnesota-twin cities           |     30135|  13205|        2|         750|         0.44|   30|
-| university of north carolina at chapel hill   |     17908|   6141|        3|         720|         0.34|   32|
-| university of pittsburgh-pittsburgh campus    |     18474|   3785|        0|         690|         0.20|   31|
-| university of texas at austin                 |     38914|  12705|        2|         720|         0.33|   32|
-| university of texas at dallas                 |     14300|   3575|        0|         700|         0.25|   31|
-| university of virginia-main campus            |     15515|   6625|        3|         740|         0.43|   33|
-| university of washington-seattle campus       |     29468|   7367|        0|         700|         0.25|   31|
-| university of wisconsin-madison               |     29302|  12046|        6|         740|         0.41|   31|
-
-#### L2
-
-|                                  |  Tot.Size|  Size|  Fellows|  SAT.Math75|  SAT.700.800|  ACT|
-|----------------------------------|---------:|-----:|--------:|-----------:|------------:|----:|
-| augustana college                |      2469|   560|        0|         690|         0.23|   29|
-| barnard college                  |      2556|   767|        0|         710|         0.30|   32|
-| bates college                    |      1773|   466|        1|         703|         0.26|   32|
-| bryn mawr college                |      1303|   467|        1|         730|         0.36|   31|
-| bucknell university              |      3528|  1210|        0|         720|         0.34|   32|
-| colby college                    |      1847|   633|        1|         720|         0.34|   32|
-| colgate university               |      2865|  1432|        1|         750|         0.50|   32|
-| college of the holy cross        |      2754|   531|        0|         690|         0.19|   31|
-| colorado college                 |      2036|   611|        0|         710|         0.30|   32|
-| connecticut college              |      1875|   469|        1|         700|         0.25|   31|
-| davidson college                 |      1765|   605|        0|         720|         0.34|   32|
-| dickinson college                |      2315|   579|        0|         700|         0.25|   31|
-| franklin and marshall college    |      2182|   859|        0|         730|         0.39|   31|
-| hamilton college                 |      1890|   945|        1|         740|         0.50|   33|
-| haverford college                |      1187|   594|        0|         740|         0.50|   34|
-| kalamazoo college                |      1431|   315|        0|         690|         0.22|   30|
-| kenyon college                   |      1651|   330|        0|         690|         0.20|   32|
-| lafayette college                |      2471|   847|        1|         720|         0.34|   31|
-| lawrence university              |      1483|   546|        1|         730|         0.37|   32|
-| macalester college               |      2053|   844|        4|         735|         0.41|   32|
-| middlebury college               |      2498|  1067|        3|         740|         0.43|   33|
-| mount holyoke college            |      2161|   828|        0|         735|         0.38|   32|
-| oberlin college                  |      2961|  1015|        1|         720|         0.34|   32|
-| occidental college               |      2023|   506|        0|         700|         0.25|   31|
-| pitzer college                   |      1076|   381|        0|         720|         0.35|   32|
-| reed college                     |      1335|   526|        2|         730|         0.39|   33|
-| rhodes college                   |      2007|   411|        0|         690|         0.20|   31|
-| scripps college                  |       962|   289|        0|         710|         0.30|   33|
-| smith college                    |      2563|   879|        1|         720|         0.34|   32|
-| soka university of america       |       411|   118|        0|         710|         0.29|   29|
-| st olaf college                  |      2990|   645|        1|         690|         0.22|   32|
-| trinity college                  |      2262|   566|        0|         700|         0.25|   31|
-| union college of schenectady, ny |      2204|   780|        0|         720|         0.35|   31|
-| university of richmond           |      3223|  1105|        0|         720|         0.34|   32|
-| vassar college                   |      2389|  1123|        0|         740|         0.47|   33|
-| washington and lee university    |      1880|   868|        0|         730|         0.46|   33|
-| wellesley college                |      2172|   969|        1|         740|         0.45|   33|
-| wesleyan university              |      2907|  1241|        2|         740|         0.43|   33|
-| wheaton college of wheaton, il   |      2402|   600|        0|         700|         0.25|   32|
-| whitman college                  |      1480|   430|        0|         710|         0.29|   32|
+|                                  |  Fellows|  Tot.Size|  Size|  SAT.Math75|  SAT.700.800|
+|----------------------------------|--------:|---------:|-----:|-----------:|------------:|
+| colorado school of mines         |        0|      4383|  1613|         720|         0.37|
+| illinois institute of technology |        0|      3046|  1359|         740|         0.45|
+| stevens institute of technology  |        0|      2842|  1466|         745|         0.52|
 
 #### T3
 
-|                                                         |  Tot.Size|  Size|  Fellows|  SAT.Math75|  SAT.700.800|  ACT|
-|---------------------------------------------------------|---------:|-----:|--------:|-----------:|------------:|----:|
-| california polytechnic state university-san luis obispo |     19177|  3308|        1|         680|         0.17|   30|
-| florida institute of technology                         |      3348|   462|        0|         660|         0.14|   30|
-| lawrence technological university                       |      2798|   277|        0|         650|         0.10|   28|
-| michigan technological university                       |      5576|   997|        0|         680|         0.18|   30|
-| new jersey institute of technology                      |      6748|  1003|        0|         670|         0.15|   29|
-| virginia polytechnic institute and state university     |     24191|  4325|        0|         680|         0.18|   30|
+|                                                         |  Fellows|  Tot.Size|  Size|  SAT.Math75|  SAT.700.800|
+|---------------------------------------------------------|--------:|---------:|-----:|-----------:|------------:|
+| california polytechnic state university-san luis obispo |        1|     19177|  3308|         680|         0.17|
+| florida institute of technology                         |        0|      3348|   462|         660|         0.14|
+| lawrence technological university                       |        0|      2798|   277|         650|         0.10|
+| michigan technological university                       |        0|      5576|   997|         680|         0.18|
+| new jersey institute of technology                      |        0|      6748|  1003|         670|         0.15|
+| virginia polytechnic institute and state university     |        0|     24191|  4325|         680|         0.18|
+
+#### Pr1
+
+|                                   |  Fellows|  Tot.Size|   Size|  SAT.Math75|  SAT.700.800|
+|-----------------------------------|--------:|---------:|------:|-----------:|------------:|
+| brandeis university               |        3|      3715|   2129|         770|         0.57|
+| brown university                  |        6|      6264|   3886|         780|         0.62|
+| carnegie mellon university        |        3|      5819|   4364|         800|         0.75|
+| case western reserve university   |        0|      4807|   2662|         760|         0.55|
+| columbia university               |        5|      8100|   6075|         790|         0.75|
+| cornell university                |        7|     14195|   9171|         770|         0.65|
+| dartmouth college                 |        6|      4184|   2703|         770|         0.65|
+| duke university                   |        3|      6480|   4860|         790|         0.75|
+| georgetown university             |        1|      7211|   3993|         760|         0.55|
+| harvard university                |       22|      7236|   5753|         800|         0.80|
+| johns hopkins university          |        2|      6039|   4188|         770|         0.69|
+| northeastern university           |        0|     13492|   8527|         760|         0.63|
+| northwestern university           |        1|      8725|   6544|         790|         0.75|
+| princeton university              |       13|      5258|   4181|         800|         0.80|
+| rice university                   |        4|      3888|   3112|         790|         0.80|
+| stanford university               |       12|      7018|   5264|         790|         0.75|
+| tufts university                  |        2|      5143|   3250|         760|         0.63|
+| university of chicago             |        4|      5729|   4694|         800|         0.82|
+| university of notre dame          |        1|      8427|   5445|         770|         0.65|
+| university of pennsylvania        |        3|     10678|   7476|         780|         0.70|
+| university of southern california |        3|     18392|  10184|         760|         0.55|
+| vanderbilt university             |        0|      6818|   5756|         800|         0.84|
+| washington university in st louis |        6|      6913|   5836|         800|         0.84|
+| yale university                   |        4|      5473|   4105|         800|         0.75|
+
+#### Pr2
+
+|                               |  Fellows|  Tot.Size|   Size|  SAT.Math75|  SAT.700.800|
+|-------------------------------|--------:|---------:|------:|-----------:|------------:|
+| bentley university            |        0|      4190|    836|         690|         0.20|
+| boston college                |        1|      9483|   4232|         740|         0.45|
+| boston university             |        0|     16457|   6247|         730|         0.38|
+| emory university              |        1|      7730|   3865|         750|         0.50|
+| george washington university  |        0|     10433|   2608|         700|         0.25|
+| lehigh university             |        1|      5034|   2247|         740|         0.45|
+| new york university           |        4|     24539|  10478|         740|         0.43|
+| santa clara university        |        0|      5447|   1634|         710|         0.30|
+| southern methodist university |        1|      6340|   1901|         710|         0.30|
+| tulane university             |        0|      7892|   1973|         700|         0.25|
+| university of miami           |        0|     10828|   4110|         730|         0.38|
+| university of tulsa           |        0|      3441|    860|         700|         0.25|
 
 #### Pr3
 
-|                                |  Tot.Size|  Size|  Fellows|  SAT.Math75|  SAT.700.800|  ACT|
-|--------------------------------|---------:|-----:|--------:|-----------:|------------:|----:|
-| american university            |      7094|   797|        0|         660|         0.11|   30|
-| baylor university              |     13801|  1936|        1|         670|         0.14|   30|
-| bethel university-saint paul   |      2936|   260|        0|         640|         0.09|   28|
-| brigham young university-provo |     27163|  4686|        0|         680|         0.17|   31|
-| butler university              |      4013|   434|        0|         650|         0.11|   29|
-| chapman university             |      6211|   479|        0|         650|         0.08|   29|
-| creighton university           |      3977|   553|        0|         665|         0.14|   29|
-| drake university               |      3290|   551|        0|         670|         0.17|   30|
-| drexel university              |     16681|  2340|        0|         670|         0.14|   27|
-| emerson college                |      3757|   290|        0|         650|         0.08|   30|
-| fordham university             |      8485|  1464|        0|         680|         0.17|   30|
-| gonzaga university             |      4754|   367|        0|         650|         0.08|   29|
-| loyola marymount university    |      6064|   682|        0|         660|         0.11|   30|
-| marquette university           |      8212|   634|        1|         650|         0.08|   29|
-| rockhurst university           |      1671|   233|        0|         650|         0.14|   28|
-| rollins college                |      2670|   313|        0|         660|         0.12|   29|
-| saint louis university         |      7822|  1162|        1|         670|         0.15|   30|
-| seattle university             |      4415|   350|        0|         640|         0.08|   29|
-| spring arbor university        |      2632|   327|        0|         645|         0.12|   25|
-| syracuse university            |     14768|  1802|        0|         660|         0.12|   29|
-| texas christian university     |      8600|   763|        0|         650|         0.09|   30|
-| university of dallas           |      1324|   105|        0|         640|         0.08|   30|
-| university of dayton           |      8305|   658|        0|         640|         0.08|   29|
-| university of denver           |      5629|   633|        0|         660|         0.11|   30|
-| university of detroit mercy    |      2677|   481|        0|         670|         0.18|   26|
-| yeshiva university             |      2814|   518|        0|         680|         0.18|   29|
+|                                |  Fellows|  Tot.Size|  Size|  SAT.Math75|  SAT.700.800|
+|--------------------------------|--------:|---------:|-----:|-----------:|------------:|
+| american university            |        0|      7094|   797|         660|         0.11|
+| baylor university              |        1|     13801|  1936|         670|         0.14|
+| bethel university-saint paul   |        0|      2936|   260|         640|         0.09|
+| brigham young university-provo |        0|     27163|  4686|         680|         0.17|
+| butler university              |        0|      4013|   434|         650|         0.11|
+| chapman university             |        0|      6211|   479|         650|         0.08|
+| creighton university           |        0|      3977|   553|         665|         0.14|
+| drake university               |        0|      3290|   551|         670|         0.17|
+| drexel university              |        0|     16681|  2340|         670|         0.14|
+| emerson college                |        0|      3757|   290|         650|         0.08|
+| fordham university             |        0|      8485|  1464|         680|         0.17|
+| gonzaga university             |        1|      4754|   367|         650|         0.08|
+| loyola marymount university    |        0|      6064|   682|         660|         0.11|
+| marquette university           |        1|      8212|   634|         650|         0.08|
+| rockhurst university           |        0|      1671|   233|         650|         0.14|
+| rollins college                |        0|      2670|   313|         660|         0.12|
+| saint louis university         |        1|      7822|  1162|         670|         0.15|
+| seattle university             |        0|      4415|   350|         640|         0.08|
+| spring arbor university        |        0|      2632|   327|         645|         0.12|
+| syracuse university            |        0|     14768|  1802|         660|         0.12|
+| texas christian university     |        0|      8600|   763|         650|         0.09|
+| university of dallas           |        0|      1324|   105|         640|         0.08|
+| university of dayton           |        0|      8305|   658|         640|         0.08|
+| university of denver           |        0|      5629|   633|         660|         0.11|
+| university of detroit mercy    |        0|      2677|   481|         670|         0.18|
+| yeshiva university             |        0|      2814|   518|         680|         0.18|
+
+#### Pu1
+
+|                                            |  Fellows|  Tot.Size|   Size|  SAT.Math75|  SAT.700.800|
+|--------------------------------------------|--------:|---------:|------:|-----------:|------------:|
+| university of california-berkeley          |       11|     27126|  14125|         770|         0.52|
+| university of california-san diego         |        0|     24801|  11887|         760|         0.48|
+| university of illinois at urbana-champaign |        6|     31875|  23906|         790|         0.75|
+| university of michigan-ann arbor           |        5|     28217|  15624|         760|         0.55|
+
+#### Pu2
+
+|                                               |  Fellows|  Tot.Size|   Size|  SAT.Math75|  SAT.700.800|
+|-----------------------------------------------|--------:|---------:|------:|-----------:|------------:|
+| college of william and mary                   |        4|      6256|   2671|         740|         0.43|
+| cuny bernard m baruch college                 |        0|     14420|   2955|         690|         0.20|
+| michigan state university                     |        2|     38395|   8535|         690|         0.22|
+| missouri university of science and technology |        0|      6418|   1604|         700|         0.25|
+| ohio state university-main campus             |        2|     43733|  16601|         730|         0.38|
+| purdue university-main campus                 |        0|     29977|   7494|         700|         0.25|
+| rutgers university-new brunswick              |        1|     34094|   8524|         700|         0.25|
+| stony brook university                        |        0|     16170|   4765|         710|         0.29|
+| suny at binghamton                            |        0|     13372|   3343|         700|         0.25|
+| university of california-davis                |        3|     27547|   6887|         700|         0.25|
+| university of california-irvine               |        1|     24474|   5394|         690|         0.22|
+| university of california-los angeles          |        5|     29627|  12550|         750|         0.42|
+| university of california-santa barbara        |        0|     20237|   5699|         710|         0.28|
+| university of connecticut                     |        0|     18016|   3767|         690|         0.21|
+| university of florida                         |        1|     31879|   6666|         690|         0.21|
+| university of iowa                            |        1|     21486|   5372|         700|         0.25|
+| university of maryland-college park           |        9|     26532|  10072|         730|         0.38|
+| university of minnesota-twin cities           |        2|     30135|  13205|         750|         0.44|
+| university of north carolina at chapel hill   |        6|     17908|   6141|         720|         0.34|
+| university of pittsburgh-pittsburgh campus    |        0|     18474|   3785|         690|         0.20|
+| university of texas at austin                 |        2|     38914|  12705|         720|         0.33|
+| university of texas at dallas                 |        0|     14300|   3575|         700|         0.25|
+| university of virginia-main campus            |        3|     15515|   6625|         740|         0.43|
+| university of washington-seattle campus       |        1|     29468|   7367|         700|         0.25|
+| university of wisconsin-madison               |        6|     29302|  12046|         740|         0.41|
 
 #### Pu3
 
-|                                            |  Tot.Size|  Size|  Fellows|  SAT.Math75|  SAT.700.800|  ACT|
-|--------------------------------------------|---------:|-----:|--------:|-----------:|------------:|----:|
-| arizona state university-tempe             |     39316|  3487|        1|         640|         0.09|   28|
-| auburn university                          |     20514|  1918|        0|         645|         0.09|   30|
-| clemson university                         |     17083|  2819|        0|         680|         0.16|   31|
-| college of new jersey                      |      6407|   899|        0|         670|         0.14|   29|
-| cuny city college                          |     12175|  1680|        0|         660|         0.14|   29|
-| cuny hunter college                        |     15778|  1560|        1|         650|         0.10|   28|
-| florida state university                   |     32432|  1489|        0|         640|         0.05|   29|
-| indiana university-bloomington             |     32252|  4209|        2|         660|         0.13|   30|
-| iowa state university                      |     28336|  5568|        0|         680|         0.20|   29|
-| miami university-oxford                    |     15454|  2763|        0|         680|         0.18|   30|
-| mississippi state university               |     15800|  1662|        0|         640|         0.11|   28|
-| north carolina state university at raleigh |     22925|  3572|        1|         680|         0.16|   30|
-| north dakota state university-main campus  |     11763|  1981|        0|         665|         0.17|   26|
-| pennsylvania state university-main campus  |     39958|  5938|        7|         670|         0.15|   29|
-| southern illinois university-carbondale    |     13171|  1480|        0|         640|         0.11|   26|
-| texas a and m university-college station   |     46941|  6975|        1|         670|         0.15|   30|
-| university at buffalo                      |     19488|  1729|        0|         650|         0.09|   29|
-| university of alabama at birmingham        |     11383|  1279|        0|         640|         0.11|   27|
-| university of alabama in huntsville        |      5451|   589|        0|         650|         0.11|   30|
-| university of california-riverside         |     18784|  2186|        1|         650|         0.12|   27|
-| university of california-santa cruz        |     16277|  2015|        1|         650|         0.12|   29|
-| university of central florida              |     52280|  3022|        0|         640|         0.06|   28|
-| university of cincinnati-main campus       |     23795|  3284|        0|         660|         0.14|   28|
-| university of colorado boulder             |     25873|  3376|        0|         660|         0.13|   30|
-| university of delaware                     |     18222|  2223|        2|         660|         0.12|   29|
-| university of georgia                      |     26738|  3751|        0|         670|         0.14|   30|
-| university of houston                      |     31643|  2180|        0|         640|         0.07|   27|
-| university of illinois at chicago          |     16635|  2296|        0|         660|         0.14|   27|
-| university of kentucky                     |     21725|  2114|        0|         640|         0.10|   28|
-| university of maryland-baltimore county    |     11274|  1582|        0|         670|         0.14|   30|
-| university of massachusetts-amherst        |     21864|  3068|        0|         670|         0.14|   30|
-| university of massachusetts-lowell         |     12190|   840|        0|         640|         0.07|   28|
-| university of michigan-dearborn            |      6906|   945|        0|         658|         0.14|   27|
-| university of michigan-flint               |      6565|  1304|        0|         680|         0.20|   24|
-| university of minnesota-duluth             |      9120|   887|        0|         640|         0.10|   26|
-| university of missouri-columbia            |     27276|  3764|        1|         660|         0.14|   28|
-| university of missouri-kansas city         |      8127|  1645|        0|         680|         0.20|   28|
-| university of missouri-st louis            |      8936|  1435|        0|         660|         0.16|   27|
-| university of nebraska-lincoln             |     19979|  2889|        0|         660|         0.14|   28|
-| university of new orleans                  |      6742|  1218|        1|         670|         0.18|   25|
-| university of north carolina wilmington    |     12686|   582|        0|         640|         0.05|   26|
-| university of oklahoma-norman campus       |     20538|  3329|        1|         670|         0.16|   29|
-| university of puerto rico-rio piedras      |     12086|  2179|        0|         673|         0.18|   29|
-| university of south carolina-columbia      |     24623|  2494|        0|         660|         0.10|   29|
-| university of tennessee-knoxville          |     21396|  1695|        1|         640|         0.08|   29|
-| university of utah                         |     22804|  2654|        1|         650|         0.12|   28|
-| university of vermont                      |      9958|   985|        1|         650|         0.10|   29|
+|                                            |  Fellows|  Tot.Size|  Size|  SAT.Math75|  SAT.700.800|
+|--------------------------------------------|--------:|---------:|-----:|-----------:|------------:|
+| arizona state university-tempe             |        1|     39316|  3487|         640|         0.09|
+| auburn university                          |        0|     20514|  1918|         645|         0.09|
+| clemson university                         |        0|     17083|  2819|         680|         0.16|
+| college of new jersey                      |        0|      6407|   899|         670|         0.14|
+| cuny city college                          |        0|     12175|  1680|         660|         0.14|
+| cuny hunter college                        |        1|     15778|  1560|         650|         0.10|
+| florida state university                   |        0|     32432|  1489|         640|         0.05|
+| indiana university-bloomington             |        2|     32252|  4209|         660|         0.13|
+| iowa state university                      |        0|     28336|  5568|         680|         0.20|
+| miami university-oxford                    |        0|     15454|  2763|         680|         0.18|
+| mississippi state university               |        1|     15800|  1662|         640|         0.11|
+| north carolina state university at raleigh |        1|     22925|  3572|         680|         0.16|
+| north dakota state university-main campus  |        0|     11763|  1981|         665|         0.17|
+| pennsylvania state university-main campus  |        7|     39958|  5938|         670|         0.15|
+| southern illinois university-carbondale    |        0|     13171|  1480|         640|         0.11|
+| texas a and m university-college station   |        2|     46941|  6975|         670|         0.15|
+| university at buffalo                      |        0|     19488|  1729|         650|         0.09|
+| university of alabama at birmingham        |        0|     11383|  1279|         640|         0.11|
+| university of alabama in huntsville        |        0|      5451|   589|         650|         0.11|
+| university of california-riverside         |        1|     18784|  2186|         650|         0.12|
+| university of california-santa cruz        |        1|     16277|  2015|         650|         0.12|
+| university of central florida              |        1|     52280|  3022|         640|         0.06|
+| university of cincinnati-main campus       |        0|     23795|  3284|         660|         0.14|
+| university of colorado boulder             |        2|     25873|  3376|         660|         0.13|
+| university of delaware                     |        2|     18222|  2223|         660|         0.12|
+| university of georgia                      |        1|     26738|  3751|         670|         0.14|
+| university of houston                      |        0|     31643|  2180|         640|         0.07|
+| university of illinois at chicago          |        0|     16635|  2296|         660|         0.14|
+| university of kentucky                     |        0|     21725|  2114|         640|         0.10|
+| university of maryland-baltimore county    |        1|     11274|  1582|         670|         0.14|
+| university of massachusetts-amherst        |        0|     21864|  3068|         670|         0.14|
+| university of massachusetts-lowell         |        0|     12190|   840|         640|         0.07|
+| university of michigan-dearborn            |        0|      6906|   945|         658|         0.14|
+| university of michigan-flint               |        0|      6565|  1304|         680|         0.20|
+| university of minnesota-duluth             |        0|      9120|   887|         640|         0.10|
+| university of missouri-columbia            |        1|     27276|  3764|         660|         0.14|
+| university of missouri-kansas city         |        0|      8127|  1645|         680|         0.20|
+| university of missouri-st louis            |        0|      8936|  1435|         660|         0.16|
+| university of nebraska-lincoln             |        0|     19979|  2889|         660|         0.14|
+| university of new orleans                  |        1|      6742|  1218|         670|         0.18|
+| university of north carolina wilmington    |        0|     12686|   582|         640|         0.05|
+| university of oklahoma-norman campus       |        1|     20538|  3329|         670|         0.16|
+| university of puerto rico-rio piedras      |        0|     12086|  2179|         673|         0.18|
+| university of south carolina-columbia      |        0|     24623|  2494|         660|         0.10|
+| university of tennessee-knoxville          |        1|     21396|  1695|         640|         0.08|
+| university of utah                         |        2|     22804|  2654|         650|         0.12|
+| university of vermont                      |        1|      9958|   985|         650|         0.10|
+
+#### L1
+
+|                              |  Fellows|  Tot.Size|  Size|  SAT.Math75|  SAT.700.800|
+|------------------------------|--------:|---------:|-----:|-----------:|------------:|
+| amherst college              |        0|      1792|  1158|         770|         0.65|
+| bowdoin college              |        1|      1797|  1202|         770|         0.67|
+| carleton college             |        1|      2042|  1131|         760|         0.55|
+| claremont mckenna college    |        0|      1293|   897|         770|         0.69|
+| grinnell college             |        0|      1670|   925|         760|         0.55|
+| harvey mudd college          |        1|       802|   756|         800|         0.94|
+| illinois wesleyan university |        1|      1883|  1043|         760|         0.55|
+| pomona college               |        2|      1635|  1134|         770|         0.69|
+| swarthmore college           |        3|      1530|   989|         770|         0.65|
+| williams college             |        4|      2019|  1224|         770|         0.61|
+
+#### L2
+
+|                                  |  Fellows|  Tot.Size|  Size|  SAT.Math75|  SAT.700.800|
+|----------------------------------|--------:|---------:|-----:|-----------:|------------:|
+| augustana college                |        0|      2469|   560|         690|         0.23|
+| barnard college                  |        0|      2556|   767|         710|         0.30|
+| bates college                    |        1|      1773|   466|         703|         0.26|
+| bryn mawr college                |        1|      1303|   467|         730|         0.36|
+| bucknell university              |        0|      3528|  1210|         720|         0.34|
+| colby college                    |        1|      1847|   633|         720|         0.34|
+| colgate university               |        1|      2865|  1432|         750|         0.50|
+| college of the holy cross        |        0|      2754|   531|         690|         0.19|
+| colorado college                 |        1|      2036|   611|         710|         0.30|
+| connecticut college              |        1|      1875|   469|         700|         0.25|
+| davidson college                 |        0|      1765|   605|         720|         0.34|
+| dickinson college                |        0|      2315|   579|         700|         0.25|
+| franklin and marshall college    |        0|      2182|   859|         730|         0.39|
+| hamilton college                 |        1|      1890|   945|         740|         0.50|
+| haverford college                |        0|      1187|   594|         740|         0.50|
+| kalamazoo college                |        0|      1431|   315|         690|         0.22|
+| kenyon college                   |        0|      1651|   330|         690|         0.20|
+| lafayette college                |        1|      2471|   847|         720|         0.34|
+| lawrence university              |        1|      1483|   546|         730|         0.37|
+| macalester college               |        4|      2053|   844|         735|         0.41|
+| middlebury college               |        3|      2498|  1067|         740|         0.43|
+| mount holyoke college            |        0|      2161|   828|         735|         0.38|
+| oberlin college                  |        1|      2961|  1015|         720|         0.34|
+| occidental college               |        0|      2023|   506|         700|         0.25|
+| pitzer college                   |        1|      1076|   381|         720|         0.35|
+| reed college                     |        2|      1335|   526|         730|         0.39|
+| rhodes college                   |        0|      2007|   411|         690|         0.20|
+| scripps college                  |        0|       962|   289|         710|         0.30|
+| smith college                    |        2|      2563|   879|         720|         0.34|
+| soka university of america       |        0|       411|   118|         710|         0.29|
+| st olaf college                  |        1|      2990|   645|         690|         0.22|
+| trinity college                  |        0|      2262|   566|         700|         0.25|
+| union college of schenectady, ny |        0|      2204|   780|         720|         0.35|
+| university of richmond           |        0|      3223|  1105|         720|         0.34|
+| vassar college                   |        0|      2389|  1123|         740|         0.47|
+| washington and lee university    |        0|      1880|   868|         730|         0.46|
+| wellesley college                |        1|      2172|   969|         740|         0.45|
+| wesleyan university              |        2|      2907|  1241|         740|         0.43|
+| wheaton college of wheaton, il   |        0|      2402|   600|         700|         0.25|
+| whitman college                  |        0|      1480|   430|         710|         0.29|
 
 #### L3
 
-|                                 |  Tot.Size|  Size|  Fellows|  SAT.Math75|  SAT.700.800|  ACT|
-|---------------------------------|---------:|-----:|--------:|-----------:|------------:|----:|
-| agnes scott college             |       802|    78|        0|         640|         0.10|   29|
-| albion college                  |      1249|   111|        0|         640|         0.09|   27|
-| austin college                  |      1272|   126|        0|         650|         0.10|   27|
-| bard college                    |      2021|   361|        0|         680|         0.18|   29|
-| beloit college                  |      1225|   102|        0|         645|         0.08|   30|
-| centre college                  |      1379|   254|        0|         680|         0.18|   31|
-| college of wooster              |      2029|   302|        0|         670|         0.15|   30|
-| concordia college at moorhead   |      2296|    49|        1|         660|         0.02|   28|
-| cornell college                 |      1082|   126|        0|         650|         0.12|   30|
-| denison university              |      2265|   391|        0|         680|         0.17|   31|
-| depauw university               |      2185|   246|        0|         660|         0.11|   29|
-| earlham college                 |       942|   162|        0|         680|         0.17|   31|
-| furman university               |      2796|   341|        1|         660|         0.12|   30|
-| gettysburg college              |      2437|   352|        1|         680|         0.14|   29|
-| gordon college                  |      1703|   166|        0|         640|         0.10|   29|
-| gustavus adolphus college       |      2455|   447|        0|         675|         0.18|   30|
-| hendrix college                 |      1322|   173|        0|         660|         0.13|   31|
-| hobart william smith colleges   |      2344|   247|        0|         670|         0.11|   30|
-| hope college                    |      3312|   358|        1|         650|         0.11|   29|
-| knox college                    |      1376|   102|        0|         660|         0.07|   29|
-| lewis and clark college         |      2039|   242|        0|         670|         0.12|   31|
-| luther college                  |      2326|   226|        1|         640|         0.10|   28|
-| muhlenberg college              |      2332|   262|        0|         660|         0.11|   31|
-| ripon college                   |       820|   173|        0|         680|         0.21|   27|
-| sarah lawrence college          |      1366|   258|        0|         680|         0.19|   31|
-| sewanee-university of the south |      1616|   125|        0|         650|         0.08|   30|
-| skidmore college                |      2612|   467|        0|         680|         0.18|   30|
-| st john's college               |       429|    77|        0|         680|         0.18|   31|
-| st lawrence university          |      2282|   278|        0|         660|         0.12|   30|
-| thomas aquinas college          |       378|    17|        0|         640|         0.05|   31|
-| transylvania university         |      1014|   140|        0|         660|         0.14|   30|
-| university of puget sound       |      2550|   226|        0|         650|         0.09|   30|
-| wabash college                  |       923|    82|        0|         640|         0.09|   27|
-| washington college              |      1408|    97|        0|         640|         0.07|   28|
-| westmont college                |      1297|   115|        0|         640|         0.09|   29|
-| wheaton college of norton, ma   |      1575|   219|        0|         665|         0.14|   30|
-| willamette university           |      2009|   199|        0|         650|         0.10|   30|
-| wofford college                 |      1654|   131|        0|         640|         0.08|   30|
+|                                 |  Fellows|  Tot.Size|  Size|  SAT.Math75|  SAT.700.800|
+|---------------------------------|--------:|---------:|-----:|-----------:|------------:|
+| agnes scott college             |        0|       802|    78|         640|         0.10|
+| albion college                  |        0|      1249|   111|         640|         0.09|
+| austin college                  |        0|      1272|   126|         650|         0.10|
+| bard college                    |        0|      2021|   361|         680|         0.18|
+| beloit college                  |        0|      1225|   102|         645|         0.08|
+| centre college                  |        0|      1379|   254|         680|         0.18|
+| college of wooster              |        0|      2029|   302|         670|         0.15|
+| concordia college at moorhead   |        1|      2296|    49|         660|         0.02|
+| cornell college                 |        0|      1082|   126|         650|         0.12|
+| denison university              |        0|      2265|   391|         680|         0.17|
+| depauw university               |        0|      2185|   246|         660|         0.11|
+| earlham college                 |        0|       942|   162|         680|         0.17|
+| furman university               |        1|      2796|   341|         660|         0.12|
+| gettysburg college              |        1|      2437|   352|         680|         0.14|
+| gordon college                  |        0|      1703|   166|         640|         0.10|
+| gustavus adolphus college       |        1|      2455|   447|         675|         0.18|
+| hendrix college                 |        0|      1322|   173|         660|         0.13|
+| hobart william smith colleges   |        0|      2344|   247|         670|         0.11|
+| hope college                    |        1|      3312|   358|         650|         0.11|
+| knox college                    |        0|      1376|   102|         660|         0.07|
+| lewis and clark college         |        0|      2039|   242|         670|         0.12|
+| luther college                  |        1|      2326|   226|         640|         0.10|
+| muhlenberg college              |        0|      2332|   262|         660|         0.11|
+| ripon college                   |        0|       820|   173|         680|         0.21|
+| sarah lawrence college          |        0|      1366|   258|         680|         0.19|
+| sewanee-university of the south |        0|      1616|   125|         650|         0.08|
+| skidmore college                |        0|      2612|   467|         680|         0.18|
+| st john's college               |        0|       429|    77|         680|         0.18|
+| st lawrence university          |        0|      2282|   278|         660|         0.12|
+| thomas aquinas college          |        0|       378|    17|         640|         0.05|
+| transylvania university         |        0|      1014|   140|         660|         0.14|
+| university of puget sound       |        1|      2550|   226|         650|         0.09|
+| wabash college                  |        0|       923|    82|         640|         0.09|
+| washington college              |        0|      1408|    97|         640|         0.07|
+| westmont college                |        0|      1297|   115|         640|         0.09|
+| wheaton college of norton, ma   |        0|      1575|   219|         665|         0.14|
+| willamette university           |        0|      2009|   199|         650|         0.10|
+| wofford college                 |        0|      1654|   131|         640|         0.08|

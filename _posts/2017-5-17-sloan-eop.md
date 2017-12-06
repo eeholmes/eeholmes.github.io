@@ -12,9 +12,9 @@ Analysis of the baccalaureate origins of Sloan fellows in the hard sciences acro
 
 The [Sloan Fellowship](https://sloan.org/fellowships/) is a prestigious award for early career scientists at U.S. and Canadian academic institutions. Each year 126 scientists are recognized. From the Sloan Fellowship website: "These 126 early-career scholars represent the most promising scientific researchers working today. Their achievements and potential place them among the next generation of scientific leaders in the U.S. and Canada." Forty-three Sloan Fellows have gone on to win a Nobel Prize and 16 have won the Fields Medal in mathematics.
 
-I looked up the CVs for all the Sloan Fellowship winners from 2017-2011 in Math, Physics, Chemistry, Neuroscience and Ocean Sciences. I noted the school where the awardee got their undergraduate degree. Here I analyze the patterns of the undergraduate institutions of those awardees who received their undergraduate degree in the United States (about 50% of awardees).
+I looked up the CVs for all the Sloan Fellowship winners for all available years (2008-2016) in all fields: Math, Physics, Chemistry, Economics, Neuroscience, Computational Biology and Ocean Sciences. The names of the awardees are listed in the Sloan Foundation press releases. I noted the school where the awardee got their undergraduate degree. Here I analyze the patterns of the undergraduate institutions of those awardees who received their undergraduate degree in the United States (about 50% of awardees). I supplemented this data, with data on the undergraduate institutions from the [Scorecard database](https://collegescorecard.ed.gov/data/) on U.S. Baccalaureate institutions.
 
-The data on the undergraduate institutions comes from the [Scorecard database](https://collegescorecard.ed.gov/data/) on U.S. Baccalaureate institutions.
+I will be showing a series of cumulative plots where I look at the Sloan production within *groups* of schools. I am not concerned with individual schools, but rather the production within a whole group of schools. Cumulative plots help one see patterns when one is looking at rare events, like Sloan fellows. Within a group, I sort by size of school (this is step is not important), and then take the cumulative sum of school size and number of Sloan fellows. I then plot cumulative sum of size (enrollment) against cumulative number of Sloan fellows.
 
 For the first analysis, I used the tiers defined by the [Equality of Opportunity Project](http://www.equality-of-opportunity.org/) (EOP) . These tiers include a relatively small set of schools (relative to all the private and public schools). I'm not sure how this set was defined, but certainly not using number of future Sloan Fellows. Notice the mean upper 75% ACT scores are similar across the groups within a tier (elite or highly selective). The EOP did not separate out the Liberal Arts colleges. I have to create separate tiers for these colleges. I did not use the EOP 'highly selective public' group since there are too many name differences between the EOP and Scorecard databases.
 
@@ -136,7 +136,7 @@ Mean upper 75% ACT is 30.35.
 Sloan Fellows Produced in Math and Physics
 ------------------------------------------
 
-This shows the cumulative number of Sloan fellows in each tier group. The x-axis is the cumulative total number of undergraduates in the tier group; I've ordered the institutions by size and then summed the sizes and number of Sloan fellows. Cumulative plots help one see patterns for rare events, and Sloan fellows are rare. If the line is higher it means the per capita production is higher in that tier group. The 'Ivy Plus' group greatly outproduced future Sloan Fellows in Math and Physics.
+This shows the cumulative number of Sloan fellows in each tier group. The x-axis is the cumulative total number of undergraduates in the tier group; I've ordered the institutions by size and then summed the sizes and number of Sloan fellows. Cumulative plots help one see patterns for rare events, and Sloan fellows are rare. If the line is higher it means the per capita production is higher in that tier group. The 'Ivy Plus' group greatly outproduced future Sloan Fellows in Math and Physics, however as you will see in the next blog post this is actually due to just four institutions: MIT, CalTech, Harvard and Princeton.
 
 ![](/blog_files/2017-5-17-sloan-eop_files/figure-markdown_github/sloan.by.type-1.png)
 
@@ -154,7 +154,82 @@ This uses the Equality of Opportunity Project 'elite private' and 'highly select
 
 ![](/blog_files/2017-5-17-sloan-eop_files/figure-markdown_github/sloan.lac.elite.vs.high-1.png)
 
-These patterns across the tier groups might simply represent the pool of undergraduates in the different tier groups and not represent any additional value added by the institutions. For the next analyses, I control for the (estimated) number of undergraduates with high math SAT scores at each institution. Math SAT scores are not a perfect metric of future STEM productivity, but are highly correlated with required career prerequisites for a Sloan fellowship, namely a PhD in a STEM field.
+These patterns across the tier groups might simply represent the pool of undergraduates in the different tier groups and not represent any additional value added by the institutions.
+
+Sloan Fellows by ACT brackets
+-----------------------------
+
+For this analysis, I ignore the EOP tiers and simply plot the cumulative sum of Sloan Fellows for schools with a upper 75% ACT score of 35, 34, ..., or 31 (as reported in the Scorecard data). This plot shows that clearly the upper 75% ACT is a predictor for the number of future Sloan Fellows. I will need to correct for the differences in the selectivity of each school. If a school has more students with a very high ACT score, they would be expected to have more future Sloan fellows simply because they have a large 'pool'.
+
+![](/blog_files/2017-5-17-sloan-eop_files/figure-markdown_github/sloan.by.act-1.png)
+
+Sloan Fellows for schools with upper 75% ACT = 34 or 33 broken out by type of school
+------------------------------------------------------------------------------------
+
+Before doing that (in the next post), I will do a preliminary analysis of the effect of 'school type'. I abandon the Equality of Opportunity Project tier groups and I switch to defining the Carnegie School Classifications. I will use only resarch universities and baccalaureate colleges (liberal arts colleges). This information is part of the Scorecard data along with information on whether the institution is public or private.
+
+-   15 = Doctoral Universities: Highest Research Activity
+-   16 = Doctoral Universities: Higher Research Activity
+-   18 = Master's Colleges & Universities: Larger Programs
+-   21 = Baccalaureate Colleges: Arts & Sciences Focus
+
+The idea is to examine whether there is a difference in the production of future Sloan Fellows based on the type of institution (research university versus undergraduate institution).
+
+For this analysis, I used all schools in the above categories with upper 75% ACT of 34 or 33. Scroll below the plot to see the schools in each group. I labelled schools as either LAC (baccalaureate), private (Carnegie Classification 15, 16 or 18 and private) or public (Carnegie Classification 15, 16 or 18 and public).
+
+This plot shows that within this very high ACT group, LACs and private research universities have similar per capita Sloan production but public schools are lower even with the same upper 75% ACT scores.
+
+![](/blog_files/2017-5-17-sloan-eop_files/figure-markdown_github/sloan.by.act34.type-1.png)
+
+### act34.33.private
+
+    ##  [1] "northwestern university"          
+    ##  [2] "university of notre dame"         
+    ##  [3] "johns hopkins university"         
+    ##  [4] "washington university in st louis"
+    ##  [5] "dartmouth college"                
+    ##  [6] "columbia university"              
+    ##  [7] "cornell university"               
+    ##  [8] "duke university"                  
+    ##  [9] "carnegie mellon university"       
+    ## [10] "university of pennsylvania"       
+    ## [11] "brown university"                 
+    ## [12] "vanderbilt university"            
+    ## [13] "rice university"                  
+    ## [14] "stanford university"              
+    ## [15] "university of southern california"
+    ## [16] "georgetown university"            
+    ## [17] "boston college"                   
+    ## [18] "brandeis university"              
+    ## [19] "northeastern university"          
+    ## [20] "tufts university"                 
+    ## [21] "case western reserve university"
+
+### act34.33.public
+
+    ## [1] "university of california-berkeley"          
+    ## [2] "university of california-los angeles"       
+    ## [3] "georgia institute of technology-main campus"
+    ## [4] "university of michigan-ann arbor"           
+    ## [5] "college of william and mary"                
+    ## [6] "university of virginia-main campus"
+
+### act34.33.lac
+
+    ##  [1] "pomona college"                "amherst college"              
+    ##  [3] "williams college"              "haverford college"            
+    ##  [5] "swarthmore college"            "claremont mckenna college"    
+    ##  [7] "scripps college"               "wesleyan university"          
+    ##  [9] "grinnell college"              "bowdoin college"              
+    ## [11] "wellesley college"             "carleton college"             
+    ## [13] "hamilton college"              "vassar college"               
+    ## [15] "reed college"                  "middlebury college"           
+    ## [17] "washington and lee university"
+
+Next Analysis
+=============
+
+For the next analyses, I control for the (estimated) number of undergraduates with high math SAT scores at each institution. Math SAT scores are not a perfect metric of future STEM productivity, but are highly correlated with required career prerequisites for a Sloan fellowship, namely a PhD in a STEM field.
 
 Raw Data
 ========
@@ -254,8 +329,8 @@ Math and Physics Data
 | university of north carolina at chapel hill |        0|  17908|
 | university of virginia-main campus          |        4|  15515|
 
-Neuroscience and Ocean Sciences Data
-------------------------------------
+Neuroscience, Chemistry and Ocean Sciences Data
+-----------------------------------------------
 
 ### Ivy Plus
 
