@@ -4,6 +4,11 @@ title: "Colleagues"
 author_profile: true
 ---
 
+<style>
+ul {
+  list-style-type: none;
+}
+
 People I work with:
 
 * [Eric Ward](https://eric-ward.github.io/) <a href="https://github.com/eric-ward"><img src="/images/github.svg" height="18" width="18"></a>
