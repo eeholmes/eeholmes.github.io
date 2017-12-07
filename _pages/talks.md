@@ -5,7 +5,6 @@ type: "Talk"
 permalink: /talks/
 ---
 
-{% include toc %}
 
 <style>
 ul {
@@ -13,7 +12,7 @@ ul {
 }
 </style>
 
-Selected Talks (and hopelessly out of date...)
+Selected Talks
 
 * EE Holmes, N Kumar, S Maity, BR Smitha, S Cubelio, C Wilson, N Saravarane, N Kumar. 2016. Multivariate time-series forecasting of the NE Arabian Sea Oil Sardine
 fishery using satellite covariates. Univ of WA Quant Seminar. Oct 2016. *Talk on the Indian oil sardine forecasting project.  The project was still at an exploratory stage in Oct 2016, and the analysis changed substantially in the next year.* [PDF](Oil_Sardines_Oct_2016.pdf)

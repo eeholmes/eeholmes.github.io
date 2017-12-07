@@ -17,7 +17,7 @@
     @include clearfix;
     padding: 1em 1em 1em;
     font-family: $sans-serif-narrow;
-	background: blue;
+	background: #D2E9FE;
 
     @include breakpoint($x-large) {
       max-width: $x-large;
@@ -34,7 +34,8 @@
 }
 
 .masthead__menu {
-    
+  background: #D2E9FE;
+  
   ul {
     margin: 0;
     padding: 0;
@@ -47,7 +48,7 @@
   display: block;
   list-style-type: none;
   white-space: nowrap;
-  background: blue;
+  background: #D2E9FE;
 
   &--lg {
     padding-right: 2em;
