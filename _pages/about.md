@@ -1,15 +1,12 @@
 ---
 permalink: /
 title: ""
-excerpt: "About me"
+excerpt: "Parsimonious Pursuits"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
-
-About me
-======
 
 My research is focused on stochastic processes and statistical models for complex multivariate, interacting systems. Much of what I do involves developing algorithms for fitting multivariate autoregressive state-space (MARSS) models to time-series data, which comes up in vector autoregressive state-space modeling, dynamic linear modeling, MAR(1) modeling, and dynamic factor analysis. I developed an EM algorithm for fitting a general constrained version of these models and develped the MARSS package for fitting such models. In my spare time, I've been working on predictive models of "multi-player" systems---I've been studying this with soccer match data. This is another application of my work on developing predictive models using 'bad' data. 
 
@@ -19,7 +16,7 @@ I am part of a NWFSC research group working in the area of hierarchical modeling
 .column {
     float: left;
     padding: 10px;
-    width: 25%;
+    width: 35%;
 }
 
 /* Clear floats after the columns */
