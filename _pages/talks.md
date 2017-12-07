@@ -5,6 +5,8 @@ type: "Talk"
 permalink: /talks/
 ---
 
+{% include toc %}
+
 <style>
 ul {
   list-style-type: none;
