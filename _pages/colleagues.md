@@ -8,6 +8,7 @@ author_profile: true
 ul {
   list-style-type: none;
 }
+</style>
 
 People I work with:
 
