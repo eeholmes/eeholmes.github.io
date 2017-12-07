@@ -1,7 +1,7 @@
 ---
 title: 'Notes on computing the Fisher Information matrix for MARSS models. Part III Overview of Harvey 1989'
-date: 2017-05-31
-permalink: /posts/2017/05/FI-III/
+date: 2016-05-16
+permalink: /posts/2016/06/FI-III/
 tags:
   - Fisher Information
   - MARSS
