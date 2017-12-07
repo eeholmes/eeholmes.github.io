@@ -8,7 +8,7 @@ author_profile: true
 
 <!-- BEGIN CONTENT -->
 <h1>Workshops, Classes and Symposia</h1>
-</p>
+
 <ul>
 <li>UW 2015: SAFS 507 Applied Time Series Analysis for Fisheries and Environmental Sciences, with Eric Ward and Mark Scheuerell. Most of the matrerial is updated from the 2015 course with more of an emphasis on Bayesian model fitting using STAN.  Course website includes recordings of the lectures, lecture ppts, and computer code used in the computer labs.[<a href="https://catalyst.uw.edu/workspace/fish203/35553/243766">ONLINE</a>] Stan code for time series models on Github [here](https://github.com/nwfsc-timeseries/statss)  Lab book for course [here](https://nwfsc-timeseries.github.io/AFTSLabbook/) </li>
 <li>March 24-28, Stockholm, Sweden.  Multivariate Time-Analysis with MARSS. <a href="http://timeseriescourseemb.wordpress.com/">Course website</a></li>
