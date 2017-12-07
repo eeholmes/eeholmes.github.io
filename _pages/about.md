@@ -15,10 +15,10 @@ My research is focused on stochastic processes and statistical models for comple
 
 I am part of a NWFSC research group working in the area of hierarchical modeling and inference. Group members include myself, [Eric Ward](https://eric-ward.github.io/), [Mark Scheuerell](http://faculty.washington.edu/scheuerl/), and [Jim Thorson](https://sites.google.com/site/thorsonresearch/), along with their post-docs and students. We develop statistical methods for ecological problems and apply these to resource and endangered species management questions. We collaborate a lot with folks at the University of Washington School for Aquatic and Fisheries Sciences (SAFS).
 
-    <div class="row">
+    <div>
 
       
-      <div class="col-sm-5">
+      <div>
         <h3>Interests</h3>
         <ul class="ul-interests">
           
@@ -33,7 +33,7 @@ I am part of a NWFSC research group working in the area of hierarchical modeling
       
 
       
-      <div class="col-sm-7">
+      <div>
         <h3>Education</h3>
         <ul class="ul-edu fa-ul">
           
