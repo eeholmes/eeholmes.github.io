@@ -1,19 +1,17 @@
 ---
-title: 'Notes on computing the Fisher Information matrix for MARSS models. Part IV Recursion in Harvey 1989'
+title: 'Notes on computing the Fisher Information matrix for MARSS models. Part III Overview of Harvey 1989'
 date: 2017-05-31
-permalink: /posts/2017/05/FI-IV/
+permalink: /posts/2017/05/FI-III/
 tags:
   - Fisher Information
   - MARSS
 ---
-<!--
-<div dir="ltr" style="text-align: left;" trbidi="on">
+
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({ TeX: { equationNumbers: {autoNumber: "AMS"} } });
 </script>
 <script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML' type='text/javascript'>
 </script>
--->
 
 <i>MathJax can be iffy.  Try reloading if the equations don't show up.</i><br /><br />
 

@@ -6,14 +6,12 @@ tags:
   - Fisher Information
   - MARSS
 ---
-<!--
-<div dir="ltr" style="text-align: left;" trbidi="on">
+
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({ TeX: { equationNumbers: {autoNumber: "AMS"} } });
 </script>
 <script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML' type='text/javascript'>
 </script>
--->
 
 <!-- Write in pure MathJax for GitHub Pages; the commented out part above is if you are embedding this in another website. -->
 
