@@ -29,7 +29,7 @@ author_profile: true
 <li>UW 2001-2002: Graduate course on ecosystem management, Zoology Dept., University of Washington. Review of the concept of ecosystem management versus its application in actual Ecosystem Management plans and projects.  Co-organized and co-lectured with D. Boersma, M. McClure, P. Kareiva</li>
 <li>UW 2000: Spatial Ecology, graduate course, Zoology Dept. Course I developed on the effect of spatial structure on population and community dynamics.</li>
 <li>UW 1999-1998: Ecology, Zoology Dept. Undergraduate core course for majors. In 1999, I co-taught with Eric Anderson.  Poor students were taught ecology that year by a statistician and theoretician.</li>
-<li>UW 1998: Metapopulation biology.  10 wk graduate seminar on Metapopulation modeling. Lecture and student presentation style course using “Metapopulation Biology” (I. Hanski, ed).</li>
+<li>UW 1998: Metapopulation biology.  10 wk graduate seminar on Metapopulation modeling. Lecture and student presentation style course using Metapopulation Biology (I. Hanski, ed).</li>
 <li>Imperial College, UK 1996: 6 wk graduate seminar on Cellular Automata models, Silwood Park, Imperial College, UK.</li>
 </ul>
 </p></p>
@@ -54,7 +54,7 @@ Rees, Mark *,1, Ellner, Steve2, 1 Imperial College, Silwood Park, Ascot, Berks, 
 <br />
 Holmes, Elizabeth*,1, 1 Northwest Fisheries Science Center, Seattle, WA, USA From theory to application: Using diffusion approximations to model complex stochastic populations processes with applications for population viability analyses.
 <br />
-Ives, Anthony*,1, Einarsson, Árni2, Gardarsson, Arnthór2, 3, Jansen, Vincent4, 1 Department of Zoology, Madison, WI, USA2 Myvatn Research Station, IS-660 Myvatn, Iceland3 Institute of Biology, IS-108 Reykjavík, Iceland4 School of Biological Sciences, Egham, Surrey, UK Extreme fluctuations in midge densities: The possibility of resource-consumer dynamics with alternative dynamical states.
+Ives, A*, 1, Einarsson, A, 2, Gardarsson, A, 3, Jansen, V, 3. 1 Department of Zoology, Madison, WI, USA2 Myvatn Research Station, IS-660 Myvatn, Iceland3 Institute of Biology, IS-108 Reykjavik, Iceland4 School of Biological Sciences, Egham, Surrey, UK Extreme fluctuations in midge densities: The possibility of resource-consumer dynamics with alternative dynamical states.
 <br />
 Kaplan, Isaac*,1, Kitchell, James 1, 1 University of Wisconsin-Madison, Madison, WI, 53706 State-space models for Yellowfin Tuna Catch-Effort Data.
 <br />
