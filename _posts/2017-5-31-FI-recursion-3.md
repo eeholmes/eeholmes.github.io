@@ -1,16 +1,18 @@
 ---
-title: 'test mathjax 2'
+title: 'Notes on computing the Fisher Information matrix for MARSS models. Part IV Recursion in Harvey 1989'
 date: 2017-05-31
-permalink: /posts/2017/05/recursion-3/
+permalink: /posts/2017/05/FI-IV/
 ---
-
+<!--
 <div dir="ltr" style="text-align: left;" trbidi="on">
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({ TeX: { equationNumbers: {autoNumber: "AMS"} } });
 </script>
 <script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML' type='text/javascript'>
 </script>
-<i>MathJax and blogger can be iffy.  Try reloading if the equations don't show up.</i><br /><br />
+-->
+
+<i>MathJax can be iffy.  Try reloading if the equations don't show up.</i><br /><br />
 
 Notes on computing the Fisher Information matrix for MARSS models <a href="http://parsimoniouspursuits.blogspot.com/2016/05/notes-on-computing-fisher-information.html">Part I Background</a>, <a href="http://parsimoniouspursuits.blogspot.com/2016/05/notes-on-computing-fisher-information_19.html">Part II Louis 1982</a>,  <a href="http://parsimoniouspursuits.blogspot.com/2016/06/notes-on-computing-fisher-information.html">Part III Overview of Harvey 1989</a>.  <br /><br />
 
@@ -210,8 +212,8 @@ I_{ij}(\theta)_t = I_{ji}(\theta)_t = \frac{1}{2}\left[ tr\left[ F_t^{-1}\frac{\
 Repeat for next t. <br/><br/>
 At the end, \( I_{ij}(\theta) \) is the observed Fisher Information Matrix.
 <br/><br/>
-Note that \(Q\) and \(R\) do not appear in \(\partial v_t/\partial \theta_i\), but all the other parameters do appear. So the second term in \(I_{ij}(\theta\) \) is always zero between \(Q\) and \(R\) and any other parameters.  In the second term, \(u\) and \(a\) do not appear, but every other terms do appear.  So the first term in \(I_{ij}(\theta\) \) is always zero between \(u\) and \(a\) and any other parameters. This means that there is always zero covariance between  \(u\) or \(a\) and \(Q\) or \(R\). But this will not be the case between \(Q\) or \(R\)  and \(B\) or \(Z\).
+Note that \(Q\) and \(R\) do not appear in \(\partial v_t/\partial \theta_i\), but all the other parameters do appear. So the second term in \(I_{ij}(\theta) \) is always zero between \(Q\) and \(R\) and any other parameters.  In the second term, \(u\) and \(a\) do not appear, but every other terms do appear.  So the first term in \(I_{ij}(\theta) \) is always zero between \(u\) and \(a\) and any other parameters. This means that there is always zero covariance between  \(u\) or \(a\) and \(Q\) or \(R\). But this will not be the case between \(Q\) or \(R\)  and \(B\) or \(Z\).
 <br/><br/>
 Part of the motivation of implementing the Harvey (1989) recursion is that currently in MARSS, I use a numerical estimate of the Fisher Information matrix by using one of R's functions to return the Hessian.  But it often returns errors.  I might improve it if I constrained it.  If I am only estimating \(u\), \(a\), \(Q\) and \(R\), I could do a two-step process. Get the Hessian holding the variances at the MLEs and then repeat with \(u\) and \(a\) at the MLEs.
-</div>
+
 
