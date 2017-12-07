@@ -1,6 +1,8 @@
-test mathjax 2
-================
-2017-05-31
+---
+title: 'test mathjax 2'
+date: 2017-05-31
+permalink: /posts/2017/05/recursion-3/
+---
 
 <div dir="ltr" style="text-align: left;" trbidi="on">
 <script type="text/x-mathjax-config">
