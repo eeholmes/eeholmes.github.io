@@ -8,12 +8,13 @@ author_profile: true
 
 <!-- BEGIN CONTENT -->
 <h1>Workshops, Classes and Symposia</h1>
-
+</p>
 <ul>
-<li>UW 2015: SAFS 507 Applied Time Series Analysis for Fisheries and Environmental Sciences, with Eric Ward and Mark Scheuerell. Most of the matrerial is updated from the 2015 course with more of an emphasis on Bayesian model fitting using STAN.  Course website includes recordings of the lectures, lecture ppts, and computer code used in the computer labs.[<a href="https://catalyst.uw.edu/workspace/fish203/35553/243766">ONLINE</a>] Stan code for time series models on Github [here](https://github.com/nwfsc-timeseries/statss)  Lab book for course [here](https://nwfsc-timeseries.github.io/AFTSLabbook/) </li>
+<li>UW 2017: SAFS 507 Applied Time Series Analysis for Fisheries and Environmental Sciences, with Eric Ward and Mark Scheuerell. This year we put more of an emphasis on Bayesian model fitting using STAN.  Course website includes recordings of the lectures, lecture ppts, and computer code used in the computer labs.[<a href="https://catalyst.uw.edu/workspace/fish203/35553/243766">ONLINE</a>] Stan code for time series models on Github [<a href="https://github.com/nwfsc-timeseries/statss">here</a>]  Lab book for course [<a href="https://nwfsc-timeseries.github.io/AFTSLabbook/">here</a>]</li>
+<li>UW 2015: SAFS 507 Applied Time Series Analysis for Fisheries and Environmental Sciences, with Eric Ward and Mark Scheuerell. Most of the matrerial was updated from the 2013 course with more of an emphasis on Bayesian model fitting. [<a href="https://catalyst.uw.edu/workspace/fish203/35553/243766">ONLINE</a>]</li>
 <li>March 24-28, Stockholm, Sweden.  Multivariate Time-Analysis with MARSS. <a href="http://timeseriescourseemb.wordpress.com/">Course website</a></li>
 <li>NWFSC 2013: Creating and sharing R packages with RStudio. [<a href="http://www.iugo-cafe.org/chinook/view_node.php?id=2962">ONLINE</a>]</li>
-<li>UW 2013: SAFS 507 Applied Time Series Analysis for Fisheries and Environmental Sciences, with Eric Ward and Mark Scheuerell. Updated course website above from 2015 course.</li>
+<li>UW 2013: SAFS 507 Applied Time Series Analysis for Fisheries and Environmental Sciences, with Eric Ward and Mark Scheuerell. [<a href="https://catalyst.uw.edu/workspace/fish203/35553/243766">ONLINE</a>]</li>
 <li>NWFSC 2012: R short course developed by Eric Ward and taught by various NWFSC R programmers. [<a href="https://sites.google.com/site/rshortcourse/">ONLINE</a>]</li>
 <li>ESA 2012: "Analysis of Time-Series Data using State-Space and Hierarchical Modeling" with Eric Ward and Mark Scheuerell [<a href="http://www.iugo-cafe.org/chinook/view_node.php?id=2686">ONLINE</a>]</li>
 <li>ESA 2010: "Analysis of Time-Series Data using State-Space and Hierarchical Modeling" with Eric Ward [<a href="http://www.iugo-cafe.org/chinook/view_node.php?id=2416">ONLINE</a>]</li>
@@ -22,13 +23,13 @@ author_profile: true
 <li>ESA 2008: "Analysis of ecological time-series data using state-space models and R" with Eric Ward, Brice Semmens and Yasmin Lucero [<a href="http://www.iugo-cafe.org/chinook/view_node.php?id=1807">ONLINE</a>]</li>
 <li>ESA 2007: "An introduction to the analysis of community time series using Multivariate Autoregressive (MAR) models" with Stephanie Hampden, Mark Scheuerell, and Steve Viscido [<a href="http://iugo-cafe.org/chinook/view_node.php?id=288">ONLINE</a>]</li>
 <li>ESA 2007: "What's the right size ecological model? Views on model complexity and parsimony from different statistical paradigms" with Kevin Gross</li>
-<li>UW 2007-2014: Lecture and PopTools lab on Marine Mammal life-history modeling. The lab uses the free Excel plug-in <a href="http://www.cse.csiro.au/poptools/">PopTools</a> developed by Greg Hood at CSIRO, Canberra, Australia. <a href="Files/Leslie_Matrix_lecture.pdf">Lecture slides</a>, <a href="Files/SSLLab.xls">PopTools lab</a>, and <a href="Files/SSL_lab_background.pdf">Lab background</a></li>
+<li>UW 2007-2014: Lecture and PopTools lab on Marine Mammal life-history modeling. The lab uses the free Excel plug-in <a href="http://www.poptools.org/">PopTools</a> developed by Greg Hood at CSIRO, Canberra, Australia. <a href="Leslie_Matrix_lecture.pdf">Lecture slides</a>, <a href="SSLLab.xls">PopTools lab</a>, and <a href="SSL_lab_background.pdf">Lab background</a></li>
 <li>ESA 2006: "Modern paradigms in population ecology: stochastic, statistical, and inferential" with Brian Dennis <a href="#ESA2006">Abstract and titles</a></li>
 <li>ESA 2005: "An introduction to state-space models for estimation of population viability analysis" [<a href="http://iugo-cafe.org/kalman/view_node.php?id=2">ONLINE</a>]</li>
 <li>ESA 2004: "Emerging approaches for the analysis of stochastic ecological data:  dealing with multiple error sources, hidden states, complex non-linearities, and uncertainty" <a href="#ESA2004">Abstract and titles</a></li>
 <li>UW 2001-2002: Graduate course on ecosystem management, Zoology Dept., University of Washington. Review of the concept of ecosystem management versus its application in actual Ecosystem Management plans and projects.  Co-organized and co-lectured with D. Boersma, M. McClure, P. Kareiva</li>
 <li>UW 2000: Spatial Ecology, graduate course, Zoology Dept. Course I developed on the effect of spatial structure on population and community dynamics.</li>
-<li>UW 1999-1998: Ecology, Zoology Dept. Undergraduate core course for majors. In 1999, I co-taught with Eric Anderson.  Poor students were taught ecology that year by a statistician and theoretician.</li>
+<li>UW 1999-1998: Ecology, Zoology Dept. Undergraduate core course for majors. In 1999, I co-taught with <a href="http://eriqande.netlify.com/">Eric Anderson</a>.  The unfortunate students were taught ecology that year by a statistician and a theoretician.</li>
 <li>UW 1998: Metapopulation biology.  10 wk graduate seminar on Metapopulation modeling. Lecture and student presentation style course using Metapopulation Biology (I. Hanski, ed).</li>
 <li>Imperial College, UK 1996: 6 wk graduate seminar on Cellular Automata models, Silwood Park, Imperial College, UK.</li>
 </ul>

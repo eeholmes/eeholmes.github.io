@@ -35,13 +35,13 @@ encoding: UTF-8
 
 0. Ward, E.J., Semmens, B.X., **Holmes, E.E.**, and K.C. Balcomb. 2011. Effects of multiple levels of social organization on survival and abundance. Conservation Biology 25(2): 350-355.  [PDF](Wardetal2011.pdf)
 
-0. Drake, J., E. A. Berntson, J. M. Cope, R. G. Gustafson, **E. E. Holmes**, P. S. Levin, N. Tolimieri, R. S. Waples, S. Sogard, G. D. Williams. 2010. Status review of five rockfish species in Puget Sound, Washington: Bocaccio (Sebastes paucispinis), canary rockfish (S. pinniger), yelloweye rockfish (S. ruberrimus), greenstriped rockfish (S. elongatus), and redstripe rockfish (S. proriger). U.S. Dept. of Commerce, NOAA Tech. Memo., NMFS-NWFSC-108. [PDF](http://www.nwfsc.noaa.gov/assets/25/7671_03072011_122127_RockfishSRTM108WebFinal.pdf)
+0. Drake, J., E. A. Berntson, J. M. Cope, R. G. Gustafson, **E. E. Holmes**, P. S. Levin, N. Tolimieri, R. S. Waples, S. Sogard, G. D. Williams. 2010. Status review of five rockfish species in Puget Sound, Washington: Bocaccio (Sebastes paucispinis), canary rockfish (S. pinniger), yelloweye rockfish (S. ruberrimus), greenstriped rockfish (S. elongatus), and redstripe rockfish (S. proriger). U.S. Dept. of Commerce, NOAA Tech. Memo., NMFS-NWFSC-108. [PDF](Drakeetal2010.pdf)
 
 0. Ward, E.J., H. Chirrakal, M. Gonzalez-Suarez, D. Aurioles-Gamboa, **E.E. Holmes**, L. Gerber. 2010. Inferring spatial structure from time-series data: using multivariate state-space models to detect metapopulation structure of California sea lions in the Gulf of California, Mexico.  Journal of Applied Ecology 47: 47-56. *Recommended by Faculty of 1000 Biology* [PDF](http://onlinelibrary.wiley.com/doi/10.1111/j.1365-2664.2009.01745.x/epdf)
 
 0. **Holmes, E. E.** and E. J. Ward. 2010. Analysis of multivariate time series using the MARSS package [PDF](http://cran.r-project.org/web/packages/MARSS/vignettes/UserGuide.pdf). User Guide for the [MARSS R package](http://cran.r-project.org/web/packages/MARSS/index.html)
 
-0. Viscido, S. V. and **E. E. Holmes**. 2010. LAMBDA: A software tool for statistical modeling of communities and ecosystems. Environmental Modelling and Software 25(12): 1905-1908.
+0. Viscido, S. V. and **E. E. Holmes**. 2010. Statistical modelling of communities and ecosystems using the LAMDA software tool. Environmental Modelling and Software 25(12): 1905-1908. [PDF](ViscidoHolmes2010.pdf)
 
 0. Ward, E.J., **E. E. Holmes**, and K. C. Balcomb. 2009. Quantifying the effects of prey abundance on killer whale reproduction. Journal of Applied Ecology 46(3): 632-640. [PDF](Wardetal2009.pdf)
 
@@ -53,11 +53,11 @@ encoding: UTF-8
 
 0. **Holmes, E. E.**, J. L. Sabo, S. V. Viscido, and W. Fagan.  2007. A statistical approach to quasi-extinction forecasting. Ecology Letters 10:1182-1198 [PDF](Holmesetal2007.pdf) [List of data sets used](Holmesetal2007_Appendix_S1.pdf)
 
-0. **Holmes, E. E.**, L. Fritz, A. York and K. Sweeney.  2007. Age-structured modeling reveals long-term declines in the natality of western Steller sea lions.  Ecological Applications 17:2214-2232. [PDF](Holmesetal2007_SSL_smaller.pdf) [Appendices](http://esapubs.org/archive/appl/A017/091/default.htm)  *In earlier versions of this paper, we had longer appendices which discussed why we feel that sightability and sex-ratios have not changed sufficiently to explain the dropping pup to nonpup ratio.  This was cut during the 2nd revision process.* [Early draft of appendices](Holmes-Suppl-Info.pdf) [Code to get lambda and scaled Leslie matrices](get_max_eig_for_scaled_life_table.m)
+0. **Holmes, E. E.**, L. Fritz, A. York and K. Sweeney.  2007. Age-structured modeling reveals long-term declines in the natality of western Steller sea lions.  Ecological Applications 17:2214-2232. [PDF](Holmesetal2007ssl.pdf) [Appendices](http://esapubs.org/archive/appl/A017/091/default.htm)  *In earlier versions of this paper, we had longer appendices which discussed why we feel that sightability and sex-ratios have not changed sufficiently to explain the dropping pup to nonpup ratio.  This was cut during the 2nd revision process.* [Early draft of appendices](Holmes-Suppl-Info.pdf) [Code to get lambda and scaled Leslie matrices](get_max_eig_for_scaled_life_table.m)
 
 0. Hauser, D., G. VanBlaricom, **E. Holmes**, and R. Osbourne. 2006. Evaluating the use of whalewatch data in determining killer whale (Orcinus orca) distribution patterns. Journal of Cetacean Research and Management 8: 273-281. [PDF](Hauseretal2007.pdf) 
 
-0. Gustafson,R. G., J. Drake, M. J. Ford, J. M. Myers, **E. E. Holmes**, and R. S. Waples. 2006. Status Review of Cherry Point Pacific Herring (Clupea pallasii) and Update of the Status Review of the Georgia Basin Distinct Population Segment of Pacific Herring Under the U.S. Endangered Species Act. U.S. Dept. Commer., NOAA Tech. Memo.NMFS-NWFSC-76, 182pp. [PDF](http://www.nwfsc.noaa.gov/assets/25/6539_08072006_141228_HerringTM76Final.pdf)
+0. Gustafson,R. G., J. Drake, M. J. Ford, J. M. Myers, **E. E. Holmes**, and R. S. Waples. 2006. Status Review of Cherry Point Pacific Herring (Clupea pallasii) and Update of the Status Review of the Georgia Basin Distinct Population Segment of Pacific Herring Under the U.S. Endangered Species Act. U.S. Dept. Commer., NOAA Tech. Memo.NMFS-NWFSC-76, 182pp. [PDF](Gustafsonetal2006.pdf)
 
 0. Levin, P., **E. E. Holmes**, K. Piner and C. Harvey.  2006.  Shifts in a Pacific Ocean fish assemblage: the potential influence of exploitation.  Conservation Biology 20: 1181-1190.  [PDF](Levinetal2006.pdf)
 
