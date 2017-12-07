@@ -15,54 +15,57 @@ My research is focused on stochastic processes and statistical models for comple
 
 I am part of a NWFSC research group working in the area of hierarchical modeling and inference. Group members include myself, [Eric Ward](https://eric-ward.github.io/), [Mark Scheuerell](http://faculty.washington.edu/scheuerl/), and [Jim Thorson](https://sites.google.com/site/thorsonresearch/), along with their post-docs and students. We develop statistical methods for ecological problems and apply these to resource and endangered species management questions. We collaborate a lot with folks at the University of Washington School for Aquatic and Fisheries Sciences (SAFS).
 
-    <div>
+<style>
+.column {
+    float: left;
+    padding: 10px;
+    width: 25%;
+}
 
-      
-      <div>
-        <h3>Interests</h3>
-        <ul class="ul-interests">
-          
-          <li>Aquatic Ecology</li>
-          
-          <li>Statistical Ecology</li>
-          
-          <li>Conservation Biology</li>
-          
-        </ul>
-      </div>
-      
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+</style>
 
-      
-      <div>
-        <h3>Education</h3>
-        <ul class="ul-edu fa-ul">
-          
-          <li>
-            <i class="fa-li fa fa-graduation-cap"></i>
-            <div class="description">
-              <p class="course">PhD in Zoology, 2002</p>
-              <p class="institution">University of Washington</p>
-            </div>
-          </li>
-          
-          <li>
-            <i class="fa-li fa fa-graduation-cap"></i>
-            <div class="description">
-              <p class="course">MS in Fisheries and Aquatic Science, 1995</p>
-              <p class="institution">Cornell University</p>
-            </div>
-          </li>
-          
-          <li>
-            <i class="fa-li fa fa-graduation-cap"></i>
-            <div class="description">
-              <p class="course">BS in Zoology, 1991</p>
-              <p class="institution">University of Wisconsin</p>
-            </div>
-          </li>
-          
-        </ul>
-      </div>
-      
+<div class="row">
 
-    </div>
+<div class="column">
+<h3>Interests</h3>
+<ul class="ul-interests">
+<li>Population Modeling</li>
+<li>Statistical Ecology</li>
+<li>Conservation Biology</li>
+<li>Time-series Analysis</li>
+<li>Stochastic Processes</li>
+</ul>
+</div>
+
+<div class="column">
+<h3>Education</h3>
+<ul class="ul-edu fa-ul">
+<li>
+<div class="description">
+<p class="course">PhD in Zoology, 1995</p>
+<p class="institution">University of Washington</p>
+</div>
+</li>
+
+<li>
+<div class="description">
+<p class="course">BS in Biology, 1988</p>
+<p class="institution">Stanford University</p>
+</div>
+</li>
+<li>
+<div class="description">
+<p class="course">BS in Mechanical Engineering, 1988</p>
+<p class="institution">Stanford University</p>
+</div>
+</li>
+</ul>
+</div>
+
+</div>
