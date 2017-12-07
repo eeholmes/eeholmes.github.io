@@ -1,6 +1,6 @@
 ---
 title: 'Notes on computing the Fisher Information matrix for MARSS models. Part II Louis 1982'
-date: 2016-05-19
+date: 2016-5-19
 permalink: /posts/2016/05/FI-II/
 tags:
   - Fisher Information
