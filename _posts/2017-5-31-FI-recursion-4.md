@@ -2,6 +2,9 @@
 title: 'Notes on computing the Fisher Information matrix for MARSS models. Part IV Recursion in Harvey 1989'
 date: 2017-05-31
 permalink: /posts/2017/05/FI-IV/
+tags:
+  - Fisher Information
+  - MARSS
 ---
 <!--
 <div dir="ltr" style="text-align: left;" trbidi="on">
@@ -11,6 +14,8 @@ permalink: /posts/2017/05/FI-IV/
 <script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML' type='text/javascript'>
 </script>
 -->
+
+<!-- Write in pure MathJax for GitHub Pages; the commented out part above is if you are embedding this in another website. -->
 
 <i>MathJax can be iffy.  Try reloading if the equations don't show up.</i><br /><br />
 
