@@ -7,15 +7,13 @@ tags:
   - MARSS
 ---
 
+<div dir="ltr" style="text-align: left;" trbidi="on">
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({ TeX: { equationNumbers: {autoNumber: "AMS"} } });
 </script>
 <script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML' type='text/javascript'>
 </script>
-
-<!-- Write in pure MathJax for GitHub Pages; the commented out part above is if you are embedding this in another website. -->
-
-<i>MathJax can be iffy.  Try reloading if the equations don't show up.</i><br /><br />
+<i>MathJax can be iffy and slow.  Try reloading if the equations don't show up.</i><br /><br />
 
 Notes on computing the Fisher Information matrix for MARSS models <a href="http://parsimoniouspursuits.blogspot.com/2016/05/notes-on-computing-fisher-information.html">Part I Background</a>, <a href="http://parsimoniouspursuits.blogspot.com/2016/05/notes-on-computing-fisher-information_19.html">Part II Louis 1982</a>,  <a href="http://parsimoniouspursuits.blogspot.com/2016/06/notes-on-computing-fisher-information.html">Part III Overview of Harvey 1989</a>.  <br /><br />
 
@@ -23,7 +21,7 @@ Part III Introduced the approach of Harvey (1989) for computing the expected and
 
 <h2>Derivatives needed for the 2nd derivative of the conditional log-likelihood</h2>
 
-Equations 3.4.66 and 3.4.69 in Harvey (1989) have first and second derivatives of \( v_{t} \) and \( F_{t} \) with respect to \( \theta_i \) and \( \theta_j \). These in turn involve derivatives of the parameter matrices and of \( \tilde{x}_{t|t} \) and \( \tilde{V}_{t|t} \).  Harvey shows all the first derivatives, and it is easy to compute the second derivatives by taking the derivatives of the first. 
+Equations 3.4.66 and 3.4.69 in Harvey (1989) have first and second derivatives of \(v_t\) and \(F_t\) with respect to \( \theta_i \) and \(\theta_j\). These in turn involve derivatives of the parameter matrices and of \(\tilde{x}_{t|t}\) and \(\tilde{V}_{t|t}\).  Harvey shows all the first derivatives, and it is easy to compute the second derivatives by taking the derivatives of the first. 
 <br /><br />
 The basic idea of the recursion is simple, if a bit tedious.  
 <ul>
@@ -158,7 +156,7 @@ Then we take the derivative of this to get the second partial derivative.
  B_t \frac{\partial^2 \tilde{x}_{t-1|t-1}}{\partial\theta_i \partial\theta_j}
 \end{align}
 In the equations, \(\tilde{x}_{t|t}\) is output by the Kalman filter.  In MARSSkf, it is called xtt[,t]. \(\tilde{x}_{t-1|t-1}\) would be called xtt[,t-1]. The derivatives of \(\tilde{x}_{t-1|t-1}\) is from the next part of the recursion (below).
-<br/><br/>
+</br></br>
 The derivative of \(\tilde{V}_{t|t-1}\) is (3.4.73b in Harvey)
 \begin{equation} \label{derivVtt1}
 \frac{\partial \tilde{V}_{t|t-1}}{\partial\theta_i } =
@@ -218,5 +216,5 @@ At the end, \( I_{ij}(\theta) \) is the observed Fisher Information Matrix.
 Note that \(Q\) and \(R\) do not appear in \(\partial v_t/\partial \theta_i\), but all the other parameters do appear. So the second term in \(I_{ij}(\theta) \) is always zero between \(Q\) and \(R\) and any other parameters.  In the second term, \(u\) and \(a\) do not appear, but every other terms do appear.  So the first term in \(I_{ij}(\theta) \) is always zero between \(u\) and \(a\) and any other parameters. This means that there is always zero covariance between  \(u\) or \(a\) and \(Q\) or \(R\). But this will not be the case between \(Q\) or \(R\)  and \(B\) or \(Z\).
 <br/><br/>
 Part of the motivation of implementing the Harvey (1989) recursion is that currently in MARSS, I use a numerical estimate of the Fisher Information matrix by using one of R's functions to return the Hessian.  But it often returns errors.  I might improve it if I constrained it.  If I am only estimating \(u\), \(a\), \(Q\) and \(R\), I could do a two-step process. Get the Hessian holding the variances at the MLEs and then repeat with \(u\) and \(a\) at the MLEs.
-
+</div>
 
