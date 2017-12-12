@@ -7,3 +7,12 @@ redirect_from:
   - /resume
 ---
 
+<style>
+ul {
+  list-style-type: none;
+}
+</style>
+
+- Test
+
+- Test
