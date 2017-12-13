@@ -65,7 +65,8 @@ The following is equations 3.1, 3.2 and 3.3 in Louis (1982) translated to the MA
 Let's call the full state at time t $\{x ,y\}$, the value of the $X$ and $Y$ at all times t. The full state can be an unconditional random variable, $\{X,Y\}$ or a conditional random variable $\{X,y\}$ (conditioned on $Y=y$. Page 227 near top of Louis 1982 becomes
 \begin{equation}\label{lambdaz} 
 \lambda(x,y,\theta) = \log\{ f_{XY}(x,y|\theta) \} 
-\end{equation}\begin{equation}\label{lambday}
+\end{equation}
+\begin{equation}\label{lambday}
 \lambda^*(y,\theta) = \log\{ f_Y(y|\theta) \} = \log \int_X f_{XY}(x,y|\theta)dx 
 \end{equation}
 $f(.|\theta)$ is the probability distribution of the random variable conditioned on $\theta$. $\lambda$ is the full likelihood; 'full' means is includes both $x$ and $y$. $\lambda^*$ is the likelihood of $y$ alone. It is defined by the marginal distribution of $y$ \[1\]; the integral over $X$ on the right side of \ref{lambday}. For a MARSS model, the data likelihood can be written easily as a function of the Kalman filter recursions (which is why you can write a recursion for the information matrix based on derivatives of $\lambda^*$; see Part III).
@@ -196,7 +197,8 @@ The negative of this is the observed Fisher Information (\ref{obsFI32}) which gi
 Louis states that "The first term in (3.2) is the conditional expected full data observed information matrix, while the last two produce the expected information for the conditional distribution of X given $X \in R$." His X is my $\{X,Y\}$ and $X \in R$ means $Y=y$ in my context. He writes this in simplified form with $X$ replaced by $XY$:
 \begin{equation}
 I_Y = I_{XY} - I_{X|Y}
-\end{equation}\begin{equation}
+\end{equation}
+\begin{equation}
 \mathcal{I}(\theta,y) = E_{X|y,\theta} [\mathcal{I}(\theta,X,y)] - I_{X|Y}
 \end{equation}
 Let's see how this is the case.
