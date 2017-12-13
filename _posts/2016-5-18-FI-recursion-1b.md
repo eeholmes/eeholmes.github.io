@@ -18,14 +18,6 @@ MathJax.Hub.Config({
 
 *MathJax can be iffy. Try reloading if the equations don't show up.*
 
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  TeX: { equationNumbers: {autoNumber: "AMS"} },
-  tex2jax: {inlineMath: [['$$','$$'], ['\\(','\\)']]}
-});
-</script>
-<script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML' type='text/javascript'>
-</script>
 Background on Fisher Information is in [Part I](http://parsimoniouspursuits.blogspot.com/2016/05/notes-on-computing-fisher-information.html).
 
 Computing Fisher Information
