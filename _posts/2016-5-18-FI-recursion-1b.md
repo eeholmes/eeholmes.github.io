@@ -42,10 +42,13 @@ It would be nice if one could use the following to compute the observed Fisher I
 $Q(\theta | \hat{\theta})$ is our score function at the end of the EM algorithm, when $\theta = \hat{\theta}$. $Q$ is a function of $\theta$, the model parameters, and will have terms like $E(X|Y=y, \hat{\theta})$, the expected value of $X$ conditioned on $Y=y$ and the MLE. Those are the expectations coming out of the Kalman filter-smoother. We take the second derivative of $Q$ with respect to $\theta$. That is straight-forward for the MARSS equations. You take the first derivative of $Q$ with respect to $\theta$, which you already have from the update or M-step equations, and take the derivative of that with respect to $\theta$.
 
 Conceptually, this
+
 \begin{equation}
 -\left.\frac{\partial^2 Q(\theta|\hat{\theta})}{\partial \theta^2} \right|_{\theta = \hat{\theta}} = \left.\frac{\partial^2 E_{X|y,\hat{\theta}}[\log f(X,y|\theta)]}{\partial \theta^2}\right|_{\theta=\hat{\theta}}
 \end{equation}
+
 looks a bit like the observed Fisher Information:
+
 \begin{equation}\label{obsFI}
-\mathcal{I}(\hat{\theta},y) = - \left.\frac{\partial^2\log f(y|\theta)}{\partial \theta^2} \right|_{\theta=\hat{\theta}}
+\mathcal{I}(\hat{\theta},y) = -\left.\frac{\partial^2\log f(y|\theta)}{\partial \theta^2} \right|_{\theta=\hat{\theta}}
 \end{equation}
