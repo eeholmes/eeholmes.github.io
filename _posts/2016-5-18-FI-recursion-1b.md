@@ -1,11 +1,11 @@
 ---
 title: "Test big"
 output:
-  eehutils::jekyll_md_document: default
+  pdf_document: default
   github_document: default
   html_fragment: null
   md_document: default
-  pdf_document: default
+  eehutils::jekyll_md_document: default
 date: '2016-05-18'
 tags:
 - Fisher Information
@@ -32,30 +32,29 @@ So how do we compute $I(\hat{\theta})$ or $\mathcal{I}(\hat{\theta},y)$ (in Part
 The 'score' function used in the EM algorithm for a MARSS model is
 <div>\begin{equation} 
 Q(\theta | \theta_j) = E_{X|y,\theta_j } [\log f_{XY}(X,y|\theta) ]
-\end{equation}</div>
+\end{equation}</div></div>
 It is the expected value taken over the hidden random variable $X$ of the full data log-likelihood at $Y=y$ (3); full means it is a function of all the random variables in the model,  which includes the hidden or latent variables.
 $x, y$ is the full 'data', the left side of the $x$ state equation and the $y$ observation equation.  We take the expectation of this full data likelihood conditioned on the observed data $y$ and $\theta_j$ which is the value of $\theta$ at the j-th iteration of the EM algorithm. Although $Q(\theta | \theta_j)$ looks a bit hairy, actually the full-data likelihood may be very easy to write down and considerably easier than the data likelihood $f(y|\theta)$.  The hard part is often the expectation step, however for MARSS models the Kalman filter-smoother algorithm computes the expectations involving $X$ and Holmes (2010) shows how to compute the expectations involving $Y$, which comes up when there are missing values in the dataset (missing time steps, say).  
 
 In the M-step of the EM algorithm, we take the derivative of $Q(\theta | \theta_j)$ with respect to $\theta$ and solve for the $\theta$ where
-\begin{equation}
+<div>\begin{equation}
 \frac{\partial Q(\theta | \theta_j ) }{\partial \theta} = 0.
-\end{equation}
+\end{equation}</div>
 It would be nice if one could use the following to compute the observed Fisher Information 
-\begin{equation}
+<div>\begin{equation}
 -\left.\frac{\partial^2 Q(\theta | \hat{\theta}) }{\partial \theta^2 } \right|_{\theta = \hat{\theta} }
-\end{equation}
+\end{equation}</div>
 $Q(\theta | \hat{\theta})$ is our score function at the end of the EM algorithm, when $\theta = \hat{\theta}$.  $Q$ is a function of $\theta$, the model parameters, and will have terms like $E(X|Y=y, \hat{\theta})$, the expected value of $X$ conditioned on $Y=y$ and the MLE.  Those are the expectations coming out of the Kalman filter-smoother.  We take the second derivative of $Q$ with respect to $\theta$.  That is straight-forward for the MARSS equations.  You take the first derivative of $Q$ with respect to $\theta$, which you already have from the update or M-step equations, and take the derivative of that with respect to $\theta$.
 
 Conceptually, this
-<div>
-\begin{equation}
+<div>\begin{equation}
 -\left.\frac{\partial^2 Q(\theta|\hat{\theta})}{\partial \theta^2} \right|_{\theta = \hat{\theta}} = \left.\frac{\partial^2 E_{X|y,\hat{\theta}}[\log f(X,y|\theta)]}{\partial \theta^2}\right|_{\theta=\hat{\theta}}
-\end{equation}
-</div>
+\end{equation}</div>
+
 looks a bit like the observed Fisher Information:
-\begin{equation}\label{obsFI}
+<div>\begin{equation}\label{obsFI}
 \mathcal{I}(\hat{\theta},y) = - \left.\frac{\partial^2\log f(y|\theta)}{\partial \theta^2} \right|_{\theta=\hat{\theta}}
-\end{equation}
+\end{equation}</div>
 except that instead of the data likelihood $f(y|\theta)$, we use the expected likelihood $E_{X|y,\hat{\theta} } [\log f_{XY}(X,y|\theta) ]$.  The expected likelihood is the full likelihood with the $X$ and $XX^\top$ random variables replaced by their expected values assuming $\theta = \hat{\theta}$ and $Y=y$. The problem is that $E_{X|y,\theta } [\log f(X,y|\theta) ]$ is a function of $\theta$ and by fixing it at $\hat{\theta}$ we are not accounting for the uncertainty in that expectation.  What we need is something like
 
 Information with $X$ fixed at expected value - Information on expected value of $X$
@@ -69,20 +68,20 @@ The following is equations 3.1, 3.2 and 3.3 in Louis (1982) translated to the MA
 
 Let's call the full state at time t $\{x ,y\}$, the value of the $X$ and $Y$ at all times t. The full state can be an unconditional random variable, $\{X,Y\}$ or a conditional random variable $\{X,y\}$ (conditioned on $Y=y$.
 Page 227 near top of Louis 1982 becomes
-\begin{equation}\label{lambdaz} 
+<div>\begin{equation}\label{lambdaz} 
 \lambda(x,y,\theta) = \log\{ f_{XY}(x,y|\theta) \} 
-\end{equation}
+\end{equation}</div>
 
-\begin{equation}\label{lambday}
+<div>\begin{equation}\label{lambday}
 \lambda^*(y,\theta) = \log\{ f_Y(y|\theta) \} = \log \int_X f_{XY}(x,y|\theta)dx 
-\end{equation}
+\end{equation}</div>
 $f(.|\theta)$ is the probability distribution of the random variable conditioned on $\theta$. $\lambda$ is the full likelihood; 'full' means is includes both $x$ and $y$.  $\lambda^*$ is the likelihood of $y$ alone.  It is defined by the marginal distribution of $y$ (1); the integral over $X$ on the right side of \ref{lambday}.  For a MARSS model, the data likelihood can be written easily as a function of the Kalman filter recursions (which is why you can write a recursion for the information matrix based on derivatives of $\lambda^*$; see Part III).
 
 Next equation down.  Louis doesn't say this and his notation is not totally clear, but the expectation right above section 3 (and in his eqn 3.1) is a conditional expectation. This is critical to know to follow his derivation of equation 3.1 in the appendix. $\theta_j$ is his $\theta(0)$; it is the value of $\theta$ at the last EM iteration.
 
-\begin{equation}\label{expLL}
+<div>\begin{equation}\label{expLL}
 E_{X|y,\theta_j}[ \lambda( X, y, \theta)] = \int_X \lambda( X, y, \theta) f_{X|Y}(x|Y=y, \theta_j) dx 
-\end{equation}
+\end{equation}</div>
 My 'expectation' notation is a little different than Louis'.  The subscript on the $E$ shows what is being integrated ($X$) and what are the conditionals.  
 
 The term $f_{X|Y}(x|Y=y,\theta_j)$ is the probability of $x$ conditioned on $Y=y$ and $\theta=\theta_j$.  The subscript on $f$ indicates that we are using the probability distribution of $x$ conditioned on $Y=y$.
@@ -96,62 +95,62 @@ Before moving on with the derivation, notice that in \ref{expLL}, we fix $y$, th
 Now we can derive equation 3.1 in Louis (1982).  I am going to combine the info in Louis' section 3.1 and the appendix on the derivation of 3.1.  Before proceeding, Louis is using 'denominator' format for his matrix derivations; I normally use denominator format but I will follow his convention here.  $\theta$ is a column vector of parameters and the likelihood $f(.|\theta)$ is scalar.  Under 'denominator format', $f^\prime(.|\theta) = df(.|\theta)/d\theta)$ will be a column vector. $f^{\prime\prime}(.|\theta) = d^2f(.|\theta)/d\theta d\theta^\top)$ will be a matrix in Hessian format (the first $d\theta$ goes 1 to $n$ down columns and the second $d\theta$ does 1 to $n$ across rows). 
 
 Take the derivative of \ref{lambdaz} with respect to $\theta$ to define $S(z,\theta)$.
-\begin{equation}
+<div>\begin{equation}
 S(x,y,\theta)=\lambda^\prime(x,y,\theta)=\frac{d \log\{f_{XY}(x,y|\theta)\} }{d \theta}= 
 \frac{df(x,y|\theta)/d\theta}{f(x,y|\theta)} =
 \frac{f^\prime(x,y|\theta)}{f(x,y|\theta)}\label{Sz}
-\end{equation}
+\end{equation}</div>
 Take the derivative of the far right side of \ref{lambday} with respect to $\theta$ to define $S^*(y,\theta)$.  For the last step (far right), I used $f_Y(y|\theta) = \int_X f_{XY}(x,y|\theta)dx$, the definition of the marginal distribution [1], to change the denominator.
 
-\begin{equation}\label{Sy}
+<div>\begin{equation}\label{Sy}
 S^*(y,\theta)=\lambda^{*\prime}(y,\theta)=\frac{ d \log \int_X f_{XY}(x,y|\theta)dx  }{d \theta} = 
 \frac{ \int_X f_{XY}^\prime(x,y|\theta) dx }{ \int_X f_{XY}(x,y|\theta)dx } =
 \frac{ \int_X f_{XY}^\prime(x,y|\theta) dx }{ f_Y(y|\theta) } 
-\end{equation}
+\end{equation}</div>
 Now multiply the integrand in the numerator by $f_{XY}(x,y|\theta)/f_{XY}(x,y|\theta)$.  The last step (far right) uses \ref{Sz}.
-\begin{equation}\label{intfprime}
+<div>\begin{equation}\label{intfprime}
 \begin{gathered}
 \int_X f_{XY}^\prime(x,y|\theta) dx   =
 \int_X \frac{f_{XY}^\prime(x,y|\theta)f_{XY}(x,y|\theta)}{f_{XY}(x,y|\theta)} dx = \\
 \int_X \frac{f_{XY}^\prime(x,y|\theta)}{f_{XY}(x,y|\theta)}f_{XY}(x,y|\theta) dx =
 \int_X S(x,y,\theta) f_{XY}(x,y|\theta) dx 
 \end{gathered}
-\end{equation}
+\end{equation}</div>
 We  combine \ref{Sy} and \ref{intfprime}:
-\begin{equation}\label{Sstar}
+<div>\begin{equation}\label{Sstar}
 S^*(y,\theta)=
 \frac{ \int_X f_{XY}^\prime(x,y|\theta) dx }{ f_Y(y|\theta) } =
 \int_X S(x,y,\theta)  \frac{ f_{XY}(x,y|\theta) }{ f_Y(y|\theta) } dx =
 \int_X S(x,y,\theta) f_{X|Y}(x|Y=y,\theta) dx
-\end{equation}
+\end{equation}</div>
 The second to last step used the fact that $f_Y(y|\theta)$ does not involve $x$ thus we can bring it into the integral.  This gives us $f_{XY}(x,y|\theta)/f_Y(y|\theta)$. This is the  probability of $x$ conditioned on $Y=y$ (2).
 
 The last step in the derivation of equation 3.1 is to recognize that the far right side of \ref{Sstar} is the conditional expectation in 3.1.  Louis does not actually write out the expectation in 3.1 and the notation is rather vague. But the expectation in equation 3.1 is the conditional expectation on the far right side of \ref{Sstar}.
-\begin{equation}\label{Louise3p1}
+<div>\begin{equation}\label{Louise3p1}
 S^*(y,\theta)=\int_X S(x,y,\theta) f_{X|Y}(x|Y=y,\theta) dx=E_{X|y,\theta} [ S(X,y,\theta) ]
-\end{equation}
+\end{equation}</div>
 using my notation for a conditional expectation which slightly different than Louis'.
 At the MLE, $S^*(y,\hat{\theta})=0$ since that is how the MLE is defined (it's where the derivative of the data likelihood is zero).
 
 ### Derivation of equation 3.2 in Louis 1982
 
 The meat of Louis 1982 is equation 3.2.  The observed Fisher Information matrix \ref{obsFI} is 
-\begin{equation}\label{obsFI32}
+<div>\begin{equation}\label{obsFI32}
  \mathcal{I}(\theta,y) = B^*(y,\theta) = -S^\prime(x,y,\theta) = - \lambda^{*\prime\prime}(y,\theta) = -\frac{\partial^2\log f_Y(y|\theta)}{\partial \theta \partial \theta^\top} 
-\end{equation}
+\end{equation}</div>
 The first 3 terms on the left are just show that all are notation that refers to the observed Fisher Information.  The 4th term is one of the ways we can compute the observed Fisher Information at $\theta$ and the far right term shows that derivative explicitly.  
 
 We start by taking the second derivative of \ref{lambdaz} with respect to $\theta$ to define $B(x,y,\theta)$. We use $S^\prime(z,\theta)$ as written in \ref{Sz}.
-\begin{equation}\label{B1}
+<div>\begin{equation}\label{B1}
 \mathcal{I}(\theta,x,y) = B(x,y,\theta)=-\lambda^{\prime\prime}(x,y,\theta) = -S^\prime(x,y,\theta) = 
 -\frac{d[f_{XY}^\prime(x,y|\theta)/f_{XY}(x,y|\theta)]}{d \theta^\top}
-\end{equation}
+\end{equation}</div>
 The transpose of $d\theta$ is because we are taking the second derivative $d^2 l/d\theta d\theta^\top$ (the Hessian of the log-likelihood); $d\theta d\theta$ wouldn't make sense as that that would be a column vector times a column vector.
 
 To do the derivative on the far right side of \ref{B1}, we first need to recognize the form of the equation.  $f_{XY}^\prime(x,y|\theta)$ is a column vector and $f(x,y|\theta)$ is a scalar, thus the thing we are taking the derivative of has the form $\overrightarrow{h}(\theta)/g(\theta)$; the arrow over $h$ is indicating that it is a (column) vector while $g()$ is a scalar.  Using the chain rule for vector derivatives, we have
-\begin{equation}
+<div>\begin{equation}
 \frac{ d (\overrightarrow{h}(\theta)/g(\theta))}{d \theta^\top} = \frac{d\overrightarrow{h}(\theta)}{d \theta^\top}\frac{1}{g(\theta)} - \frac{\overrightarrow{h}(\theta)}{ g(\theta)^2 }\frac{ g(\theta) }{ d \theta^\top }
-\end{equation}
+\end{equation}</div>
 Thus (notice I'm writing the equation for the negative of $B(x,y,\theta)$ ),
 
 \begin{align}\label{B2}
@@ -176,71 +175,71 @@ S^*(y|\theta)S^*(y|\theta)^\top
 \end{align}
 
 The last substitution uses \ref{Sy}.  Thus,
-\begin{equation}\label{B4}
+<div>\begin{equation}\label{B4}
 \lambda^{*\prime\prime}(y,\theta)=
 \frac{\int_X f_{XY}^{\prime\prime}(x,y|\theta) dx }{f_Y(y|\theta)}-
 S^*(y|\theta)S^*(y|\theta)^\top
-\end{equation}
+\end{equation}</div>
 
 
 Let's look at the integral of the second derivative of $f_{XY}(x,y|\theta)$ in \ref{B4}:
 
-\begin{equation}\label{B5}
+<div>\begin{equation}\label{B5}
 \begin{gathered}
 \left( \int_X f_{XY}^{\prime\prime}(x,y|\theta) dx \middle/ f_Y(y|\theta) \right) = \\
  \int_X \frac{f_{XY}^{\prime\prime}(x,y|\theta) dx}{ f_{XY}(x,y|\theta) }\frac{f_{XY}(x,y|\theta)}{ f_Y(y|\theta)} dx=
  \int_X \frac{f_{XY}^{\prime\prime}(x,y|\theta) dx}{ f_{XY}(x,y|\theta) }f_{X|Y}(x|Y=y,\theta) dx
 \end{gathered}
-\end{equation}
+\end{equation}</div>
 
 This is the conditional expectation $E_{X|y,\theta} [ f_{XY}^{\prime\prime}(x,y|\theta) dx/f_{XY}(x,y|\theta) ]$ that we see 5 lines above the references in Louis (1982).  Using \ref{B2} we can write this in terms of $B(x,y|\theta)$:
-\begin{equation}\label{B6}
+<div>\begin{equation}\label{B6}
 \int_X \frac{f_{XY}^{\prime\prime}(z|\theta) dx}{ f_{XY}(x,y|\theta) } = -B(x,y|\theta)+S(x,y|\theta)S(x,y|\theta)^\top
-\end{equation}
+\end{equation}</div>
 
 Combining \ref{B4}, \ref{B5}, and \ref{B6}, we can write the equation above the references in Louis:
-\begin{equation}\label{B7}
+<div>\begin{equation}\label{B7}
 \lambda^{*\prime\prime}(y,\theta)= E_{X|y,\theta} [ - B(X,y|\theta)+S(X,y|\theta)S(X,y|\theta)^\top]-S^*(y|\theta)S^*(y|\theta)^\top
-\end{equation}
+\end{equation}</div>
 The negative of this is the observed Fisher Information (\ref{obsFI32}) which gives us equation 3.2 in Louis (1982):
-\begin{equation}\label{Louismain}
+<div>\begin{equation}\label{Louismain}
 \mathcal{I}(\theta,y) = E_{X|y,\theta} [ B(X,y|\theta)] - E_{X|y,\theta} [ S(X,y|\theta)S(X,y|\theta)^\top]+S^*(y|\theta)S^*(y|\theta)^\top
-\end{equation}
+\end{equation}</div>
 
 ### Derivation of equation 3.3 in Louis 1982
 
 Louis states that  "The first term in (3.2) is the conditional expected full data observed information matrix, while the last two produce the expected information for the conditional distribution of X given $X \in R$."  His X is my  $\{X,Y\}$ and $X \in R$ means $Y=y$ in my context.  He writes this in simplified form with $X$ replaced by $XY$: 
-\begin{equation}
+<div>\begin{equation}
 I_Y = I_{XY} - I_{X|Y}
-\end{equation}
+\end{equation}</div>
 
-\begin{equation}
+<div>\begin{equation}
 \mathcal{I}(\theta,y) = E_{X|y,\theta} [\mathcal{I}(\theta,X,y)] - I_{X|Y}
-\end{equation}
+\end{equation}</div>
 Let's see how this is the case.
 
 The full data observed information matrix is 
-\begin{equation}
+<div>\begin{equation}
 \mathcal{I}(\theta,x,y) = -\lambda^{\prime\prime}(x,y|\theta) = B(x,y,\theta)
-\end{equation}
+\end{equation}</div>
 This is simply the definition that Louis gives to $B(x,y,\theta)$. We do not know $x$ so we do not know the full data observed Information matrix.  But we have the distribution of $x$ conditioned on our data $y$.
-\begin{equation}
+<div>\begin{equation}
 E_{X|y,\theta} [ B(X,y|\theta)]
-\end{equation}
+\end{equation}</div>
 is thus the expected full data observed information matrix conditioned on our observed data $y$.
 So this is the first part of his statement.<br /><br />
 The second part of his statement takes a bit more effort to work out.  First we substitute $S^*(y|\theta)$ with 
 $E_{X|y,\theta} [ S(X,y|\theta) ]$ from \ref{Louise3p1}. This gives us this:
-\begin{equation}\label{ES1}
+<div>\begin{equation}\label{ES1}
 \begin{gathered}
  E_{X|y,\theta} [ S(X,y|\theta)S(X,y|\theta)^\top ]-S^*(y|\theta)S^*(y|\theta)^\top = \\
 E_{X|y,\theta} [ S(X,y|\theta)S(X,y|\theta)^\top ]-E_{X|y,\theta} [ S(X,y|\theta) ]E_{X|y,\theta} [ S(X,y|\theta)^\top ]
 \end{gathered}
-\end{equation}
+\end{equation}</div>
 Using the computational form of the variance, $var(X)=E(XX)-E(X)E(X)$, we can see that \ref{ES1} is the conditional variance of $S(X,y|\theta)$.
-\begin{equation}
+<div>\begin{equation}
 var_{X|y,\theta}( S(X,y|\theta) )
-\end{equation}
+\end{equation}</div>
 But the variance of the first derivative of $f^\prime(X|\theta)$ is the <em>expected</em> Fisher Information of $X$ (4).  In this case, it is the expected Fisher Information of the hidden state $X$, where we specify that $X$ has the conditional distribution $f_{X|Y} (X | Y=y,\theta)$.  Thus we have the second part of Louis' statement.
 
 
@@ -249,13 +248,13 @@ Relating Louis 1982 to the update equations in the MARSS EM algorithm
 
 
 The main result in Louis (1982) (\ref{Louismain}) can be written
-\begin{equation}\label{Louismain2}
+<div>\begin{equation}\label{Louismain2}
 \mathcal{I}(\theta,y) = E_{X|y,\theta} [ B(X,y|\theta)] - var_{X|y,\theta} [ S(X,y|\theta) ]
-\end{equation}
+\end{equation}</div>
 The M-step of the EM algorithm involves the first derivative of the log-likelihood with respect to $\theta$, $S(X,y|\theta)$, since it involves setting this derivative to zero:
-\begin{equation} 
+<div>\begin{equation} 
 Q^\prime(\theta | \theta_j) = d( E_{X|y,\theta_j } [\log f_{XY}(X,y|\theta) ])/d\theta = E_{X|y,\theta_j } [\log f^\prime_{XY}(X,y|\theta) ] = E_{X|y,\theta_j } [ S(X,y|\theta) ]
-\end{equation} 
+\end{equation}</div> 
 With the MARSS model, $S(X,y|\theta)$ is analytical and we can also compute $B(X,y|\theta)$, the second derivative, analytically.  
 
 The difficulty arises with this term: $var_{X|y,\theta} [ S(X,y|\theta) ]$.  The $S(X,y|\theta)$ is a summation from $t=1$ to $T$ that involves $X_t$ or $X_t X_{t-1}^top$ for some parameters. When we do the cross-product, we will end up with terms like  $E[ X_t X_{t+k}^\top ]$ and $E[ X_t X_t^\top X_{t+k}X_{t+k}^\top ]$.  The latter is not a problem; all the random variables in a MARSS models are multivariate normal and the k-th central moments can be expressed in terms of the first and second moments (5), but that will still leave us with terms like $E[ X_t X_{t+k}^\top ]$, which are the smoothed covariance between $X$ at time $t$ and $t+k$ conditioned on all the data ($t=1:T$).  
@@ -275,21 +274,21 @@ Footnotes
 
 1. Given a joint probability distribution of $\{X,Y\}$, the marginal distribution of $Y$ is $\int_X f(X,Y) dx$.  Discussions of the estimators for MARSS models often use the property of the marginal distributions of a multivariate normal without actually stating that this property is being used.  The step in the derivation will just say, 'Thus' with no indication of what property was just used. <br />Reviewed here: http://fourier.eng.hmc.edu/e161/lectures/gaussianprocess/node7.html 
 If you have a joint likelihood of some random variables, and you want the likelihood of a subset of those random variables, then you compute the marginal distribution.  i.e. you integrate over the random variables you want to get rid of:
-\begin{equation}
+<div>\begin{equation}
 L(\theta | y) ] = \int_X L(\theta | X,Y) p(x|Y=y, \theta_j) dx |_{Y=y}.
-\end{equation}
+\end{equation}</div>
 So we integrate out $X$ from the full likelihood and then set $Y=y$ to get the 
 
 The marginal likelihood is a little different.  The marginal likelihood is used when you want to get rid of some of the parameters, nuisance parameters.  The integral you use is different: 
-\begin{equation}
+<div>\begin{equation}
 L(\theta_1|y) = \int_{\theta_2} p(y|\theta_1,\theta_2) p(\theta_2|\theta_1)d\theta_2 
-\end{equation}
+\end{equation}</div>
 This presumes that you have $p(\theta_2|\theta_1)$.
 
 The expected likelihood is different yet again:  
-\begin{equation}
+<div>\begin{equation}
 E_{X,Y|Y=y,\theta_j} [L(\theta | X,Y) ] = \int_X L(\theta | X,Y) p(x|Y=y, \theta_j) dx.
-\end{equation}
+\end{equation}</div>
 On the surface it looks like the equation for $L(\theta|y)$ but it is different.  $\theta_j$ is not $\theta$.  It is the parameter value at which we are computing the expected value of $X$.  Maximizing the $E_{X,Y|Y=y,\theta_j} [L(\theta | X,Y) ]$ will increase the likelihood but will not take you to the MLE. You have to imbed this maximization in the EM algorithm that walks up the likelihood surface.
 
 2. $P(A|B) = P(A \cup B)/P(B)$
