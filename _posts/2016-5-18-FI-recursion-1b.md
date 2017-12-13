@@ -16,7 +16,7 @@ permalink: /posts/2016/05/test-big/
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
   TeX: { equationNumbers: {autoNumber: "AMS"} },
-  tex2jax: {inlineMath: [['$$','$$'], ['\\(','\\)']]}
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
 });
 </script>
 <script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML' type='text/javascript'>
