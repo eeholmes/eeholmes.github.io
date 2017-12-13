@@ -43,8 +43,7 @@ $Q(\theta | \hat{\theta})$ is our score function at the end of the EM algorithm,
 
 Conceptually, this
 \begin{equation}
--\left.\frac{\partial^2 Q(\theta|\hat{\theta})}{\partial \theta^2}\right|_{\theta = \hat{\theta}}
-= \left.\frac{\partial^2 E_{X|y,\hat{\theta}}[\log f(X,y|\theta)]}{\partial \theta^2}\right|_{\theta=\hat{\theta}}
+-\left.\frac{\partial^2 Q(\theta|\hat{\theta})}{\partial \theta^2} \right|_{\theta = \hat{\theta}} = \left.\frac{\partial^2 E_{X|y,\hat{\theta}}[\log f(X,y|\theta)]}{\partial \theta^2}\right|_{\theta=\hat{\theta}}
 \end{equation}
 looks a bit like the observed Fisher Information:
 \begin{equation}\label{obsFI}
@@ -74,7 +73,7 @@ Next equation down. Louis doesn't say this and his notation is not totally clear
 \begin{equation}\label{expLL}
 E_{X|y,\theta_j}[ \lambda( X, y, \theta)] = \int_X \lambda( X, y, \theta) f_{X|Y}(x|Y=y, \theta_j) dx 
 \end{equation}
-My 'expectation' notation is a little different than Louis'. The subscript on the E shows what is being integrated ($X$ ) and what are the conditionals.
+My 'expectation' notation is a little different than Louis'. The subscript on the $E$ shows what is being integrated ($X$) and what are the conditionals.
 
 The term $f_{X|Y}(x|Y=y,\theta_j)$ is the probability of $x$ conditioned on $Y=y$ and $\theta=\theta_j$. The subscript on $f$ indicates that we are using the probability distribution of $x$ conditioned on $Y=y$. For the EM algorithm, we need to distinguish between $\theta$ and $\theta_j$ because we maximize with respect to $\theta$ not $\theta_j$. If we just need the expectation at $\theta$, no maximization step, then we just use $\theta$ in $f(.|\theta)$ and the subscript on E.
 
