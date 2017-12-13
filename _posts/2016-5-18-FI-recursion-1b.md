@@ -27,7 +27,7 @@ Background on Fisher Information is in [Part I](http://parsimoniouspursuits.blog
 Computing Fisher Information
 ======================
 
-So how do we compute \(I(\hat{\theta})\) or \(\mathcal{I}(\hat{\theta},y)\) (in Part I)?  In particular, can we use the analytical derivatives of the full log-likelihood that are part of the EM algorithm?  Many researchers have worked on this idea. My notes here were influenced by [EM Algorithm: Confidence Intervals](http://statisticalrecipes.blogspot.com/2012/03/em-algorithm-and-confidence-intervals.html) which is on the same topic.  This blog post is mainly a discussion of the result by Louis (1982) on calculation of the Fisher Information matrix from the 'score' function that one takes the derivative of in the M-step of the EM algorithm.
+So how do we compute $I(\hat{\theta})$ or \( \mathcal{I}(\hat{\theta},y) \) (in Part I)?  In particular, can we use the analytical derivatives of the full log-likelihood that are part of the EM algorithm?  Many researchers have worked on this idea. My notes here were influenced by [EM Algorithm: Confidence Intervals](http://statisticalrecipes.blogspot.com/2012/03/em-algorithm-and-confidence-intervals.html) which is on the same topic.  This blog post is mainly a discussion of the result by Louis (1982) on calculation of the Fisher Information matrix from the 'score' function that one takes the derivative of in the M-step of the EM algorithm.
 
 The 'score' function used in the EM algorithm for a MARSS model is
 \begin{equation} 
