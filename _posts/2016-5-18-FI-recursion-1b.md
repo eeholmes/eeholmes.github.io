@@ -43,6 +43,11 @@ $Q(\theta | \hat{\theta})$ is our score function at the end of the EM algorithm,
 
 Conceptually, this
 
+\begin{equation}
+-\left.\frac{\partial^2 Q(\theta | \hat{\theta}) }{\partial \theta^2 } \right|_{\theta = \hat{\theta} }
+\end{equation}
+
+
 \begin{equation} -\left.\frac{\partial^2 Q(\theta|\hat{\theta})}{\partial \theta^2} \right|_{\theta = \hat{\theta}} = \left.\frac{\partial^2 E_{X|y,\hat{\theta}}[\log f(X,y|\theta)]}{\partial \theta^2}\right|_{\theta=\hat{\theta}}
 \end{equation}
 
