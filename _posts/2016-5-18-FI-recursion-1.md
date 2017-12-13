@@ -30,7 +30,7 @@ It is the expected value taken over the hidden random variable \( X \) of the fu
 In the M-step of the EM algorithm, we take the derivative of \( Q(\theta | \theta_j) \) with respect to \( \theta \) and solve for the \( \theta \) where
 \[ \frac{\partial Q(\theta | \theta_j ) }{\partial \theta} = 0. \]
 It would be nice if one could use the following to compute the observed Fisher Information 
-\[  - \frac{\partial^2 Q(\theta | \hat{\theta}) }{\partial \theta^2 } \right|_{\theta = \hat{\theta} } \]
+\[  -\left.\frac{\partial^2 Q(\theta | \hat{\theta}) }{\partial \theta^2 } \right|_{\theta = \hat{\theta} } \]
 \( Q(\theta | \hat{\theta}) \) is our score function at the end of the EM algorithm, when \( \theta = \hat{\theta} \).  \( Q \) is a function of \( \theta \), the model parameters, and will have terms like \( E(X|Y=y, \hat{\theta}) \), the expected value of \( X \) conditioned on \( Y=y \) and the MLE.  Those are the expectations coming out of the Kalman filter-smoother.  We take the second derivative of \( Q \) with respect to \( \theta \).  That is straight-forward for the MARSS equations.  You take the first derivative of \( Q \) with respect to \( \theta \), which you already have from the update or M-step equations, and take the derivative of that with respect to \( \theta \).
 <br /><br />
 Conceptually, this
