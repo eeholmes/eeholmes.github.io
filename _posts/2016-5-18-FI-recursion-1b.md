@@ -7,6 +7,8 @@ tags:
   - MARSS
 ---
 
+<div dir="ltr" style="text-align: left;" trbidi="on">
+
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
   TeX: { equationNumbers: {autoNumber: "AMS"} },
@@ -54,3 +56,5 @@ looks a bit like the observed Fisher Information:
 \begin{equation}\label{obsFI}
 \mathcal{I}(\hat{\theta},y) = -\left.\frac{\partial^2\log f(y|\theta)}{\partial \theta^2} \right|_{\theta=\hat{\theta}}
 \end{equation}
+
+</div>
