@@ -45,10 +45,13 @@ Conceptually, this
 
 \begin{equation}
 -\left.\frac{\partial^2 Q(\theta | \hat{\theta}) }{\partial \theta^2 } \right|_{\theta = \hat{\theta} }
+= \left.\frac{\partial^2 E_{X|y,\hat{\theta}}[\log f(X,y|\theta)]}{\partial \theta^2}\right|_{\theta=\hat{\theta}}
 \end{equation}
 
 
-\begin{equation} -\left.\frac{\partial^2 Q(\theta|\hat{\theta})}{\partial \theta^2} \right|_{\theta = \hat{\theta}} = \left.\frac{\partial^2 E_{X|y,\hat{\theta}}[\log f(X,y|\theta)]}{\partial \theta^2}\right|_{\theta=\hat{\theta}}
+\begin{equation} 
+-\left.\frac{\partial^2 Q(\theta | \hat{\theta}) }{\partial \theta^2 } \right|_{\theta = \hat{\theta} }
+= \left.\frac{\partial^2 E_{X|y,\hat{\theta}}[\log f(X,y|\theta)]}{\partial \theta^2}\right|_{\theta=\hat{\theta}}
 \end{equation}
 
 looks a bit like the observed Fisher Information:
