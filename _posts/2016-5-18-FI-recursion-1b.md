@@ -37,13 +37,13 @@ In the M-step of the EM algorithm, we take the derivative of $Q(\theta | \theta_
 \end{equation}
 It would be nice if one could use the following to compute the observed Fisher Information
 \begin{equation}
-- \left.\frac{\partial^2 Q(\theta | \hat{\theta}) }{\partial \theta^2 } \right|_{\theta = \hat{\theta} }
+-\left.\frac{\partial^2 Q(\theta | \hat{\theta}) }{\partial \theta^2 } \right|_{\theta = \hat{\theta} }
 \end{equation}
 $Q(\theta | \hat{\theta})$ is our score function at the end of the EM algorithm, when $\theta = \hat{\theta}$. $Q$ is a function of $\theta$, the model parameters, and will have terms like $E(X|Y=y, \hat{\theta})$, the expected value of $X$ conditioned on $Y=y$ and the MLE. Those are the expectations coming out of the Kalman filter-smoother. We take the second derivative of $Q$ with respect to $\theta$. That is straight-forward for the MARSS equations. You take the first derivative of $Q$ with respect to $\theta$, which you already have from the update or M-step equations, and take the derivative of that with respect to $\theta$.
 
 Conceptually, this
 \begin{equation}
-- \left.\frac{\partial^2 Q(\theta|\hat{\theta})}{\partial \theta^2}\right|_{\theta = \hat{\theta}}
+-\left.\frac{\partial^2 Q(\theta|\hat{\theta})}{\partial \theta^2}\right|_{\theta = \hat{\theta}}
 = \left.\frac{\partial^2 E_{X|y,\hat{\theta}}[\log f(X,y|\theta)]}{\partial \theta^2}\right|_{\theta=\hat{\theta}}
 \end{equation}
 looks a bit like the observed Fisher Information:
@@ -52,9 +52,9 @@ looks a bit like the observed Fisher Information:
 \end{equation}
 except that instead of the data likelihood $f(y|\theta)$, we use the expected likelihood $E_{X|y,\hat{\theta} } [\log f_{XY}(X,y|\theta) ]$. The expected likelihood is the full likelihood with the $X$ and $XX^\top$ random variables replaced by their expected values assuming $\theta = \hat{\theta}$ and $Y=y$. The problem is that $E_{X|y,\theta } [\log f(X,y|\theta) ]$ is a function of $\theta$ and by fixing it at $\hat{\theta}$ we are not accounting for the uncertainty in that expectation. What we need is something like
 
-Information with X fixed at expected value - Information on expected value of X
+Information with $X$ fixed at expected value - Information on expected value of $X$
 
-so we account for the fact that we have over-estimated the information from the data by treating the hidden random variable as fixed. The same issue arises when we compute confidence intervals using the estimate of the variance without accounting for the fact that this is an estimate and thus has uncertainty. Louis (1982) and Oakes (1999) are concerned with how to do this correction or adjustment.
+We account for the fact that we have over-estimated the information from the data by treating the hidden random variable as fixed. The same issue arises when we compute confidence intervals using the estimate of the variance without accounting for the fact that this is an estimate and thus has uncertainty. Louis (1982) and Oakes (1999) are concerned with how to do this correction or adjustment.
 
 Louis 1982 approach
 -------------------
@@ -125,8 +125,7 @@ using my notation for a conditional expectation which slightly different than Lo
 
 The meat of Louis 1982 is equation 3.2. The observed Fisher Information matrix \ref{obsFI} is
 \begin{equation}\label{obsFI32}
- \mathcal{I}(\theta,y) = B^*(y,\theta) = -S^\prime(x,y,\theta) = - \lambda^{*\prime\prime}(y,\theta) = 
-- \frac{\partial^2\log f_Y(y|\theta)}{\partial \theta \partial \theta^\top} 
+ \mathcal{I}(\theta,y) = B^*(y,\theta) = -S^\prime(x,y,\theta) = - \lambda^{*\prime\prime}(y,\theta) = -\frac{\partial^2\log f_Y(y|\theta)}{\partial \theta \partial \theta^\top} 
 \end{equation}
 The first 3 terms on the left are just show that all are notation that refers to the observed Fisher Information. The 4th term is one of the ways we can compute the observed Fisher Information at $\theta$ and the far right term shows that derivative explicitly.
 
@@ -147,8 +146,8 @@ Thus (notice I'm writing the equation for the negative of $B(x,y,\theta)$ ),
 \begin{gathered}
 -B(x,y,\theta) = \\
 \frac{d(f_{XY}^\prime(x,y|\theta)/f_{XY}(x,y|\theta))}{d \theta^\top} =
-\frac{f_{XY}^{\prime\prime}(x,y|\theta)}{f_{XY}(x,y|\theta)} 
-- \frac{f_{XY}^\prime(x,y|\theta)f^\prime(z|\theta)^\top}{ f_{XY}(x,y|\theta)^2 }=
+\frac{f_{XY}^{\prime\prime}(x,y|\theta)}{f_{XY}(x,y|\theta)}
+-\frac{f_{XY}^\prime(x,y|\theta)f^\prime(z|\theta)^\top}{ f_{XY}(x,y|\theta)^2 }=
 \frac{f_{XY}^{\prime\prime}(x,y|\theta)}{f_{XY}(x,y|\theta)} - S(x,y|\theta)S(x,y|\theta)^\top
 \end{gathered}
 \end{equation}
@@ -181,7 +180,7 @@ Let's look at the integral of the second derivative of $f_{XY}(x,y|\theta)$ in \
 \end{equation}
 This is the conditional expectation $E_{X|y,\theta} [ f_{XY}^{\prime\prime}(x,y|\theta) dx/f_{XY}(x,y|\theta) ]$ that we see 5 lines above the references in Louis (1982). Using \ref{B2} we can write this in terms of $B(x,y|\theta)$:
 \begin{equation}\label{B6}
- \int_X \frac{f_{XY}^{\prime\prime}(z|\theta) dx}{ f_{XY}(x,y|\theta) } = -B(x,y|\theta)+S(x,y|\theta)S(x,y|\theta)^\top
+\int_X \frac{f_{XY}^{\prime\prime}(z|\theta) dx}{ f_{XY}(x,y|\theta) } = -B(x,y|\theta)+S(x,y|\theta)S(x,y|\theta)^\top
 \end{equation}
 Combining \ref{B4}, \ref{B5}, and \ref{B6}, we can write the equation above the references in Louis:
 \begin{equation}\label{B7}
