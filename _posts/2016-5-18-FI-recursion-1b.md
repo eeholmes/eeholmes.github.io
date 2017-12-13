@@ -7,7 +7,7 @@ tags:
   - MARSS
 ---
 
-<div dir="ltr" style="text-align: left;" trbidi="on">
+<div>
 
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
