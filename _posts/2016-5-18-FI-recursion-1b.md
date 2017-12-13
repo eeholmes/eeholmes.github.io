@@ -75,7 +75,7 @@ Page 227 near top of Louis 1982 becomes
 <div>\begin{equation}\label{lambday}
 \lambda^\ast (y,\theta) = \log\{ f_Y(y|\theta) \} = \log \int_X f_{XY}(x,y|\theta)dx 
 \end{equation}</div>
-$f(.|\theta)$ is the probability distribution of the random variable conditioned on $\theta$. $\lambda$ is the full likelihood; 'full' means is includes both $x$ and $y$.  $\lambda^\ast $ is the likelihood of $y$ alone.  It is defined by the marginal distribution of $y$ (1); the integral over $X$ on the right side of \ref{lambday}.  For a MARSS model, the data likelihood can be written easily as a function of the Kalman filter recursions (which is why you can write a recursion for the information matrix based on derivatives of $\lambda^\ast $; see Part III).
+$f(.|\theta)$ is the probability distribution of the random variable conditioned on $\theta$. $\lambda$ is the full likelihood; 'full' means is includes both $x$ and $y$.  $\lambda^\ast$ is the likelihood of $y$ alone.  It is defined by the marginal distribution of $y$ (1); the integral over $X$ on the right side of \ref{lambday}.  For a MARSS model, the data likelihood can be written easily as a function of the Kalman filter recursions (which is why you can write a recursion for the information matrix based on derivatives of $\lambda^\ast$; see Part III).
 
 Next equation down.  Louis doesn't say this and his notation is not totally clear, but the expectation right above section 3 (and in his eqn 3.1) is a conditional expectation. This is critical to know to follow his derivation of equation 3.1 in the appendix. $\theta_j$ is his $\theta(0)$; it is the value of $\theta$ at the last EM iteration.
 
