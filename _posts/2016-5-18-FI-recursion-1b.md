@@ -75,7 +75,7 @@ Page 227 near top of Louis 1982 becomes
 <div>\begin{equation}\label{lambday}
 \lambda^*(y,\theta) = \log\{ f_Y(y|\theta) \} = \log \int_X f_{XY}(x,y|\theta)dx 
 \end{equation}</div>
-$f(.|\theta)$ is the probability distribution of the random variable conditioned on $\theta$. $\lambda$ is the full likelihood; 'full' means is includes both $x$ and $y$.  <div>$\lambda^*$</div> is the likelihood of $y$ alone.  It is defined by the marginal distribution of $y$ (1); the integral over $X$ on the right side of \ref{lambday}.  For a MARSS model, the data likelihood can be written easily as a function of the Kalman filter recursions (which is why you can write a recursion for the information matrix based on derivatives of <div>$\lambda^*$</div>; see Part III).
+$f(.|\theta)$ is the probability distribution of the random variable conditioned on $\theta$. $\lambda$ is the full likelihood; 'full' means is includes both $x$ and $y$.  <div> $\lambda^*$ </div> is the likelihood of $y$ alone.  It is defined by the marginal distribution of $y$ (1); the integral over $X$ on the right side of \ref{lambday}.  For a MARSS model, the data likelihood can be written easily as a function of the Kalman filter recursions (which is why you can write a recursion for the information matrix based on derivatives of <div> $\lambda^*$ </div>; see Part III).
 
 Next equation down.  Louis doesn't say this and his notation is not totally clear, but the expectation right above section 3 (and in his eqn 3.1) is a conditional expectation. This is critical to know to follow his derivation of equation 3.1 in the appendix. $\theta_j$ is his $\theta(0)$; it is the value of $\theta$ at the last EM iteration.
 
@@ -108,19 +108,23 @@ S^*(y,\theta)=\lambda^{*\prime}(y,\theta)=\frac{ d \log \int_X f_{XY}(x,y|\theta
 \frac{ \int_X f_{XY}^\prime(x,y|\theta) dx }{ f_Y(y|\theta) } 
 \end{equation}</div>
 Now multiply the integrand in the numerator by $f_{XY}(x,y|\theta)/f_{XY}(x,y|\theta)$.  The last step (far right) uses \ref{Sz}.
-<div>\begin{align}\label{intfprime}
+<div>
+\begin{align}\label{intfprime}
 \int_X f_{XY}^\prime(x,y|\theta) dx =&
 \int_X \frac{f_{XY}^\prime(x,y|\theta)f_{XY}(x,y|\theta)}{f_{XY}(x,y|\theta)} dx \\
 =& \int_X \frac{f_{XY}^\prime(x,y|\theta)}{f_{XY}(x,y|\theta)}f_{XY}(x,y|\theta) dx \\
 =& \int_X S(x,y,\theta) f_{XY}(x,y|\theta) dx 
-\end{align}</div>
+\end{align}
+</div>
 We  combine \ref{Sy} and \ref{intfprime}:
-<div>\begin{equation}\label{Sstar}
+<div>
+\begin{equation}\label{Sstar}
 S^*(y,\theta)=
 \frac{ \int_X f_{XY}^\prime(x,y|\theta) dx }{ f_Y(y|\theta) } =
 \int_X S(x,y,\theta)  \frac{ f_{XY}(x,y|\theta) }{ f_Y(y|\theta) } dx =
 \int_X S(x,y,\theta) f_{X|Y}(x|Y=y,\theta) dx
-\end{equation}</div>
+\end{equation}
+</div>
 The second to last step used the fact that $f_Y(y|\theta)$ does not involve $x$ thus we can bring it into the integral.  This gives us $f_{XY}(x,y|\theta)/f_Y(y|\theta)$. This is the  probability of $x$ conditioned on $Y=y$ (2).
 
 The last step in the derivation of equation 3.1 is to recognize that the far right side of \ref{Sstar} is the conditional expectation in 3.1.  Louis does not actually write out the expectation in 3.1 and the notation is rather vague. But the expectation in equation 3.1 is the conditional expectation on the far right side of \ref{Sstar}.
@@ -151,6 +155,7 @@ To do the derivative on the far right side of \ref{B1}, we first need to recogni
 \end{equation}</div>
 Thus (notice I'm writing the equation for the negative of $B(x,y,\theta)$ ),
 
+<div>
 \begin{align}\label{B2}
 -B(x,y,\theta) =& 
 \frac{d(f_{XY}^\prime(x,y|\theta)/f_{XY}(x,y|\theta))}{d \theta^\top} \\
@@ -158,6 +163,7 @@ Thus (notice I'm writing the equation for the negative of $B(x,y,\theta)$ ),
 -\frac{f_{XY}^\prime(x,y|\theta)f^\prime(z|\theta)^\top}{ f_{XY}(x,y|\theta)^2 } \\
 =& \frac{f_{XY}^{\prime\prime}(x,y|\theta)}{f_{XY}(x,y|\theta)} - S(x,y|\theta)S(x,y|\theta)^\top
 \end{align}
+</div>
 
 Let's return to \ref{obsFI32} and take the derivative of <div>$\lambda^{*\prime}(y,\theta)$</div> with respect to $\theta$ using the form shown in equation \ref{Sy}.  I have replaced the integral in the denominator by $f_Y(y|\theta)$ and used the same chain rule used for \ref{B2}.
 
@@ -165,11 +171,10 @@ Let's return to \ref{obsFI32} and take the derivative of <div>$\lambda^{*\prime}
 \begin{align}
 \begin{split}
 \lambda^{*\prime\prime}(y,\theta)=
-d\left( \int_X f_{XY}^\prime(x,y|\theta) dx \middle/ f_Y(y|\theta) \right)/d\theta^\top = \\
-\frac{\int_X f_{XY}^{\prime\prime}(x,y|\theta) dx }{f_Y(y|\theta)}-
-\frac{\int_X f_{XY}^\prime(x,y|\theta)dx }{f_Y(y|\theta)} \left(\frac{\int_X f_{XY}^\prime(x,y|\theta)dx}{f_Y(y|\theta)}\right) =
-\frac{\int_X f_{XY}^{\prime\prime}(x,y|\theta) dx }{f_Y(y|\theta)}-
-S^*(y|\theta)S^*(y|\theta)^\top
+d\left( \int_X f_{XY}^\prime(x,y|\theta) dx \middle/ f_Y(y|\theta) \right)/d\theta^\top \\
+=& \frac{\int_X f_{XY}^{\prime\prime}(x,y|\theta) dx }{f_Y(y|\theta)}-
+\frac{\int_X f_{XY}^\prime(x,y|\theta)dx }{f_Y(y|\theta)} \left(\frac{\int_X f_{XY}^\prime(x,y|\theta)dx}{f_Y(y|\theta)}\right) \\
+=&\frac{\int_X f_{XY}^{\prime\prime}(x,y|\theta) dx }{f_Y(y|\theta)}-S^*(y|\theta)S^*(y|\theta)^\top
 \end{split}
 \end{align}
 </div>
@@ -184,11 +189,13 @@ S^*(y|\theta)S^*(y|\theta)^\top
 
 Let's look at the integral of the second derivative of $f_{XY}(x,y|\theta)$ in \ref{B4}:
 
-<div>\begin{align}\label{B5}
+<div>
+\begin{align}\label{B5}
 \left( \int_X f_{XY}^{\prime\prime}(x,y|\theta) dx \middle/ f_Y(y|\theta) \right) =&
  \int_X \frac{f_{XY}^{\prime\prime}(x,y|\theta) dx}{ f_{XY}(x,y|\theta) }\frac{f_{XY}(x,y|\theta)}{ f_Y(y|\theta)} dx \\
 =& \int_X \frac{f_{XY}^{\prime\prime}(x,y|\theta) dx}{ f_{XY}(x,y|\theta) }f_{X|Y}(x|Y=y,\theta) dx
-\end{align}</div>
+\end{align}
+</div>
 
 This is the conditional expectation $E_{X|y,\theta} [ f_{XY}^{\prime\prime}(x,y|\theta) dx/f_{XY}(x,y|\theta) ]$ that we see 5 lines above the references in Louis (1982).  Using \ref{B2} we can write this in terms of $B(x,y|\theta)$:
 <div>\begin{equation}\label{B6}
