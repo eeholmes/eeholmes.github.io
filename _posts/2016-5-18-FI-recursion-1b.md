@@ -17,6 +17,7 @@ MathJax.Hub.Config({
 </script>
 <script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML' type='text/javascript'>
 </script>
+</div>
 
 *MathJax can be iffy. Try reloading if the equations don't show up.*
 
@@ -57,4 +58,3 @@ looks a bit like the observed Fisher Information:
 \mathcal{I}(\hat{\theta},y) = -\left.\frac{\partial^2\log f(y|\theta)}{\partial \theta^2} \right|_{\theta=\hat{\theta}}
 \end{equation}
 
-</div>
