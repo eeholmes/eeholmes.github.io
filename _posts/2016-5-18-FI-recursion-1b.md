@@ -45,7 +45,7 @@ Conceptually, this
 
 \begin{equation}
 -\left.\frac{\partial^2 Q(\theta | \hat{\theta}) }{\partial \theta^2 } \right|_{\theta = \hat{\theta} }
-= 1
+= -\left.\frac{\partial^2\log f(y|\theta)}{\partial \theta^2} \right|_{\theta=\hat{\theta}}
 \end{equation}
 
 
