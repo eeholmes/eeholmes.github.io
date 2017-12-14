@@ -111,11 +111,14 @@ Now multiply the integrand in the numerator by $f_{XY}(x,y\vert\theta)/f_{XY}(x,
 </div>
 We  combine \ref{Sy} and \ref{intfprime}:
 <div>
-\begin{equation}\label{Sstar}
-S^\ast (y,\theta)=
-\frac{ \int_X f_{XY}^\prime(x,y\vert\theta) dx }{ f_Y(y\vert\theta) } =
-\int_X S(x,y,\theta)  \frac{ f_{XY}(x,y\vert\theta) }{ f_Y(y\vert\theta) } dx =
-\int_X S(x,y,\theta) f_{X|Y}(x|Y=y,\theta) dx
+\begin{equation}
+\begin{split}
+S^\ast (y,\theta) =&
+\frac{ \int_X f_{XY}^\prime(x,y\vert\theta) dx }{ f_Y(y\vert\theta) } \\
+=& \int_X S(x,y,\theta)  \frac{ f_{XY}(x,y\vert\theta) }{ f_Y(y\vert\theta) } dx \\
+=& \int_X S(x,y,\theta) f_{X|Y}(x|Y=y,\theta) dx
+\end{split}
+\label{Sstar}
 \end{equation}
 </div>
 The second to last step used the fact that $f_Y(y\vert\theta)$ does not involve $x$ thus we can bring it into the integral.  This gives us $f_{XY}(x,y\vert\theta)/f_Y(y\vert\theta)$. This is the  probability of $x$ conditioned on $Y=y$ (2).
