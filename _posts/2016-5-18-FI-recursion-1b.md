@@ -1,6 +1,8 @@
 ---
 title: "Test big"
-output: pdf_document
+output:
+  pdf_document: default
+  html_document: default
 date: '2016-05-18'
 tags:
 - Fisher Information
@@ -295,11 +297,13 @@ Footnotes
 
 1. Given a joint probability distribution of $\{X,Y\}$, the marginal distribution of $Y$ is $\int_X f(X,Y) dx$.  Discussions of the estimators for MARSS models often use the property of the marginal distributions of a multivariate normal without actually stating that this property is being used.  The step in the derivation will just say, 'Thus' with no indication of what property was just used. <br />Reviewed here: http://fourier.eng.hmc.edu/e161/lectures/gaussianprocess/node7.html
 
-    If you have a joint likelihood of some random variables, and you want the likelihood of a subset of those random variables, then you compute the marginal distribution.  i.e. you integrate over the random variables you want to get rid of: \begin{equation}L(\theta\vert y) ] = \int_X L(\theta\vert X,Y) p(x\vert Y=y, \theta_j) dx \vert_{Y=y}.\end{equation}  So we integrate out $X$ from the full likelihood and then set $Y=y$ to get the likelihood.
+    If you have a joint likelihood of some random variables, and you want the likelihood of a subset of those random variables, then you compute the marginal distribution.  i.e. you integrate over the random variables you want to get rid of: \begin{equation} L(\theta\vert y) ] = \int_X L(\theta\vert X,Y) p(x\vert Y=y, \theta_j) dx \vert_{Y=y}. \end{equation} So we integrate out $X$ from the full likelihood and then set $Y=y$ to get the likelihood.
 
-    The marginal likelihood is a little different.  The marginal likelihood is used when you want to get rid of some of the parameters, nuisance parameters.  The integral you use is different: $$L(\theta_1|y) = \int_{\theta_2} p(y\vert\theta_1,\theta_2) p(\theta_2\vert\theta_1)d\theta_2$$ This presumes that you have $p(\theta_2\vert\theta_1)$.  The expected likelihood is different yet again:  $$E_{X,Y|Y=y,\theta_j} [L(\theta | X,Y) ] = \int_X L(\theta | X,Y) p(x|Y=y, \theta_j) dx.$$
+    The marginal likelihood is a little different.  The marginal likelihood is used when you want to get rid of some of the parameters, nuisance parameters.  The integral you use is different: \begin{equation} L(\theta_1\vert y) = \int_{\theta_2} p(y\vert\theta_1,\theta_2) p(\theta_2\vert\theta_1)d\theta_2  \end{equation}
 
-    On the surface it looks like the equation for $L(\theta\vert y)$ but it is different.  $\theta_j$ is not $\theta$.  It is the parameter value at which we are computing the expected value of $X$.  Maximizing the $E_{X,Y\vert Y=y,\theta_j} [L(\theta\vert X,Y) ]$ will increase the likelihood but will not take you to the MLE. You have to imbed this maximization in the EM algorithm that walks up the likelihood surface.
+    This presumes that you have $p(\theta_2\vert\theta_1)$.  The expected likelihood is different yet again:  \begin{equation} E_{X,Y\vert Y=y,\theta_j} [L(\theta\vert X,Y) ] = \int_X L(\theta\vert X,Y) p(x\vert Y=y, \theta_j) dx.\end{equation}
+
+    On the surface it looks like the equation for $L(\theta\vert y)$ but it is different.  $\theta_j$ is not $\theta$.  It is the parameter value at which we are computing the expected value of $X$.  Maximizing the $E_{X,Y\vert Y=y,\theta_j} [L(\theta\vert X,Y)]$ will increase the likelihood but will not take you to the MLE. You have to embed this maximization in the EM algorithm that walks up the likelihood surface.
 
 2. $P(A\vert B) = P(A \cup B)/P(B)$
 
