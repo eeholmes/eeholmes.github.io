@@ -100,12 +100,14 @@ S^\ast (y,\theta)=\lambda^{\ast \prime}(y,\theta)=\frac{ d \log \int_X f_{XY}(x,
 \end{equation}</div>
 Now multiply the integrand in the numerator by $f_{XY}(x,y\vert\theta)/f_{XY}(x,y\vert\theta)$.  The last step (far right) uses \ref{Sz}.
 <div>
-\begin{align}\label{intfprime}
+\begin{equation}\label{intfprime}
+\begin{split}
 \int_X f_{XY}^\prime(x,y\vert\theta) dx =&
 \int_X \frac{f_{XY}^\prime(x,y\vert\theta)f_{XY}(x,y\vert\theta)}{f_{XY}(x,y\vert\theta)} dx \\
 =& \int_X \frac{f_{XY}^\prime(x,y\vert\theta)}{f_{XY}(x,y\vert\theta)}f_{XY}(x,y\vert\theta) dx \\
 =& \int_X S(x,y,\theta) f_{XY}(x,y\vert\theta) dx 
-\end{align}
+\end{split}
+\end{equation}
 </div>
 We  combine \ref{Sy} and \ref{intfprime}:
 <div>
