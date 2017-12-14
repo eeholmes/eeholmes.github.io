@@ -75,7 +75,6 @@ E_{X|y,\theta_j}[ \lambda( X, y, \theta)] = \int_X \lambda( X, y, \theta) f_{X|Y
 \end{equation}</div>
 My 'expectation' notation is a little different than Louis'.  The subscript on the $E$ shows what is being integrated ($X$) and what are the conditionals.  
 
-<div>
 The term $f_{X\vert Y}(x\vert Y=y,\theta_j)$ is the probability of $x$ conditioned on $Y=y$ and $\theta=\theta_j$.  The subscript on $f$ indicates that we are using the probability distribution of $x$ conditioned on $Y=y$.
 For the EM algorithm, we need to distinguish between $\theta$ and $\theta_j$ because we maximize with respect to $\theta$ not $\theta_j$.  If we just need the expectation at $\theta$, no maximization step, then we just use $\theta$ in $f(.\vert\theta)$ and the subscript on E.
 
