@@ -299,17 +299,17 @@ Footnotes
 <div>\begin{equation}
 L(\theta|y) ] = \int_X L(\theta|X,Y) p(x|Y=y, \theta_j) dx |_{Y=y}.
 \end{equation}</div>
-     So we integrate out $X$ from the full likelihood and then set $Y=y$ to get the likelihood.
+      So we integrate out $X$ from the full likelihood and then set $Y=y$ to get the likelihood.
 
-     The marginal likelihood is a little different.  The marginal likelihood is used when you want to get rid of some of the parameters, nuisance parameters.  The integral you use is different: 
+      The marginal likelihood is a little different.  The marginal likelihood is used when you want to get rid of some of the parameters, nuisance parameters.  The integral you use is different: 
 <div>\begin{equation}
 L(\theta_1|y) = \int_{\theta_2} p(y\vert\theta_1,\theta_2) p(\theta_2\vert\theta_1)d\theta_2 
 \end{equation}</div>
-     This presumes that you have $p(\theta_2\vert\theta_1)$.  The expected likelihood is different yet again:  
+      This presumes that you have $p(\theta_2\vert\theta_1)$.  The expected likelihood is different yet again:  
 <div>\begin{equation}
 E_{X,Y|Y=y,\theta_j} [L(\theta | X,Y) ] = \int_X L(\theta | X,Y) p(x|Y=y, \theta_j) dx.
 \end{equation}</div>
-     On the surface it looks like the equation for $L(\theta|y)$ but it is different.  $\theta_j$ is not $\theta$.  It is the parameter value at which we are computing the expected value of $X$.  Maximizing the $E_{X,Y|Y=y,\theta_j} [L(\theta | X,Y) ]$ will increase the likelihood but will not take you to the MLE. You have to imbed this maximization in the EM algorithm that walks up the likelihood surface.
+      On the surface it looks like the equation for $L(\theta|y)$ but it is different.  $\theta_j$ is not $\theta$.  It is the parameter value at which we are computing the expected value of $X$.  Maximizing the $E_{X,Y|Y=y,\theta_j} [L(\theta | X,Y) ]$ will increase the likelihood but will not take you to the MLE. You have to imbed this maximization in the EM algorithm that walks up the likelihood surface.
 
 2. $P(A\vert B) = P(A \cup B)/P(B)$
 
