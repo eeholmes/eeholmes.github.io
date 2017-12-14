@@ -140,10 +140,15 @@ The meat of Louis 1982 is equation 3.2.  The observed Fisher Information matrix 
 The first 3 terms on the left are just show that all are notation that refers to the observed Fisher Information.  The 4th term is one of the ways we can compute the observed Fisher Information at $\theta$ and the far right term shows that derivative explicitly.  
 
 We start by taking the second derivative of \ref{lambdaz} with respect to $\theta$ to define $B(x,y,\theta)$. We use $S^\prime(z,\theta)$ as written in \ref{Sz}.
-<div>\begin{equation}\label{B1}
-\mathcal{I}(\theta,x,y) = B(x,y,\theta)=-\lambda^{\prime\prime}(x,y,\theta) = -S^\prime(x,y,\theta) = 
+<div>
+\begin{equation}
+\begin{gathered}
+\mathcal{I}(\theta,x,y) = B(x,y,\theta)=-\lambda^{\prime\prime}(x,y,\theta) = -S^\prime(x,y,\theta) = \\
 -\frac{d[f_{XY}^\prime(x,y\vert\theta)/f_{XY}(x,y\vert\theta)]}{d \theta^\top}
-\end{equation}</div>
+\end{gathered}
+\label{B1}
+\end{equation}
+</div>
 The transpose of $d\theta$ is because we are taking the second derivative $d^2 l/d\theta d\theta^\top$ (the Hessian of the log-likelihood); $d\theta d\theta$ wouldn't make sense as that that would be a column vector times a column vector.
 
 To do the derivative on the far right side of \ref{B1}, we first need to recognize the form of the equation.  $f_{XY}^\prime(x,y\vert\theta)$ is a column vector and $f(x,y\vert\theta)$ is a scalar, thus the thing we are taking the derivative of has the form $\overrightarrow{h}(\theta)/g(\theta)$; the arrow over $h$ is indicating that it is a (column) vector while $g()$ is a scalar.  Using the chain rule for vector derivatives, we have
@@ -277,7 +282,7 @@ Q^\prime(\theta | \theta_j) =& d( E_{X|y,\theta_j } [\log f_{XY}(X,y\vert\theta)
 </div> 
 With the MARSS model, $S(X,y\vert\theta)$ is analytical and we can also compute $B(X,y\vert\theta)$, the second derivative, analytically.  
 
-The difficulty arises with this term: $var_{X\vert Y,\theta} [ S(X,y\vert\theta) ]$.  The $S(X,y\vert\theta)$ is a summation from $t=1$ to $T$ that involves $X_t$ or $X_t X_{t-1}^top$ for some parameters. When we do the cross-product, we will end up with terms like  $E[ X_t X_{t+k}^\top ]$ and $E[ X_t X_t^\top X_{t+k}X_{t+k}^\top ]$.  The latter is not a problem; all the random variables in a MARSS models are multivariate normal and the k-th central moments can be expressed in terms of the first and second moments (5), but that will still leave us with terms like $E[ X_t X_{t+k}^\top ]$, which are the smoothed covariance between $X$ at time $t$ and $t+k$ conditioned on all the data ($t=1:T$).  
+The difficulty arises with this term: $var_{X\vert Y,\theta} [ S(X,y\vert\theta) ]$.  The $S(X,y\vert\theta)$ is a summation from $t=1$ to $T$ that involves $X_t$ or $X_t X_{t-1}^\top$ for some parameters. When we do the cross-product, we will end up with terms like  $E[ X_t X_{t+k}^\top ]$ and $E[ X_t X_t^\top X_{t+k}X_{t+k}^\top ]$.  The latter is not a problem; all the random variables in a MARSS models are multivariate normal and the k-th central moments can be expressed in terms of the first and second moments (5), but that will still leave us with terms like $E[ X_t X_{t+k}^\top ]$, which are the smoothed covariance between $X$ at time $t$ and $t+k$ conditioned on all the data ($t=1:T$).  
 
 Computing these is not hard.  These are the the n-step apart smoothed covariances. Harvey (1989), page 148, discusses how to use the Kalman filter to get the n-step ahead prediction covariances and a similar approach can be used (presumably) to get the $V(t,t+k)$ smoothed covariances.  However this will end up being computationally expensive because we will need all of the $t,t+k$ combinations, i.e., {1,3}, {1,4}, ..., {2,3}, {2,4}, .... etc.. That will be a lot: $T + T-1 + T-2 + T-3 + \dots$, i.e. 
 $T(T+1)/2$, smoothed covariances.  
