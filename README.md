@@ -46,3 +46,5 @@ I write in Rmarkdown and write math in latex.  This generally works fine as long
 * Avoid using any special markdown symbols in math.  "*" is \ast, "|" is \vert.  markdown will misinterpret these as markdown and mess up your equations.  "_" is known to create problems in some jekyll sites; there is an extension setting that will turn off "_" as emphasis.
 
 * IF you have the `\begin{equation}\end{equation}` embedded in a paragraph, for example to have a list with multiple paragraphs, then leave off the `<div>`s.  They are implicitly there already.
+
+* To add a link to download a pdf of a post, add the pdf somewhere and then add pdf: [url to pdf] to the yaml of post.  If you put in blog_files/pdfs  then add pdf: blog_files/pdfs/nameoffile.pdf
