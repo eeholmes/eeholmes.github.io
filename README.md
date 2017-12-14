@@ -17,7 +17,7 @@ I (Eli) forked (then detached) an edited copy of academicpages from Eric Ward.  
 
 # Instructions for using my hacked version of academicpages as your website
 
-1. Clone [this repository](https://github.com/eeholmes/eeholmes.github.io). 
+1. Clone [eeholmes.github.io](https://github.com/eeholmes/eeholmes.github.io). 
 1. Enable GitHub Pages for your repository. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository. If you name it [Your GitHub username].github.io", then that will be your website's URL.  Alternatively, you could name it to say [foo] and your URL would be [Your GitHub username]/foo   You'll want to specifify for pages to use master.
 1. Wait a bit for jekyll to do it's stuff and go to your URL to see the website.
 1. Hack away.
@@ -42,6 +42,6 @@ I write in Rmarkdown and write math in latex.  This generally works fine as long
 
 * You can use \$...\$ or \\(...\\) for inline equations.  mathjax.html sets the mathjax config to allow \$...\$.  This means you need to be careful in how you use $.  You might run into trouble in code.
 
-* Avoid using any special markdown symbols in math.  "*" is \ast, "|" is \vert.  markdown will misinterpret these as markdown and mess up your equations.
+* Avoid using any special markdown symbols in math.  "*" is \ast, "|" is \vert.  markdown will misinterpret these as markdown and mess up your equations.  "_" is known to create problems in some jekyll sites; there is an extension setting that will turn off "_" as emphasis.
 
 * IF you have the `\begin{equation}\end{equation}` embedded in a paragraph, for example to have a list with multiple paragraphs, then leave off the `<div>`s.  They are implicitly there already.
