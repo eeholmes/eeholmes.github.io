@@ -1,28 +1,47 @@
-A Github Pages template for academic websites. This was forked (then detached) by [Stuart Geiger](https://github.com/staeiou) from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/), which is © 2016 Michael Rose and released under the MIT License. See LICENSE.md.
+Original source: A Github Pages template for academic websites by [Stuart Geiger](https://github.com/staeiou): [academicpages.github.io](https://github.com/academicpages/academicpages.github.io).  Academicpages was forked (then detached) by [Stuart Geiger](https://github.com/staeiou) from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/), which is © 2016 Michael Rose and released under the MIT License. See LICENSE.md.  
 
-I think I've got things running smoothly and fixed some major bugs, but feel free to file issues or make pull requests if you want to improve the generic template / theme.
+I (Eli) forked (then detached) an edited copy of academicpages from Eric Ward.  I then tore into it and simplied it quite a bit.  I've made a number of changes and did not document along the way.  The following are some that I remember.
 
-# Instructions
+* I added mathjax.html to _includes folder and change the default.hmtl in _layouts folder to include that.  This specs which MathJax configs I want to.
 
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Fork [this repository](https://github.com/academicpages/academicpages.github.io) by clicking the "fork" button in the top right. 
-1. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](http://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
-1. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
-1. (Optional) Use the Jupyter notebooks or python scripts in the `markdown_generator` folder to generate markdown files for publications and talks from a TSV file.
+* Added some new pages into _pages and added these to navigation using _data/navigation.yml
 
-See more info at https://academicpages.github.io/
+* Removed bullets from my publication and talks list in _pages/publications.md and _page/talks.md using css just in those pages.
 
-## To run locally (not on GitHub Pages, to serve on your own computer)
-1. Clone the repository and made updates as detailed above
-1. Make sure you have ruby-dev, bundler, and nodejs installed: `sudo apt install ruby-dev ruby-bundler nodejs`
-1. Run `bundle clean` to clean up the directory (no need to run `--force`)
-1. Run `bundle install` to install ruby dependencies. If you get errors, delete Gemfile.lock and try again.
-1. Run `bundle exec jekyll serve` to generate the HTML and serve it from localhost:4000
+* Added a two column table with css to _pages/about.md for my education.
 
-# Changelog -- bugfixes and enhancements
+* added a bunch of folders at the base level for publications, talks, blog_files (images and pdfs are here).
 
-There is one logistical issue with a ready-to-fork template theme like academic pages that makes it a little tricky to get bug fixes and updates to the core theme. If you fork this repository, customize it, then pull again, you'll probably get merge conflicts. If you want to save your various .yml configuration files and markdown files, you can delete the repository and fork it again. Or you can manually patch. 
+* fuzted with the site css in _sass.  Had to make changes in 3 places: _masthead.scss, _navigation.scss, and _variables.scss.
 
-To support this, all changes to the underlying code appear as a closed issue with the tag 'code change' -- get the list [here](https://github.com/academicpages/academicpages.github.io/issues?q=is%3Aclosed%20is%3Aissue%20label%3A%22code%20change%22%20). Each issue thread includes a comment linking to the single commit or a diff across multiple commits, so those with forked repositories can easily identify what they need to patch.
+
+# Instructions for using my hacked version of academicpages as your website
+
+1. Clone [this repository](https://github.com/eeholmes/eeholmes.github.io). 
+1. Enable GitHub Pages for your repository. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository. If you name it [Your GitHub username].github.io", then that will be your website's URL.  Alternatively, you could name it to say [foo] and your URL would be [Your GitHub username]/foo   You'll want to specifify for pages to use master.
+1. Wait a bit for jekyll to do it's stuff and go to your URL to see the website.
+1. Hack away.
+
+# Important stuff to keep in mind
+
+My website has a blog and that blog is math heavy, has images and citations.
+
+## Making sure math works
+
+I write in Rmarkdown and write math in latex.  This generally works fine as long as I follow a few rules.  I use my Rmarkdown to make both markdown for GitHub Pages and PDFs.  It needs to just work across outputs straight from my Rmd file.  I don't want to be futzing with the markdown output by my Rmd, e.g. I don't want to have to paste on a yaml as needed by jekyll.  Also I don't want to be writing custom templates of mucking with pandoc templates.  That just creates something that is too custom to be portable.  I wasted 2 days trying that before deciding that was a) too much work and b) a bad idea.
+
+* **Use GitHub flavored markdown for headings**.  Rmarkdown will understand these.  In general, just write in markdown that GitHub will understand because github_document will trash your math in ways that are really hard to fix without a lot of customization of rmarkdown templates and pandoc templates.
+
+* To create the markdown (.md) file from rmarkdown (.Rmd) use knitr(filename).  Don't use the knit button because that calls render() and that uses pandoc.  pandoc's math latex to mathjax processor will delete the `<div>`s necessary to protect the math from jekyll.
+
+* If there is no R code to process, then you can just upload the .Rmd file to _posts.  Make sure the file naming is correct and the yaml is correct.  See other posts for examples.
+
+* If the post has no math/latex but has a bunch of tables from R code, like kable(), then you can use `output: github_document` in the yaml and use the gfm output.  I'm not sure if the tables from knit() will work in github.
+
+* Only use `\begin{equation}\end{equation}` (or align, etc).  Don't use $$.  Wrap in a `<div>` to protect from jekyll.  so like so  `<div>\begin{equation}\end{equation}</div>`
+
+* You can use \$...\$ or \\(...\\) for inline equations.  mathjax.html sets the mathjax config to allow \$...\$.  This means you need to be careful in how you use $.  You might run into trouble in code.
+
+* Avoid using any special markdown symbols in math.  "*" is \ast, "|" is \vert.  markdown will misinterpret these as markdown and mess up your equations.
+
+* IF you have the `\begin{equation}\end{equation}` embedded in a paragraph, for example to have a list with multiple paragraphs, then leave off the `<div>`s.  They are implicitly there already.
