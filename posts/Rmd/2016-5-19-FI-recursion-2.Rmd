@@ -8,8 +8,8 @@ tags:
 - Fisher Information
 - MARSS
 permalink: /posts/2016/05/FI-II/
-page: /blog_files/pdfs/2016-5-19-FI-recursion-2.pdf
-github: 
+pdf: /posts/pdfs/2016-5-19-FI-recursion-2.pdf
+github: /posts/Rmd/2016-5-19-FI-recursion-2.Rmd
 ---
 
 <!--
