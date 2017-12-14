@@ -14,6 +14,7 @@ I (Eli) forked (then detached) an edited copy of academicpages from Eric Ward.  
 
 * fuzted with the site css in _sass.  Had to make changes in 3 places: _masthead.scss, _navigation.scss, and _variables.scss.
 
+* added a pdf download for posts with changes in single.html. To use, just add pdf: [url of pdf] to the yaml in a post.
 
 # Instructions for using my hacked version of academicpages as your website
 

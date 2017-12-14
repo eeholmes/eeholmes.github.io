@@ -8,6 +8,7 @@ tags:
 - Fisher Information
 - MARSS
 permalink: /posts/2016/05/test-big/
+page: /blog_files/pdfs/2016-5-18-FI-recursion-2.pdf
 ---
 
 Background on Fisher Information is in [Part I](http://parsimoniouspursuits.blogspot.com/2016/05/notes-on-computing-fisher-information.html).
