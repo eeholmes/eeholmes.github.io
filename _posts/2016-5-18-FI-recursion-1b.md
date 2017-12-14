@@ -150,30 +150,34 @@ To do the derivative on the far right side of \ref{B1}, we first need to recogni
 <div>\begin{equation}
 \frac{ d (\overrightarrow{h}(\theta)/g(\theta))}{d \theta^\top} = \frac{d\overrightarrow{h}(\theta)}{d \theta^\top}\frac{1}{g(\theta)} - \frac{\overrightarrow{h}(\theta)}{ g(\theta)^2 }\frac{ g(\theta) }{ d \theta^\top }
 \end{equation}</div>
-Thus (notice I'm writing the equation for the negative of $B(x,y,\theta)$ ),
+Thus we can write the equation for the negative of $B(x,y,\theta)$ as
 
 <div>
-\begin{align}\label{B2}
+\begin{equation}
+\begin{split}
 -B(x,y,\theta) =& 
 \frac{d(f_{XY}^\prime(x,y\vert\theta)/f_{XY}(x,y\vert\theta))}{d \theta^\top} \\
 =& \frac{f_{XY}^{\prime\prime}(x,y\vert\theta)}{f_{XY}(x,y\vert\theta)}
 -\frac{f_{XY}^\prime(x,y\vert\theta)f^\prime(z\vert\theta)^\top}{ f_{XY}(x,y\vert\theta)^2 } \\
 =& \frac{f_{XY}^{\prime\prime}(x,y\vert\theta)}{f_{XY}(x,y\vert\theta)} - S(x,y\vert\theta)S(x,y\vert\theta)^\top
-\end{align}
+\end{split}
+\label{B2}
+\end{equation}
+
 </div>
 
 Let's return to \ref{obsFI32} and take the derivative of $\lambda^{\ast \prime}(y,\theta)$ with respect to $\theta$ using the form shown in equation \ref{Sy}.  I have replaced the integral in the denominator by $f_Y(y\vert\theta)$ and used the same chain rule used for \ref{B2}.
 
 <div>
-\begin{align}
+\begin{equation}
 \begin{split}
-\lambda^{\ast \prime\prime}(y,\theta)=
+\lambda^{\ast \prime\prime}(y,\theta)=&
 d\left( \int_X f_{XY}^\prime(x,y\vert\theta) dx \middle/ f_Y(y\vert\theta) \right)/d\theta^\top \\
 =& \frac{\int_X f_{XY}^{\prime\prime}(x,y\vert\theta) dx }{f_Y(y\vert\theta)}-
 \frac{\int_X f_{XY}^\prime(x,y\vert\theta)dx }{f_Y(y\vert\theta)} \left(\frac{\int_X f_{XY}^\prime(x,y\vert\theta)dx}{f_Y(y\vert\theta)}\right) \\
 =&\frac{\int_X f_{XY}^{\prime\prime}(x,y\vert\theta) dx }{f_Y(y\vert\theta)}-S^\ast (y\vert\theta)S^\ast (y\vert\theta)^\top
 \end{split}
-\end{align}
+\end{equation}
 </div>
 
 The last substitution uses \ref{Sy}.  Thus,
@@ -187,11 +191,14 @@ S^\ast (y\vert\theta)S^\ast (y\vert\theta)^\top
 Let's look at the integral of the second derivative of $f_{XY}(x,y\vert\theta)$ in \ref{B4}:
 
 <div>
-\begin{align}\label{B5}
+\begin{equation}
+\begin{split}
 \left( \int_X f_{XY}^{\prime\prime}(x,y\vert\theta) dx \middle/ f_Y(y\vert\theta) \right) =&
  \int_X \frac{f_{XY}^{\prime\prime}(x,y\vert\theta) dx}{ f_{XY}(x,y\vert\theta) }\frac{f_{XY}(x,y\vert\theta)}{ f_Y(y\vert\theta)} dx \\
 =& \int_X \frac{f_{XY}^{\prime\prime}(x,y\vert\theta) dx}{ f_{XY}(x,y\vert\theta) }f_{X|Y}(x|Y=y,\theta) dx
-\end{align}
+\end{split}
+\label{B5}
+\end{equation}
 </div>
 
 This is the conditional expectation $E_{X\vert Y,\theta} [ f_{XY}^{\prime\prime}(x,y\vert\theta) dx/f_{XY}(x,y\vert\theta) ]$ that we see 5 lines above the references in Louis (1982).  Using \ref{B2} we can write this in terms of $B(x,y\vert\theta)$:
@@ -231,11 +238,16 @@ E_{X|y,\theta} [ B(X,y\vert\theta)]
 is thus the expected full data observed information matrix conditioned on our observed data $y$.
 So this is the first part of his statement.<br /><br />
 The second part of his statement takes a bit more effort to work out.  First we substitute $S^\ast (y\vert\theta)$ with 
-$E_{X\vert Y,\theta} [ S(X,y\vert\theta) ]$ from \ref{Louise3p1}. This gives us this:
-<div>\begin{equation}\label{ES1}
- E_{X|y,\theta} [ S(X,y\vert\theta)S(X,y\vert\theta)^\top ]-S^\ast (y\vert\theta)S^\ast (y\vert\theta)^\top = 
+$E_{X\vert Y,\theta} [ S(X,y\vert\theta) ]$ from \ref{Louise3p1}. This gives us:
+<div>
+\begin{equation}
+\begin{split}
+ E_{X|y,\theta} [ S(X,y\vert\theta)S(X,y\vert\theta)^\top ]-S^\ast (y\vert\theta)S^\ast (y\vert\theta)^\top = \\
 E_{X|y,\theta} [ S(X,y\vert\theta)S(X,y\vert\theta)^\top ]-E_{X|y,\theta} [ S(X,y\vert\theta) ]E_{X|y,\theta} [ S(X,y\vert\theta)^\top ]
-\end{equation}</div>
+\end{split}
+\label{ES1}
+\end{equation}
+</div>
 Using the computational form of the variance, $var(X)=E(XX)-E(X)E(X)$, we can see that \ref{ES1} is the conditional variance of $S(X,y\vert\theta)$.
 <div>\begin{equation}
 var_{X|y,\theta}( S(X,y\vert\theta) )
@@ -248,18 +260,26 @@ Relating Louis 1982 to the update equations in the MARSS EM algorithm
 
 
 The main result in Louis (1982) (\ref{Louismain}) can be written
-<div>\begin{equation}\label{Louismain2}
+<div>
+\begin{equation}\label{Louismain2}
 \mathcal{I}(\theta,y) = E_{X|y,\theta} [ B(X,y\vert\theta)] - var_{X|y,\theta} [ S(X,y\vert\theta) ]
-\end{equation}</div>
+\end{equation}
+</div>
 The M-step of the EM algorithm involves the first derivative of the log-likelihood with respect to $\theta$, $S(X,y\vert\theta)$, since it involves setting this derivative to zero:
-<div>\begin{equation} 
-Q^\prime(\theta | \theta_j) = d( E_{X|y,\theta_j } [\log f_{XY}(X,y\vert\theta) ])/d\theta = E_{X|y,\theta_j } [\log f^\prime_{XY}(X,y\vert\theta) ] = E_{X|y,\theta_j } [ S(X,y\vert\theta) ]
-\end{equation}</div> 
+<div>
+\begin{equation}
+\begin{split}
+Q^\prime(\theta | \theta_j) =& d( E_{X|y,\theta_j } [\log f_{XY}(X,y\vert\theta) ])/d\theta \\
+=& E_{X|y,\theta_j } [\log f^\prime_{XY}(X,y\vert\theta) ] \\
+=& E_{X|y,\theta_j } [ S(X,y\vert\theta) ]
+\end{split}
+\end{equation}
+</div> 
 With the MARSS model, $S(X,y\vert\theta)$ is analytical and we can also compute $B(X,y\vert\theta)$, the second derivative, analytically.  
 
 The difficulty arises with this term: $var_{X\vert Y,\theta} [ S(X,y\vert\theta) ]$.  The $S(X,y\vert\theta)$ is a summation from $t=1$ to $T$ that involves $X_t$ or $X_t X_{t-1}^top$ for some parameters. When we do the cross-product, we will end up with terms like  $E[ X_t X_{t+k}^\top ]$ and $E[ X_t X_t^\top X_{t+k}X_{t+k}^\top ]$.  The latter is not a problem; all the random variables in a MARSS models are multivariate normal and the k-th central moments can be expressed in terms of the first and second moments (5), but that will still leave us with terms like $E[ X_t X_{t+k}^\top ]$, which are the smoothed covariance between $X$ at time $t$ and $t+k$ conditioned on all the data ($t=1:T$).  
 
-Computing these is not hard.  These are the the n-step apart smoothed covariances. Harvey (1989), page 148, discusses how to use the Kalman filter to get the n-step ahead prediction covariances and a similar approach can be used (presumably) to get the $V(t,t+k)$ smoothed covariances.  However this will end up being computationally expensive because we will need all of the $t,t+k$ combinations, i.e., {1,3}, {1,4}, ..., {2,3}, {2,4}, .... etc.. That will be a lot: T + T-1 + T-2 + T-3 = 
+Computing these is not hard.  These are the the n-step apart smoothed covariances. Harvey (1989), page 148, discusses how to use the Kalman filter to get the n-step ahead prediction covariances and a similar approach can be used (presumably) to get the $V(t,t+k)$ smoothed covariances.  However this will end up being computationally expensive because we will need all of the $t,t+k$ combinations, i.e., {1,3}, {1,4}, ..., {2,3}, {2,4}, .... etc.. That will be a lot: $T + T-1 + T-2 + T-3 + \dots$, i.e. 
 $T(T+1)/2$, smoothed covariances.  
 Lystig and Hughes (2012) and Duan and Fulop (2011) discuss this issue for in a related application of the approach in Louis (1982).  They suggest that you do not need to include covariances with a large time separation because the covariance goes to zero.  You just need to include enough time-steps. 
 
@@ -273,19 +293,19 @@ Footnotes
 =============
 
 1. Given a joint probability distribution of $\{X,Y\}$, the marginal distribution of $Y$ is $\int_X f(X,Y) dx$.  Discussions of the estimators for MARSS models often use the property of the marginal distributions of a multivariate normal without actually stating that this property is being used.  The step in the derivation will just say, 'Thus' with no indication of what property was just used. <br />Reviewed here: http://fourier.eng.hmc.edu/e161/lectures/gaussianprocess/node7.html 
-If you have a joint likelihood of some random variables, and you want the likelihood of a subset of those random variables, then you compute the marginal distribution.  i.e. you integrate over the random variables you want to get rid of:
+  If you have a joint likelihood of some random variables, and you want the likelihood of a subset of those random variables, then you compute the marginal distribution.  i.e. you integrate over the random variables you want to get rid of:
 <div>\begin{equation}
 L(\theta|y) ] = \int_X L(\theta|X,Y) p(x|Y=y, \theta_j) dx |_{Y=y}.
 \end{equation}</div>
 So we integrate out $X$ from the full likelihood and then set $Y=y$ to get the 
 
-The marginal likelihood is a little different.  The marginal likelihood is used when you want to get rid of some of the parameters, nuisance parameters.  The integral you use is different: 
+  The marginal likelihood is a little different.  The marginal likelihood is used when you want to get rid of some of the parameters, nuisance parameters.  The integral you use is different: 
 <div>\begin{equation}
 L(\theta_1|y) = \int_{\theta_2} p(y\vert\theta_1,\theta_2) p(\theta_2\vert\theta_1)d\theta_2 
 \end{equation}</div>
 This presumes that you have $p(\theta_2\vert\theta_1)$.
 
-The expected likelihood is different yet again:  
+  The expected likelihood is different yet again:  
 <div>\begin{equation}
 E_{X,Y|Y=y,\theta_j} [L(\theta | X,Y) ] = \int_X L(\theta | X,Y) p(x|Y=y, \theta_j) dx.
 \end{equation}</div>
