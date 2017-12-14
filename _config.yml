@@ -196,7 +196,6 @@ defaults:
       comments: true
       share: true
       related: true
-      post_pdf: true
   # _pages
   - scope:
       path: ""
