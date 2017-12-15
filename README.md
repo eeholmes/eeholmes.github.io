@@ -39,12 +39,38 @@ I write in Rmarkdown and write math in latex.  This generally works fine as long
 
 * If the post has no math/latex but has a bunch of tables from R code, like kable(), then you can use `output: github_document` in the yaml and use the gfm output.  I'm not sure if the tables from knit() will work in github.
 
-* Only use `\begin{equation}\end{equation}` (or align, etc).  Don't use $$.  Wrap in a `<div>` to protect from jekyll.  so like so  `<div>\begin{equation}\end{equation}</div>`
+* Only use `\begin{equation}\end{equation}` (or align, etc).  Don't use $$.  Wrap in a `<div>` to protect from jekyll.  so like so  `<div>\begin{equation}\end{equation}</div>`.  Note, if your `\begin{equation}\end{equation}` is in a paragraph with NO line feeds anywhere (not even in the equation), the  `\begin{equation}\end{equation}` is already wrapped in a `<div>` from the paragraph. In that case, don't add another set of `<div>`s.  This is what an equation should normally look like:
+
+```
+<div>
+\begin{equation}
+1+1 = 2
+\end{equation}
+</div>
+```
 
 * You can use \$...\$ or \\(...\\) for inline equations.  mathjax.html sets the mathjax config to allow \$...\$.  This means you need to be careful in how you use $.  You might run into trouble in code.
 
-* Avoid using any special markdown symbols in math.  "*" is \ast, "|" is \vert.  markdown will misinterpret these as markdown and mess up your equations.  "_" is known to create problems in some jekyll sites; there is an extension setting that will turn off "_" as emphasis.
+* Avoid using any special markdown symbols in math.  Use `\ast` instead of "*"; Use `\vert` instead of "|".  markdown will misinterpret these as markdown and mess up your equations.  "_" is known to create problems in some jekyll sites; there is an extension setting that will turn off "_" as emphasis.
 
-* IF you have the `\begin{equation}\end{equation}` embedded in a paragraph, for example to have a list with multiple paragraphs, then leave off the `<div>`s.  They are implicitly there already.
+* IF you want a bulleted or numbered list with multiple paragraphs and you have math equations in those paragraphs, you need to embed the `\begin{equation}\end{equation}` in the paragraph with no line feeds anywhere. So it will look like so:
 
-* To add a link to download a pdf of a post, add the pdf somewhere and then add pdf: [url to pdf] to the yaml of post.  If you put in blog_files/pdfs  then add pdf: blog_files/pdfs/nameoffile.pdf
+```
+    Note the leading 4 spaces.  Now I have an equation, \begin{equation}1+1=2\end{equation} with no line feeds anywhere.  All one paragraph and not <div>s around the equation.
+```
+
+* To add a link to download a pdf of a post, set up your yaml similar to this.  This says to add a link to the PDF and Rmd file.  It will look for the pdf in posts/pdfs/ and the Rmd in posts/Rmd .  You need to put the files there and they have to be called [postname].pdf and [postname].Rmd .  Look in posts/Rmd for an R script that will do this automatically from a Rmd file.
+
+```
+---
+title: "Title of my blog"
+output: pdf_document
+date: '2016-05-19'
+tags:
+- Fisher Information
+- MARSS
+permalink: /posts/2016/05/FI-II/
+postname: '2016-5-19-FI-recursion-2'
+pdf: true
+rmd: true
+```
