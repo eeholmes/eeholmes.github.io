@@ -44,21 +44,17 @@ I am part of a NWFSC research group working in the area of hierarchical modeling
 <h3>Education</h3>
 <ul class="ul-edu fa-ul">
 <li>
-<i class="fa fa-university"></i>PhD in Zoology, 1995, University of Washington
+<i class="fa fa-mortar-board"></i> BS in Biology, 1988, Stanford University
 </li>
 
 <li>
-<div class="description">
-<p class="course">BS in Biology, 1988</p>
-<p class="institution">Stanford University</p>
-</div>
+<i class="fa fa-mortar-board"></i> BS in Mechanical Engineering, 1988, Stanford University
 </li>
+
 <li>
-<div class="description">
-<p class="course">BS in Mechanical Engineering, 1988</p>
-<p class="institution">Stanford University</p>
-</div>
+<i class="fa fa-university"></i> PhD in Zoology, 1995, University of Washington
 </li>
+
 </ul>
 </div>
 
