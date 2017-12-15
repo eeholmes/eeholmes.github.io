@@ -16,6 +16,9 @@ require(eehutils)
 filename="2016-5-18-FI-recursion-1.Rmd"
 rmd_to_gfm(filename, pdf=TRUE)
 -->
+
+
+
 This is part of a series on computing the Fisher Information for Multivariate Autoregressive State-Space Models.
 [Part I: Background](https://eeholmes.github.io/posts/2016-5-18-FI-recursion-1/), 
 [Part II: Louis 1982](https://eeholmes.github.io/posts/2016-5-19-FI-recursion-2/), 
