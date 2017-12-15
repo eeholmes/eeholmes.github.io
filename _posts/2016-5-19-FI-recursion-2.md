@@ -19,7 +19,11 @@ filename="2016-5-19-FI-recursion-2.Rmd"
 rmd_to_gfm(filename, pdf=TRUE)
 -->
 
-Background on Fisher Information is in [Part I](http://parsimoniouspursuits.blogspot.com/2016/05/notes-on-computing-fisher-information.html).
+This is part of a series on computing the Fisher Information for Multivariate Autoregressive State-Space Models.
+[Part I: Background](https://eeholmes.github.io/posts/2016-5-18-FI-recursion-1/), 
+[Part II: Louis 1982](https://eeholmes.github.io/posts/2016-5-19-FI-recursion-2/), 
+[Part III: Harvey 1989, Background](https://eeholmes.github.io/posts/2016/06/FI-III/),
+[Part IV: Harvey 1989, Implementation](https://eeholmes.github.io/posts/2017/05/FI-IV/).
 
 Computing Fisher Information
 ======================

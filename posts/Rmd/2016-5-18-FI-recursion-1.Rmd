@@ -16,6 +16,14 @@ require(eehutils)
 filename="2016-5-18-FI-recursion-1.Rmd"
 rmd_to_gfm(filename, pdf=TRUE)
 -->
+This is part of a series on computing the Fisher Information for Multivariate Autoregressive State-Space Models.
+[Part I: Background](https://eeholmes.github.io/posts/2016-5-18-FI-recursion-1/), 
+[Part II: Louis 1982](https://eeholmes.github.io/posts/2016-5-19-FI-recursion-2/), 
+[Part III: Harvey 1989, Background](https://eeholmes.github.io/posts/2016/06/FI-III/),
+[Part IV: Harvey 1989, Implementation](https://eeholmes.github.io/posts/2017/05/FI-IV/).
+
+(Expected) Fisher Information
+===================
 
 The Fisher Information is defined as
 <div>
@@ -51,6 +59,9 @@ That $\vert_{\theta=\hat{\theta}}$ at the end means that after doing the derivat
 
 This is a viable approach if you can take the derivative of the log-likelihood with respect to $\theta$ and can take the expectation over the data.  You could always do that expectation using simulation of course.  You just need to be able to simulate data from your model with $\hat{\theta}$.
 
+Observed Fisher Information
+-------------------------
+
 Another approach is to drop the expectation.  This is termed the *observed* Fisher Information: 
 <div>
 \begin{equation}\label{observedFisherInformation}
@@ -59,9 +70,12 @@ Another approach is to drop the expectation.  This is termed the *observed* Fish
 </div>
 where $y$ is the one dataset we collected.  The observed Fisher Information is the curvature of the log-likelihood function around the MLE. When you estimate the variance of the MLEs from the Hessian of the log-likelihood (output from say some kind of Newton method or any other algorithm that uses the Hessian of the log-likelihood), then you are using the observed Fisher Information matrix.  Efron and Hinkley (1978) (and Fisher they say in their article) say that the observed Fisher Information is a better estimate of the variance of $\hat{\theta}$<span id="a2">[[2]](#f2)</span><span id="a3">[[3]](#f3)</span>, while Cavanaugh and Shumway (1996) show results from MARSS models that indicate that the expected Fisher Information has lower mean squared error (though may be more biased; mean squared error measures both bias and precision). 
 
-So how do we compute $I(\hat{\theta})$ or $\mathcal{I}(\hat{\theta},y)$?  In particular, I am interested in whether I can use the analytical derivatives of the full log-likelihood that are part of the EM algorithm? [Notes on computing the Fisher Information matrix for MARSS models. Part II](https://eeholmes.github.io/posts/2016-5-19-FI-recursion-2/).
+Computing the Fisher Information
+================================
 
-Footnotes
+So how do we compute $I(\hat{\theta})$ or $\mathcal{I}(\hat{\theta},y)$?  In particular, I am interested in whether I can use the analytical derivatives of the full log-likelihood that are part of the EM algorithm to compute the Fisher Information. [Notes on computing the Fisher Information matrix for MARSS models. Part II](https://eeholmes.github.io/posts/2016-5-19-FI-recursion-2/).
+
+Endnotes
 =============
 
 1. <span id="f1"></span> See any detailed write-up on Fisher Information.  For example page 2 of these [Lecture Notes on Fisher Information](http://people.missouristate.edu/songfengzheng/Teaching/MTH541/Lecture%20notes/Fisher_info.pdf). [$\hookleftarrow$](#a1)
