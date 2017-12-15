@@ -1,8 +1,6 @@
 Original source: A Github Pages template for academic websites by [Stuart Geiger](https://github.com/staeiou): [academicpages.github.io](https://github.com/academicpages/academicpages.github.io).  Academicpages was forked (then detached) by [Stuart Geiger](https://github.com/staeiou) from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/), which is © 2016 Michael Rose and released under the MIT License. See LICENSE.md.  
 
-I (Eli) forked (then detached) an edited copy of academicpages from Eric Ward.  I then tore into it and changed it quite a bit.  
-
-I've made a number of changes and did not document along the way.  The following are some that I remember.
+I (Eli) forked (then detached) an edited copy of academicpages from Eric Ward.  I then tore into it and changed it quite a bit.  I did not document all changes.  The following are the major ones.
 
 * I added mathjax.html to _includes folder and change the default.hmtl in _layouts folder to include that.  This specs which MathJax configs I want to.
 
@@ -16,7 +14,7 @@ I've made a number of changes and did not document along the way.  The following
 
 * fuzted with the site css in _sass.  Had to make changes in 3 places: _masthead.scss, _navigation.scss, and _variables.scss.
 
-* added a pdf and rmd download for posts with changes in single.html. To use, just add pdf: [url of pdf] to the yaml in a post.  I added some yaml variables for posts: pdf, rmd, postname.  postname is used to construct the url.  pdf url is  assumed to be /posts/pdfs/postname.pdf  rmd is assumed to be in the repo for the website in /posts/Rmd/postname.rmd.  Note postname is dynamically gotten from the Rmd file if you use the template.
+* added a pdf and rmd download for posts with changes in single.html. To use, just add pdf: [url of pdf] to the yaml in a post.  I added some yaml variables for posts: pdf, rmd, postname.  postname is used to construct the url.  pdf url is  assumed to be /posts/pdfs/postname.pdf  rmd is assumed to be in the repo for the website in /posts/Rmd/postname.rmd.  Note postname is dynamically gotten from the Rmd file if you use the template (click on the rmd link on any post in my blog to see the Rmd file).
 
 # Instructions for using my hacked version of academicpages as your website
 
