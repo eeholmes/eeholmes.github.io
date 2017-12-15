@@ -1,7 +1,6 @@
 ---
 title: 'Notes on computing the Fisher Information matrix for MARSS models. Part IV Implementing the Recursion in Harvey 1989'
 date: 2017-05-31
-author: EE Holmes
 tags:
   - Fisher Information
   - MARSS
@@ -10,6 +9,7 @@ postname: '2017-5-31-FI-recursion-4'
 pdf: true
 rmd: true
 urlcolor: blue
+author: EE Holmes, National Marine Fisheries Service & University of Washington
 ---
 
 <!--
@@ -23,8 +23,9 @@ rmd_to_gfm(filename, pdf=TRUE)
 This is part of a series on computing the Fisher Information for Multivariate Autoregressive State-Space Models.
 [Part I: Background](https://eeholmes.github.io/posts/2016-5-18-FI-recursion-1/), 
 [Part II: Louis 1982](https://eeholmes.github.io/posts/2016-5-19-FI-recursion-2/), 
-[Part III: Harvey 1989, Background](https://eeholmes.github.io/posts/2016/06/FI-III/),
-[Part IV: Harvey 1989, Implementation](https://eeholmes.github.io/posts/2017/05/FI-IV/).
+[Part III: Harvey 1989, Background](https://eeholmes.github.io/posts/2016-6-16-FI-recursion-3/),
+[Part IV: Harvey 1989, Implementation](https://eeholmes.github.io/posts/2017-5-31-FI-recursion-4/).
+\footnote[1]{Holmes, E. E. 2016. Notes on computing the Fisher Information matrix for MARSS models. Part IV Implementing the Recursion in Harvey 1989. }
 
 _______
 

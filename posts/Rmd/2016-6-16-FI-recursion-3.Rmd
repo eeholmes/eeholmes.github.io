@@ -9,6 +9,7 @@ postname: '`r sub("[.]Rmd","",knitr::current_input())`'
 pdf: true
 rmd: true
 urlcolor: blue
+author: EE Holmes, National Marine Fisheries Service & University of Washington
 ---
 
 <!--
@@ -19,6 +20,7 @@ rmd_to_gfm(filename, pdf=TRUE)
 
 ```{r, child="FI-header.Rmd"}
 ```
+\footnote[1]{Holmes, E. E. 2016. Notes on computing the Fisher Information matrix for MARSS models. Part III Overview of Harvey 1989. }
 
 _______
 
