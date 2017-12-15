@@ -9,7 +9,7 @@ tags:
 - MARSS
 permalink: /posts/2016/05/FI-II/
 pdf: /posts/pdfs/2016-5-19-FI-recursion-2.pdf
-github: /posts/Rmd/2016-5-19-FI-recursion-2.Rmd
+github:  https://github.com/eeholmes/eeholmes.github.io/posts/Rmd/2016-5-19-FI-recursion-2.Rmd
 ---
 
 <!--

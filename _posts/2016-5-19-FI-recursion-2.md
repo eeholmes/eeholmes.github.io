@@ -7,7 +7,7 @@ date: '2016-05-19'
 tags:
 - Fisher Information
 - MARSS
-permalink: /posts/2016/05/FI-II/
+permalink: /posts/2016-05-19-FI-II/
 pdf: /posts/pdfs/2016-5-19-FI-recursion-2.pdf
 github: /posts/Rmd/2016-5-19-FI-recursion-2.Rmd
 ---
