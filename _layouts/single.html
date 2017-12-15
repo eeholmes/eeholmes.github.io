@@ -45,7 +45,7 @@ layout: default
         <span style="padding-left: .5cm"><a href="/posts/pdfs/{{ page.postname }}.pdf"><i class="fa fa-file-pdf-o" style="font-size:24px;color:red"></i></a></span>
             {% endif %}
             {% if page.rmd %}
-        <a href="https://github.com/{{ author.github }}/{{ site.repository}}/blob/master/posts/Rmd/{{ page.postname }}.Rmd"><i class="fa fa-github" style="font-size:24px;color:black"></i></a>
+        <a href="https://github.com/{{ site.author.github }}/{{ site.repository}}/blob/master/posts/Rmd/{{ page.postname }}.Rmd"><i class="fa fa-github" style="font-size:24px;color:black"></i></a>
             {% endif %}
         </p>        
         {% elsif page.venue and page.date %}
