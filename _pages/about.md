@@ -44,10 +44,7 @@ I am part of a NWFSC research group working in the area of hierarchical modeling
 <h3>Education</h3>
 <ul class="ul-edu fa-ul">
 <li>
-<div class="description">
-<p class="course">PhD in Zoology, 1995</p>
-<p class="institution">University of Washington</p>
-</div>
+<i class="fa fa-university"></i>PhD in Zoology, 1995, University of Washington
 </li>
 
 <li>
