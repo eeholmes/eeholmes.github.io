@@ -1,0 +1,14 @@
+---
+title: Blog title
+output: pdf_document
+date: '2016-05-19'
+tags:
+- Fisher Information
+- MARSS
+permalink: '`r paste0("/posts/",sub("[.]Rmd","",knitr::current_input()),"/")`'
+postname: '`r sub("[.]Rmd","",knitr::current_input())`'
+pdf: true
+rmd: true
+header-includes:
+  - \usepackage{mathrsfs}
+---
