@@ -30,7 +30,7 @@ The 'score' function used in the EM algorithm for a MARSS model is
 <div>\begin{equation} 
 Q(\theta|\theta_j) = E_{X|y,\theta_j } [\log f_{XY}(X,y\vert\theta) ]
 \end{equation}</div>
-It is the expected value taken over the hidden random variable $X$ of the full data log-likelihood at $Y=y$ (3); full means it is a function of all the random variables in the model,  which includes the hidden or latent variables.
+It is the expected value taken over the hidden random variable $X$ of the full data log-likelihood at $Y=y$ <span id="a3">[[3]](#f3)</span>; full means it is a function of all the random variables in the model,  which includes the hidden or latent variables.
 $x, y$ is the full 'data', the left side of the $x$ state equation and the $y$ observation equation.  We take the expectation of this full data likelihood conditioned on the observed data $y$ and $\theta_j$ which is the value of $\theta$ at the j-th iteration of the EM algorithm. Although $Q(\theta \vert \theta_j)$ looks a bit hairy, actually the full-data likelihood may be very easy to write down and considerably easier than the data likelihood $f(y\vert\theta)$.  The hard part is often the expectation step, however for MARSS models the Kalman filter-smoother algorithm computes the expectations involving $X$ and Holmes (2010) shows how to compute the expectations involving $Y$, which comes up when there are missing values in the dataset (missing time steps, say).  
 
 In the M-step of the EM algorithm, we take the derivative of $Q(\theta \vert \theta_j)$ with respect to $\theta$ and solve for the $\theta$ where
@@ -72,7 +72,7 @@ Page 227 near top of Louis 1982 becomes
 <div>\begin{equation}\label{lambday}
 \lambda^\ast (y,\theta) = \log\{ f_Y(y\vert\theta) \} = \log \int_X f_{XY}(x,y\vert\theta)dx 
 \end{equation}</div>
-$f(.\vert\theta)$ is the probability distribution of the random variable conditioned on $\theta$. $\lambda$ is the full likelihood; 'full' means is includes both $x$ and $y$.  $\lambda^\ast$ is the likelihood of $y$ alone.  It is defined by the marginal distribution of $y$ (1); the integral over $X$ on the right side of \ref{lambday}.  For a MARSS model, the data likelihood can be written easily as a function of the Kalman filter recursions (which is why you can write a recursion for the information matrix based on derivatives of $\lambda^\ast$; see Part III).
+$f(.\vert\theta)$ is the probability distribution of the random variable conditioned on $\theta$. $\lambda$ is the full likelihood; 'full' means is includes both $x$ and $y$.  $\lambda^\ast$ is the likelihood of $y$ alone.  It is defined by the marginal distribution of $y$ <span id="a1">[[1]](#f1)</span>; the integral over $X$ on the right side of \ref{lambday}.  For a MARSS model, the data likelihood can be written easily as a function of the Kalman filter recursions (which is why you can write a recursion for the information matrix based on derivatives of $\lambda^\ast$; see Part III).
 
 Next equation down.  Louis doesn't say this and his notation is not totally clear, but the expectation right above section 3 (and in his eqn 3.1) is a conditional expectation. This is critical to know to follow his derivation of equation 3.1 in the appendix. $\theta_j$ is his $\theta(0)$; it is the value of $\theta$ at the last EM iteration.
 
@@ -128,7 +128,7 @@ S^\ast (y,\theta) =&
 \label{Sstar}
 \end{equation}
 </div>
-The second to last step used the fact that $f_Y(y\vert\theta)$ does not involve $x$ thus we can bring it into the integral.  This gives us $f_{XY}(x,y\vert\theta)/f_Y(y\vert\theta)$. This is the  probability of $x$ conditioned on $Y=y$ (2).
+The second to last step used the fact that $f_Y(y\vert\theta)$ does not involve $x$ thus we can bring it into the integral.  This gives us $f_{XY}(x,y\vert\theta)/f_Y(y\vert\theta)$. This is the  probability of $x$ conditioned on $Y=y$ <span id="a2">[[2]](#f2)</span>.
 
 The last step in the derivation of equation 3.1 is to recognize that the far right side of \ref{Sstar} is the conditional expectation in 3.1.  Louis does not actually write out the expectation in 3.1 and the notation is rather vague. But the expectation in equation 3.1 is the conditional expectation on the far right side of \ref{Sstar}.
 <div>\begin{equation}\label{Louise3p1}
@@ -263,7 +263,7 @@ Using the computational form of the variance, $var(X)=E(XX)-E(X)E(X)$, we can se
 <div>\begin{equation}
 var_{X|y,\theta}( S(X,y\vert\theta) )
 \end{equation}</div>
-But the variance of the first derivative of $f^\prime(X\vert\theta)$ is the <em>expected</em> Fisher Information of $X$ (4).  In this case, it is the expected Fisher Information of the hidden state $X$, where we specify that $X$ has the conditional distribution $f_{X\vert Y} (X \vert Y=y,\theta)$.  Thus we have the second part of Louis' statement.
+But the variance of the first derivative of $f^\prime(X\vert\theta)$ is the <em>expected</em> Fisher Information of $X$ <span id="a4">[[4]](#f4)</span>.  In this case, it is the expected Fisher Information of the hidden state $X$, where we specify that $X$ has the conditional distribution $f_{X\vert Y} (X \vert Y=y,\theta)$.  Thus we have the second part of Louis' statement.
 
 
 Relating Louis 1982 to the update equations in the MARSS EM algorithm
@@ -288,7 +288,7 @@ Q^\prime(\theta | \theta_j) =& d( E_{X|y,\theta_j } [\log f_{XY}(X,y\vert\theta)
 </div> 
 With the MARSS model, $S(X,y\vert\theta)$ is analytical and we can also compute $B(X,y\vert\theta)$, the second derivative, analytically.  
 
-The difficulty arises with this term: $var_{X\vert Y,\theta} [ S(X,y\vert\theta) ]$.  The $S(X,y\vert\theta)$ is a summation from $t=1$ to $T$ that involves $X_t$ or $X_t X_{t-1}^\top$ for some parameters. When we do the cross-product, we will end up with terms like  $E[ X_t X_{t+k}^\top ]$ and $E[ X_t X_t^\top X_{t+k}X_{t+k}^\top ]$.  The latter is not a problem; all the random variables in a MARSS models are multivariate normal and the k-th central moments can be expressed in terms of the first and second moments (5), but that will still leave us with terms like $E[ X_t X_{t+k}^\top ]$, which are the smoothed covariance between $X$ at time $t$ and $t+k$ conditioned on all the data ($t=1:T$).  
+The difficulty arises with this term: $var_{X\vert Y,\theta} [ S(X,y\vert\theta) ]$.  The $S(X,y\vert\theta)$ is a summation from $t=1$ to $T$ that involves $X_t$ or $X_t X_{t-1}^\top$ for some parameters. When we do the cross-product, we will end up with terms like  $E[ X_t X_{t+k}^\top ]$ and $E[ X_t X_t^\top X_{t+k}X_{t+k}^\top ]$.  The latter is not a problem; all the random variables in a MARSS models are multivariate normal and the k-th central moments can be expressed in terms of the first and second moments <span id="a5">[[5]](#f5)</span>, but that will still leave us with terms like $E[ X_t X_{t+k}^\top ]$, which are the smoothed covariance between $X$ at time $t$ and $t+k$ conditioned on all the data ($t=1:T$).  
 
 Computing these is not hard.  These are the the n-step apart smoothed covariances. Harvey (1989), page 148, discusses how to use the Kalman filter to get the n-step ahead prediction covariances and a similar approach can be used (presumably) to get the $V(t,t+k)$ smoothed covariances.  However this will end up being computationally expensive because we will need all of the $t,t+k$ combinations, i.e., {1,3}, {1,4}, ..., {2,3}, {2,4}, .... etc.. That will be a lot: $T + T-1 + T-2 + T-3 + \dots$, i.e. 
 $T(T+1)/2$, smoothed covariances.  
@@ -301,10 +301,10 @@ Conclusion
 I think the approach of Louis (1982) is not viable for MARSS models. The derivatives $B(x,y\vert\theta)$ and $S(x,y\vert\theta)$ are straight-forward (if tedious) to compute analytically following the approach in Holmes (2010).  But the computing all the n-step smoothed covariances is going to be very slow and each computation involves many matrix multiplications.  However, one could compute $\mathcal{I}(\theta,y)$ via simulation using \ref{Louismain2}.  It is easy enough to simulate $X$ using the MLEs and then you compute $B(x_b,y\vert\theta)$ and $S(x_b,y\vert\theta)$ for each where $x_b$ is the bootstrapped $x$ time series and $y$ is the data.  I don't think it makes sense to do that for MARSS models since there are two recursion approaches for computing the observed and expected Fisher Information using $f(y\vert\theta)$ and the Kalman filter equations (Harvey 1989, pages 140-142; Cavanaugh and Shumway 1996).
 
 
-Footnotes
+Endnotes
 =============
 
-1. Given a joint probability distribution of $\{X,Y\}$, the marginal distribution of $Y$ is $\int_X f(X,Y) dx$.  Discussions of the estimators for MARSS models often use the property of the marginal distributions of a multivariate normal without actually stating that this property is being used.  The step in the derivation will just say, 'Thus' with no indication of what property was just used. <br />Reviewed here: http://fourier.eng.hmc.edu/e161/lectures/gaussianprocess/node7.html
+1. <span id="f1"></span>Given a joint probability distribution of $\{X,Y\}$, the marginal distribution of $Y$ is $\int_X f(X,Y) dx$.  Discussions of the estimators for MARSS models often use the property of the marginal distributions of a multivariate normal without actually stating that this property is being used.  The step in the derivation will just say, 'Thus' with no indication of what property was just used. <br />Reviewed here: http://fourier.eng.hmc.edu/e161/lectures/gaussianprocess/node7.html
 
     If you have a joint likelihood of some random variables, and you want the likelihood of a subset of those random variables, then you compute the marginal distribution.  i.e. you integrate over the random variables you want to get rid of: \begin{equation} L(\theta\vert y) ] = \int_X L(\theta\vert X,Y) p(x\vert Y=y, \theta_j) dx \vert_{Y=y}. \end{equation} So we integrate out $X$ from the full likelihood and then set $Y=y$ to get the likelihood.
 
@@ -312,83 +312,51 @@ Footnotes
 
     This presumes that you have $p(\theta_2\vert\theta_1)$.  The expected likelihood is different yet again:  \begin{equation} E_{X,Y\vert Y=y,\theta_j} [L(\theta\vert X,Y) ] = \int_X L(\theta\vert X,Y) p(x\vert Y=y, \theta_j) dx.\end{equation}
 
-    On the surface it looks like the equation for $L(\theta\vert y)$ but it is different.  $\theta_j$ is not $\theta$.  It is the parameter value at which we are computing the expected value of $X$.  Maximizing the $E_{X,Y\vert Y=y,\theta_j} [L(\theta\vert X,Y)]$ will increase the likelihood but will not take you to the MLE. You have to embed this maximization in the EM algorithm that walks up the likelihood surface.
+    On the surface it looks like the equation for $L(\theta\vert y)$ but it is different.  $\theta_j$ is not $\theta$.  It is the parameter value at which we are computing the expected value of $X$.  Maximizing the $E_{X,Y\vert Y=y,\theta_j} [L(\theta\vert X,Y)]$ will increase the likelihood but will not take you to the MLE. You have to embed this maximization in the EM algorithm that walks up the likelihood surface. [$\hookleftarrow$](#a1)
 
-2. $P(A\vert B) = P(A \cup B)/P(B)$
+2. <span id="f2"></span>$P(A\vert B) = P(A \cup B)/P(B)$ [$\hookleftarrow$](#a2)
 
-3. I normally think about $Y$ as being partially observed (missing values) so I also take the expectation over $Y(2)$ conditioned on $Y(1)$, where (1) means observed and (2) means missing.  In Holmes (2010), this is done in order to derive general EM update equations for the missing values case.  But my notation is getting hairy, so for this write-up, I'm treating $Y$ as fully observed; so no $Y(2)$ and I've dropped the integrals (expectations) over $Y(2)$.
+3. <span id="f3"></span>I normally think about $Y$ as being partially observed (missing values) so I also take the expectation over $Y(2)$ conditioned on $Y(1)$, where (1) means observed and (2) means missing.  In Holmes (2010), this is done in order to derive general EM update equations for the missing values case.  But my notation is getting hairy, so for this write-up, I'm treating $Y$ as fully observed; so no $Y(2)$ and I've dropped the integrals (expectations) over $Y(2)$. [$\hookleftarrow$](#a3)
 
-4. http://people.missouristate.edu/songfengzheng/Teaching/MTH541/Lecture%20notes/Fisher_info.pdf
+4. <span id="f4"></span>http://people.missouristate.edu/songfengzheng/Teaching/MTH541/Lecture%20notes/Fisher_info.pdf [$\hookleftarrow$](#a4)
 
-5. https://en.wikipedia.org/wiki/Multivariate_normal_distribution#Higher_moments
+5. <span id="f5"></span>See the Wipedia page on the [Multivariate Normal Distribution](https://en.wikipedia.org/wiki/Multivariate_normal_distribution#Higher_moments) [$\hookleftarrow$](#a5)
 
 Papers and online references
 =============================
 
-* Ng, Krishnan and McLachlan 2004<br />
-The EM algorithm.  Section 3.5 discusses standard errors approaches<br />
-https://www.econstor.eu/dspace/bitstream/10419/22198/1/24_tk_gm_skn.pdf<br />
-http://hdl.handle.net/10419/22198
+* Ng, Krishnan and McLachlan 2004. The EM algorithm.  Section 3.5 discusses standard errors approaches [PDF](https://www.econstor.eu/dspace/bitstream/10419/22198/1/24_tk_gm_skn.pdf) http://hdl.handle.net/10419/22198
 
-* Efron and Hinkley 1978<br />
-(argues that the observed Fisher Information is better than expected Fisher Information in many/some cases.  The same paper argues for the likelihood ratio method for CIs)<br />
-Assessing the accuracy of the maximum likelihood estimator: observed versus expected Fisher Information<br />
-https://www.stat.tamu.edu/~suhasini/teaching613/expected_observed_information78.pdf
+* Efron and Hinkley 1978. Assessing the accuracy of the maximum likelihood estimator: observed versus expected Fisher Information. *They argue that the observed Fisher Information is better than expected Fisher Information in many/some cases.  They also argue for the likelihood ratio method for CIs.* [PDF](https://www.stat.tamu.edu/~suhasini/teaching613/expected_observed_information78.pdf)
 
-* Hamilton 1994<br />
-http://web.pdx.edu/~crkl/readings/Hamilton94.pdf
+* Hamilton 1994. [PDF](http://web.pdx.edu/~crkl/readings/Hamilton94.pdf)
 
-* Hamilton's exposition assumes you know the marginal distribution of a multivariate normal.  Scroll down to the bottom.<br />
+* Hamilton's exposition assumes you know the marginal distribution of a multivariate normal.  Scroll down to the bottom of this page to see that:
 http://fourier.eng.hmc.edu/e161/lectures/gaussianprocess/node7.html
 
-* Meilijson 1989<br />
-Fast improvement to the EM algorithm on its own terms<br />
-http://www.jstor.org/stable/pdf/2345847.pdf
+* Meilijson 1989. Fast improvement to the EM algorithm on its own terms. [PDF](http://www.jstor.org/stable/pdf/2345847.pdf)
 
-* Oakes 1999<br />
-Direct calculation of the information matrix via the EM algorithm<br />
-http://www.jstor.org/stable/pdf/2680653.pdf?_=1463187953783
+* Oakes 1999. Direct calculation of the information matrix via the EM algorithm. [PDF](http://www.jstor.org/stable/pdf/2680653.pdf?_=1463187953783)
 
-* Ho, Shumway and Ombao 2006<br />
-(this has a brief statement that Oakes 1999 derivatives are hard to compute.  It doesn't say why. It says nothing of Louis 1982.)<br />
-Chapter 7, The state-space approach to modeling dynamic processes<br />
-Models for Intensive Longitudinal Data<br />
-https://books.google.com/books?hl=en&lr=&id=Semo20xZ_M8C
+* Ho, Shumway and Ombao 2006. The state-space approach to modeling dynamic processes. Chap 7 in Models for Intensive Longitudinal Data.  *This has a brief statement that Oakes 1999 derivatives are hard to compute.  It doesn't say why. It says nothing about Louis 1982.*
+[Link](https://books.google.com/books?hl=en&lr=&id=Semo20xZ_M8C)
 
-* Louis 1982<br />
-(so elegant. alas, MARSS deals with time series data...)<br />
-Finding the observed information matrix when using the EM algorithm<br />
-http://www.jstor.org/stable/pdf/2345828.pdf<br />
-http://www.markirwin.net/stat220/Refs/louis1982.pdf
+* Louis 1982. Finding the observed information matrix when using the EM algorithm. *So elegant. alas, MARSS deals with time series data and that makes this ugly.* [PDF](http://www.jstor.org/stable/pdf/2345828.pdf) [Another PDF](http://www.markirwin.net/stat220/Refs/louis1982.pdf)
 
-* Lystig and Hughes 2012 <br />
-(helped me better understand why Louis 1982 is hard for MARSS models)<br />
-Exact computation of the observed information matrix for hidden Markov models<br />
-http://www.tandfonline.com.offcampus.lib.washington.edu/doi/abs/10.1198/106186002402
+* Lystig and Hughes 2012. Exact computation of the observed information matrix for hidden Markov models. *This paper helped me better understand why Louis 1982 is hard for MARSS models.*
+[Abstract](http://www.tandfonline.com.offcampus.lib.washington.edu/doi/abs/10.1198/106186002402)
 
-* Duan and Fulop 2011<br />
-(also helped me better understand why Louis 1982 is hard for MARSS models)<br />
-A stable estimator for the information matrix under EM for dependent data<br />
-http://www.rmi.nus.edu.sg/DuanJC/index_files/files/EM_Variance_March%205%202007.pdf<br />
-http://link.springer.com/article/10.1007/s11222-009-9149-4
+* Duan and Fulop 2011. A stable estimator for the information matrix under EM for dependent data. *This paper also helped me better understand why Louis 1982 is hard for MARSS models.* [PDF](
+http://www.rmi.nus.edu.sg/DuanJC/index_files/files/EM_Variance_March%205%202007.pdf) [Journal](http://link.springer.com/article/10.1007/s11222-009-9149-4)
 
-* Naranjo 2007  (didn't use)<br />
-State-space models with exogenous variables and missing data, PhD U of FL<br />
-http://etd.fcla.edu/UF/UFE0021568/naranjo_a.pdf
+* Naranjo 2007. State-space models with exogenous variables and missing data, PhD U of FL. *I didn't use this directly, but it helped me understand what I did need to use.* [PDF](http://etd.fcla.edu/UF/UFE0021568/naranjo_a.pdf)
 
-* Dempster, Laird, Rubin 1977<br />
-(didn't really use but looked up more info on the 'score' function Q)<br />
-Maximum likelihood for incomplete data via the EM algorithm<br />
-http://web.mit.edu/6.435/www/Dempster77.pdf
+* Dempster, Laird, Rubin 1977. Maximum likelihood for incomplete data via the EM algorithm. *I didn't really use this but looked up more info on the 'score' function Q in this paper, and that helped me understand Louis 1982 better* [PDF](http://web.mit.edu/6.435/www/Dempster77.pdf)
 
-* van Dyk, Meng and Rubin 1995<br />
-(this looks promising)<br />
-Maximum likelihood estimation via the ECM algorithm: computing the asymptotic variance<br />
-http://wwwf.imperial.ac.uk/~dvandyk/Research/95-sinica-secm.pdf
+* van Dyk, Meng and Rubin 1995. Maximum likelihood estimation via the ECM algorithm: computing the asymptotic variance. *I didn't use but it looks promising.* [PDF](http://wwwf.imperial.ac.uk/~dvandyk/Research/95-sinica-secm.pdf)
 
-* Cavanaugh and Shumway 1996<br />
-On computing the expected Fisher Information Matrix for state-space model parameters<br />
+* Cavanaugh and Shumway 1996. On computing the expected Fisher Information Matrix for state-space model parameters.
 
-* Harvey 1989, pages 140-143, Section 3.4.5 Information matrix<br />
-Forecasting, structural time series models and the Kalman filter<br />
+* Harvey 1989, pages 140-143, Section 3.4.5 Information matrix *in*
+Forecasting, structural time series models and the Kalman filter.
 
