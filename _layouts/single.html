@@ -42,10 +42,10 @@ layout: default
 <strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time>
             {% endif %}
             {% if page.pdf %}
-        <span style="padding-left: .5cm"><a href="{{ page.pdf }}"><i class="fa fa-file-pdf-o" style="font-size:24px;color:red"></i></a></span>
+        <span style="padding-left: .5cm"><a href="/posts/pdfs/{{ page.postname }}.pdf"><i class="fa fa-file-pdf-o" style="font-size:24px;color:red"></i></a></span>
             {% endif %}
             {% if page.github %}
-        <a href="{{ page.github }}"><i class="fa fa-github" style="font-size:24px;color:black"></i></a>
+        <a href="https://github.com/{{ author.github }}/{{ site.repository}}/blob/master/posts/Rmd/{{ page.postname }}.Rmd"><i class="fa fa-github" style="font-size:24px;color:black"></i></a>
             {% endif %}
         </p>        
         {% elsif page.venue and page.date %}
