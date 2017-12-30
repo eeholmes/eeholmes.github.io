@@ -25,7 +25,8 @@ This is part of a series on computing the Fisher Information for Multivariate Au
 [Part II: Louis 1982](https://eeholmes.github.io/posts/2016-5-19-FI-recursion-2/), 
 [Part III: Harvey 1989, Background](https://eeholmes.github.io/posts/2016-6-16-FI-recursion-3/),
 [Part IV: Harvey 1989, Implementation](https://eeholmes.github.io/posts/2017-5-31-FI-recursion-4/).
-\footnote[1]{Holmes, E. E. 2016. Notes on computing the Fisher Information matrix for MARSS models. Part I Background.  Technical Report. https://doi.org/10.13140/RG.2.2.27306.11204/1}
+
+Citation: Holmes, E. E. 2016. Notes on computing the Fisher Information matrix for MARSS models. Part I Background.  Technical Report. https://doi.org/10.13140/RG.2.2.27306.11204/1
 
 (Expected) Fisher Information
 ===================
