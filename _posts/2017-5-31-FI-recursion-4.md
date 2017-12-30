@@ -92,9 +92,9 @@ The derivative of this with respect to $\theta_i=a$ is
 \end{equation}
 </div>
 So in MARSS, $\partial M/\partial \theta_i$ would be 
-```
-    dthetai=matrix(0,ip,1); dthetai[i,]=1 #set up the d theta_i bit.
-    dM=unvec(f+D%*%dthetai,dim(M)) #only needed if M is matrix
+```r
+dthetai=matrix(0,ip,1); dthetai[i,]=1 #set up the d theta_i bit.
+dM=unvec(f+D%*%dthetai,dim(M)) #only needed if M is matrix
 ```
 
 The reason is that MARSS allows any linear constraint of the form $\alpha+\beta a + \beta_2 b$, etc.  The vec form allows me to work with a generic linear constraint without having to know the exact form of that constraint.  The model and parameters are all specified in vec form with f, D, and p matrices (lower case = column vector).
