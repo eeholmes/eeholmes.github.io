@@ -93,8 +93,8 @@ The derivative of this with respect to $\theta_i=a$ is
 </div>
 So in MARSS, $\partial M/\partial \theta_i$ would be 
 ```
-dthetai=matrix(0,ip,1); dthetai[i,]=1 #set up the d theta_i bit.
-dM=unvec(f+D%*%dthetai,dim(M)) #only needed if M is matrix
+    dthetai=matrix(0,ip,1); dthetai[i,]=1 #set up the d theta_i bit.
+    dM=unvec(f+D%*%dthetai,dim(M)) #only needed if M is matrix
 ```
 
 The reason is that MARSS allows any linear constraint of the form $\alpha+\beta a + \beta_2 b$, etc.  The vec form allows me to work with a generic linear constraint without having to know the exact form of that constraint.  The model and parameters are all specified in vec form with f, D, and p matrices (lower case = column vector).
@@ -124,7 +124,7 @@ $\tilde{V} _ {t\vert t-1}$ is the one-step ahead prediction covariance output fr
 
 ### Recursion for derivatives of states and variance of states
 
-#### If t=1
+### If t=1
 
 * **Case 1**. $\pi=x_0$ is treated as a parameter and $V_0 = 0$.  For any $\theta_i$ that is not in $\pi$, $Z$ or $a$,  $\partial v_1/\partial \theta_i\ = 0$.  For any $\theta_i$ that is not in  $Z$ or $R$,  $\partial F_1/\partial \theta_i\ = 0$ (a n x n matrix of zeros).  
 
@@ -132,7 +132,7 @@ $\tilde{V} _ {t\vert t-1}$ is the one-step ahead prediction covariance output fr
 
     From equation 3.4.73b and using  $V_0 = 0$: \begin{equation} \frac{\partial \tilde{V}_{1\vert 0}}{\partial\theta_i } = \frac{\partial B_1}{\partial \theta_i} V_0 B_1^\top + B_1 \frac{\partial V_0}{\partial \theta_i} B_1^\top + B_1 V_0 \frac{\partial B_1^\top}{\partial \theta_i} + \frac{\partial (G_t Q_t G_t^\top)}{\partial \theta_i} = \frac{\partial (G_t Q_t G_t^\top)}{\partial \theta_i}\end{equation}
 
-* **Case 2**. $\pi=x_{1\vert 0}$ is treated as a parameter and $V_{1\vert 0}=0$. \begin{equation}\frac{\partial \tilde{x}_{1\vert 0}}{\partial \theta_i}=\frac{\partial \pi}{\partial \theta_i} \text{ and } \partial V_{1\vert 0}/\partial\theta_i = 0.\end{equation}
+* **Case 2**. $\pi=x_{1\vert 0}$ is treated as a parameter and $V_{1\vert 0}=0$. \begin{equation}\frac{\partial \tilde{x} _ {1\vert 0}}{\partial \theta_i}=\frac{\partial \pi}{\partial \theta_i} \text{ and } \partial V_{1\vert 0}/\partial\theta_i = 0.\end{equation}
 
 * **Case 3**. $x_0$ is specified by a  fixed prior.  $x_0=\pi$ and $V_0=\Lambda$. The derivatives of these are 0, because they are fixed.
 
@@ -147,11 +147,10 @@ $\tilde{V} _ {t\vert t-1}$ is the one-step ahead prediction covariance output fr
 
 When coding this recursion, I will loop though the MARSS parameters (x0, V, Z, a, R, B, u, Q) and within that loop, loop through the individual parameters within the parameter vector.  So say Q is diagonal and unequal.  It has m variance parameters, and I'll loop through each.
 
-Now we have <div>$\frac{\partial \tilde{x}_{1\vert 0}}{\partial \theta_i}$</div> and $\frac{\partial \tilde{V} _ {1\vert 0}}{\partial \theta_i}$ for $t=1$ and we can proceed.
+Now we have $\frac{\partial \tilde{x} _ {1\vert 0}}{\partial \theta_i}$ and $\frac{\partial \tilde{V} _ {1\vert 0}}{\partial \theta_i}$ for $t=1$ and we can proceed.
 
-_______________________
 
-#### If t>1
+### If t>1
 
 The derivative of $\tilde{x} _ {t\vert t-1}$ is (3.4.73a in Harvey)
 <div>
@@ -198,7 +197,7 @@ B_t \frac{\tilde{V}_{t-1\vert t-1}}{\partial\theta_j} \frac{\partial B_t^\top}{\
 </div>
 In the derivatives, $\tilde{V} _ {t\vert t}$ is output by the Kalman filter.  In MARSSkf, it is called Vtt[,t]. $\tilde{V} _ {t-1\vert t-1}$ would be called Vtt[,t-1].  The derivatives of $\tilde{V} _ {t-1\vert t-1}$ is from the rest of the recursion (below).
 
-#### Rest of the recursion equations are the same for all t.
+### Rest of the recursion equations are the same for all t.
 
 From equation 3.4.74a:
 <div>
@@ -232,7 +231,7 @@ From equation 3.4.74b:
     * Loop over j = i to p.
         * Compute $I_{ij}(\theta)$ and add to previous time step. This is equation 3.4.69 with expectation dropped.  Store in `Iij[i,j]` and `Iij[j,i]`.<div>\begin{equation}I_{ij}(\theta)_t = I_{ji}(\theta)_t = \frac{1}{2}\left[ tr\left[ F_t^{-1}\frac{\partial F_t}{\partial \theta_i}F_t^{-1}\frac{\partial F_t}{\partial \theta_j}\right]\right] + \left(\frac{\partial v_t}{\partial \theta_i}\right)^\top F_t^{-1}\frac{\partial v_t}{\partial \theta_j}\end{equation}</div>
 
-        * Add this on to previous one to get new $I_{ij}(\theta)$:<div>\begin{equation}I_{ij}(\theta) = I_{ij}(\theta) + I_{ij}(\theta)_t\end{equation}</div>
+        * Add this on to previous one to get new $I_{ij}(\theta)$: \begin{equation}I_{ij}(\theta) = I_{ij}(\theta) + I_{ij}(\theta)_t\end{equation}
 
     * Repeat for next j.
     * Repeat for next i.
