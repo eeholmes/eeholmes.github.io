@@ -28,7 +28,7 @@ Part III Introduced the approach of Harvey (1989) for computing the expected and
 
 ## Derivatives needed for the 2nd derivative of the conditional log-likelihood
 
-Equations 3.4.66 and 3.4.69 in Harvey (1989) have first and second derivatives of $v_t$ and $F_t$ with respect to $\theta_i$ and $\theta_j$. These in turn involve derivatives of the parameter matrices and of $\tilde{x}_{t|t}$ and $\tilde{V}_{t|t}$.  Harvey shows all the first derivatives, and it is easy to compute the second derivatives by taking the derivatives of the first. 
+Equations 3.4.66 and 3.4.69 in Harvey (1989) have first and second derivatives of $v_t$ and $F_t$ with respect to $\theta_i$ and $\theta_j$. These in turn involve derivatives of the parameter matrices and of $\tilde{x}_{t\vert t}$ and $\tilde{V}_{t\vert t}$.  Harvey shows all the first derivatives, and it is easy to compute the second derivatives by taking the derivatives of the first. 
 
 The basic idea of the recursion is simple, if a bit tedious.  
 
@@ -101,7 +101,7 @@ The second derivative of a parameter matrix with respect to $\theta_j$ is always
 Equation 3.4.71b in Harvey shows $\partial v_t / \partial \theta_i$. Store result in dvit[,p].
 <div>
 \begin{equation}
-\frac{\partial v_t}{\partial \theta_i}= -Z_t \frac{\partial \tilde{x}_{t|t-1}}{\partial \theta_i}- \frac{Z_t}{\partial \theta_i}\tilde{x}_{t|t-1}- \frac{\partial a_t}{\partial \theta_i}
+\frac{\partial v_t}{\partial \theta_i}= -Z_t \frac{\partial \tilde{x}_{t\vert t-1}}{\partial \theta_i}- \frac{Z_t}{\partial \theta_i}\tilde{x}_{t\vert t-1}- \frac{\partial a_t}{\partial \theta_i}
 \end{equation}
 </div>
 
@@ -110,12 +110,12 @@ Next, use equation 3.4.73, to get $\partial F_t / \partial \theta_i$. Store resu
 <div>
 \begin{equation}
 \frac{\partial F_t}{\partial \theta_i}= 
- \frac{\partial Z_t}{\partial \theta_i} \tilde{V}_{t|t-1} Z_t^\top + 
-Z_t \frac{\partial \tilde{V}_{t|t-1}}{\partial \theta_i} Z_t^\top +
-Z_t \tilde{V}_{t|t-1} \frac{\partial Z_t^\top}{\partial \theta_i} + \frac{\partial (H_t R_t H_t^\top)}{\partial \theta_i}
+ \frac{\partial Z_t}{\partial \theta_i} \tilde{V}_{t\vert t-1} Z_t^\top + 
+Z_t \frac{\partial \tilde{V}_{t\vert t-1}}{\partial \theta_i} Z_t^\top +
+Z_t \tilde{V}_{t\vert t-1} \frac{\partial Z_t^\top}{\partial \theta_i} + \frac{\partial (H_t R_t H_t^\top)}{\partial \theta_i}
 \end{equation}
 </div>
-$\tilde{V}_{t|t-1}$ is the one-step ahead prediction covariance output from the Kalman filter, and in MARSSkf is denoted `Vtt1[,,t]`.
+$\tilde{V}_{t\vert t-1}$ is the one-step ahead prediction covariance output from the Kalman filter, and in MARSSkf is denoted `Vtt1[,,t]`.
 
 ### Recursion for derivatives of states and variance of states
 
@@ -123,22 +123,22 @@ $\tilde{V}_{t|t-1}$ is the one-step ahead prediction covariance output from the 
 
 * **Case 1**. $\pi=x_0$ is treated as a parameter and $V_0 = 0$.  For any $\theta_i$ that is not in $\pi$, $Z$ or $a$,  $\partial v_1/\partial \theta_i\ = 0$.  For any $\theta_i$ that is not in  $Z$ or $R$,  $\partial F_1/\partial \theta_i\ = 0$ (a n x n matrix of zeros).  
 
-    From equation 3.4.73a:<div>\begin{equation} \frac{\partial \tilde{x}_{1|0}}{\partial\theta_i } = \frac{\partial B_1}{\partial \theta_i} \pi + B_1 \frac{\partial \pi}{\partial \theta_i} + \frac{\partial u_t}{\partial \theta_i}\end{equation}</div>
+    From equation 3.4.73a:<div>\begin{equation} \frac{\partial \tilde{x}_{1\vert 0}}{\partial\theta_i } = \frac{\partial B_1}{\partial \theta_i} \pi + B_1 \frac{\partial \pi}{\partial \theta_i} + \frac{\partial u_t}{\partial \theta_i}\end{equation}</div>
 
-    From equation 3.4.73b and using  $V_0 = 0$:<div>\begin{equation} \frac{\partial \tilde{V}_{1|0}}{\partial\theta_i } = \frac{\partial B_1}{\partial \theta_i} V_0 B_1^\top + B_1 \frac{\partial V_0}{\partial \theta_i} B_1^\top + B_1 V_0 \frac{\partial B_1^\top}{\partial \theta_i} + \frac{\partial (G_t Q_t G_t^\top)}{\partial \theta_i} = \frac{\partial (G_t Q_t G_t^\top)}{\partial \theta_i}\end{equation}</div>
+    From equation 3.4.73b and using  $V_0 = 0$:<div>\begin{equation} \frac{\partial \tilde{V}_{1\vert 0}}{\partial\theta_i } = \frac{\partial B_1}{\partial \theta_i} V_0 B_1^\top + B_1 \frac{\partial V_0}{\partial \theta_i} B_1^\top + B_1 V_0 \frac{\partial B_1^\top}{\partial \theta_i} + \frac{\partial (G_t Q_t G_t^\top)}{\partial \theta_i} = \frac{\partial (G_t Q_t G_t^\top)}{\partial \theta_i}\end{equation}</div>
 
-* **Case 2**. $\pi=x_{1|0}$ is treated as a parameter and $V_{1\vert 0}=0$. <div>\begin{equation}\frac{\partial \tilde{x}_{1|0}}{\partial \theta_i}=\frac{\partial \pi}{\partial \theta_i} \text{ and } \partial V_{1|0}/\partial\theta_i = 0.\end{equation}</div>
+* **Case 2**. $\pi=x_{1\vert 0}$ is treated as a parameter and $V_{1\vert 0}=0$. <div>\begin{equation}\frac{\partial \tilde{x}_{1\vert 0}}{\partial \theta_i}=\frac{\partial \pi}{\partial \theta_i} \text{ and } \partial V_{1\vert 0}/\partial\theta_i = 0.\end{equation}</div>
 
 * **Case 3**. $x_0$ is specified by a  fixed prior.  $x_0=\pi$ and $V_0=\Lambda$. The derivatives of these are 0, because they are fixed.
 
-    From equation 3.4.73a  and using  $x_0 = \pi$ and $\partial \pi/\partial \theta_i = 0$:  <div>\begin{equation} \frac{\partial \tilde{x}_{1|0}}{\partial\theta_i } = \frac{\partial B_1}{\partial \theta_i} \pi + B_1 \frac{\partial \pi}{\partial \theta_i} + \frac{\partial u_t}{\partial \theta_i}=\frac{\partial B_1}{\partial \theta_i} \pi + \frac{\partial u_t}{\partial \theta_i}\end{equation}</div>
+    From equation 3.4.73a  and using  $x_0 = \pi$ and $\partial \pi/\partial \theta_i = 0$:  <div>\begin{equation} \frac{\partial \tilde{x}_{1\vert 0}}{\partial\theta_i } = \frac{\partial B_1}{\partial \theta_i} \pi + B_1 \frac{\partial \pi}{\partial \theta_i} + \frac{\partial u_t}{\partial \theta_i}=\frac{\partial B_1}{\partial \theta_i} \pi + \frac{\partial u_t}{\partial \theta_i}\end{equation}</div>
 
-    From equation 3.4.73b and using  $V_0 = \Lambda$ and $\partial \Lambda/\partial \theta_i = 0$: <div>\begin{equation} \frac{\partial \tilde{V}_{1|0}}{\partial\theta_i } = \frac{\partial B_1}{\partial \theta_i} V_0 B_1^\top + B_1 \frac{\partial V_0}{\partial \theta_i} B_1^\top + B_1 V_0 \frac{\partial B_1^\top}{\partial \theta_i} + \frac{\partial (G_t Q_t G_t^\top)}{\partial \theta_i} = \frac{\partial B_1}{\partial \theta_i} \Lambda B_1^\top +  B_1 \Lambda \frac{\partial B_1^\top}{\partial \theta_i} + \frac{\partial (G_t Q_t G_t^\top)}{\partial \theta_i}\end{equation}</div>
+    From equation 3.4.73b and using  $V_0 = \Lambda$ and $\partial \Lambda/\partial \theta_i = 0$: <div>\begin{equation} \frac{\partial \tilde{V}_{1\vert 0}}{\partial\theta_i } = \frac{\partial B_1}{\partial \theta_i} V_0 B_1^\top + B_1 \frac{\partial V_0}{\partial \theta_i} B_1^\top + B_1 V_0 \frac{\partial B_1^\top}{\partial \theta_i} + \frac{\partial (G_t Q_t G_t^\top)}{\partial \theta_i} = \frac{\partial B_1}{\partial \theta_i} \Lambda B_1^\top +  B_1 \Lambda \frac{\partial B_1^\top}{\partial \theta_i} + \frac{\partial (G_t Q_t G_t^\top)}{\partial \theta_i}\end{equation}</div>
 
 
 * **Case 4**. $x_{1\vert 0}$ is specified by a fixed prior. $x_{1\vert 0}=\pi$ and $V_{1\vert 0} = \Lambda$.  $\partial V_{1\vert 0}/\partial\theta_i = 0$ and  $\partial x_{1\vert 0}/\partial\theta_i = 0$.
 
-* **Case 5**. Estimate $V_0$ or $V_{1|0}$.  That is unstable (per Harvey 1989, somewhere).  I do not allow that in the MARSS package.
+* **Case 5**. Estimate $V_0$ or $V_{1\vert 0}$.  That is unstable (per Harvey 1989, somewhere).  I do not allow that in the MARSS package.
 
 When coding this recursion, I will loop though the MARSS parameters (x0, V, Z, a, R, B, u, Q) and within that loop, loop through the individual parameters within the parameter vector.  So say Q is diagonal and unequal.  It has m variance parameters, and I'll loop through each.
 
@@ -151,21 +151,21 @@ _______________________
 The derivative of $\tilde{x}_{t\vert t-1}$ is (3.4.73a in Harvey)
 <div>
 \begin{equation} 
-\frac{\partial \tilde{x}_{t|t-1}}{\partial\theta_i } = \frac{\partial B_t}{\partial \theta_i} \tilde{x}_{t-1|t-1} + B_t \frac{\partial \tilde{x}_{t-1|t-1}}{\partial \theta_i} + \frac{\partial u_t}{\partial \theta_i}
+\frac{\partial \tilde{x}_{t\vert t-1}}{\partial\theta_i } = \frac{\partial B_t}{\partial \theta_i} \tilde{x}_{t-1\vert t-1} + B_t \frac{\partial \tilde{x}_{t-1\vert t-1}}{\partial \theta_i} + \frac{\partial u_t}{\partial \theta_i}
 \end{equation}
 </div>
 Then we take the derivative of this to get the second partial derivative.
 <div>
 \begin{align} 
-\frac{\partial^2 \tilde{x}_{t|t-1}}{\partial\theta_i \partial\theta_j} = 
-\frac{\partial^2 B_t}{\partial\theta_i \partial\theta_j} \tilde{x}_{t-1|t-1} +
- \frac{\partial B_t}{\partial \theta_i}\frac{\partial \tilde{x}_{t-1|t-1}}{\partial \theta_j} +
- \frac{\partial B_t}{\partial \theta_j} \frac{\partial \tilde{x}_{t-1|t-1}}{\partial \theta_i} + 
- B_t \frac{\partial^2 \tilde{x}_{t-1|t-1}}{\partial\theta_i \partial\theta_j} + 
+\frac{\partial^2 \tilde{x}_{t\vert t-1}}{\partial\theta_i \partial\theta_j} = 
+\frac{\partial^2 B_t}{\partial\theta_i \partial\theta_j} \tilde{x}_{t-1\vert t-1} +
+ \frac{\partial B_t}{\partial \theta_i}\frac{\partial \tilde{x}_{t-1\vert t-1}}{\partial \theta_j} +
+ \frac{\partial B_t}{\partial \theta_j} \frac{\partial \tilde{x}_{t-1\vert t-1}}{\partial \theta_i} + 
+ B_t \frac{\partial^2 \tilde{x}_{t-1\vert t-1}}{\partial\theta_i \partial\theta_j} + 
 \frac{\partial^2 u_t}{\partial\theta_i \partial\theta_j}\\
-= \frac{\partial B_t}{\partial \theta_i}\frac{\partial \tilde{x}_{t-1|t-1}}{\partial \theta_j} +
- \frac{\partial B_t}{\partial \theta_j} \frac{\partial \tilde{x}_{t-1|t-1}}{\partial \theta_i} + 
- B_t \frac{\partial^2 \tilde{x}_{t-1|t-1}}{\partial\theta_i \partial\theta_j}
+= \frac{\partial B_t}{\partial \theta_i}\frac{\partial \tilde{x}_{t-1\vert t-1}}{\partial \theta_j} +
+ \frac{\partial B_t}{\partial \theta_j} \frac{\partial \tilde{x}_{t-1\vert t-1}}{\partial \theta_i} + 
+ B_t \frac{\partial^2 \tilde{x}_{t-1\vert t-1}}{\partial\theta_i \partial\theta_j}
 \end{align}
 </div>
 In the equations, $\tilde{x}_{t\vert t}$ is output by the Kalman filter.  In MARSSkf, it is called xtt[,t]. $\tilde{x}_{t-1\vert t-1}$ would be called xtt[,t-1]. The derivatives of $\tilde{x}_{t-1\vert t-1}$ is from the next part of the recursion (below).
@@ -173,21 +173,21 @@ In the equations, $\tilde{x}_{t\vert t}$ is output by the Kalman filter.  In MAR
 The derivative of $\tilde{V}_{t\vert t-1}$ is (3.4.73b in Harvey)
 <div>
 \begin{equation} \label{derivVtt1}
-\frac{\partial \tilde{V}_{t|t-1}}{\partial\theta_i } =
- \frac{\partial B_t}{\partial \theta_i} \tilde{V}_{t-1|t-1} B_t^\top + B_t \frac{\partial \tilde{V}_{t-1|t-1}}{\partial \theta_i} B_t^\top + B_t \tilde{V}_{t-1|t-1} \frac{\partial B_t^\top}{\partial \theta_i} + \frac{\partial (G_t Q_t G_t^\top)}{\partial \theta_i} 
+\frac{\partial \tilde{V}_{t\vert t-1}}{\partial\theta_i } =
+ \frac{\partial B_t}{\partial \theta_i} \tilde{V}_{t-1\vert t-1} B_t^\top + B_t \frac{\partial \tilde{V}_{t-1\vert t-1}}{\partial \theta_i} B_t^\top + B_t \tilde{V}_{t-1\vert t-1} \frac{\partial B_t^\top}{\partial \theta_i} + \frac{\partial (G_t Q_t G_t^\top)}{\partial \theta_i} 
 \end{equation}
 </div>
 The second derivative of $\tilde{V}_{t\vert t-1}$ is obtained by taking the derivative of \ref{derivVtt1} and eliminating any second derivatives of parameters:
 <div>
 \begin{align} 
-\frac{\partial^2 \tilde{V}_{t|t-1}}{\partial\theta_i \partial\theta_j} =
-\frac{\partial B_t}{\partial \theta_i} \frac{\tilde{V}_{t-1|t-1}}{\partial\theta_j} B_t^\top + 
-\frac{\partial B_t}{\partial \theta_i} \tilde{V}_{t-1|t-1} \frac{\partial B_t^\top}{\partial \theta_j} + 
-\frac{\partial B_t}{\partial \theta_j} \frac{\partial \tilde{V}_{t-1|t-1}}{\partial \theta_i} B_t^\top + 
-B_t \frac{\partial^2 \tilde{V}_{t-1|t-1}}{\partial\theta_i \partial\theta_j} B_t^\top + \\
-B_t \frac{\partial \tilde{V}_{t-1|t-1}}{\partial \theta_i} \frac{\partial B_t^\top}{\partial \theta_j} + 
-\frac{\partial B_t}{\partial \theta_j} \tilde{V}_{t-1|t-1} \frac{\partial B_t^\top}{\partial \theta_i} + 
-B_t \frac{\tilde{V}_{t-1|t-1}}{\partial\theta_j} \frac{\partial B_t^\top}{\partial \theta_i}
+\frac{\partial^2 \tilde{V}_{t\vert t-1}}{\partial\theta_i \partial\theta_j} =
+\frac{\partial B_t}{\partial \theta_i} \frac{\tilde{V}_{t-1\vert t-1}}{\partial\theta_j} B_t^\top + 
+\frac{\partial B_t}{\partial \theta_i} \tilde{V}_{t-1\vert t-1} \frac{\partial B_t^\top}{\partial \theta_j} + 
+\frac{\partial B_t}{\partial \theta_j} \frac{\partial \tilde{V}_{t-1\vert t-1}}{\partial \theta_i} B_t^\top + 
+B_t \frac{\partial^2 \tilde{V}_{t-1\vert t-1}}{\partial\theta_i \partial\theta_j} B_t^\top + \\
+B_t \frac{\partial \tilde{V}_{t-1\vert t-1}}{\partial \theta_i} \frac{\partial B_t^\top}{\partial \theta_j} + 
+\frac{\partial B_t}{\partial \theta_j} \tilde{V}_{t-1\vert t-1} \frac{\partial B_t^\top}{\partial \theta_i} + 
+B_t \frac{\tilde{V}_{t-1\vert t-1}}{\partial\theta_j} \frac{\partial B_t^\top}{\partial \theta_i}
 \end{align}
 </div>
 In the derivatives, $\tilde{V}_{t\vert t}$ is output by the Kalman filter.  In MARSSkf, it is called Vtt[,t]. $\tilde{V}_{t-1\vert t-1}$ would be called Vtt[,t-1].  The derivatives of $\tilde{V}_{t-1\vert t-1}$ is from the rest of the recursion (below).
@@ -197,10 +197,10 @@ In the derivatives, $\tilde{V}_{t\vert t}$ is output by the Kalman filter.  In M
 From equation 3.4.74a:
 <div>
 \begin{equation} 
-\frac{\partial \tilde{x}_{t|t}}{\partial\theta_i } = \frac{\partial \tilde{x}_{t|t-1}}{\partial \theta_i} + \frac{\partial \tilde{V}_{t|t-1}}{\partial \theta_i} Z_t^\top F_t^{-1}v_t + 
-\tilde{V}_{t|t-1} \frac{\partial Z_t^\top}{\partial \theta_i} F_t^{-1}v_t - 
-\tilde{V}_{t|t-1} Z_t^\top F_t^{-1}\frac{\partial F_t}{\partial \theta_i}F_t^{-1}v_t
-+ \tilde{V}_{t|t-1} Z_t^\top F_t^{-1}\frac{\partial v_t}{\partial \theta_i}
+\frac{\partial \tilde{x}_{t\vert t}}{\partial\theta_i } = \frac{\partial \tilde{x}_{t\vert t-1}}{\partial \theta_i} + \frac{\partial \tilde{V}_{t\vert t-1}}{\partial \theta_i} Z_t^\top F_t^{-1}v_t + 
+\tilde{V}_{t\vert t-1} \frac{\partial Z_t^\top}{\partial \theta_i} F_t^{-1}v_t - 
+\tilde{V}_{t\vert t-1} Z_t^\top F_t^{-1}\frac{\partial F_t}{\partial \theta_i}F_t^{-1}v_t
++ \tilde{V}_{t\vert t-1} Z_t^\top F_t^{-1}\frac{\partial v_t}{\partial \theta_i}
 \end{equation}
 </div>
 $\tilde{V}_{t\vert t-1}$ is output by the Kalman filter.  In MARSSkf, it is called Vtt1[,t]. $v_t$ are the innovations.  In MARSSkf, they are called Innov[,t].
@@ -209,13 +209,13 @@ From equation 3.4.74b:
 <div>
 \begin{equation} 
 \begin{split} 
-\frac{\partial \tilde{V}_{t|t}}{\partial\theta_i } = &
-\frac{\partial \tilde{V}_{t|t-1}}{\partial \theta_i} - 
-\frac{\partial \tilde{V}_{t|t-1}}{\partial \theta_i} Z_t^\top F_t^{-1}Z_t \tilde{V}_{t|t-1} -
-\tilde{V}_{t|t-1} \frac{\partial Z_t^\top}{\partial \theta_i} F_t^{-1}Z_t \tilde{V}_{t|t-1} + 
-\tilde{V}_{t|t-1} Z_t^\top F_t^{-1}\frac{\partial F_t}{\partial \theta_i}F_t^{-1}Z_t \tilde{V}_{t|t-1} - \\
-&\tilde{V}_{t|t-1} Z_t^\top F_t^{-1}\frac{\partial Z_t}{\partial \theta_i} \tilde{V}_{t|t-1} -
-\tilde{V}_{t|t-1} Z_t^\top F_t^{-1}Z_t \frac{\partial \tilde{V}_{t|t-1}}{\partial \theta_i}
+\frac{\partial \tilde{V}_{t\vert t}}{\partial\theta_i } = &
+\frac{\partial \tilde{V}_{t\vert t-1}}{\partial \theta_i} - 
+\frac{\partial \tilde{V}_{t\vert t-1}}{\partial \theta_i} Z_t^\top F_t^{-1}Z_t \tilde{V}_{t\vert t-1} -
+\tilde{V}_{t\vert t-1} \frac{\partial Z_t^\top}{\partial \theta_i} F_t^{-1}Z_t \tilde{V}_{t\vert t-1} + 
+\tilde{V}_{t\vert t-1} Z_t^\top F_t^{-1}\frac{\partial F_t}{\partial \theta_i}F_t^{-1}Z_t \tilde{V}_{t\vert t-1} - \\
+&\tilde{V}_{t\vert t-1} Z_t^\top F_t^{-1}\frac{\partial Z_t}{\partial \theta_i} \tilde{V}_{t\vert t-1} -
+\tilde{V}_{t\vert t-1} Z_t^\top F_t^{-1}Z_t \frac{\partial \tilde{V}_{t\vert t-1}}{\partial \theta_i}
 \end{split}
 \end{equation}
 </div>
