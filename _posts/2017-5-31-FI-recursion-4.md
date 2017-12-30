@@ -147,7 +147,7 @@ $\tilde{V} _ {t\vert t-1}$ is the one-step ahead prediction covariance output fr
 
 When coding this recursion, I will loop though the MARSS parameters (x0, V, Z, a, R, B, u, Q) and within that loop, loop through the individual parameters within the parameter vector.  So say Q is diagonal and unequal.  It has m variance parameters, and I'll loop through each.
 
-Now we have $\frac{\partial \tilde{x} _ {1\vert 0}}{\partial \theta_i}$ and $\frac{\partial \tilde{V} _ {1\vert 0}}{\partial \theta_i}$ for $t=1$ and we can proceed.
+Now we have <div>$\frac{\partial \tilde{x}_{1\vert 0}}{\partial \theta_i}$</div> and $\frac{\partial \tilde{V} _ {1\vert 0}}{\partial \theta_i}$ for $t=1$ and we can proceed.
 
 _______________________
 
