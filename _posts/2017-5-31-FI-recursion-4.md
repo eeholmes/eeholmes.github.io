@@ -33,13 +33,13 @@ Part III Introduced the approach of Harvey (1989) for computing the expected and
 
 ## Derivatives needed for the 2nd derivative of the conditional log-likelihood
 
-Equations 3.4.66 and 3.4.69 in Harvey (1989) have first and second derivatives of $v_t$ and $F_t$ with respect to $\theta_i$ and $\theta_j$. These in turn involve derivatives of the parameter matrices and of $\tilde{x} _ {t\vert t}$ and $\tilde{V}_{t\vert t}$.  Harvey shows all the first derivatives, and it is easy to compute the second derivatives by taking the derivatives of the first. 
+Equations 3.4.66 and 3.4.69 in Harvey (1989) have first and second derivatives of $v_t$ and $F_t$ with respect to $\theta_i$ and $\theta_j$. These in turn involve derivatives of the parameter matrices and of $\tilde{x} _ {t\vert t}$ and $\tilde{V} _ {t\vert t}$.  Harvey shows all the first derivatives, and it is easy to compute the second derivatives by taking the derivatives of the first. 
 
 The basic idea of the recursion is simple, if a bit tedious.  
 
 * First we set up matrices for all the first derivatives of the parameters.
 
-* Then starting from t=1 and working forward, we will do the recursion (described below) for all $\theta_i$ and we store the first derivatives of $v_t$, $F_t$, $\tilde{x}_{t\vert t}$ and $\tilde{V}_{t\vert t}$ with respect to $\theta_i$.
+* Then starting from t=1 and working forward, we will do the recursion (described below) for all $\theta_i$ and we store the first derivatives of $v_t$, $F_t$, $\tilde{x} _ {t\vert t}$ and $\tilde{V} _ {t\vert t}$ with respect to $\theta_i$.
 
 * Then we go through the parameter vector a second time, to get all the second derivatives with respect to $\theta_i$ and $\theta_j$.
 
