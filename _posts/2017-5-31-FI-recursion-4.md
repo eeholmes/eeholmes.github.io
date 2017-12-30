@@ -128,17 +128,17 @@ $\tilde{V} _ {t\vert t-1}$ is the one-step ahead prediction covariance output fr
 
 * **Case 1**. $\pi=x_0$ is treated as a parameter and $V_0 = 0$.  For any $\theta_i$ that is not in $\pi$, $Z$ or $a$,  $\partial v_1/\partial \theta_i\ = 0$.  For any $\theta_i$ that is not in  $Z$ or $R$,  $\partial F_1/\partial \theta_i\ = 0$ (a n x n matrix of zeros).  
 
-    From equation 3.4.73a:<div>\begin{equation} \frac{\partial \tilde{x}_{1\vert 0}}{\partial\theta_i } = \frac{\partial B_1}{\partial \theta_i} \pi + B_1 \frac{\partial \pi}{\partial \theta_i} + \frac{\partial u_t}{\partial \theta_i}\end{equation}</div>
+    From equation 3.4.73a: \begin{equation} \frac{\partial \tilde{x}_{1\vert 0}}{\partial\theta_i } = \frac{\partial B_1}{\partial \theta_i} \pi + B_1 \frac{\partial \pi}{\partial \theta_i} + \frac{\partial u_t}{\partial \theta_i}\end{equation}
 
-    From equation 3.4.73b and using  $V_0 = 0$:<div>\begin{equation} \frac{\partial \tilde{V}_{1\vert 0}}{\partial\theta_i } = \frac{\partial B_1}{\partial \theta_i} V_0 B_1^\top + B_1 \frac{\partial V_0}{\partial \theta_i} B_1^\top + B_1 V_0 \frac{\partial B_1^\top}{\partial \theta_i} + \frac{\partial (G_t Q_t G_t^\top)}{\partial \theta_i} = \frac{\partial (G_t Q_t G_t^\top)}{\partial \theta_i}\end{equation}</div>
+    From equation 3.4.73b and using  $V_0 = 0$: \begin{equation} \frac{\partial \tilde{V}_{1\vert 0}}{\partial\theta_i } = \frac{\partial B_1}{\partial \theta_i} V_0 B_1^\top + B_1 \frac{\partial V_0}{\partial \theta_i} B_1^\top + B_1 V_0 \frac{\partial B_1^\top}{\partial \theta_i} + \frac{\partial (G_t Q_t G_t^\top)}{\partial \theta_i} = \frac{\partial (G_t Q_t G_t^\top)}{\partial \theta_i}\end{equation}
 
-* **Case 2**. $\pi=x_{1\vert 0}$ is treated as a parameter and $V_{1\vert 0}=0$. <div>\begin{equation}\frac{\partial \tilde{x}_{1\vert 0}}{\partial \theta_i}=\frac{\partial \pi}{\partial \theta_i} \text{ and } \partial V_{1\vert 0}/\partial\theta_i = 0.\end{equation}</div>
+* **Case 2**. $\pi=x_{1\vert 0}$ is treated as a parameter and $V_{1\vert 0}=0$. \begin{equation}\frac{\partial \tilde{x}_{1\vert 0}}{\partial \theta_i}=\frac{\partial \pi}{\partial \theta_i} \text{ and } \partial V_{1\vert 0}/\partial\theta_i = 0.\end{equation}
 
 * **Case 3**. $x_0$ is specified by a  fixed prior.  $x_0=\pi$ and $V_0=\Lambda$. The derivatives of these are 0, because they are fixed.
 
-    From equation 3.4.73a  and using  $x_0 = \pi$ and $\partial \pi/\partial \theta_i = 0$:  <div>\begin{equation} \frac{\partial \tilde{x}_{1\vert 0}}{\partial\theta_i } = \frac{\partial B_1}{\partial \theta_i} \pi + B_1 \frac{\partial \pi}{\partial \theta_i} + \frac{\partial u_t}{\partial \theta_i}=\frac{\partial B_1}{\partial \theta_i} \pi + \frac{\partial u_t}{\partial \theta_i}\end{equation}</div>
+    From equation 3.4.73a  and using  $x_0 = \pi$ and $\partial \pi/\partial \theta_i = 0$:  \begin{equation} \frac{\partial \tilde{x}_{1\vert 0}}{\partial\theta_i } = \frac{\partial B_1}{\partial \theta_i} \pi + B_1 \frac{\partial \pi}{\partial \theta_i} + \frac{\partial u_t}{\partial \theta_i}=\frac{\partial B_1}{\partial \theta_i} \pi + \frac{\partial u_t}{\partial \theta_i}\end{equation}
 
-    From equation 3.4.73b and using  $V_0 = \Lambda$ and $\partial \Lambda/\partial \theta_i = 0$: <div>\begin{equation} \frac{\partial \tilde{V}_{1\vert 0}}{\partial\theta_i } = \frac{\partial B_1}{\partial \theta_i} V_0 B_1^\top + B_1 \frac{\partial V_0}{\partial \theta_i} B_1^\top + B_1 V_0 \frac{\partial B_1^\top}{\partial \theta_i} + \frac{\partial (G_t Q_t G_t^\top)}{\partial \theta_i} = \frac{\partial B_1}{\partial \theta_i} \Lambda B_1^\top +  B_1 \Lambda \frac{\partial B_1^\top}{\partial \theta_i} + \frac{\partial (G_t Q_t G_t^\top)}{\partial \theta_i}\end{equation}</div>
+    From equation 3.4.73b and using  $V_0 = \Lambda$ and $\partial \Lambda/\partial \theta_i = 0$: \begin{equation} \frac{\partial \tilde{V}_{1\vert 0}}{\partial\theta_i } = \frac{\partial B_1}{\partial \theta_i} V_0 B_1^\top + B_1 \frac{\partial V_0}{\partial \theta_i} B_1^\top + B_1 V_0 \frac{\partial B_1^\top}{\partial \theta_i} + \frac{\partial (G_t Q_t G_t^\top)}{\partial \theta_i} = \frac{\partial B_1}{\partial \theta_i} \Lambda B_1^\top +  B_1 \Lambda \frac{\partial B_1^\top}{\partial \theta_i} + \frac{\partial (G_t Q_t G_t^\top)}{\partial \theta_i}\end{equation}
 
 
 * **Case 4**. $x_{1\vert 0}$ is specified by a fixed prior. $x_{1\vert 0}=\pi$ and $V_{1\vert 0} = \Lambda$.  $\partial V_{1\vert 0}/\partial\theta_i = 0$ and  $\partial x_{1\vert 0}/\partial\theta_i = 0$.
@@ -173,7 +173,8 @@ Then we take the derivative of this to get the second partial derivative.
  B_t \frac{\partial^2 \tilde{x}_{t-1\vert t-1}}{\partial\theta_i \partial\theta_j}
 \end{align}
 </div>
-In the equations, $\tilde{x} _ {t\vert t}$ is output by the Kalman filter.  In MARSSkf, it is called xtt[,t]. $\tilde{x} _ {t-1\vert t-1}$ would be called xtt[,t-1]. The derivatives of $\tilde{x} _ {t-1\vert t-1}$ is from the next part of the recursion (below).
+
+In the equations, $\tilde{x} _ {t\vert t}$ is output by the Kalman filter.  In MARSSkf, it is called `xtt[,t]`. $\tilde{x} _ {t-1\vert t-1}$ would be called `xtt[,t-1]`. The derivatives of $\tilde{x} _ {t-1\vert t-1}$ is from the next part of the recursion (below).
 
 The derivative of $\tilde{V} _ {t\vert t-1}$ is (3.4.73b in Harvey)
 <div>
