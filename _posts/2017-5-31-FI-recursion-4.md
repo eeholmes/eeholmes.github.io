@@ -106,11 +106,11 @@ The second derivative of a parameter matrix with respect to $\theta_j$ is always
 Equation 3.4.71b in Harvey shows $\partial v_t / \partial \theta_i$. Store result in dvit[,p].
 <div>
 \begin{equation}
-\frac{\partial v_t}{\partial \theta_i}= -Z_t \frac{\partial \tilde{x}_{t\vert t-1}}{\partial \theta_i}- \frac{Z_t}{\partial \theta_i}\tilde{x}_{t\vert t-1}- \frac{\partial a_t}{\partial \theta_i}
+\frac{\partial v_t}{\partial \theta_i}= -Z_t \frac{\partial \tilde{x}_{t\vert t-1}}{\partial \theta_i}- \frac{Z_t}{\partial \theta_i}\tilde{x} _ {t\vert t-1}- \frac{\partial a_t}{\partial \theta_i}
 \end{equation}
 </div>
 
-$\tilde{x}_{t\vert t-1}$ is the one-step ahead prediction covariance output from the Kalman filter, and in MARSSkf is `xtt1[,t]`.
+$\tilde{x} _ {t\vert t-1}$ is the one-step ahead prediction covariance output from the Kalman filter, and in MARSSkf is `xtt1[,t]`.
 Next, use equation 3.4.73, to get $\partial F_t / \partial \theta_i$. Store result in `dFit[,,p]`.
 <div>
 \begin{equation}
@@ -120,7 +120,7 @@ Z_t \frac{\partial \tilde{V}_{t\vert t-1}}{\partial \theta_i} Z_t^\top +
 Z_t \tilde{V}_{t\vert t-1} \frac{\partial Z_t^\top}{\partial \theta_i} + \frac{\partial (H_t R_t H_t^\top)}{\partial \theta_i}
 \end{equation}
 </div>
-$\tilde{V}_{t\vert t-1}$ is the one-step ahead prediction covariance output from the Kalman filter, and in MARSSkf is denoted `Vtt1[,,t]`.
+$\tilde{V} _ {t\vert t-1}$ is the one-step ahead prediction covariance output from the Kalman filter, and in MARSSkf is denoted `Vtt1[,,t]`.
 
 ### Recursion for derivatives of states and variance of states
 
@@ -147,13 +147,13 @@ $\tilde{V}_{t\vert t-1}$ is the one-step ahead prediction covariance output from
 
 When coding this recursion, I will loop though the MARSS parameters (x0, V, Z, a, R, B, u, Q) and within that loop, loop through the individual parameters within the parameter vector.  So say Q is diagonal and unequal.  It has m variance parameters, and I'll loop through each.
 
-Now we have $\frac{\partial \tilde{x}_{1\vert 0}}{\partial \theta_i}$ and $\frac{\partial \tilde{V}_{1\vert 0}}{\partial \theta_i}$ for $t=1$ and we can proceed.
+Now we have $\frac{\partial \tilde{x} _ {1\vert 0}}{\partial \theta_i}$ and $\frac{\partial \tilde{V} _ {1\vert 0}}{\partial \theta_i}$ for $t=1$ and we can proceed.
 
 _______________________
 
 #### If t>1
 
-The derivative of $\tilde{x}_{t\vert t-1}$ is (3.4.73a in Harvey)
+The derivative of $\tilde{x} _ {t\vert t-1}$ is (3.4.73a in Harvey)
 <div>
 \begin{equation} 
 \frac{\partial \tilde{x}_{t\vert t-1}}{\partial\theta_i } = \frac{\partial B_t}{\partial \theta_i} \tilde{x}_{t-1\vert t-1} + B_t \frac{\partial \tilde{x}_{t-1\vert t-1}}{\partial \theta_i} + \frac{\partial u_t}{\partial \theta_i}
@@ -173,16 +173,16 @@ Then we take the derivative of this to get the second partial derivative.
  B_t \frac{\partial^2 \tilde{x}_{t-1\vert t-1}}{\partial\theta_i \partial\theta_j}
 \end{align}
 </div>
-In the equations, $\tilde{x}_{t\vert t}$ is output by the Kalman filter.  In MARSSkf, it is called xtt[,t]. $\tilde{x}_{t-1\vert t-1}$ would be called xtt[,t-1]. The derivatives of $\tilde{x}_{t-1\vert t-1}$ is from the next part of the recursion (below).
+In the equations, $\tilde{x} _ {t\vert t}$ is output by the Kalman filter.  In MARSSkf, it is called xtt[,t]. $\tilde{x} _ {t-1\vert t-1}$ would be called xtt[,t-1]. The derivatives of $\tilde{x} _ {t-1\vert t-1}$ is from the next part of the recursion (below).
 
-The derivative of $\tilde{V}_{t\vert t-1}$ is (3.4.73b in Harvey)
+The derivative of $\tilde{V} _ {t\vert t-1}$ is (3.4.73b in Harvey)
 <div>
 \begin{equation} \label{derivVtt1}
 \frac{\partial \tilde{V}_{t\vert t-1}}{\partial\theta_i } =
  \frac{\partial B_t}{\partial \theta_i} \tilde{V}_{t-1\vert t-1} B_t^\top + B_t \frac{\partial \tilde{V}_{t-1\vert t-1}}{\partial \theta_i} B_t^\top + B_t \tilde{V}_{t-1\vert t-1} \frac{\partial B_t^\top}{\partial \theta_i} + \frac{\partial (G_t Q_t G_t^\top)}{\partial \theta_i} 
 \end{equation}
 </div>
-The second derivative of $\tilde{V}_{t\vert t-1}$ is obtained by taking the derivative of \ref{derivVtt1} and eliminating any second derivatives of parameters:
+The second derivative of $\tilde{V} _ {t\vert t-1}$ is obtained by taking the derivative of \ref{derivVtt1} and eliminating any second derivatives of parameters:
 <div>
 \begin{align} 
 \frac{\partial^2 \tilde{V}_{t\vert t-1}}{\partial\theta_i \partial\theta_j} =
@@ -195,7 +195,7 @@ B_t \frac{\partial \tilde{V}_{t-1\vert t-1}}{\partial \theta_i} \frac{\partial B
 B_t \frac{\tilde{V}_{t-1\vert t-1}}{\partial\theta_j} \frac{\partial B_t^\top}{\partial \theta_i}
 \end{align}
 </div>
-In the derivatives, $\tilde{V}_{t\vert t}$ is output by the Kalman filter.  In MARSSkf, it is called Vtt[,t]. $\tilde{V}_{t-1\vert t-1}$ would be called Vtt[,t-1].  The derivatives of $\tilde{V}_{t-1\vert t-1}$ is from the rest of the recursion (below).
+In the derivatives, $\tilde{V} _ {t\vert t}$ is output by the Kalman filter.  In MARSSkf, it is called Vtt[,t]. $\tilde{V} _ {t-1\vert t-1}$ would be called Vtt[,t-1].  The derivatives of $\tilde{V} _ {t-1\vert t-1}$ is from the rest of the recursion (below).
 
 #### Rest of the recursion equations are the same for all t.
 
@@ -208,7 +208,7 @@ From equation 3.4.74a:
 + \tilde{V}_{t\vert t-1} Z_t^\top F_t^{-1}\frac{\partial v_t}{\partial \theta_i}
 \end{equation}
 </div>
-$\tilde{V}_{t\vert t-1}$ is output by the Kalman filter.  In MARSSkf, it is called Vtt1[,t]. $v_t$ are the innovations.  In MARSSkf, they are called Innov[,t].
+$\tilde{V} _ {t\vert t-1}$ is output by the Kalman filter.  In MARSSkf, it is called Vtt1[,t]. $v_t$ are the innovations.  In MARSSkf, they are called Innov[,t].
 
 From equation 3.4.74b:
 <div>
