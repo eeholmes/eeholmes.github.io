@@ -93,7 +93,7 @@ The derivative of this with respect to $\theta_i=a$ is
 </div>
 So in MARSS, $\partial M/\partial \theta_i$ would be 
 
-```r
+```
 dthetai=matrix(0,ip,1); dthetai[i,]=1 #set up the d theta_i bit.
 dM=unvec(f+D%*%dthetai,dim(M)) #only needed if M is matrix
 ```
