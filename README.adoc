@@ -97,7 +97,7 @@ install_github("eeholmes/eehutils")
 
 ## Add the pdf download link to blogs
 
-* To add a link to download a pdf of a post, set up your yaml similar to this.  This says to add a link to the PDF and Rmd file.  It will look for the pdf in posts/pdfs/ and the Rmd in posts/Rmd .  You need to put the files there and they have to be called [postname].pdf and [postname].Rmd .  Look in posts/Rmd for an R script that will do this automatically from a Rmd file.
+* To add a link to download a pdf of a post, set up your yaml similar to this.  
 
 ```
 ---
@@ -112,3 +112,6 @@ postname: '2016-5-19-FI-recursion-2'
 pdf: true
 rmd: true
 ```
+
+`pdf=TRUE` says to add a link to the PDF and Rmd file.  It will look for the pdf in `posts/pdfs/` and the Rmd in `posts/Rmd`.  You need to put the files there and they have to be called `[postname].pdf` and `[postname].Rmd`.  `rmd_to_gfm(filename, pdf=TRUE)` (the function is in posts/Rmd) will do this automatically from an Rmd file (in posts directory).
+
