@@ -73,9 +73,27 @@ I write in Rmarkdown and write math in latex.  This generally works fine as long
 
 * If it is a Jekyll issue, then a good bet is that the special characters in the equation are making it be interpreted as markdown.
 
-    * Put spaces around `_`
-    * Replace `|` with `\vert` and `*` with `\ast`
-    * If your equations is in a list (bulleted or numbered), no line returns in the paragraph and no `<div>` around the equation.
+1. Put spaces around `_`
+2. Replace `|` with `\vert` and `*` with `\ast`
+3. If your equations is in a list (bulleted or numbered), no line returns in the paragraph and no `<div>` around the equation.
+
+
+# How to add a blog entry
+
+1. Create the blog .Rmd file in the posts directory.  See other .Rmd files in that directory or template.Rmd for the yaml you need to use.
+2. Run this code.  It assumes your working directory is somewhere (anywhere) in the repository for your website code.
+```
+require(eehutils)
+filename="replace-with-actual-filename.Rmd"
+rmd_to_gfm(filename, pdf=TRUE)
+```
+This will make the md file and put in _posts directory and make the pdf and put in posts/pdfs.  You don't need not want the html file in _posts (and rmd_to_gfm won't make it).  Jekyll on github is going to process the html from the md.  knit won't make the right html.
+
+The `rmd_to_gfm` function is in `_use-to-knit-rmd-file.r` in the posts directory.  I have it in a utils package with a bunch of other stuff for writing papers.  To install eehutils (which no one except eeh would want to do...).
+```
+require(devtools)
+install_github("eeholmes/eehutils")
+```
 
 ## Add the pdf download link to blogs
 
@@ -93,21 +111,4 @@ permalink: /posts/2016/05/FI-II/
 postname: '2016-5-19-FI-recursion-2'
 pdf: true
 rmd: true
-```
-
-# How to add a blog entry
-
-1. Create the blog .Rmd file in the posts directory.  See other .Rmd files in that directory or template.Rmd for the yaml you need to use.
-2. Run this code.  It assumes your working directory is somewhere (anywhere) in the repository for your website code.
-```
-require(eehutils)
-filename="replace-with-actual-filename.Rmd"
-rmd_to_gfm(filename, pdf=TRUE)
-```
-This will make the md file and put in _posts directory and make the pdf and put in posts/pdfs.  You don't need not want the html file in _posts (and rmd_to_gfm won't make it).  Jekyll on github is going to process the html from the md.  knit won't make the right html.
-
-The `rmd_to_gfm` function is in `_use-to-knit-rmd-file.r` in the posts directory.  I have it in a utils package with a bunch of other stuff for writing papers.  To install eehutils (which no one except eeh would want to do...).
-```
-require(devtools)
-install_github("eeholmes/eehutils")
 ```
