@@ -25,7 +25,8 @@ This is part of a series on computing the Fisher Information for Multivariate Au
 [Part II: Louis 1982](https://eeholmes.github.io/posts/2016-5-19-FI-recursion-2/), 
 [Part III: Harvey 1989, Background](https://eeholmes.github.io/posts/2016-6-16-FI-recursion-3/),
 [Part IV: Harvey 1989, Implementation](https://eeholmes.github.io/posts/2017-5-31-FI-recursion-4/).
-\footnote[1]{Holmes, E. E. 2016. Notes on computing the Fisher Information matrix for MARSS models. Part IV Implementing the Recursion in Harvey 1989. }
+
+*Citation: Holmes, E. E. 2016. Notes on computing the Fisher Information matrix for MARSS models. Part IV Implementing the Recursion in Harvey 1989.*
 
 _______
 
@@ -94,7 +95,8 @@ The derivative of this with respect to $\theta_i=a$ is
 So in MARSS, $\partial M/\partial \theta_i$ would be 
 
 ```
-dthetai=matrix(0,ip,1); dthetai[i,]=1 #set up the d theta_i bit.
+dthetai=matrix(0,ip,1)
+dthetai[i,]=1 #set up the d theta_i bit.
 dM=unvec(f+D%*%dthetai,dim(M)) #only needed if M is matrix
 ```
 
@@ -196,7 +198,7 @@ B_t \frac{\partial \tilde{V}_{t-1\vert t-1}}{\partial \theta_i} \frac{\partial B
 B_t \frac{\tilde{V}_{t-1\vert t-1}}{\partial\theta_j} \frac{\partial B_t^\top}{\partial \theta_i}
 \end{align}
 </div>
-In the derivatives, $\tilde{V} _ {t\vert t}$ is output by the Kalman filter.  In MARSSkf, it is called Vtt[,t]. $\tilde{V} _ {t-1\vert t-1}$ would be called Vtt[,t-1].  The derivatives of $\tilde{V} _ {t-1\vert t-1}$ is from the rest of the recursion (below).
+In the derivatives, $\tilde{V} _ {t\vert t}$ is output by the Kalman filter.  In MARSSkf, it is called `Vtt[,t]`. $\tilde{V} _ {t-1\vert t-1}$ would be called `Vtt[,t-1]`.  The derivatives of $\tilde{V} _ {t-1\vert t-1}$ is from the rest of the recursion (below).
 
 ### Rest of the recursion equations are the same for all t.
 
@@ -209,7 +211,7 @@ From equation 3.4.74a:
 + \tilde{V}_{t\vert t-1} Z_t^\top F_t^{-1}\frac{\partial v_t}{\partial \theta_i}
 \end{equation}
 </div>
-$\tilde{V} _ {t\vert t-1}$ is output by the Kalman filter.  In MARSSkf, it is called Vtt1[,t]. $v_t$ are the innovations.  In MARSSkf, they are called Innov[,t].
+$\tilde{V} _ {t\vert t-1}$ is output by the Kalman filter.  In MARSSkf, it is called `Vtt1[,t]`. $v_t$ are the innovations.  In MARSSkf, they are called `Innov[,t]`.
 
 From equation 3.4.74b:
 <div>
