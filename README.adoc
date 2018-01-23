@@ -6,4 +6,4 @@
 
 toc::[]
 
-include::basics.adoc[]
+include::README-text.md[]
