@@ -13,6 +13,7 @@ author: EE Holmes, National Marine Fisheries Service & University of Washington
 ---
 
 <!--
+# to build.  This works from anywhere in the eeholmes.github.io project
 require(eehutils)
 filename="2017-5-31-FI-recursion-4.Rmd"
 rmd_to_gfm(filename, pdf=TRUE)
