@@ -36,7 +36,7 @@ I (Eli) forked (then detached) an edited copy of academicpages from Eric Ward.  
 
 # Making sure math works
 
-My website has a blog and that blog is math heavy, has images and citations.
+My website has a blog and that blog is math heavy, has images and citations.  The file `_includes/mathjax.html` has some settings for mathjax such as eqn numbers.  So if you preview your Rmd files in Rstudio, you won't see the line numbers.
 
 I write in Rmarkdown and write math in latex.  This generally works fine as long as I follow a few rules.  I use my Rmarkdown to make both markdown for GitHub Pages and PDFs.  It needs to just work across outputs straight from my Rmd file.  I don't want to be futzing with the markdown output by my Rmd, e.g. I don't want to have to paste on a yaml as needed by Jekyll.  Also I don't want to be writing custom templates of mucking with pandoc templates.  That just creates something that is too custom to be portable.  I wasted 2 days trying that before deciding that was a) too much work and b) a bad idea.
 
@@ -58,7 +58,7 @@ I write in Rmarkdown and write math in latex.  This generally works fine as long
 </div>
 ```
 
-* You can use \$...\$ or \\(...\\) for inline equations.  mathjax.html sets the mathjax config to allow \$...\$.  This means you need to be careful in how you use $.  You might run into trouble in code.
+* You can use \$...\$ or \\(...\\) for inline equations.  `_includes/mathjax.html` sets the mathjax config to allow \$...\$.  This means you need to be careful in how you use $.  You might run into trouble in code.
 
 * Avoid using any special markdown symbols in math.  Use `\ast` instead of "*"; Use `\vert` instead of "|".  markdown will misinterpret these as markdown and mess up your equations.  "\_" is known to create problems in some jekyll sites; there is an extension setting that will turn off "\_" as emphasis if using redcarpet as the markdown interpreter.  I am using kramdown and "\_" generally works unless it appears after a "}".  In that case, add spaces around the "\_".  So if you need this `\hat{a}_{a+b}` then write it like this `\hat{a} _ {a+b}`.
 
