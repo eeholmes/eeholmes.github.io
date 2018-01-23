@@ -29,7 +29,8 @@ I (Eli) forked (then detached) an edited copy of academicpages from Eric Ward.  
 # Instructions for using my hacked version of academicpages as your website
 
 1. Clone [eeholmes.github.io](https://github.com/eeholmes/eeholmes.github.io). 
-1. Enable GitHub Pages for your repository. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository. If you name it [Your GitHub username].github.io", then that will be your website's URL.  Alternatively, you could name it to say [foo] and your URL would be [Your GitHub username]/foo   You'll want to specifify for pages to use master.
+1. Enable GitHub Pages for your repository. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository. If you name it [Your GitHub username].github.io", then that will be your website's URL: `http://username.github.io`. Alternatively, you could name your repository `foo` and your URL would be `http://github.com/username/foo`. 
+1. You'll want to specify for GitHub Pages to use master.  Go to your respository settings, and scroll down towards the bottom and you'll see a section on GitHub Pages and the first option is to specify Source.  Choose 'master branch'.
 1. Wait a bit for jekyll to do it's stuff and go to your URL to see the website.
 1. Hack away.
 
@@ -37,11 +38,11 @@ I (Eli) forked (then detached) an edited copy of academicpages from Eric Ward.  
 
 My website has a blog and that blog is math heavy, has images and citations.
 
-I write in Rmarkdown and write math in latex.  This generally works fine as long as I follow a few rules.  I use my Rmarkdown to make both markdown for GitHub Pages and PDFs.  It needs to just work across outputs straight from my Rmd file.  I don't want to be futzing with the markdown output by my Rmd, e.g. I don't want to have to paste on a yaml as needed by jekyll.  Also I don't want to be writing custom templates of mucking with pandoc templates.  That just creates something that is too custom to be portable.  I wasted 2 days trying that before deciding that was a) too much work and b) a bad idea.
+I write in Rmarkdown and write math in latex.  This generally works fine as long as I follow a few rules.  I use my Rmarkdown to make both markdown for GitHub Pages and PDFs.  It needs to just work across outputs straight from my Rmd file.  I don't want to be futzing with the markdown output by my Rmd, e.g. I don't want to have to paste on a yaml as needed by Jekyll.  Also I don't want to be writing custom templates of mucking with pandoc templates.  That just creates something that is too custom to be portable.  I wasted 2 days trying that before deciding that was a) too much work and b) a bad idea.
 
 * **Use GitHub flavored markdown for headings**.  Rmarkdown will understand these.  In general, just write in markdown that GitHub will understand because github_document will trash your math in ways that are really hard to fix without a lot of customization of rmarkdown templates and pandoc templates.
 
-* To create the markdown (.md) file from rmarkdown (.Rmd) use knitr(filename).  Don't use the knit button because that calls render() and that uses pandoc.  pandoc's math latex to mathjax processor will delete the `<div>`s necessary to protect the math from jekyll.
+* To create the markdown (.md) file from rmarkdown (.Rmd) use knitr(filename).  Don't use the knit button because that calls render() and that uses pandoc.  pandoc's math latex to mathjax processor will delete the `<div>`s necessary to protect the math from Jekyll.
 
 * If there is no R code to process, then you can just upload the .Rmd file to _posts.  Make sure the file naming is correct and the yaml is correct.  See other posts for examples.
 
@@ -59,12 +60,12 @@ I write in Rmarkdown and write math in latex.  This generally works fine as long
 
 * You can use \$...\$ or \\(...\\) for inline equations.  mathjax.html sets the mathjax config to allow \$...\$.  This means you need to be careful in how you use $.  You might run into trouble in code.
 
-* Avoid using any special markdown symbols in math.  Use `\ast` instead of "*"; Use `\vert` instead of "|".  markdown will misinterpret these as markdown and mess up your equations.  "\_" is known to create problems in some jekyll sites; there is an extension setting that will turn off "\_" as emphasis if using redcarpet as the markdown interpreter.  I am using kramdown and "\_" generally works unless it appears after a "{".  In that case, add spaces around the "\_"
+* Avoid using any special markdown symbols in math.  Use `\ast` instead of "*"; Use `\vert` instead of "|".  markdown will misinterpret these as markdown and mess up your equations.  "\_" is known to create problems in some jekyll sites; there is an extension setting that will turn off "\_" as emphasis if using redcarpet as the markdown interpreter.  I am using kramdown and "\_" generally works unless it appears after a "}".  In that case, add spaces around the "\_".  So if you need this `\hat{a}_{a+b}` then write it like this `\hat{a} _ {a+b}`.
 
 * IF you want a bulleted or numbered list with multiple paragraphs and you have math equations in those paragraphs, you need to embed the `\begin{equation}\end{equation}` in the paragraph with no line feeds anywhere. So it will look like so:
 
 ```
-    Note the leading 4 spaces.  Now I have an equation, \begin{equation}1+1=2\end{equation} with no line feeds anywhere.  All one paragraph and no <div>s around the equation.
+    Note the leading 4 spaces.  \begin{equation}1+1=2\end{equation}. No line feeds anywhere.  All one paragraph and no <div>s around the equation.
 ```
 
 * To add a link to download a pdf of a post, set up your yaml similar to this.  This says to add a link to the PDF and Rmd file.  It will look for the pdf in posts/pdfs/ and the Rmd in posts/Rmd .  You need to put the files there and they have to be called [postname].pdf and [postname].Rmd .  Look in posts/Rmd for an R script that will do this automatically from a Rmd file.
