@@ -187,16 +187,18 @@ The derivative of $\tilde{V} _ {t\vert t-1}$ is (3.4.73b in Harvey)
 </div>
 The second derivative of $\tilde{V} _ {t\vert t-1}$ is obtained by taking the derivative of \ref{derivVtt1} and eliminating any second derivatives of parameters:
 <div>
-\begin{align} 
-\frac{\partial^2 \tilde{V}_{t\vert t-1}}{\partial\theta_i \partial\theta_j} =
-\frac{\partial B_t}{\partial \theta_i} \frac{\tilde{V}_{t-1\vert t-1}}{\partial\theta_j} B_t^\top + 
-\frac{\partial B_t}{\partial \theta_i} \tilde{V}_{t-1\vert t-1} \frac{\partial B_t^\top}{\partial \theta_j} + 
-\frac{\partial B_t}{\partial \theta_j} \frac{\partial \tilde{V}_{t-1\vert t-1}}{\partial \theta_i} B_t^\top + 
-B_t \frac{\partial^2 \tilde{V}_{t-1\vert t-1}}{\partial\theta_i \partial\theta_j} B_t^\top + \\
-B_t \frac{\partial \tilde{V}_{t-1\vert t-1}}{\partial \theta_i} \frac{\partial B_t^\top}{\partial \theta_j} + 
-\frac{\partial B_t}{\partial \theta_j} \tilde{V}_{t-1\vert t-1} \frac{\partial B_t^\top}{\partial \theta_i} + 
-B_t \frac{\tilde{V}_{t-1\vert t-1}}{\partial\theta_j} \frac{\partial B_t^\top}{\partial \theta_i}
-\end{align}
+\begin{equation}
+\begin{split} 
+\frac{\partial^2 \tilde{V}_{t\vert t-1}}{\partial\theta_i \partial\theta_j} = &
+\frac{\partial B_t}{\partial \theta_i} \frac{\tilde{V}_{t-1\vert t-1}}{\partial\theta_j} B_t^\top 
++ \frac{\partial B_t}{\partial \theta_i} \tilde{V}_{t-1\vert t-1} \frac{\partial B_t^\top}{\partial \theta_j} 
++ \frac{\partial B_t}{\partial \theta_j} \frac{\partial \tilde{V}_{t-1\vert t-1}}{\partial \theta_i} B_t^\top \\
+&+ B_t \frac{\partial^2 \tilde{V}_{t-1\vert t-1}}{\partial\theta_i \partial\theta_j} B_t^\top 
++ B_t \frac{\partial \tilde{V}_{t-1\vert t-1}}{\partial \theta_i} \frac{\partial B_t^\top}{\partial \theta_j} 
++ \frac{\partial B_t}{\partial \theta_j} \tilde{V}_{t-1\vert t-1} \frac{\partial B_t^\top}{\partial \theta_i} 
++ B_t \frac{\tilde{V}_{t-1\vert t-1}}{\partial\theta_j} \frac{\partial B_t^\top}{\partial \theta_i}
+\end{split}
+\end{equation}
 </div>
 In the derivatives, $\tilde{V} _ {t\vert t}$ is output by the Kalman filter.  In MARSSkf, it is called `Vtt[,t]`. $\tilde{V} _ {t-1\vert t-1}$ would be called `Vtt[,t-1]`.  The derivatives of $\tilde{V} _ {t-1\vert t-1}$ is from the rest of the recursion (below).
 
@@ -204,11 +206,15 @@ In the derivatives, $\tilde{V} _ {t\vert t}$ is output by the Kalman filter.  In
 
 From equation 3.4.74a:
 <div>
-\begin{equation} 
-\frac{\partial \tilde{x}_{t\vert t}}{\partial\theta_i } = \frac{\partial \tilde{x}_{t\vert t-1}}{\partial \theta_i} + \frac{\partial \tilde{V}_{t\vert t-1}}{\partial \theta_i} Z_t^\top F_t^{-1}v_t + 
-\tilde{V}_{t\vert t-1} \frac{\partial Z_t^\top}{\partial \theta_i} F_t^{-1}v_t - 
-\tilde{V}_{t\vert t-1} Z_t^\top F_t^{-1}\frac{\partial F_t}{\partial \theta_i}F_t^{-1}v_t
-+ \tilde{V}_{t\vert t-1} Z_t^\top F_t^{-1}\frac{\partial v_t}{\partial \theta_i}
+\begin{equation}
+\begin{split} 
+\frac{\partial \tilde{x}_{t\vert t}}{\partial\theta_i } = &
+\frac{\partial \tilde{x}_{t\vert t-1}}{\partial \theta_i} 
++ \frac{\partial \tilde{V}_{t\vert t-1}}{\partial \theta_i} Z_t^\top F_t^{-1}v_t \\
+&+ \tilde{V}_{t\vert t-1} \frac{\partial Z_t^\top}{\partial \theta_i} F_t^{-1}v_t 
+- \tilde{V}_{t\vert t-1} Z_t^\top F_t^{-1}\frac{\partial F_t}{\partial \theta_i}F_t^{-1}v_t \\
+&+ \tilde{V}_{t\vert t-1} Z_t^\top F_t^{-1}\frac{\partial v_t}{\partial \theta_i}
+\end{split}
 \end{equation}
 </div>
 $\tilde{V} _ {t\vert t-1}$ is output by the Kalman filter.  In MARSSkf, it is called `Vtt1[,t]`. $v_t$ are the innovations.  In MARSSkf, they are called `Innov[,t]`.
@@ -216,15 +222,15 @@ $\tilde{V} _ {t\vert t-1}$ is output by the Kalman filter.  In MARSSkf, it is ca
 From equation 3.4.74b:
 <div>
 \begin{equation} 
-\begin{gathered} 
-\frac{\partial \tilde{V}_{t\vert t}}{\partial\theta_i } = 
+\begin{split} 
+\frac{\partial \tilde{V}_{t\vert t}}{\partial\theta_i } = &
 \frac{\partial \tilde{V}_{t\vert t-1}}{\partial \theta_i} - 
 \frac{\partial \tilde{V}_{t\vert t-1}}{\partial \theta_i} Z_t^\top F_t^{-1}Z_t \tilde{V}_{t\vert t-1} \\
-- \tilde{V}_{t\vert t-1} \frac{\partial Z_t^\top}{\partial \theta_i} F_t^{-1}Z_t \tilde{V}_{t\vert t-1} + 
-\tilde{V}_{t\vert t-1} Z_t^\top F_t^{-1}\frac{\partial F_t}{\partial \theta_i}F_t^{-1}Z_t \tilde{V}_{t\vert t-1} \\
-- \tilde{V}_{t\vert t-1} Z_t^\top F_t^{-1}\frac{\partial Z_t}{\partial \theta_i} \tilde{V}_{t\vert t-1} -
-\tilde{V}_{t\vert t-1} Z_t^\top F_t^{-1}Z_t \frac{\partial \tilde{V}_{t\vert t-1}}{\partial \theta_i}
-\end{gathered}
+&- \tilde{V}_{t\vert t-1} \frac{\partial Z_t^\top}{\partial \theta_i} F_t^{-1}Z_t \tilde{V}_{t\vert t-1} 
++ \tilde{V}_{t\vert t-1} Z_t^\top F_t^{-1}\frac{\partial F_t}{\partial \theta_i}F_t^{-1}Z_t \tilde{V}_{t\vert t-1} \\
+&- \tilde{V}_{t\vert t-1} Z_t^\top F_t^{-1}\frac{\partial Z_t}{\partial \theta_i} \tilde{V}_{t\vert t-1} 
+-\tilde{V}_{t\vert t-1} Z_t^\top F_t^{-1}Z_t \frac{\partial \tilde{V}_{t\vert t-1}}{\partial \theta_i}
+\end{split}
 \end{equation}
 </div>
 
