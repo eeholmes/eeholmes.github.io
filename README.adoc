@@ -1,12 +1,12 @@
 :toc: macro
 :toc-title:
-:toclevels: 99
+:toclevels: 3
 
 # Table of Contents
 
 toc::[]
 
-# Source
+# Source and main changes
 
 Original source: A Github Pages template for academic websites by [Stuart Geiger](https://github.com/staeiou): [academicpages.github.io](https://github.com/academicpages/academicpages.github.io).  Academicpages was forked (then detached) by [Stuart Geiger](https://github.com/staeiou) from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/), which is © 2016 Michael Rose and released under the MIT License. See LICENSE.md.  
 
@@ -33,11 +33,9 @@ I (Eli) forked (then detached) an edited copy of academicpages from Eric Ward.  
 1. Wait a bit for jekyll to do it's stuff and go to your URL to see the website.
 1. Hack away.
 
-# Important stuff to keep in mind
+# Making sure math works
 
 My website has a blog and that blog is math heavy, has images and citations.
-
-## Making sure math works
 
 I write in Rmarkdown and write math in latex.  This generally works fine as long as I follow a few rules.  I use my Rmarkdown to make both markdown for GitHub Pages and PDFs.  It needs to just work across outputs straight from my Rmd file.  I don't want to be futzing with the markdown output by my Rmd, e.g. I don't want to have to paste on a yaml as needed by jekyll.  Also I don't want to be writing custom templates of mucking with pandoc templates.  That just creates something that is too custom to be portable.  I wasted 2 days trying that before deciding that was a) too much work and b) a bad idea.
 
@@ -66,7 +64,7 @@ I write in Rmarkdown and write math in latex.  This generally works fine as long
 * IF you want a bulleted or numbered list with multiple paragraphs and you have math equations in those paragraphs, you need to embed the `\begin{equation}\end{equation}` in the paragraph with no line feeds anywhere. So it will look like so:
 
 ```
-    Note the leading 4 spaces.  Now I have an equation, \begin{equation}1+1=2\end{equation} with no line feeds anywhere.  All one paragraph and not <div>s around the equation.
+    Note the leading 4 spaces.  Now I have an equation, \begin{equation}1+1=2\end{equation} with no line feeds anywhere.  All one paragraph and no <div>s around the equation.
 ```
 
 * To add a link to download a pdf of a post, set up your yaml similar to this.  This says to add a link to the PDF and Rmd file.  It will look for the pdf in posts/pdfs/ and the Rmd in posts/Rmd .  You need to put the files there and they have to be called [postname].pdf and [postname].Rmd .  Look in posts/Rmd for an R script that will do this automatically from a Rmd file.
@@ -83,4 +81,21 @@ permalink: /posts/2016/05/FI-II/
 postname: '2016-5-19-FI-recursion-2'
 pdf: true
 rmd: true
+```
+
+# How to add a blog entry
+
+1. Create the blog .Rmd file in the posts directory.  See other .Rmd files in that directory or template.Rmd for the yaml you need to use.
+2. Run this code.  It assumes your working directory is somewhere (anywhere) in the repository for your website code.
+```
+require(eehutils)
+filename="replace-with-actual-filename.Rmd"
+rmd_to_gfm(filename, pdf=TRUE)
+```
+This will make the md file and put in _posts directory and make the pdf and put in posts/pdfs.  You don't need not want the html file in _posts (and rmd_to_gfm won't make it).  Jekyll on github is going to process the html from the md.  knit won't make the right html.
+
+The `rmd_to_gfm` function is in `_use-to-knit-rmd-file.r` in the posts directory.  I have it in a utils package with a bunch of other stuff for writing papers.  To install eehutils (which no one except eeh would want to do...).
+```
+require(devtools)
+install_github("eeholmes/eehutils")
 ```
