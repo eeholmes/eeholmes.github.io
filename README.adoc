@@ -31,7 +31,7 @@ I (Eli) forked (then detached) an edited copy of academicpages from Eric Ward.  
 1. Clone [eeholmes.github.io](https://github.com/eeholmes/eeholmes.github.io). 
 1. Enable GitHub Pages for your repository. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository. If you name it [Your GitHub username].github.io", then that will be your website's URL: `http://username.github.io`. Alternatively, you could name your repository `foo` and your URL would be `http://github.com/username/foo`. 
 1. You'll want to specify for GitHub Pages to use master.  Go to your respository settings, and scroll down towards the bottom and you'll see a section on GitHub Pages and the first option is to specify Source.  Choose 'master branch'.
-1. Wait a bit for jekyll to do it's stuff and go to your URL to see the website.
+1. Wait a bit for Jekyll to do it's stuff and go to your URL to see the website.
 1. Hack away.
 
 # Making sure math works
@@ -48,7 +48,7 @@ I write in Rmarkdown and write math in latex.  This generally works fine as long
 
 * If the post has no math/latex but has a bunch of tables from R code, like kable(), then you can use `output: github_document` in the yaml and use the gfm output.  I'm not sure if the tables from knit() will work in github.
 
-* Only use `\begin{equation}\end{equation}` (or align, etc).  Don't use $$.  Wrap in a `<div>` to protect from jekyll.  so like so  `<div>\begin{equation}\end{equation}</div>`.  Note, if your `\begin{equation}\end{equation}` is in a paragraph with NO line feeds anywhere (not even in the equation), the  `\begin{equation}\end{equation}` is already wrapped in a `<div>` from the paragraph. In that case, don't add another set of `<div>`s.  This is what an equation should normally look like:
+* Only use `\begin{equation}\end{equation}` (or align, etc).  Don't use $$.  Wrap in a `<div>` to protect from Jekyll.  so like so  `<div>\begin{equation}\end{equation}</div>`.  Note, if your `\begin{equation}\end{equation}` is in a paragraph with NO line feeds anywhere (not even in the equation), the  `\begin{equation}\end{equation}` is already wrapped in a `<div>` from the paragraph. In that case, don't add another of `<div>` wrapper.  This is what an equation should normally look like:
 
 ```
 <div>
@@ -60,7 +60,7 @@ I write in Rmarkdown and write math in latex.  This generally works fine as long
 
 * You can use \$...\$ or \\(...\\) for inline equations.  `_includes/mathjax.html` sets the mathjax config to allow \$...\$.  This means you need to be careful in how you use $.  You might run into trouble in code.
 
-* Avoid using any special markdown symbols in math.  Use `\ast` instead of "*"; Use `\vert` instead of "|".  markdown will misinterpret these as markdown and mess up your equations.  "\_" is known to create problems in some jekyll sites; there is an extension setting that will turn off "\_" as emphasis if using redcarpet as the markdown interpreter.  I am using kramdown and "\_" generally works unless it appears after a "}".  In that case, add spaces around the "\_".  So if you need this `\hat{a}_{a+b}` then write it like this `\hat{a} _ {a+b}`.
+* Avoid using any special markdown symbols in math.  Use `\ast` instead of "*"; Use `\vert` instead of "|".  markdown will misinterpret these as markdown and mess up your equations.  "\_" is known to create problems in some Jekyll sites; there is an extension setting that will turn off "\_" as emphasis if using redcarpet as the markdown interpreter.  I am using kramdown and "\_" generally works unless it appears after a "}".  In that case, add spaces around the "\_".  So if you need this `\hat{a}_{a+b}` then write it like this `\hat{a} _ {a+b}`.
 
 * IF you want a bulleted or numbered list with multiple paragraphs and you have math equations in those paragraphs, you need to embed the `\begin{equation}\end{equation}` in the paragraph with no line feeds anywhere. So it will look like so:
 
@@ -75,7 +75,7 @@ I write in Rmarkdown and write math in latex.  This generally works fine as long
 
 1. Put spaces around `_`
 2. Replace `|` with `\vert` and `*` with `\ast`
-3. If your equations is in a list (bulleted or numbered), no line returns in the paragraph and no `<div>` around the equation.
+3. If your equation is in a list (bulleted or numbered), no line returns in the paragraph and no `<div>` around the equation.
 
 
 # How to add a blog entry
