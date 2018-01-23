@@ -1,7 +1,9 @@
 
 # Use this code to run an Rmd File
 # if eehutils loaded, use
-# 
+#
+require(devtools)
+install_github("eeholmes/eehutils")
 require(eehutils)
 filename="2017-5-31-FI-recursion-4.Rmd"
 rmd_to_gfm(filename, pdf=TRUE)
