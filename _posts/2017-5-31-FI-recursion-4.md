@@ -13,7 +13,6 @@ author: EE Holmes, National Marine Fisheries Service & University of Washington
 ---
 
 <!--
-# to build.  This works from anywhere in the eeholmes.github.io project
 require(eehutils)
 filename="2017-5-31-FI-recursion-4.Rmd"
 rmd_to_gfm(filename, pdf=TRUE)
@@ -217,15 +216,15 @@ $\tilde{V} _ {t\vert t-1}$ is output by the Kalman filter.  In MARSSkf, it is ca
 From equation 3.4.74b:
 <div>
 \begin{equation} 
-\begin{split} 
-\frac{\partial \tilde{V}_{t\vert t}}{\partial\theta_i } = &
+\begin{gathered} 
+\frac{\partial \tilde{V}_{t\vert t}}{\partial\theta_i } = 
 \frac{\partial \tilde{V}_{t\vert t-1}}{\partial \theta_i} - 
-\frac{\partial \tilde{V}_{t\vert t-1}}{\partial \theta_i} Z_t^\top F_t^{-1}Z_t \tilde{V}_{t\vert t-1} -
-\tilde{V}_{t\vert t-1} \frac{\partial Z_t^\top}{\partial \theta_i} F_t^{-1}Z_t \tilde{V}_{t\vert t-1} + 
-\tilde{V}_{t\vert t-1} Z_t^\top F_t^{-1}\frac{\partial F_t}{\partial \theta_i}F_t^{-1}Z_t \tilde{V}_{t\vert t-1} - \\
-&\tilde{V}_{t\vert t-1} Z_t^\top F_t^{-1}\frac{\partial Z_t}{\partial \theta_i} \tilde{V}_{t\vert t-1} -
+\frac{\partial \tilde{V}_{t\vert t-1}}{\partial \theta_i} Z_t^\top F_t^{-1}Z_t \tilde{V}_{t\vert t-1} \\
+- \tilde{V}_{t\vert t-1} \frac{\partial Z_t^\top}{\partial \theta_i} F_t^{-1}Z_t \tilde{V}_{t\vert t-1} + 
+\tilde{V}_{t\vert t-1} Z_t^\top F_t^{-1}\frac{\partial F_t}{\partial \theta_i}F_t^{-1}Z_t \tilde{V}_{t\vert t-1} \\
+- \tilde{V}_{t\vert t-1} Z_t^\top F_t^{-1}\frac{\partial Z_t}{\partial \theta_i} \tilde{V}_{t\vert t-1} -
 \tilde{V}_{t\vert t-1} Z_t^\top F_t^{-1}Z_t \frac{\partial \tilde{V}_{t\vert t-1}}{\partial \theta_i}
-\end{split}
+\end{gathered}
 \end{equation}
 </div>
 
@@ -233,7 +232,7 @@ From equation 3.4.74b:
 * Repeat for parameter matrix at time $t$.
     * Loop over i = 1 to p.
     * Loop over j = i to p.
-        * Compute $I_{ij}(\theta)$ and add to previous time step. This is equation 3.4.69 with expectation dropped.  Store in `Iij[i,j]` and `Iij[j,i]`.<div>\begin{equation}I_{ij}(\theta)_t = I_{ji}(\theta)_t = \frac{1}{2}\left[ tr\left[ F_t^{-1}\frac{\partial F_t}{\partial \theta_i}F_t^{-1}\frac{\partial F_t}{\partial \theta_j}\right]\right] + \left(\frac{\partial v_t}{\partial \theta_i}\right)^\top F_t^{-1}\frac{\partial v_t}{\partial \theta_j}\end{equation}</div>
+        * Compute $I_{ij}(\theta)$ and add to previous time step. This is equation 3.4.69 with expectation dropped.  Store in `Iij[i,j]` and `Iij[j,i]`. \begin{equation}I_{ij}(\theta)_t = I_{ji}(\theta)_t = \frac{1}{2}\left[ tr\left[ F_t^{-1}\frac{\partial F_t}{\partial \theta_i}F_t^{-1}\frac{\partial F_t}{\partial \theta_j}\right]\right] + \left(\frac{\partial v_t}{\partial \theta_i}\right)^\top F_t^{-1}\frac{\partial v_t}{\partial \theta_j}\end{equation}
 
         * Add this on to previous one to get new $I_{ij}(\theta)$: \begin{equation}I_{ij}(\theta) = I_{ij}(\theta) + I_{ij}(\theta)_t\end{equation}
 
