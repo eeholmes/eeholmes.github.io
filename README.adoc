@@ -67,6 +67,17 @@ I write in Rmarkdown and write math in latex.  This generally works fine as long
 ```
     Note the leading 4 spaces.  \begin{equation}1+1=2\end{equation}. No line feeds anywhere.  All one paragraph and no <div>s around the equation.
 ```
+## Degugging equations that mathjax won't process
+
+* First preview the md locally (via Rstudio) and see if it is a latex/markdown issue or something that Jekyll is doing in post-processing.
+
+* If it is a Jekyll issue, then a good bet is that the special characters in the equation are making it be interpreted as markdown.
+
+    * Put spaces around `_`
+    * Replace `|` with `\vert` and `*` with `\ast`
+    * If your equations is in a list (bulleted or numbered), no line returns in the paragraph and no `<div>` around the equation.
+
+## Add the pdf download link to blogs
 
 * To add a link to download a pdf of a post, set up your yaml similar to this.  This says to add a link to the PDF and Rmd file.  It will look for the pdf in posts/pdfs/ and the Rmd in posts/Rmd .  You need to put the files there and they have to be called [postname].pdf and [postname].Rmd .  Look in posts/Rmd for an R script that will do this automatically from a Rmd file.
 

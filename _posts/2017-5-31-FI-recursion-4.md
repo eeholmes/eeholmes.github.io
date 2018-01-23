@@ -241,8 +241,6 @@ From equation 3.4.74b:
     * Loop over i = 1 to p.
     * Loop over j = i to p.
 
-        * Compute $I_{ij}(\theta)$ and add to previous time step. This is equation 3.4.69 with the expectation dropped.  Store in `Iij[i,j]` and `Iij[j,i]`. \begin{equation}I_{ij}(\theta)_t = I_{ji}(\theta)_t = \frac{1}{2}\left[ tr\left[ F_t^{-1}\frac{\partial F_t}{\partial \theta_i}F_t^{-1}\frac{\partial F_t}{\partial \theta_j}\right]\right] + \left(\frac{\partial v_t}{\partial \theta_i}\right)^\top F_t^{-1}\frac{\partial v_t}{\partial \theta_j}\end{equation}
-
         * Compute $I_{ij}(\theta)$ and add to previous time step. This is equation 3.4.69 with the expectation dropped.  Store in `Iij[i,j]` and `Iij[j,i]`. \begin{equation}I _ {ij}(\theta)_t = I _ {ji}(\theta) _ t = \frac{1}{2}\left[ tr\left[ F_t^{-1}\frac{\partial F_t}{\partial \theta_i}F_t^{-1}\frac{\partial F_t}{\partial \theta_j}\right]\right] + \left(\frac{\partial v_t}{\partial \theta_i}\right)^\top F_t^{-1}\frac{\partial v_t}{\partial \theta_j}\end{equation}
 
         * Add this on to previous one to get new $I_{ij}(\theta)$: \begin{equation}I_{ij}(\theta) = I_{ij}(\theta) + I_{ij}(\theta)_t\end{equation}
