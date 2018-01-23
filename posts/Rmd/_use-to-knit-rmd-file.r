@@ -1,7 +1,10 @@
 
 # Use this code to run an Rmd File
 # if eehutils loaded, use
-# rmd_to_gfm(filename, pdf=TRUE)
+# 
+require(eehutils)
+filename="2017-5-31-FI-recursion-4.Rmd"
+rmd_to_gfm(filename, pdf=TRUE)
 
 rmd_to_gfm = function(filename, pdf=FALSE){
   require(here)
