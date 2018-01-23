@@ -72,10 +72,9 @@ I write in Rmarkdown and write math in latex.  This generally works fine as long
 * First preview the md locally (via Rstudio) and see if it is a latex/markdown issue or something that Jekyll is doing in post-processing.
 
 * If it is a Jekyll issue, then a good bet is that the special characters in the equation are making it be interpreted as markdown.
-
-1. Put spaces around `_`
-2. Replace `|` with `\vert` and `*` with `\ast`
-3. If your equation is in a list (bulleted or numbered), no line returns in the paragraph and no `<div>` around the equation.
+    1. Put spaces around `_`
+    2. Replace `|` with `\vert` and `*` with `\ast`
+    3. If your equation is in a list (bulleted or numbered), no line returns in the paragraph and no `<div>` around the equation.
 
 
 # How to add a blog entry
