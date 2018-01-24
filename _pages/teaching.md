@@ -11,7 +11,7 @@ ul {
 </style>
 
 
-* UW 2017: SAFS 507 Applied Time Series Analysis for Fisheries and Environmental Sciences, with Eric Ward and Mark Scheuerell. This year we put more of an emphasis on Bayesian model fitting using STAN.  Course website includes recordings of the lectures, lecture ppts, and computer code used in the computer labs.[<a href="https://catalyst.uw.edu/workspace/fish203/35553/243766">ONLINE</a>] Stan code for time series models on Github [<a href="https://github.com/nwfsc-timeseries/statss">here</a>]  Lab book for course [<a href="https://nwfsc-timeseries.github.io/atsa-labs/">here</a>]
+* UW 2017: SAFS 507 Applied Time Series Analysis for Fisheries and Environmental Sciences, with Eric Ward and Mark Scheuerell. This year we put more of an emphasis on Bayesian model fitting using STAN.  Course website includes recordings of the lectures, lecture ppts, and computer code used in the computer labs.[<a href="https://catalyst.uw.edu/workspace/fish203/35553/243766">ONLINE</a>] Stan code for time series models on Github [<a href="https://github.com/nwfsc-timeseries/atsar">here</a>]  Lab book for course [<a href="https://nwfsc-timeseries.github.io/atsa-labs/">here</a>]
 
 * UW 2015: SAFS 507 Applied Time Series Analysis for Fisheries and Environmental Sciences, with Eric Ward and Mark Scheuerell. Most of the matrerial was updated from the 2013 course with more of an emphasis on Bayesian model fitting. [<a href="https://catalyst.uw.edu/workspace/fish203/35553/243766">ONLINE</a>]
 

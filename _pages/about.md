@@ -16,7 +16,7 @@ I am part of a NWFSC research group working in the area of hierarchical modeling
 .column {
     float: left;
     padding: 10px;
-    width: 35%;
+    width: 45%;
 }
 
 /* Clear floats after the columns */
@@ -44,7 +44,7 @@ I am part of a NWFSC research group working in the area of hierarchical modeling
 <h3>Education</h3>
 <ul class="ul-edu fa-ul">
 <li>
-<i class="fa fa-mortar-board"></i> BS in Biology, 1988, Stanford University
+<i class="fa fa-university"></i> PhD in Zoology, 1995, University of Washington
 </li>
 
 <li>
@@ -52,7 +52,7 @@ I am part of a NWFSC research group working in the area of hierarchical modeling
 </li>
 
 <li>
-<i class="fa fa-university"></i> PhD in Zoology, 1995, University of Washington
+<i class="fa fa-mortar-board"></i> BS in Biology, 1988, Stanford University
 </li>
 
 </ul>
