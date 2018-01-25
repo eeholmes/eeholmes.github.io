@@ -13,11 +13,8 @@ main:
   - title: "Talks"
     url: /talks/
 
-  - title: "Open Notebook Older"
-    url: /blog/
-    
-  - title: "Open Notebook Newer"
-    url: /year-archive-title-only/
+  - title: "Open Notebook"
+    url: /open-notebook/
 
   - title: "Colleagues"
     url: /colleagues/
