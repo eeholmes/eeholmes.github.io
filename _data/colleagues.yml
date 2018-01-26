@@ -5,6 +5,9 @@
 - name: Mark Scheuerell
   website: https://faculty.washington.edu/scheuerl/
   github: mdscheuerell
+  projects:
+    - name: ASSESSOR
+      url: https://mdscheuerell.github.io/ASSESSOR/
 
 - name: Eric Anderson
   website: http://eriqande.netlify.com/
@@ -23,3 +26,9 @@
     - name: Lab website
       url: http://www.semmenslab.org/
 
+- name: Brian Stock
+  website: https://brianstock.github.io/
+  github: brianstock
+  projects:
+    - name: MixSIAR
+      url: https://brianstock.github.io/mixsiar/
