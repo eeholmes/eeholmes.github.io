@@ -12,6 +12,11 @@
 - name: Eric Anderson
   website: http://eriqande.netlify.com/
   github: eriqande
+  projects:
+    - name: Reproducible Research 2014
+      url: http://eriqande.github.io/rep-res-web/
+    - name: Reproducible Research 2018
+      url: https://eriqande.github.io/rep-res-eeb-2017/
 
 - name: Jim Thorson
   website: https://sites.google.com/site/thorsonresearch/
