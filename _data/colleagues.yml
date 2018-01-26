@@ -1,24 +1,25 @@
-- colleague:
-  name: Eric Ward
+- name: Eric Ward
   website: https://eric-ward.github.io/
   github: eric-ward
-- colleague:
-  name: Mark Scheuerell
+
+- name: Mark Scheuerell
   website: https://faculty.washington.edu/scheuerl/
   github: mdscheuerell
-- colleague:
-  name: Eric Anderson
+
+- name: Eric Anderson
   website: http://eriqande.netlify.com/
   github: eriqande
-- colleague:
-  name: Jim Thorson
+
+- name: Jim Thorson
   website: https://sites.google.com/site/thorsonresearch/
   github: James-Thorson
-  project: FishStats
-    url: https://james-thorson.github.io/
-- colleague:
-  name: Brice Semmens
+  projects:
+    - name: FishStats
+      url: https://james-thorson.github.io/
+
+- name: Brice Semmens
   website: http://scrippsscholars.ucsd.edu/bsemmens/biocv
-  project: Lab website
-    url: http://www.semmenslab.org/
+  projects: 
+    - name: Lab website
+      url: http://www.semmenslab.org/
 

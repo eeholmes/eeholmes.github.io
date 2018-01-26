@@ -6,8 +6,8 @@ author_profile: true
 
 |               |               | Projects  |
 | ------------- |:-------------:| ---------:|
-{% for name in site.data.colleagues %}
-[{{ colleague.name }}]({{ colleague.website }}) | [![](/images/github.svg = 18x18)]({{ colleague.github }}) | {% for project in colleague %}[{{project}}({{ project.url}}) {% endfor %} |
+{% for colleague in site.data.colleagues %}
+[{{ colleague.name }}]({{ colleague.website }}) | {% if colleague.github != null %}[![](/images/github.svg = 18x18)]({{ colleague.github }}){% endif %} | {% if colleague.projects != null %}{% for project in colleague.projects %}[{{project.name}}({{ project.url}}) {% endfor %}{% endif %} |
 {% endfor %}
 
 <style>
