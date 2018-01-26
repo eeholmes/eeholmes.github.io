@@ -6,7 +6,7 @@ author_profile: true
 
 ## Multivariate time-series analysis
 
-Looking for R packages for time-series analysis (MARSS, atsar, ...)? Head to our 
+Looking for R packages for time-series analysis ([MARSS](https://nwfsc-timeseries.github.io/MARSS/), atsar, ...)? Head to our 
 [NWFSC Time Series](https://nwfsc-timeseries.github.io/) page.  Packages, course webpage and Applied Time-Series Analysis book is there.
 
 Other random stuff is on my [GitHub](https://github.com/eeholmes) page.  However, if you are looking for time-series analysis or hierarchical modeling code, then you should look at my [collegues](https://eeholmes.github.io/colleagues/)' GitHub repositories and project pages.
