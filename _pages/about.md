@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-<p style="background:#b7f98b;text-align:center">[Applied Time-Series Analysis for Fisheries and Environmental Data](https://nwfsc-timeseries.github.io/)<br>Course webpage, R packages, and book on our new webpage</p>
+<p style="background:#b7f98b;text-align:center"><a href="https://nwfsc-timeseries.github.io/">Applied Time-Series Analysis for Fisheries and Environmental Data</a><br>Course webpage, R packages, and book on our new webpage</p>
 
 My research is focused on stochastic processes and statistical models for complex multivariate, interacting systems. Much of what I do involves developing algorithms for fitting multivariate autoregressive state-space (MARSS) models to time-series data, which comes up in vector autoregressive state-space modeling, dynamic linear modeling, MAR(1) modeling, and dynamic factor analysis. I developed an EM algorithm for fitting a general constrained version of these models and develped the MARSS package for fitting such models. In my spare time, I've been working on predictive models of "multi-player" systems---I've been studying this with soccer match data. This is another application of my work on developing predictive models using 'bad' data. 
 
