@@ -13,8 +13,12 @@ main:
   - title: "Talks"
     url: /talks/
 
+  - title: "Code"
+    url: /code/
+
   - title: "Open Notebook"
     url: /open-notebook/
 
   - title: "Colleagues"
     url: /colleagues/
+
