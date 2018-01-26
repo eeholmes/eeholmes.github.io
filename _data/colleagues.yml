@@ -8,6 +8,8 @@
   projects:
     - name: ASSESSOR
       url: https://mdscheuerell.github.io/ASSESSOR/
+    - name: muti
+      url: https://mdscheuerell.github.io/muti/
 
 - name: Eric Anderson
   website: http://eriqande.netlify.com/
