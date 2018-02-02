@@ -80,10 +80,10 @@ analytics:
 author:
   name             : "Eli E. Holmes"
   avatar           : "profile.png"
-  bio              : "Research Scientist @ NWFSC, Affiliate professor at UW (SAFS)"
+  bio              : "Research Scientist @ NWFSC, Affiliate professor @ UW (SAFS)"
   location         : "Seattle WA, USA"
-  employer         :
-  googlescholar    : 
+  employer         : NOAA Fisheries
+  googlescholar    : "https://scholar.google.com/citations?user=HtIhixwAAAAJ&hl=en"
   email            : "eli.holmes@noaa.gov"
   uri              :
   bitbucket        :
