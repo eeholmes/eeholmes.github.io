@@ -49,7 +49,7 @@
   
 - name: Josh London
   website: https://www.afsc.noaa.gov/nmml/personnel/nmmlprofile.php?name=Josh.London
-  github: https://github.com/jmlondon
+  github: jmlondon
   projects:
     - name: crawl
       url: https://github.com/jmlondon/crawl
