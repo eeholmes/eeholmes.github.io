@@ -43,5 +43,13 @@
 - name: Devin Johnson
   website: https://www.afsc.noaa.gov/nmml/personnel/nmmlprofile.php?name=Devin.Johnson
   github: dsjohnson
+  projects:
+    - name: agTrend
+      url: https://github.com/NMML/agTrend
   
-  
+- name: Josh London
+  website: https://www.afsc.noaa.gov/nmml/personnel/nmmlprofile.php?name=Josh.London
+  github: jmlondon
+  projects:
+    - name: crawl
+      url: https://github.com/jmlondon/crawl
