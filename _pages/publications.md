@@ -10,7 +10,7 @@ ul {
   list-style-type: none;
 }
 </style>
-* <i class="fas fa-info-circle"></i> Ward, E. J., K. Oken, K. A. Rose, S. Sable, K. Watkins, **E. E. Holmes**, and M. D. Scheuerell. 2018. Applying spatiotemporal models to monitoring data to quantify fish responses to the Deepwater Horizon oil spill in the Gulf of Mexico.  In press in Environmental Monitoring and Assessment.
+* <i class="fa fa-info-circle"></i> Ward, E. J., K. Oken, K. A. Rose, S. Sable, K. Watkins, **E. E. Holmes**, and M. D. Scheuerell. 2018. Applying spatiotemporal models to monitoring data to quantify fish responses to the Deepwater Horizon oil spill in the Gulf of Mexico.  In press in Environmental Monitoring and Assessment.
 
 * **Holmes, E.E.**, M. D. Scheuerell, and E. J. Ward. 2017. Applied Time Series Analysis for Fisheries and Environmental Sciences.  Online text for our course at University of Washington. [Online](https://nwfsc-timeseries.github.io/AFTSLabbook/)
 
