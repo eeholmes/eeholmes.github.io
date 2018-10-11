@@ -14,6 +14,8 @@ ul {
 
 * Ward, E. J., K. Oken, K. A. Rose, S. Sable, K. Watkins, **E. E. Holmes**, and M. D. Scheuerell. 2018. Applying spatiotemporal models to monitoring data to quantify fish responses to the Deepwater Horizon oil spill in the Gulf of Mexico.  In press in Environmental Monitoring and Assessment.
 
+* <i class="fa fa-book"></i> **Holmes, E. E.**, E. J. Ward and M. D. Scheuerell. 2018. Analysis of multivariate time series using the MARSS package [PDF](http://cran.r-project.org/web/packages/MARSS/vignettes/UserGuide.pdf). User Guide for the [MARSS R package  3.10.8](https://cran.r-project.org/package=MARSS)
+
 * <i class="fa fa-book"></i> **Holmes, E.E.**, M. D. Scheuerell, and E. J. Ward. 2017. Applied Time Series Analysis for Fisheries and Environmental Sciences.  Online text for our course at University of Washington. [Online](https://nwfsc-timeseries.github.io/AFTSLabbook/)
 
 * <i class="fa fa-file-text-o"></i> Ferguson, L., M. Srinivasan, E. Oleson, S. Hayes, S.K. Brown, R. Angliss, J. Carretta, **E. Holmes**, E. Ward, J. Kocik, K. Mullin, R. Dean, and J. Davis (eds.). 2017. Proceedings of the First National Protected Species Assessment Workshop. U.S. Dept. of Commer., NOAA. NOAA Technical Memorandum NMFS-F/SPO-172, 92 p. [PDF](http://spo.nmfs.noaa.gov/sites/default/files/TMSPO172.pdf)
@@ -52,7 +54,7 @@ ul {
 
 * Ward, E.J., H. Chirrakal, M. Gonzalez-Suarez, D. Aurioles-Gamboa, **E.E. Holmes**, L. Gerber. 2010. Inferring spatial structure from time-series data: using multivariate state-space models to detect metapopulation structure of California sea lions in the Gulf of California, Mexico.  Journal of Applied Ecology 47: 47-56. *Recommended by Faculty of 1000 Biology* [PDF](http://onlinelibrary.wiley.com/doi/10.1111/j.1365-2664.2009.01745.x/epdf)
 
-* <i class="fa fa-book"></i> **Holmes, E. E.** and E. J. Ward. 2010. Analysis of multivariate time series using the MARSS package [PDF](http://cran.r-project.org/web/packages/MARSS/vignettes/UserGuide.pdf). User Guide for the [MARSS R package](http://cran.r-project.org/web/packages/MARSS/index.html)
+* <i class="fa fa-book"></i> **Holmes, E. E.** and E. J. Ward. 2010. Analysis of multivariate time series using the MARSS package. User Guide for the MARSS R package version 1.0.  Now outdated and replaced by more recent editions.
 
 * Viscido, S. V. and **E. E. Holmes**. 2010. Statistical modelling of communities and ecosystems using the LAMDA software tool. Environmental Modelling and Software 25(12): 1905-1908. [PDF](ViscidoHolmes2010.pdf)
 
