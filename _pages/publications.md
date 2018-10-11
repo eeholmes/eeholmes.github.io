@@ -10,15 +10,17 @@ ul {
   list-style-type: none;
 }
 </style>
-* <i class="fa fa-info-circle"></i> Ward, E. J., K. Oken, K. A. Rose, S. Sable, K. Watkins, **E. E. Holmes**, and M. D. Scheuerell. 2018. Applying spatiotemporal models to monitoring data to quantify fish responses to the Deepwater Horizon oil spill in the Gulf of Mexico.  In press in Environmental Monitoring and Assessment.
+* <i class="fa fa-book"></i> **Holmes, E.E.**. 2018. Fish Catch Forecasting with R.  Online text for short course (see teaching tab). [Online](https://fish-forecast.github.io/Fish-Forecast-Bookdown/)
 
-* **Holmes, E.E.**, M. D. Scheuerell, and E. J. Ward. 2017. Applied Time Series Analysis for Fisheries and Environmental Sciences.  Online text for our course at University of Washington. [Online](https://nwfsc-timeseries.github.io/AFTSLabbook/)
+* Ward, E. J., K. Oken, K. A. Rose, S. Sable, K. Watkins, **E. E. Holmes**, and M. D. Scheuerell. 2018. Applying spatiotemporal models to monitoring data to quantify fish responses to the Deepwater Horizon oil spill in the Gulf of Mexico.  In press in Environmental Monitoring and Assessment.
 
-* Ferguson, L., M. Srinivasan, E. Oleson, S. Hayes, S.K. Brown, R. Angliss, J. Carretta, **E. Holmes**, E. Ward, J. Kocik, K. Mullin, R. Dean, and J. Davis (eds.). 2017. Proceedings of the First National Protected Species Assessment Workshop. U.S. Dept. of Commer., NOAA. NOAA Technical Memorandum NMFS-F/SPO-172, 92 p. [PDF](http://spo.nmfs.noaa.gov/sites/default/files/TMSPO172.pdf)
+* <i class="fa fa-book"></i> **Holmes, E.E.**, M. D. Scheuerell, and E. J. Ward. 2017. Applied Time Series Analysis for Fisheries and Environmental Sciences.  Online text for our course at University of Washington. [Online](https://nwfsc-timeseries.github.io/AFTSLabbook/)
+
+* <i class="fa fa-file-text-o"></i> Ferguson, L., M. Srinivasan, E. Oleson, S. Hayes, S.K. Brown, R. Angliss, J. Carretta, **E. Holmes**, E. Ward, J. Kocik, K. Mullin, R. Dean, and J. Davis (eds.). 2017. Proceedings of the First National Protected Species Assessment Workshop. U.S. Dept. of Commer., NOAA. NOAA Technical Memorandum NMFS-F/SPO-172, 92 p. [PDF](http://spo.nmfs.noaa.gov/sites/default/files/TMSPO172.pdf)
 
 * Tolimieri, N., **E. E. Holmes**, G. D. Williams, R. Pacunski, and D. Lowry.  2017. Population assessment using multivariate time-series analysis: A case study of rockfishes in Puget Sound. Ecology and Evolution 7(8): 2045-7758. [PDF]( http://onlinelibrary.wiley.com/doi/10.1002/ece3.2901/epdf)
 
-* Ford, M. J., K. Barnas, T. Cooney, L. G. Crozier, M. Diaz, J. J. Hard, **E. E. Holmes**, D. M. Holzer, R. G. Kope, P. W. Lawson, M. Liermann, J. M. Myers, M. Rowse, D. J. Teel, D. M. Van Doornik, T. C. Wainwright, L. A. Weitkamp, M. Williams. 2015. Status Review Update for Pacific Salmon and Steelhead Listed under the Endangered Species Act:  Pacific Northwest. Nationa Marine Fisheries Service, Northwest Fisheries Science Center. [PDF](https://www.nwfsc.noaa.gov/assets/11/8623_03072016_124156_Ford-NWSalmonBioStatusReviewUpdate-Dec%2021-2015%20v2.pdf)
+* <i class="fa fa-file-text-o"></i> Ford, M. J., K. Barnas, T. Cooney, L. G. Crozier, M. Diaz, J. J. Hard, **E. E. Holmes**, D. M. Holzer, R. G. Kope, P. W. Lawson, M. Liermann, J. M. Myers, M. Rowse, D. J. Teel, D. M. Van Doornik, T. C. Wainwright, L. A. Weitkamp, M. Williams. 2015. Status Review Update for Pacific Salmon and Steelhead Listed under the Endangered Species Act:  Pacific Northwest. Nationa Marine Fisheries Service, Northwest Fisheries Science Center. [PDF](https://www.nwfsc.noaa.gov/assets/11/8623_03072016_124156_Ford-NWSalmonBioStatusReviewUpdate-Dec%2021-2015%20v2.pdf)
 
 * Keith, D.M., H.R. Akcakaya, S.H.M. Butchart, B. Collen, N. K. Dulvy, **E. E. Holmes**, J. A. Hutchings, D. Keinath, M. K. Schwartz, A. O. Shelton, and R. S. Waples.  2015.  Temporal correlations in population trends:  Conservation implications from time-series analysis of diverse animal taxa.  Biological Conservation 192:247-257. *Selected for Editor's Choice December 2015* [PDF](Keithetal2015.pdf)
 
@@ -28,13 +30,13 @@ ul {
 
 * Francis, T. B., E. M. Wolkovich, M. D. Scheuerell, S. L. Katz, **E. E. Holmes**, and S. E. Hampton. 2014. Shifting Regimes and Changing Interactions in the Lake Washington, USA, Plankton Community from 1962-1994. PlosOne e110363. [PDF](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0110363)
 
-* **Holmes, E. E.** 2014. Computation of standardized residuals for (MARSS) models. Technical Report. arXiv:1411.0045 [PDF](https://arxiv.org/abs/1411.0045)
+* <i class="fa fa-file-text-o"></i> **Holmes, E. E.** 2014. Computation of standardized residuals for (MARSS) models. Technical Report. arXiv:1411.0045 [PDF](https://arxiv.org/abs/1411.0045)
 
 * Ward, E.J., **E.E. Holmes**, J.T. Thorson, and B. Collen. 2014. Complexity is costly: a meta-analysis of parametric and non-parametric methods for short-term population forecasting. Oikos, 123(6): 652-661. *Selected for Editor's Choice June 2014*. [PDF](http://onlinelibrary.wiley.com/doi/10.1111/j.1600-0706.2014.00916.x/epdf)
 
 * Hampton, S.E., **E.E. Holmes**, D.E. Pendleton, L.P. Scheef, M.D. Scheuerell, and E.J. Ward. 2013. Quantifying effects of abiotic and biotic drivers on community dynamics with multivariate autoregressive (MAR) models. Ecology 94(12): 2663-2669. *Recommended by Faculty of 1000 Biology* [PDF](https://cereo.wsu.edu/wp-content/uploads/sites/95/2014/11/Hampton_Ecology_MAR_w_supplement_2013.pdf)
 
-* **Holmes, E. E.** 2013. Derivation of the EM algorithm for constrained and unconstrained multivariate autoregressive state-space (MARSS) models. Technical Report. arXiv:1302.3919 [PDF](http://arxiv.org/abs/1302.3919) *Multivariate autoregressive state-space models go by different names in different fields. Dynamic linear models,vector autoregressive models, dynamic factor analysis models, multivariate discrete time Gompertz models and multivariate regression models with ARMA errors, are some of the many types of discrete time multivariate time-series models that can be written in MARSS form.*
+* <i class="fa fa-file-text-o"></i> **Holmes, E. E.** 2013. Derivation of the EM algorithm for constrained and unconstrained multivariate autoregressive state-space (MARSS) models. Technical Report. arXiv:1302.3919 [PDF](http://arxiv.org/abs/1302.3919) *Multivariate autoregressive state-space models go by different names in different fields. Dynamic linear models,vector autoregressive models, dynamic factor analysis models, multivariate discrete time Gompertz models and multivariate regression models with ARMA errors, are some of the many types of discrete time multivariate time-series models that can be written in MARSS form.*
 
 * Mongillo, T. M., **E. E. Holmes**, D. P. Noren, G. R. VanBlaricom, A. E. Punt, S. M. O'Neill, G. M. Ylitalo, M. B. Hanson, P. S. Ross. 2012. Predicted polybrominated diphenyl ether (PBDE) and polychlorinated biphenyl (PCB) accumulation in southern resident killer whales. Marine Ecology Progress Series 453:263-277. [PDF](http://www.int-res.com/abstracts/meps/v453/p263-277/)
 
@@ -46,11 +48,11 @@ ul {
 
 * Pattengill-Semmens, C. V.,  Semmens, B. X., E. E. Holmes, E. J. Ward, and B. I. Ruttenberg. 2011. Integrating time-series of community monitoring data. Proceedings of the Gulf and Caribbean Fisheries Institute 63: 214-216. [PDF](Pattengill-Semmensetal2011.pdf)
 
-* Drake, J., E. A. Berntson, J. M. Cope, R. G. Gustafson, **E. E. Holmes**, P. S. Levin, N. Tolimieri, R. S. Waples, S. Sogard, G. D. Williams. 2010. Status review of five rockfish species in Puget Sound, Washington: Bocaccio (Sebastes paucispinis), canary rockfish (S. pinniger), yelloweye rockfish (S. ruberrimus), greenstriped rockfish (S. elongatus), and redstripe rockfish (S. proriger). U.S. Dept. of Commerce, NOAA Tech. Memo., NMFS-NWFSC-108. [PDF](Drakeetal2010.pdf)
+* <i class="fa fa-file-text-o"></i> Drake, J., E. A. Berntson, J. M. Cope, R. G. Gustafson, **E. E. Holmes**, P. S. Levin, N. Tolimieri, R. S. Waples, S. Sogard, G. D. Williams. 2010. Status review of five rockfish species in Puget Sound, Washington: Bocaccio (Sebastes paucispinis), canary rockfish (S. pinniger), yelloweye rockfish (S. ruberrimus), greenstriped rockfish (S. elongatus), and redstripe rockfish (S. proriger). U.S. Dept. of Commerce, NOAA Tech. Memo., NMFS-NWFSC-108. [PDF](Drakeetal2010.pdf)
 
 * Ward, E.J., H. Chirrakal, M. Gonzalez-Suarez, D. Aurioles-Gamboa, **E.E. Holmes**, L. Gerber. 2010. Inferring spatial structure from time-series data: using multivariate state-space models to detect metapopulation structure of California sea lions in the Gulf of California, Mexico.  Journal of Applied Ecology 47: 47-56. *Recommended by Faculty of 1000 Biology* [PDF](http://onlinelibrary.wiley.com/doi/10.1111/j.1365-2664.2009.01745.x/epdf)
 
-* **Holmes, E. E.** and E. J. Ward. 2010. Analysis of multivariate time series using the MARSS package [PDF](http://cran.r-project.org/web/packages/MARSS/vignettes/UserGuide.pdf). User Guide for the [MARSS R package](http://cran.r-project.org/web/packages/MARSS/index.html)
+* <i class="fa fa-book"></i> **Holmes, E. E.** and E. J. Ward. 2010. Analysis of multivariate time series using the MARSS package [PDF](http://cran.r-project.org/web/packages/MARSS/vignettes/UserGuide.pdf). User Guide for the [MARSS R package](http://cran.r-project.org/web/packages/MARSS/index.html)
 
 * Viscido, S. V. and **E. E. Holmes**. 2010. Statistical modelling of communities and ecosystems using the LAMDA software tool. Environmental Modelling and Software 25(12): 1905-1908. [PDF](ViscidoHolmes2010.pdf)
 
@@ -68,7 +70,7 @@ ul {
 
 * Hauser, D., G. VanBlaricom, **E. Holmes**, and R. Osbourne. 2006. Evaluating the use of whalewatch data in determining killer whale (Orcinus orca) distribution patterns. Journal of Cetacean Research and Management 8: 273-281. [PDF](Hauseretal2007.pdf) 
 
-* Gustafson,R. G., J. Drake, M. J. Ford, J. M. Myers, **E. E. Holmes**, and R. S. Waples. 2006. Status Review of Cherry Point Pacific Herring (Clupea pallasii) and Update of the Status Review of the Georgia Basin Distinct Population Segment of Pacific Herring Under the U.S. Endangered Species Act. U.S. Dept. Commer., NOAA Tech. Memo.NMFS-NWFSC-76, 182pp. [PDF](Gustafsonetal2006.pdf)
+* <i class="fa fa-file-text-o"></i> Gustafson,R. G., J. Drake, M. J. Ford, J. M. Myers, **E. E. Holmes**, and R. S. Waples. 2006. Status Review of Cherry Point Pacific Herring (Clupea pallasii) and Update of the Status Review of the Georgia Basin Distinct Population Segment of Pacific Herring Under the U.S. Endangered Species Act. U.S. Dept. Commer., NOAA Tech. Memo.NMFS-NWFSC-76, 182pp. [PDF](Gustafsonetal2006.pdf)
 
 * Levin, P., **E. E. Holmes**, K. Piner and C. Harvey.  2006.  Shifts in a Pacific Ocean fish assemblage: the potential influence of exploitation.  Conservation Biology 20: 1181-119*  [PDF](Levinetal2006.pdf)
 
