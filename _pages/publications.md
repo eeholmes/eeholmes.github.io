@@ -12,7 +12,7 @@ ul {
 </style>
 * <i class="fa fa-book"></i> **Holmes, E.E.**. 2018. Fish Catch Forecasting with R.  Online text for short course (see teaching tab). [Online](https://fish-forecast.github.io/Fish-Forecast-Bookdown/)
 
-* Ward, E. J., K. Oken, K. A. Rose, S. Sable, K. Watkins, **E. E. Holmes**, and M. D. Scheuerell. 2018. Applying spatiotemporal models to monitoring data to quantify fish responses to the Deepwater Horizon oil spill in the Gulf of Mexico.  In press in Environmental Monitoring and Assessment.
+* Ward, E. J., K. Oken, K. A. Rose, S. Sable, K. Watkins, **E. E. Holmes**, and M. D. Scheuerell. 2018. Applying spatiotemporal models to monitoring data to quantify fish responses to the Deepwater Horizon oil spill in the Gulf of Mexico. Environmental Monitoring and Assessment 190:530. https://doi.org/10.1007/s10661-018-6912-z
 
 * <i class="fa fa-book"></i> **Holmes, E. E.**, E. J. Ward and M. D. Scheuerell. 2018. Analysis of multivariate time series using the MARSS package [PDF](http://cran.r-project.org/web/packages/MARSS/vignettes/UserGuide.pdf). User Guide for the [MARSS R package  3.10.8](https://cran.r-project.org/package=MARSS)
 
