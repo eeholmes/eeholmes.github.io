@@ -10,7 +10,7 @@ ul {
 }
 </style>
 
-* Sept 24-28, 2018. Hyderabad, India.  Fish-catch Time-Series Forecasting with R.  Sponsored by the India Centre for <a href="https://rverse-tutorials.github.io/Fish-Forecast-Training-Course/">Course website and lectures</a>.  The course morning sessions were on catch forecasting and the afternoon sessions were on R Workflow with RStudio: R Markdown reports, static websites with RStudio, Bookdown, R Packages, and R Shiny apps.  The material on catch forecasting was assembled into a <a href="https://fish-forecast.github.io/Fish-Forecast-Bookdown/">online book</a>.
+* Sept 24-28, 2018. Hyderabad, India.  Fish-catch Time-Series Forecasting with R.  Sponsored by the India Centre for Ocean Information Services. <a href="https://rverse-tutorials.github.io/Fish-Forecast-Training-Course/">Course website and lectures</a>.  The course morning sessions were on catch forecasting and the afternoon sessions were on R Workflow with RStudio: R Markdown reports, static websites with RStudio, Bookdown, R Packages, and R Shiny apps.  The material on catch forecasting was assembled into a <a href="https://fish-forecast.github.io/Fish-Forecast-Bookdown/">online book</a>.
 
 * UW 2017: SAFS 507 Applied Time Series Analysis for Fisheries and Environmental Sciences, with Eric Ward and Mark Scheuerell. This year we put more of an emphasis on Bayesian model fitting using STAN.  Course website includes recordings of the lectures, lecture ppts, and computer code used in the computer labs.
 <!--
