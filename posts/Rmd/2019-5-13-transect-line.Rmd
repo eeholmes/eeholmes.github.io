@@ -18,7 +18,7 @@ filename="2019-5-14-transect-line.Rmd"
 rmd_to_gfm(filename, pdf=TRUE)
 -->
 
-I have been working the last 5 years on a project having to do with the upwelling zones off the coast of India.  As part of this, I have been working on ways to visualize the upwelling zone---a spatial and temporal visualization problem.
+I have been working the last 5 years on a project having to do with the upwelling zones off the coast of India.  As part of this, I have been working on ways to visualize the upwelling zone---a spatial and temporal visualization problem. I have some RMarkdown files showing how to create these in R using data from the NOAA ERDDAP data server.
 
 ## Gifs and movies
 

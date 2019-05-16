@@ -86,13 +86,14 @@ require(eehutils)
 filename="replace-with-actual-filename.Rmd"
 rmd_to_gfm(filename, pdf=TRUE)
 ```
-This will make the md file and put in _posts directory and make the pdf and put in posts/pdfs.  You don't need not want the html file in _posts (and rmd_to_gfm won't make it).  Jekyll on github is going to process the html from the md.  knit won't make the right html.
+This will make the md file and put in _posts directory and make the pdf and put in posts/pdfs.  You don't want the html file in _posts (and rmd_to_gfm won't make it).  Jekyll on github is going to process the html from the md.  knit won't make the right html.
 
 The `rmd_to_gfm` function is in `_use-to-knit-rmd-file.r` in the posts directory.  I have it in a utils package with a bunch of other stuff for writing papers.  To install eehutils (which no one except eeh would want to do...).
 ```
 require(devtools)
 install_github("eeholmes/eehutils")
 ```
+3. Upload the md file to your GitHub site and GitHub does the rest.
 
 ## Add the pdf download link to blogs
 
@@ -113,4 +114,6 @@ rmd: true
 ```
 
 `pdf=TRUE` says to add a link to the PDF and Rmd file.  It will look for the pdf in `posts/pdfs/` and the Rmd in `posts/Rmd`.  You need to put the files there and they have to be called `[postname].pdf` and `[postname].Rmd`.  `rmd_to_gfm(filename, pdf=TRUE)` (the function is in posts/Rmd) will do this automatically from an Rmd file (in posts directory).
+
+
 
