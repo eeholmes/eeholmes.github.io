@@ -10,6 +10,8 @@ ul {
   list-style-type: none;
 }
 </style>
+* Pendleton, D., **E. E. Holmes**, J. Zhang, and J. Redfin. 2020. Using modeled prey to predict the distribution of a highly mobile marine mammal. Diversity and Distributions, *in press* 
+
 * <i class="fa fa-book"></i> **Holmes, E.E.**. 2018. Fish Catch Forecasting with R.  Online text for short course (see teaching tab). [Online](https://fish-forecast.github.io/Fish-Forecast-Bookdown/)
 
 * Ward, E. J., K. Oken, K. A. Rose, S. Sable, K. Watkins, **E. E. Holmes**, and M. D. Scheuerell. 2018. Applying spatiotemporal models to monitoring data to quantify fish responses to the Deepwater Horizon oil spill in the Gulf of Mexico. Environmental Monitoring and Assessment 190:530. https://doi.org/10.1007/s10661-018-6912-z
@@ -22,7 +24,7 @@ ul {
 
 * Tolimieri, N., **E. E. Holmes**, G. D. Williams, R. Pacunski, and D. Lowry.  2017. Population assessment using multivariate time-series analysis: A case study of rockfishes in Puget Sound. Ecology and Evolution 7(8): 2045-7758. [PDF]( http://onlinelibrary.wiley.com/doi/10.1002/ece3.2901/epdf)
 
-* <i class="fa fa-file-text-o"></i> Ford, M. J., K. Barnas, T. Cooney, L. G. Crozier, M. Diaz, J. J. Hard, **E. E. Holmes**, D. M. Holzer, R. G. Kope, P. W. Lawson, M. Liermann, J. M. Myers, M. Rowse, D. J. Teel, D. M. Van Doornik, T. C. Wainwright, L. A. Weitkamp, M. Williams. 2015. Status Review Update for Pacific Salmon and Steelhead Listed under the Endangered Species Act:  Pacific Northwest. Nationa Marine Fisheries Service, Northwest Fisheries Science Center. [PDF](https://www.nwfsc.noaa.gov/assets/11/8623_03072016_124156_Ford-NWSalmonBioStatusReviewUpdate-Dec%2021-2015%20v2.pdf)
+* <i class="fa fa-file-text-o"></i> Ford, M. J., K. Barnas, T. Cooney, L. G. Crozier, M. Diaz, J. J. Hard, **E. E. Holmes**, D. M. Holzer, R. G. Kope, P. W. Lawson, M. Liermann, J. M. Myers, M. Rowse, D. J. Teel, D. M. Van Doornik, T. C. Wainwright, L. A. Weitkamp, M. Williams. 2015. Status Review Update for Pacific Salmon and Steelhead Listed under the Endangered Species Act:  Pacific Northwest. National Marine Fisheries Service, Northwest Fisheries Science Center. [PDF](https://www.nwfsc.noaa.gov/assets/11/8623_03072016_124156_Ford-NWSalmonBioStatusReviewUpdate-Dec%2021-2015%20v2.pdf)
 
 * Keith, D.M., H.R. Akcakaya, S.H.M. Butchart, B. Collen, N. K. Dulvy, **E. E. Holmes**, J. A. Hutchings, D. Keinath, M. K. Schwartz, A. O. Shelton, and R. S. Waples.  2015.  Temporal correlations in population trends:  Conservation implications from time-series analysis of diverse animal taxa.  Biological Conservation 192:247-257. *Selected for Editor's Choice December 2015* [PDF](Keithetal2015.pdf)
 
