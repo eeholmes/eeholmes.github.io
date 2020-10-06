@@ -10,7 +10,7 @@ ul {
   list-style-type: none;
 }
 </style>
-* Pendleton, D., **E. E. Holmes**, J. Zhang, and J. Redfin. 2020. Using modeled prey to predict the distribution of a highly mobile marine mammal. Diversity and Distributions, *in press* 
+* Pendleton, D. E., **E. E. Holmes**, J. Redfern, and J. Zhang. 2020. Using modeled prey to predict the distribution of a highly mobile marine mammal. Diversity and Distributions, https://doi.org/10.1111/ddi.13149
 
 * <i class="fa fa-book"></i> **Holmes, E.E.**. 2018. Fish Catch Forecasting with R.  Online text for short course (see teaching tab). [Online](https://fish-forecast.github.io/Fish-Forecast-Bookdown/)
 
