@@ -10,26 +10,29 @@ ul {
 }
 </style>
 
+* UW 2021: SAFS 507 Applied Time Series Analysis for Fisheries and Environmental Sciences, with Eric Ward and Mark Scheuerell. Note because this year's videos are recordings of the Zoom classes, the links this year are only open to UW students.
+[<a href="https://nwfsc-timeseries.github.io/atsa/">ONLINE</a>] Lab book for course [<a href="https://nwfsc-timeseries.github.io/atsa-labs/">here</a>]
+
+* Summer 2020: R Workflow with RStudio: R Markdown reports, static websites with RStudio, Bookdown, R Packages, and R Shiny apps. [ONLINE](https://rverse-tutorials.github.io/RWorkflow-NWFSC-2020/)
+
+* UW 2019: SAFS 507 Applied Time Series Analysis for Fisheries and Environmental Sciences, with Eric Ward and Mark Scheuerell. The material changes a bit each year.
+[<a href="https://nwfsc-timeseries.github.io/atsa2019/">2019 ONLINE</a>] Stan code for time series models on Github [<a href="https://github.com/nwfsc-timeseries/atsar">here</a>]  Lab book for course [<a href="https://nwfsc-timeseries.github.io/atsa-labs/">here</a>]
+
 * Sept 24-28, 2018. Hyderabad, India.  Fish-catch Time-Series Forecasting with R.  Sponsored by the India Centre for Ocean Information Services. <a href="https://rverse-tutorials.github.io/Fish-Forecast-Training-Course/">Course website and lectures</a>.  The course morning sessions were on catch forecasting and the afternoon sessions were on R Workflow with RStudio: R Markdown reports, static websites with RStudio, Bookdown, R Packages, and R Shiny apps.  The material on catch forecasting was assembled into a <a href="https://fish-forecast.github.io/Fish-Forecast-Bookdown/">online book</a>.
 
-* UW 2017: SAFS 507 Applied Time Series Analysis for Fisheries and Environmental Sciences, with Eric Ward and Mark Scheuerell. This year we put more of an emphasis on Bayesian model fitting using STAN.  Course website includes recordings of the lectures, lecture ppts, and computer code used in the computer labs.
-<!--
-https://catalyst.uw.edu/workspace/fish203/35553/243766
--->
-[<a href="https://nwfsc-timeseries.github.io/atsa-2017/">ONLINE</a>] Stan code for time series models on Github [<a href="https://github.com/nwfsc-timeseries/atsar">here</a>]  Lab book for course [<a href="https://nwfsc-timeseries.github.io/atsa-labs/">here</a>]
+* UW 2017: SAFS 507 Applied Time Series Analysis for Fisheries and Environmental Sciences, with Eric Ward and Mark Scheuerell. This year we put more of an emphasis on Bayesian model fitting using STAN. 
+[<a href="https://nwfsc-timeseries.github.io/atsa-2017/">2017 ONLINE</a>]
 
-* UW 2015: SAFS 507 Applied Time Series Analysis for Fisheries and Environmental Sciences, with Eric Ward and Mark Scheuerell. Most of the material was updated from the 2013 course with more of an emphasis on Bayesian model fitting. [<a href="https://catalyst.uw.edu/workspace/fish203/35553/243766">ONLINE</a>]
+* UW 2015: SAFS 507 Applied Time Series Analysis for Fisheries and Environmental Sciences, with Eric Ward and Mark Scheuerell.
 
 * March 24-28, Stockholm, Sweden.  Multivariate Time-Analysis with MARSS. <a href="http://timeseriescourseemb.wordpress.com/">Course website</a>
 
 * NWFSC 2013: Creating and sharing R packages with RStudio. [<a href="http://www.iugo-cafe.org/chinook/view_node.php?id=2962">ONLINE</a>]
 
 * UW 2013: SAFS 507 Applied Time Series Analysis for Fisheries and Environmental Sciences, with Eric Ward and Mark Scheuerell. 
-<!--
-[<a href="https://catalyst.uw.edu/workspace/fish203/35553/243766">ONLINE</a>]
--->
 
 * NWFSC 2012: R short course developed by Eric Ward and taught by various NWFSC R programmers. [<a href="https://sites.google.com/site/rshortcourse/">ONLINE</a>]
+
 * ESA 2012: "Analysis of Time-Series Data using State-Space and Hierarchical Modeling" with Eric Ward and Mark Scheuerell [<a href="http://www.iugo-cafe.org/chinook/view_node.php?id=2686">ONLINE</a>]
 
 * ESA 2010: "Analysis of Time-Series Data using State-Space and Hierarchical Modeling" with Eric Ward [<a href="http://www.iugo-cafe.org/chinook/view_node.php?id=2416">ONLINE</a>]
