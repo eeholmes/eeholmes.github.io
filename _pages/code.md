@@ -12,7 +12,7 @@ Looking for R packages for time-series analysis ([MARSS](https://nwfsc-timeserie
 Most of my code is on GitHub and organized into the following organizations:
 
 * Time series analysis [nwfsc-timeseries](https://github.com/nwfsc-timeseries)
-* Working with remote sending data [ocean-satellite-tools](https://github.com/ocean-satellite-tools)
+* Working with remote sensing data [ocean-satellite-tools](https://github.com/ocean-satellite-tools)
 * R Workflow [RVerse-Tutorials](https://github.com/RVerse-Tutorials)
 * Catch forecasting [Fish-Forecast](https://github.com/Fish-Forecast)
 

@@ -8,9 +8,21 @@ redirect_from:
   - /about.html
 ---
 
-<p style="background:#b7f98b;text-align:center"><a href="https://nwfsc-timeseries.github.io/">Applied Time-Series Analysis for Fisheries and Environmental Data</a><br>Course webpage, R packages, and online book on our new webpage</p>
+Most of my research is on GitHub and organized into the following organizations:
 
-<p style="background:#b7f98b;text-align:center"><a href="https://rverse-tutorials.github.io/RWorkflow-Workshop/">Fish catch forecasting and R Workflow with RStudio</a><br>Course webpage, lectures, labs, and <a href="https://fish-forecast.github.io/Fish-Forecast-Bookdown/">online book</a> from a recent short course</p>
+* Time series analysis [nwfsc-timeseries](https://github.com/nwfsc-timeseries)
+* Working with remote sensing data [ocean-satellite-tools](https://github.com/ocean-satellite-tools)
+* R Workflow [RVerse-Tutorials](https://github.com/RVerse-Tutorials)
+* Catch forecasting [Fish-Forecast](https://github.com/Fish-Forecast)
+
+My big current projects are
+
+* [Applied Time-Series Analysis for Fisheries and Environmental Data](https://nwfsc-timeseries.github.io/): Course webpage, [MARSS](https://nwfsc-timeseries.github.io/MARSS) R packages, and [atsar](https://nwfsc-timeseries.github.io/atsar) R package for Bayesian MARSS models, and our [online book](https://nwfsc-timeseries.github.io/atsa-labs).
+* [R Workflow with RStudio](<p https://rverse-tutorials.github.io): Course webpage and lectures from workshops I have taught on this subject. 
+* [Fish catch forecasting](https://fish-forecast.github.io/): Lectures, labs, and an [online book]("https://fish-forecast.github.io/Fish-Forecast-Bookdown/) on catch forecasting from a recent short course.
+
+
+-----
 
 My research is focused on stochastic processes and statistical models for complex multivariate, interacting systems. Much of what I do involves developing algorithms for fitting multivariate autoregressive state-space (MARSS) models to time-series data, which comes up in vector autoregressive state-space modeling, dynamic linear modeling, MAR(1) modeling, and dynamic factor analysis. I developed an EM algorithm for fitting a general constrained version of these models and develped the MARSS package for fitting such models. In my spare time, I've been working on predictive models of "multi-player" systems---I've been studying this with soccer match data. This is another application of my work on developing predictive models using 'bad' data. 
 
