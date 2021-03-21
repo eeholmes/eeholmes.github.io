@@ -10,11 +10,11 @@ ul {
   list-style-type: none;
 }
 </style>
-* Pendleton, D. E., **E. E. Holmes**, J. Redfern, and J. Zhang. 2020. Using modeled prey to predict the distribution of a highly mobile marine mammal. Diversity and Distributions, https://doi.org/10.1111/ddi.13149
+* Pendleton, D. E., **E. E. Holmes**, J. Redfern, and J. Zhang. 2020. Using modeled prey to predict the distribution of a highly mobile marine mammal. Diversity and Distributions, [Online](https://doi.org/10.1111/ddi.13149)
 
 * <i class="fa fa-book"></i> **Holmes, E.E.**. 2018. Fish Catch Forecasting with R.  Online text for short course (see teaching tab). [Online](https://fish-forecast.github.io/Fish-Forecast-Bookdown/)
 
-* Ward, E. J., K. Oken, K. A. Rose, S. Sable, K. Watkins, **E. E. Holmes**, and M. D. Scheuerell. 2018. Applying spatiotemporal models to monitoring data to quantify fish responses to the Deepwater Horizon oil spill in the Gulf of Mexico. Environmental Monitoring and Assessment 190:530. https://doi.org/10.1007/s10661-018-6912-z
+* Ward, E. J., K. Oken, K. A. Rose, S. Sable, K. Watkins, **E. E. Holmes**, and M. D. Scheuerell. 2018. Applying spatiotemporal models to monitoring data to quantify fish responses to the Deepwater Horizon oil spill in the Gulf of Mexico. Environmental Monitoring and Assessment 190:530. [Online](https://doi.org/10.1007/s10661-018-6912-z)
 
 * <i class="fa fa-book"></i> **Holmes, E. E.**, E. J. Ward and M. D. Scheuerell. 2018. Analysis of multivariate time series using the MARSS package [PDF](http://cran.r-project.org/web/packages/MARSS/vignettes/UserGuide.pdf). User Guide for the [MARSS R package  3.10.8](https://cran.r-project.org/package=MARSS)
 
@@ -36,9 +36,9 @@ ul {
 
 * <i class="fa fa-file-text-o"></i> **Holmes, E. E.** 2014. Computation of standardized residuals for (MARSS) models. Technical Report. arXiv:1411.0045 [PDF](https://arxiv.org/abs/1411.0045)
 
-* Ward, E.J., **E.E. Holmes**, J.T. Thorson, and B. Collen. 2014. Complexity is costly: a meta-analysis of parametric and non-parametric methods for short-term population forecasting. Oikos, 123(6): 652-661. *Selected for Editor's Choice June 2014*. [PDF](http://onlinelibrary.wiley.com/doi/10.1111/j.1600-0706.2014.00916.x/epdf)
+* Ward, E.J., **E.E. Holmes**, J.T. Thorson, and B. Collen. 2014. Complexity is costly: a meta-analysis of parametric and non-parametric methods for short-term population forecasting. Oikos, 123(6): 652-661. *Selected for Editor's Choice June 2014*. [PDF](Wardetal2014.pdf)   [Online](http://onlinelibrary.wiley.com/doi/10.1111/j.1600-0706.2014.00916.x/epdf)
 
-* Hampton, S.E., **E.E. Holmes**, D.E. Pendleton, L.P. Scheef, M.D. Scheuerell, and E.J. Ward. 2013. Quantifying effects of abiotic and biotic drivers on community dynamics with multivariate autoregressive (MAR) models. Ecology 94(12): 2663-2669. *Recommended by Faculty of 1000 Biology* [PDF](https://cereo.wsu.edu/wp-content/uploads/sites/95/2014/11/Hampton_Ecology_MAR_w_supplement_2013.pdf)
+* Hampton, S.E., **E.E. Holmes**, D.E. Pendleton, L.P. Scheef, M.D. Scheuerell, and E.J. Ward. 2013. Quantifying effects of abiotic and biotic drivers on community dynamics with multivariate autoregressive (MAR) models. Ecology 94(12): 2663-2669. *Recommended by Faculty of 1000 Biology* [PDF](Hamptonetal2013.pdf)
 
 * <i class="fa fa-file-text-o"></i> **Holmes, E. E.** 2013. Derivation of the EM algorithm for constrained and unconstrained multivariate autoregressive state-space (MARSS) models. Technical Report. arXiv:1302.3919 [PDF](http://arxiv.org/abs/1302.3919) *Multivariate autoregressive state-space models go by different names in different fields. Dynamic linear models,vector autoregressive models, dynamic factor analysis models, multivariate discrete time Gompertz models and multivariate regression models with ARMA errors, are some of the many types of discrete time multivariate time-series models that can be written in MARSS form.*
 
@@ -70,9 +70,9 @@ ul {
 
 * **Holmes, E. E.**, J. L. Sabo, S. V. Viscido, and W. Fagan.  2007. A statistical approach to quasi-extinction forecasting. Ecology Letters 10:1182-1198 [PDF](Holmesetal2007.pdf) [List of data sets used](Holmesetal2007_Appendix_S1.pdf)
 
-* **Holmes, E. E.**, L. Fritz, A. York and K. Sweeney.  2007. Age-structured modeling reveals long-term declines in the natality of western Steller sea lions.  Ecological Applications 17:2214-2232. [PDF](Holmesetal2007ssl.pdf) [Appendices](http://esapubs.org/archive/appl/A017/091/default.htm)  *In earlier versions of this paper, we had longer appendices which discussed why we feel that sightability and sex-ratios have not changed sufficiently to explain the dropping pup to nonpup ratio.  This was cut during the 2nd revision process.* [Early draft of appendices](Holmes-Suppl-Info.pdf) [Code to get lambda and scaled Leslie matrices](get_max_eig_for_scaled_life_table.m)
+* **Holmes, E. E.**, L. Fritz, A. York and K. Sweeney.  2007. Age-structured modeling reveals long-term declines in the natality of western Steller sea lions.  Ecological Applications 17:2214-2232. [PDF](Holmesetal2007ssl.pdf) [Appendices](https://esapubs.org/archive/appl/A017/091/)  *In earlier versions of this paper, we had longer appendices which discussed why we feel that sightability and sex-ratios have not changed sufficiently to explain the dropping pup to nonpup ratio.  This was cut during the 2nd revision process.* [Early draft of appendices](Holmes-Suppl-Info.pdf) [Code to get lambda and scaled Leslie matrices](get_max_eig_for_scaled_life_table.m)
 
-* Hauser, D., G. VanBlaricom, **E. Holmes**, and R. Osbourne. 2006. Evaluating the use of whalewatch data in determining killer whale (Orcinus orca) distribution patterns. Journal of Cetacean Research and Management 8: 273-281. [PDF](Hauseretal2007.pdf) 
+* Hauser, D., G. VanBlaricom, **E. Holmes**, and R. Osbourne. 2006. Evaluating the use of whalewatch data in determining killer whale (Orcinus orca) distribution patterns. Journal of Cetacean Research and Management 8: 273-281. [PDF](Hauseretal2006.pdf) 
 
 * <i class="fa fa-file-text-o"></i> Gustafson,R. G., J. Drake, M. J. Ford, J. M. Myers, **E. E. Holmes**, and R. S. Waples. 2006. Status Review of Cherry Point Pacific Herring (Clupea pallasii) and Update of the Status Review of the Georgia Basin Distinct Population Segment of Pacific Herring Under the U.S. Endangered Species Act. U.S. Dept. Commer., NOAA Tech. Memo.NMFS-NWFSC-76, 182pp. [PDF](Gustafsonetal2006.pdf)
 
