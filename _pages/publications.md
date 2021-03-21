@@ -80,6 +80,9 @@ ul {
 
 * Fagan, W. F and **E. E. Holmes**. 2006. Quantifying the extinction vortex.  Ecology Letters 9:51-6* [PDF](FaganHolmes2006.pdf)
 
+* **Holmes, E. E.**, W. F. Fagan, J. J. Rango, A. Folarin, J. A. Sorensen, J. E. Lippe, and N. E. McIntyre. 2005. Cross-validation of quasi-extinction risks from real time series: an examination of diffusion approximation methods. U.S. Dept. Commer., NOAA Tech. Memo.
+NMFS-NWFSC-67, 37 p. [PDF](Holmesetal2005.pdf)
+
 * **Holmes, E. E.**  2004.  Beyond theory to application and evaluation: diffusion approximations for population viability analysis.  Ecological Applications 14: 1272-1293.  [PDF](Holmes2004.pdf)
 
 * **Holmes, E. E.** and B. Semmens.  2004.  Population viability analysis for metapopulations: a diffusion approximation approach.  Pp. 565-598 in [Ecology, Genetics, and Evolution of Metapopulations](http://www.amazon.com/Ecology-Genetics-Evolution-Metapopulations-Hanski/dp/0123234484), editors Illka Hanski and Oscar E. Gaggiotti. Elsevier Press.  [PDF](HolmesCorrectedNov31-03.pdf)
