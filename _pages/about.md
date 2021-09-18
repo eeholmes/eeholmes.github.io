@@ -8,18 +8,18 @@ redirect_from:
   - /about.html
 ---
 
-Most of my research is on GitHub and organized into the following organizations:
+Most of my research is on [GitHub](https://github.com/eeholmes) and organized into the following organizations:
 
 * Time series analysis [nwfsc-timeseries](https://github.com/nwfsc-timeseries)
 * Working with remote sensing data [ocean-satellite-tools](https://github.com/ocean-satellite-tools)
 * R Workflow [RVerse-Tutorials](https://github.com/RVerse-Tutorials)
-* Catch forecasting [Fish-Forecast](https://github.com/Fish-Forecast)
+* Catch forecasting [Fish-Forecast](https://github.com/Fish-Forecast). Lectures, labs, and an [online book]("https://fish-forecast.github.io/Fish-Forecast-Bookdown/) on catch forecasting from a recent short course.
 
 My big current projects are
 
 * [Applied Time-Series Analysis for Fisheries and Environmental Data](https://nwfsc-timeseries.github.io/): Course webpage, [MARSS](https://nwfsc-timeseries.github.io/MARSS) R packages, and [atsar](https://nwfsc-timeseries.github.io/atsar) R package for Bayesian MARSS models, and our [online book](https://nwfsc-timeseries.github.io/atsa-labs).
-* [R Workflow with RStudio](<p https://rverse-tutorials.github.io): Course webpage and lectures from workshops I have taught on this subject. 
-* [Fish catch forecasting](https://fish-forecast.github.io/): Lectures, labs, and an [online book]("https://fish-forecast.github.io/Fish-Forecast-Bookdown/) on catch forecasting from a recent short course.
+* **Open-science workflow** I am involved in a few different efforts and 2021 has had me running a bunch of workshops. [Scientific workflow training](<p https://rverse-tutorials.github.io), [Openscapes cohorts](https://www.openscapes.org/), [R-Govys](https://rgovys.github.io/) new R consortium working group to support R-users in government.
+* [Global Upwelling](https://github.com/UW-Upwelling-Project). Brand new project on changing patterns of coastal upwelling.
 
 
 -----
