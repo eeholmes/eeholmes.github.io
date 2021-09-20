@@ -55,3 +55,18 @@
   projects:
     - name: crawl
       url: https://github.com/jmlondon/crawl
+      
+- name: Emily Markowitz
+  website: https://emilyhmarkowitz.github.io/emilyhmarkowitz/
+  github: EmilyMarkowitz-NOAA
+  projects:
+    - name: NMFS Reports
+      url: https://emilymarkowitz-noaa.github.io/NMFSReports/
+      
+- name: NMFS Fish Tools
+  website: https://github.com/nmfs-fish-tools
+  github: nmfs-fish-tools
+  projects:
+    - name: Resources
+      url: https://github.com/nmfs-fish-tools/Resources
+
