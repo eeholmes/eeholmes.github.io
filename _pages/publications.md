@@ -11,7 +11,7 @@ ul {
 }
 </style>
 
-* **Holmes, E.E.**, BR, S., Nimit, K., Maity, S., Checkley, D.M., Jr., Wells, M.L. and Trainer, V.L. (2021), Improving landings forecasts using environmental covariates: A case study on the Indian oil sardine (Sardinella longiceps). Fisheries Oceanography [Online](https://onlinelibrary.wiley.com/doi/10.1111/fog.12541)
+* **Holmes, E.E.**, BR, S., Nimit, K., Maity, S., Checkley, D.M., Jr., Wells, M.L. and Trainer, V.L. (2021), Improving landings forecasts using environmental covariates: A case study on the Indian oil sardine (Sardinella longiceps). Fisheries Oceanography 30(6): 623-642 [Online](https://onlinelibrary.wiley.com/doi/10.1111/fog.12541)
 
 * Pendleton, D. E., **E. E. Holmes**, J. Redfern, and J. Zhang. 2020. Using modeled prey to predict the distribution of a highly mobile marine mammal. Diversity and Distributions, [Online](https://doi.org/10.1111/ddi.13149)
 
