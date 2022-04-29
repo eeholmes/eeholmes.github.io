@@ -14,6 +14,8 @@ ul {
 
 Selected Talks
 
+* EEHolmes and M Williams. Common metrics used in the Pacific NW Salmonid Viability Report. Virtual. to Pacific NW Aquatic Monitoring Working Group. April 21, 2022. [Video](https://youtu.be/fW3cnJcG7_M?t=1519)
+
 * EE Holmes, BR Smitha, N Kumar, S Maity, D Checkley, Jr., M Wells, V Trainer. 2021. Improving forecasts using environmental covariates: a case study on the Indian oil sardine (Sardinella longiceps). Univ of WA Fish and Wildlife Ecology Seminar. May 24, 2021. [PDF](Oil_Sardines_2021.pdf)  [Video](https://vimeo.com/554782654)
 
 * EE Holmes and JT Zikan. 2021. Using unsupervised image classification to study changes in seasonal upwelling
