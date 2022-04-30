@@ -10,6 +10,12 @@ ul {
 }
 </style>
 
+* Spring-Summer 2022: R Workflow with RStudio and GitHub: Git, GitHub project management and Scrum, R packages and R Markdown. [ONLINE](https://rverse-tutorials.github.io/RWorkflow-NWFSC-2022/)
+
+* Winter 2022: PSAW 3 Workshops on Git, GitHub, R packages and RStudio Cloud. [ONLINE](https://rverse-tutorials.github.io/PSAW-2022/)
+
+* Spring-Summer 2021: R Workflow with RStudio and GitHub: R Markdown reports, R Packages, and GitHub Workflow. [ONLINE](https://rverse-tutorials.github.io/RWorkflow-NWFSC-2021/)
+
 * UW 2021: SAFS 507 Applied Time Series Analysis for Fisheries and Environmental Sciences, with Eric Ward and Mark Scheuerell. Note because this year's videos are recordings of the Zoom classes, the links this year are only open to UW students.
 [<a href="https://nwfsc-timeseries.github.io/atsa/">ONLINE</a>] Lab book for course [<a href="https://nwfsc-timeseries.github.io/atsa-labs/">here</a>]
 
