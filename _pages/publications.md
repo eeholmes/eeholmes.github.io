@@ -11,7 +11,7 @@ ul {
 }
 </style>
 
-* Nilsen I., C. Hansen, I. Kaplan, **E. Holmes** and  Ø. Langangen. 2022. Exploring the role of Northeast Atlantic cod in the Barents Sea food web using a multi-model approach. Fish and Fisheries DOI: 10.1111/faf.12671. In press.
+* Nilsen I., C. Hansen, I. Kaplan, **E. Holmes** and  Ø. Langangen. 2022. Exploring the role of Northeast Atlantic cod in the Barents Sea food web using a multi-model approach. Fish and Fisheries DOI: 10.1111/faf.12671. [Online](https://onlinelibrary.wiley.com/doi/10.1111/faf.12671)
 
 * **Holmes, E. E.**, S. BR, K. Nimit, S. Maity, D. M. Checkley Jr., M. L. Wells and V. L. Trainer. 2021. Improving landings forecasts using environmental covariates: A case study on the Indian oil sardine (Sardinella longiceps). Fisheries Oceanography 30(6): 623-642 [Online](https://onlinelibrary.wiley.com/doi/10.1111/fog.12541)
 
