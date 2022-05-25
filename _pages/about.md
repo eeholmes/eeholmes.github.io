@@ -10,15 +10,15 @@ redirect_from:
 
 Most of my research is on [GitHub](https://github.com/eeholmes) and organized into the following organizations:
 
-* Time series analysis [nwfsc-timeseries](https://github.com/nwfsc-timeseries)
+* Time series analysis [atsa-es](https://github.com/atsa-es)
 * Working with remote sensing data [ocean-satellite-tools](https://github.com/ocean-satellite-tools)
-* R Workflow [RVerse-Tutorials](https://github.com/RVerse-Tutorials)
+* R Workflow [RVerse-Tutorials](https://rverse-tutorials.github.io/)
 * Catch forecasting [Fish-Forecast](https://github.com/Fish-Forecast). Lectures, labs, and an [online book]("https://fish-forecast.github.io/Fish-Forecast-Bookdown/) on catch forecasting from a recent short course.
 
 My big current projects are
 
-* [Applied Time-Series Analysis for Fisheries and Environmental Data](https://nwfsc-timeseries.github.io/): Course webpage, [MARSS](https://nwfsc-timeseries.github.io/MARSS) R packages, and [atsar](https://nwfsc-timeseries.github.io/atsar) R package for Bayesian MARSS models, and our [online book](https://nwfsc-timeseries.github.io/atsa-labs).
-* **Open-science workflow** I am involved in a few different efforts and 2021 has had me running a bunch of workshops. [Scientific workflow training](<p https://rverse-tutorials.github.io), [Openscapes cohorts](https://www.openscapes.org/), [R-Govys](https://rgovys.github.io/) new R consortium working group to support R-users in government.
+* [Applied Time-Series Analysis for Fisheries and Environmental Data](https://atsa-es.github.io/): Course webpage, [MARSS](https://atsa-es.github.io/MARSS) R packages, and [atsar](https://atsa-es.github.io/atsar) R package for Bayesian MARSS models, and our [online book](https://atsa-es.github.io/atsa-labs).
+* **Open-science workflow** I am involved in a few different efforts and 2021-22 has had me running a bunch of workshops. [Scientific workflow training](https://rverse-tutorials.github.io), [Openscapes cohorts](https://www.openscapes.org/), [R-Govys](https://rgovys.github.io/) new R consortium working group to support R-users in government, and [NMFS Openscapes](nmfs-openscapes.github.io).
 * [Global Upwelling](https://github.com/UW-Upwelling-Project). Brand new project on changing patterns of coastal upwelling.
 
 

@@ -11,17 +11,19 @@ ul {
 }
 </style>
 
-* **Holmes, E.E.**, BR, S., Nimit, K., Maity, S., Checkley, D.M., Jr., Wells, M.L. and Trainer, V.L. (2021), Improving landings forecasts using environmental covariates: A case study on the Indian oil sardine (Sardinella longiceps). Fisheries Oceanography 30(6): 623-642 [Online](https://onlinelibrary.wiley.com/doi/10.1111/fog.12541)
+* Nilsen I., C. Hansen, I. Kaplan, **E. Holmes** and  Ø. Langangen. 2022. Exploring the role of Northeast Atlantic cod in the Barents Sea food web using a multi-model approach. Fish and Fisheries DOI: 10.1111/faf.12671. [Online](https://onlinelibrary.wiley.com/doi/10.1111/faf.12671)
+
+* **Holmes, E. E.**, S. BR, K. Nimit, S. Maity, D. M. Checkley Jr., M. L. Wells and V. L. Trainer. 2021. Improving landings forecasts using environmental covariates: A case study on the Indian oil sardine (Sardinella longiceps). Fisheries Oceanography 30(6): 623-642 [Online](https://onlinelibrary.wiley.com/doi/10.1111/fog.12541)
 
 * Pendleton, D. E., **E. E. Holmes**, J. Redfern, and J. Zhang. 2020. Using modeled prey to predict the distribution of a highly mobile marine mammal. Diversity and Distributions, 26: 1612– 1626 [Online](https://doi.org/10.1111/ddi.13149)
 
-* <i class="fa fa-book"></i> **Holmes, E.E.**. 2018. Fish Catch Forecasting with R.  Online text for short course (see teaching tab). [Online](https://fish-forecast.github.io/Fish-Forecast-Bookdown/)
+* <i class="fa fa-book"></i> **Holmes, E. E.**. 2018. Fish Catch Forecasting with R.  Online text for short course (see teaching tab). [Online](https://fish-forecast.github.io/Fish-Forecast-Bookdown/)
 
 * Ward, E. J., K. Oken, K. A. Rose, S. Sable, K. Watkins, **E. E. Holmes**, and M. D. Scheuerell. 2018. Applying spatiotemporal models to monitoring data to quantify fish responses to the Deepwater Horizon oil spill in the Gulf of Mexico. Environmental Monitoring and Assessment 190:530. [Online](https://doi.org/10.1007/s10661-018-6912-z)
 
 * <i class="fa fa-book"></i> **Holmes, E. E.**, E. J. Ward and M. D. Scheuerell. 2018. Analysis of multivariate time series using the MARSS package [PDF](http://cran.r-project.org/web/packages/MARSS/vignettes/UserGuide.pdf). User Guide for the [MARSS R package  3.10.8](https://cran.r-project.org/package=MARSS)
 
-* <i class="fa fa-book"></i> **Holmes, E.E.**, M. D. Scheuerell, and E. J. Ward. 2017. Applied Time Series Analysis for Fisheries and Environmental Sciences.  Online text for our course at University of Washington. [Online](https://nwfsc-timeseries.github.io/AFTSLabbook/)
+* <i class="fa fa-book"></i> **Holmes, E. E.**, M. D. Scheuerell, and E. J. Ward. 2017. Applied Time Series Analysis for Fisheries and Environmental Sciences.  Online text for our course at University of Washington. [Online](https://nwfsc-timeseries.github.io/AFTSLabbook/)
 
 * <i class="fa fa-file-text-o"></i> Ferguson, L., M. Srinivasan, E. Oleson, S. Hayes, S.K. Brown, R. Angliss, J. Carretta, **E. Holmes**, E. Ward, J. Kocik, K. Mullin, R. Dean, and J. Davis (eds.). 2017. Proceedings of the First National Protected Species Assessment Workshop. U.S. Dept. of Commer., NOAA. NOAA Technical Memorandum NMFS-F/SPO-172, 92 p. [PDF](http://spo.nmfs.noaa.gov/sites/default/files/TMSPO172.pdf)
 
@@ -41,23 +43,23 @@ ul {
 
 * Ward, E.J., **E.E. Holmes**, J.T. Thorson, and B. Collen. 2014. Complexity is costly: a meta-analysis of parametric and non-parametric methods for short-term population forecasting. Oikos, 123(6): 652-661. *Selected for Editor's Choice June 2014*. [PDF](Wardetal2014.pdf)   [Online](http://onlinelibrary.wiley.com/doi/10.1111/j.1600-0706.2014.00916.x/epdf)
 
-* Hampton, S.E., **E.E. Holmes**, D.E. Pendleton, L.P. Scheef, M.D. Scheuerell, and E.J. Ward. 2013. Quantifying effects of abiotic and biotic drivers on community dynamics with multivariate autoregressive (MAR) models. Ecology 94(12): 2663-2669. *Recommended by Faculty of 1000 Biology* [PDF](Hamptonetal2013.pdf)
+* Hampton, S.E., **E. E. Holmes**, D.E. Pendleton, L.P. Scheef, M.D. Scheuerell, and E.J. Ward. 2013. Quantifying effects of abiotic and biotic drivers on community dynamics with multivariate autoregressive (MAR) models. Ecology 94(12): 2663-2669. *Recommended by Faculty of 1000 Biology* [PDF](Hamptonetal2013.pdf)
 
 * <i class="fa fa-file-text-o"></i> **Holmes, E. E.** 2013. Derivation of the EM algorithm for constrained and unconstrained multivariate autoregressive state-space (MARSS) models. Technical Report. arXiv:1302.3919 [PDF](http://arxiv.org/abs/1302.3919) *Multivariate autoregressive state-space models go by different names in different fields. Dynamic linear models,vector autoregressive models, dynamic factor analysis models, multivariate discrete time Gompertz models and multivariate regression models with ARMA errors, are some of the many types of discrete time multivariate time-series models that can be written in MARSS form.*
 
 * Mongillo, T. M., **E. E. Holmes**, D. P. Noren, G. R. VanBlaricom, A. E. Punt, S. M. O'Neill, G. M. Ylitalo, M. B. Hanson, P. S. Ross. 2012. Predicted polybrominated diphenyl ether (PBDE) and polychlorinated biphenyl (PCB) accumulation in southern resident killer whales. Marine Ecology Progress Series 453:263-277. [PDF](http://www.int-res.com/abstracts/meps/v453/p263-277/)
 
-* **Holmes, E.E.**, E.J. Ward, and K. Wills. 2012. MARSS: multivariate autoregressive state-space models for analyzing time series data. R Journal 4(1): 11-19. [PDF](https://journal.r-project.org/archive/2012-1/RJournal_2012-1_Holmes~et~al.pdf)
+* **Holmes, E. E.**, E.J. Ward, and K. Wills. 2012. MARSS: multivariate autoregressive state-space models for analyzing time series data. R Journal 4(1): 11-19. [PDF](https://journal.r-project.org/archive/2012-1/RJournal_2012-1_Holmes~et~al.pdf)
 
 * Scheef, L. P., D. E. Pendleton, S. E. Hampton, S. L. Katz, **E. E. Holmes**, M. D. Scheuerell, and D.G. Johns. 2012. Assessing marine plankton community structure from long-term monitoring data with multivariate autoregressive (MAR) models: a comparison of fixed station vs. spatially distributed sampling data. Limnology & Oceanography: Methods 10: 54-64. [PDF](Scheefetal2012.pdf)
 
-* Ward, E.J., Semmens, B.X., **Holmes, E.E.**, and K.C. Balcomb. 2011. Effects of multiple levels of social organization on survival and abundance. Conservation Biology 25(2): 350-355.  [PDF](Wardetal2011.pdf)
+* Ward, E.J., Semmens, B.X., **Holmes, E. E.**, and K.C. Balcomb. 2011. Effects of multiple levels of social organization on survival and abundance. Conservation Biology 25(2): 350-355.  [PDF](Wardetal2011.pdf)
 
 * Pattengill-Semmens, C. V.,  Semmens, B. X., E. E. Holmes, E. J. Ward, and B. I. Ruttenberg. 2011. Integrating time-series of community monitoring data. Proceedings of the Gulf and Caribbean Fisheries Institute 63: 214-216. [PDF](Pattengill-Semmensetal2011.pdf)
 
 * <i class="fa fa-file-text-o"></i> Drake, J., E. A. Berntson, J. M. Cope, R. G. Gustafson, **E. E. Holmes**, P. S. Levin, N. Tolimieri, R. S. Waples, S. Sogard, G. D. Williams. 2010. Status review of five rockfish species in Puget Sound, Washington: Bocaccio (Sebastes paucispinis), canary rockfish (S. pinniger), yelloweye rockfish (S. ruberrimus), greenstriped rockfish (S. elongatus), and redstripe rockfish (S. proriger). U.S. Dept. of Commerce, NOAA Tech. Memo., NMFS-NWFSC-108. [PDF](Drakeetal2010.pdf)
 
-* Ward, E.J., H. Chirrakal, M. Gonzalez-Suarez, D. Aurioles-Gamboa, **E.E. Holmes**, L. Gerber. 2010. Inferring spatial structure from time-series data: using multivariate state-space models to detect metapopulation structure of California sea lions in the Gulf of California, Mexico.  Journal of Applied Ecology 47: 47-56. *Recommended by Faculty of 1000 Biology* [PDF](http://onlinelibrary.wiley.com/doi/10.1111/j.1365-2664.2009.01745.x/epdf)
+* Ward, E.J., H. Chirrakal, M. Gonzalez-Suarez, D. Aurioles-Gamboa, **E. E. Holmes**, L. Gerber. 2010. Inferring spatial structure from time-series data: using multivariate state-space models to detect metapopulation structure of California sea lions in the Gulf of California, Mexico.  Journal of Applied Ecology 47: 47-56. *Recommended by Faculty of 1000 Biology* [PDF](http://onlinelibrary.wiley.com/doi/10.1111/j.1365-2664.2009.01745.x/epdf)
 
 * <i class="fa fa-book"></i> **Holmes, E. E.** and E. J. Ward. 2010. Analysis of multivariate time series using the MARSS package. User Guide for the MARSS R package version 1.0.  Now outdated and replaced by more recent editions.
 
@@ -65,7 +67,7 @@ ul {
 
 * Ward, E.J., **E. E. Holmes**, and K. C. Balcomb. 2009. Quantifying the effects of prey abundance on killer whale reproduction. Journal of Applied Ecology 46(3): 632-64* [PDF](Wardetal2009.pdf)
 
-* Ward, E. J., **E.E. Holmes**, K. Parsons, K. C. Balcomb, and J. K. B. Ford. 2009. The role of menopause and reproductive senescence in a long-lived social mammal. Frontiers in Zoology 6(4). [PDF](Wardetal2009b.pdf)
+* Ward, E. J., **E. E. Holmes**, K. Parsons, K. C. Balcomb, and J. K. B. Ford. 2009. The role of menopause and reproductive senescence in a long-lived social mammal. Frontiers in Zoology 6(4). [PDF](Wardetal2009b.pdf)
 
 * Ellner, S. P. and **E. E. Holmes**. 2008. Resolving the debate on when extinction risk is predictable. Ecology Letters 11: E1-E5. [PDF](EllnerHolmes2008.pdf)
 
