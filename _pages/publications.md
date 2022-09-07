@@ -11,10 +11,13 @@ ul {
 }
 </style>
 
-*  Brodie, S.,   Smith, J. A.,  Muhling, B. A., Barnett, L.  A. K.,   Carroll, G.,  Fiedler, P.,   Bograd, S. J.,   Hazen, E. L., Jacox, M. F.,  Andrews, K. S.,  Barnes, C. L.,   Crozier, L. G.,   Fiechter, J.,  Fredston, A., Haltuch, M. A.,  Harvey, C. J., *Holmes, E. E.*,   Karp, M. A., Liu, O. R.,  Malick, M. J.,  Buil, M. P.,  Richerson, K.,  Rooper, C. N., Samhouri, J.,  Seary, R., Selden, R. L., Thompson, A. R.,   Tommasi, D.,  Ward, E. J., Kaplan, I. C. 2022. Recommendations for  quantifying   and  reducing  uncertainty   in  climate  projections  of  species  distributions. Global Change Biology DOI:10.1111/gcb.16371
+*  Brodie, S.,   Smith, J. A.,  Muhling, B. A., Barnett, L.  A. K.,   Carroll, G.,  Fiedler, P.,   Bograd, S. J.,   Hazen, E. L., Jacox, M. F.,  Andrews, K. S.,  Barnes, C. L.,   Crozier, L. G.,   Fiechter, J.,  Fredston, A., Haltuch, M. A.,  Harvey, C. J., **Holmes, E. E.**,   Karp, M. A., Liu, O. R.,  Malick, M. J.,  Buil, M. P.,  Richerson, K.,  Rooper, C. N., Samhouri, J.,  Seary, R., Selden, R. L., Thompson, A. R.,   Tommasi, D.,  Ward, E. J., Kaplan, I. C. 2022. Recommendations for  quantifying   and  reducing  uncertainty   in  climate  projections  of  species  distributions. Global Change Biology DOI:10.1111/gcb.16371
 
 * Nilsen I., C. Hansen, I. Kaplan, **E. Holmes** and  Ø. Langangen. 2022. Exploring the role of Northeast Atlantic cod in the Barents Sea food web using a multi-model approach. Fish and Fisheries DOI: 10.1111/faf.12671. [Online](https://onlinelibrary.wiley.com/doi/10.1111/faf.12671)
 
+* Ford, M. J., editor. 2022. Biological Viability Assessment Update for Pacific Salmon and Steelhead Listed Under the Endangered Species Act: Pacific
+Northwest. U.S. Department of Commerce, NOAA Technical Memorandum NMFS-NWFSC-171. [Online](https://doi.org/10.25923/kq2n-ke70)
+ 
 * **Holmes, E. E.**, S. BR, K. Nimit, S. Maity, D. M. Checkley Jr., M. L. Wells and V. L. Trainer. 2021. Improving landings forecasts using environmental covariates: A case study on the Indian oil sardine (Sardinella longiceps). Fisheries Oceanography 30(6): 623-642 [Online](https://onlinelibrary.wiley.com/doi/10.1111/fog.12541)
 
 * Pendleton, D. E., **E. E. Holmes**, J. Redfern, and J. Zhang. 2020. Using modeled prey to predict the distribution of a highly mobile marine mammal. Diversity and Distributions, 26: 1612– 1626 [Online](https://doi.org/10.1111/ddi.13149)
