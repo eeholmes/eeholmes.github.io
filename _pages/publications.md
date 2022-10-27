@@ -111,7 +111,7 @@ NMFS-NWFSC-67, 37 p. [PDF](Holmesetal2005.pdf)
 
 * **Holmes, E. E.** and H.B. Wilson. 1998. Running from trouble: long distance dispersal and the competitive coexistence of inferior species. American Naturalist 151: 578-586.  [PDF](HolmesWilson1998.pdf)
 
-* **Holmes, E. E.**  1997.  Basic epidemiological concepts in a spatial context. In Spatial Ecology (editors, D. Tilman and P. Kareiva). Princeton University Press. [PDF](http://www.amazon.com/Spatial-Ecology-David-Tilman/dp/0691016526/)
+* **Holmes, E. E.**  1997.  Basic epidemiological concepts in a spatial context. In Spatial Ecology (editors, D. Tilman and P. Kareiva). Princeton University Press. [Link to book](http://www.amazon.com/Spatial-Ecology-David-Tilman/dp/0691016526/) [Chapter PDF](Holmes1997-chapter.pdf)
 
 * **Holmes, E. E.**  1995.  Spatial models in ecology: explorations into the impact of spatial behavior on population dynamics. Dissertation. University of Washington.
 
