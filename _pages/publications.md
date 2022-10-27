@@ -11,7 +11,7 @@ ul {
 }
 </style>
 
-*  Brodie, S.,   Smith, J. A.,  Muhling, B. A., Barnett, L.  A. K.,   Carroll, G.,  Fiedler, P.,   Bograd, S. J.,   Hazen, E. L., Jacox, M. F.,  Andrews, K. S.,  Barnes, C. L.,   Crozier, L. G.,   Fiechter, J.,  Fredston, A., Haltuch, M. A.,  Harvey, C. J., **Holmes, E. E.**,   Karp, M. A., Liu, O. R.,  Malick, M. J.,  Buil, M. P.,  Richerson, K.,  Rooper, C. N., Samhouri, J.,  Seary, R., Selden, R. L., Thompson, A. R.,   Tommasi, D.,  Ward, E. J., Kaplan, I. C. 2022. Recommendations for  quantifying   and  reducing  uncertainty   in  climate  projections  of  species  distributions. Global Change Biology DOI:10.1111/gcb.16371
+*  Brodie, S.,   Smith, J. A.,  Muhling, B. A., Barnett, L.  A. K.,   Carroll, G.,  Fiedler, P.,   Bograd, S. J.,   Hazen, E. L., Jacox, M. F.,  Andrews, K. S.,  Barnes, C. L.,   Crozier, L. G.,   Fiechter, J.,  Fredston, A., Haltuch, M. A.,  Harvey, C. J., **Holmes, E. E.**,   Karp, M. A., Liu, O. R.,  Malick, M. J.,  Buil, M. P.,  Richerson, K.,  Rooper, C. N., Samhouri, J.,  Seary, R., Selden, R. L., Thompson, A. R.,   Tommasi, D.,  Ward, E. J., Kaplan, I. C. 2022. Recommendations for  quantifying   and  reducing  uncertainty   in  climate  projections  of  species  distributions. Global Change Biology DOI:10.1111/gcb.16371 [Online](https://onlinelibrary.wiley.com/doi/10.1111/gcb.16371)
 
 * Nilsen I., C. Hansen, I. Kaplan, **E. Holmes** and  Ø. Langangen. 2022. Exploring the role of Northeast Atlantic cod in the Barents Sea food web using a multi-model approach. Fish and Fisheries DOI: 10.1111/faf.12671. [Online](https://onlinelibrary.wiley.com/doi/10.1111/faf.12671)
 
