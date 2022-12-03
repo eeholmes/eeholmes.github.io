@@ -14,7 +14,7 @@ Most of my research is on [GitHub](https://github.com/eeholmes) and organized in
 * Working with remote sensing data [ocean-satellite-tools](https://github.com/ocean-satellite-tools)
 * R Workflow [RVerse-Tutorials](https://rverse-tutorials.github.io/)
 * Supporting Open Science [NMFS Open Science](https://nmfs-opensci-github.io) and [NMFS Openscapes](https://nmfs-openscapes-github.io)
-* Catch forecasting [Fish-Forecast](https://github.com/Fish-Forecast). Lectures, labs, and an [online book]("https://fish-forecast.github.io/Fish-Forecast-Bookdown/) on catch forecasting from a recent short course.
+* Catch forecasting [Fish-Forecast](https://github.com/Fish-Forecast). Lectures, labs, and an [online book](https://fish-forecast.github.io/Fish-Forecast-Bookdown) on catch forecasting from a recent short course.
 
 My big current projects are
 
