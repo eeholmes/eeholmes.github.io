@@ -10,6 +10,8 @@ ul {
 }
 </style>
 
+* Oct 6, 2022: WSDS GitHub Workshop [ONLINE](https://rverse-tutorials.github.io/WSDS-StLouis/)
+
 * Spring-Summer 2022: R Workflow with RStudio and GitHub: Git, GitHub project management and Scrum, R packages and R Markdown. [ONLINE](https://rverse-tutorials.github.io/RWorkflow-NWFSC-2022/)
 
 * Winter 2022: PSAW 3 Workshops on Git, GitHub, R packages and RStudio Cloud. [ONLINE](https://rverse-tutorials.github.io/PSAW-2022/)
