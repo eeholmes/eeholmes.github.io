@@ -14,6 +14,8 @@ ul {
 
 Selected Talks
 
+* J Lowndes and EE Holmes. Presentation on the Openscapes approach to helping organizations transition to Open Science workflows and new tools. Similar to the May 4th talk below. Presented to the Committee on Applied and Theoretical Statistics, National Academies of Sciences, Engineering and Medicine. September 8, 2022. 
+
 * J Lowndes and EE Holmes. Presentation on the Openscapes approach to helping organizations transition to Open Science workflows and new tools. This talk focuses on the peer-learning and community aspects and developing the high-level strategies for organization change. Presented to the High-level Group for the Modernisation of Statistical Production & Services (HLG-MOS), United Nations Economic Commission for Europe (UNECE). May 4, 2022. [Video](https://www.youtube.com/watch?v=TuqgE2jc2ZQ)
 
 * EE Holmes and M Williams. Common metrics used in the Pacific NW Salmonid Viability Report. Virtual. to Pacific NW Aquatic Monitoring Working Group. April 21, 2022. [Video](https://youtu.be/fW3cnJcG7_M?t=1519)
