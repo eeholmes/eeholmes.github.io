@@ -20,8 +20,8 @@ Selected Talks
 
 * EE Holmes and M Williams. Common metrics used in the Pacific NW Salmonid Viability Report. Virtual. to Pacific NW Aquatic Monitoring Working Group. April 21, 2022. [Video](https://youtu.be/fW3cnJcG7_M?t=1519)
 
-* Panelist in an [ESIP](https://www.esipfed.org/) session on "Better Science for Future Us: Planning for the Year of Open Science". My talk was on "Open Science Adoption within Organizations: lessons for individuals from theories of technology adoption. My talk starts at minute 19:53. [Video](https://youtu.be/hbFAkhNRpJw?t=101)
- 
+* EE Holmes. Open Science Adoption with Organizations: Lessons for individuals from theories about technology adoption. A talk on using theory concerning technology adoption to help plan activities in preparation for the 2023 Year of Open Science. Given at the [ESIP Panel](https://www.youtube.com/watch?v=hbFAkhNRpJw) on "Better Science for Future Us: Planning for the Year of Open Science" organized by Erin Robinson and Julie Lowndes. January 18-21, 2022.  [Video](https://youtu.be/-xyrVWjdV_Q)
+
 * EE Holmes, BR Smitha, N Kumar, S Maity, D Checkley, Jr., M Wells, V Trainer. 2021. Improving forecasts using environmental covariates: a case study on the Indian oil sardine (Sardinella longiceps). Univ of WA Fish and Wildlife Ecology Seminar. May 24, 2021. [PDF](Oil_Sardines_2021.pdf)  [Video](https://vimeo.com/554782654)
 
 * EE Holmes and JT Zikan. 2021. Using unsupervised image classification to study changes in seasonal upwelling
