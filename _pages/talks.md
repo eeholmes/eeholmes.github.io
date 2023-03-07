@@ -14,6 +14,8 @@ ul {
 
 Selected Talks
 
+* EE Holmes. Intro to Kaizen and Agile for science teams. A lecture in FISH 549 [Best Practices in Environmental Data Science](https://fish549.github.io/website/index.html). This was a 50 minute lecture for the class. [slides](https://rverse-tutorials.github.io/quarto_slides/Agile-Mar-3-2023.html#/title-slide) [Quarto file](https://github.com/RVerse-Tutorials/quarto_slides/blob/main/Agile-Mar-3-2023.qmd). March 3, 2023.
+
 * J Lowndes and EE Holmes. Presentation on the Openscapes approach to helping organizations transition to Open Science workflows and new tools. Similar to the May 4th talk below. Presented to the Committee on Applied and Theoretical Statistics, National Academies of Sciences, Engineering and Medicine. September 8, 2022. 
 
 * J Lowndes and EE Holmes. Presentation on the Openscapes approach to helping organizations transition to Open Science workflows and new tools. This talk focuses on the peer-learning and community aspects and developing the high-level strategies for organization change. Presented to the High-level Group for the Modernisation of Statistical Production & Services (HLG-MOS), United Nations Economic Commission for Europe (UNECE). May 4, 2022. [Video](https://www.youtube.com/watch?v=TuqgE2jc2ZQ)
