@@ -12,8 +12,6 @@ ul {
 }
 </style>
 
-Selected Talks
-
 * EE Holmes. Intro to Kaizen and Agile for science teams. A lecture in FISH 549 [Best Practices in Environmental Data Science](https://fish549.github.io/website/index.html). This was a 50 minute lecture for the class. [slides](https://rverse-tutorials.github.io/quarto_slides/Agile-Mar-3-2023.html#/title-slide) [Quarto file](https://github.com/RVerse-Tutorials/quarto_slides/blob/main/Agile-Mar-3-2023.qmd). March 3, 2023.
 
 * EE Holmes, M Williams, K Barnes, C Jordan, D Dishman. Transforming to Open Science workflows: Example from protected species management at NOAA Fisheries. ESIP January 2023 meeting. Research Showcase. [Slides](ESIP_Holmes_2023_01_25.pdf)
@@ -28,8 +26,7 @@ Selected Talks
 
 * EE Holmes, BR Smitha, N Kumar, S Maity, D Checkley, Jr., M Wells, V Trainer. 2021. Improving forecasts using environmental covariates: a case study on the Indian oil sardine (Sardinella longiceps). Univ of WA Fish and Wildlife Ecology Seminar. May 24, 2021. [PDF](Oil_Sardines_2021.pdf)  [Video](https://vimeo.com/554782654)
 
-* EE Holmes and JT Zikan. 2021. Using unsupervised image classification to study changes in seasonal upwelling
-  in the Southeast Arabian Sea. Univ of WA Quantitative Seminar. April 9, 2021. [html](QuanSeminar_2021.html) [Video](https://www.youtube.com/watch?v=Q9oeifHbaFc&ab_channel=UWSchoolofAquaticandFisherySciences)
+* EE Holmes and JT Zikan. 2021. Using unsupervised image classification to study changes in seasonal upwelling in the Southeast Arabian Sea. Univ of WA Quantitative Seminar. April 9, 2021. [html](QuanSeminar_2021.html) [Video](https://www.youtube.com/watch?v=Q9oeifHbaFc&ab_channel=UWSchoolofAquaticandFisherySciences)
 
 * EE Holmes, N Kumar, S Maity, BR Smitha, S Cubelio, C Wilson, N Saravarane, N Kumar. 2016. Multivariate time-series forecasting of the NE Arabian Sea Oil Sardine
 fishery using satellite covariates. Univ of WA Quant Seminar. Oct 2016. *Talk on the Indian oil sardine forecasting project.  The project was still at an exploratory stage in Oct 2016, and the analysis changed substantially in the next year.* [PDF](Oil_Sardines_Oct_2016.pdf)
