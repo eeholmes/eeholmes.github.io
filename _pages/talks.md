@@ -12,6 +12,8 @@ ul {
 }
 </style>
 
+* EE Holmes. NOAA Fisheries Open Science and the 2023 Year of Open Science. PSAW III talk. March 30, 2023. [Slides with notes](PSAW3_3_8_40_Holmes_v3.pdf)
+
 * EE Holmes. Intro to Kaizen and Agile for science teams. A lecture in FISH 549 [Best Practices in Environmental Data Science](https://fish549.github.io/website/index.html). This was a 50 minute lecture for the class. [slides](https://rverse-tutorials.github.io/quarto_slides/Agile-Mar-3-2023.html#/title-slide) [Quarto file](https://github.com/RVerse-Tutorials/quarto_slides/blob/main/Agile-Mar-3-2023.qmd). March 3, 2023.
 
 * EE Holmes, M Williams, K Barnes, C Jordan, D Dishman. Transforming to Open Science workflows: Example from protected species management at NOAA Fisheries. ESIP January 2023 meeting. Research Showcase. [Slides](ESIP_Holmes_2023_01_25.pdf)
