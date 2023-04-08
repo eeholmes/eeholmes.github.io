@@ -12,6 +12,8 @@ ul {
 }
 </style>
 
+* EE Holmes. Facilitating programmatic data retrieval from CAP with R and Python clients: rCAX and pycax packages. PNAMP talk. April 13, 2023.  [Slides](PNAMP_Holmes_2023_04_13.pdf)
+
 * EE Holmes. NOAA Fisheries Open Science and the 2023 Year of Open Science. PSAW III talk. March 30, 2023.  [Slides](PSAW3_3_30_2023_Holmes_v3.pdf) &diams; [Slides with notes](PSAW3_3_30_2023_Holmes_v3_notes.pdf) &diams; [MML SAR Lightning talk (NOAA internal)](https://drive.google.com/file/d/1dxe3qpuPLfaqbPkSkS36ca4nbq0w20EN/view?usp=sharing)
 
 * EE Holmes. Intro to Kaizen and Agile for science teams. A lecture in FISH 549 [Best Practices in Environmental Data Science](https://fish549.github.io/website/index.html). This was a 50 minute lecture for the class. [slides](https://rverse-tutorials.github.io/quarto_slides/Agile-Mar-3-2023.html#/title-slide) [Quarto file](https://github.com/RVerse-Tutorials/quarto_slides/blob/main/Agile-Mar-3-2023.qmd). March 3, 2023.
