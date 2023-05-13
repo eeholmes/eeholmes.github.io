@@ -19,6 +19,9 @@ main:
   - title: "Open Notebook"
     url: /open-notebook/
 
+  - title: "Supervision"
+    url: /supervision/
+
   - title: "Colleagues"
     url: /colleagues/
 
