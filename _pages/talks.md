@@ -12,6 +12,8 @@ ul {
 }
 </style>
 
+* EE Holmes. NOAA Fisheries Data Vision: Open Data and Open Science. LOE4 - Fully enable Open Science. [Abstract](https://2023julyesipmeeting.sched.com/event/1Nod1/noaa-fisheries-data-vision-open-data-and-open-science) &diams; [Video](https://youtu.be/ZA6jwLyuIRU?t=2467)
+
 * EE Holmes. NOAA Fisheries Open Science and Openscapes 
 NOAA Data Governance Committee Monthly Community Call. May 10, 2023.  [Slides](DGC_Holmes_05_10_23.pdf) [Video](https://youtu.be/N3uscZg9gpc)
 
