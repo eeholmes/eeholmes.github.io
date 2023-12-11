@@ -12,6 +12,8 @@ ul {
 }
 </style>
 
+* EE Holmes. NOAA Fisheries. Building Bridges for Indian Ocean Rim Marine Scientists Across the “Big Data Geoscience” and Cloud –computing Divide. AGU Fall conference. Dec 12, 2023. [Slides](2023_AGU_Holmes.pdf)
+
 * EE Holmes. NOAA Fisheries Open Science and Openscapes 
 NOAA Data Governance Committee Monthly Community Call. May 10, 2023.  [Slides](DGC_Holmes_05_10_23.pdf) [Video](https://youtu.be/N3uscZg9gpc)
 
