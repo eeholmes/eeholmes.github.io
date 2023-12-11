@@ -10,6 +10,11 @@ ul {
 }
 </style>
 
+* OceanHackWeek 2023: Project mentor for Species Distribution Modeling team. [OceanHackWeek 2023](https://oceanhackweek.org/ohw23/index.html)
+  
+* UW 2023: SAFS 5550 Applied Time Series Analysis for Fisheries and Environmental Sciences, with Eric Ward and Mark Scheuerell.
+[<a href="https://nwfsc-timeseries.github.io/atsa/">ONLINE</a>] Lab book for course [<a href="https://nwfsc-timeseries.github.io/atsa-labs/">here</a>]
+
 * Oct 6, 2022: WSDS GitHub Workshop [ONLINE](https://rverse-tutorials.github.io/WSDS-StLouis/)
 
 * Spring-Summer 2022: R Workflow with RStudio and GitHub: Git, GitHub project management and Scrum, R packages and R Markdown. [ONLINE](https://rverse-tutorials.github.io/RWorkflow-NWFSC-2022/)
