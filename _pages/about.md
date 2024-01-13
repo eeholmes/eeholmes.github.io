@@ -8,6 +8,8 @@ redirect_from:
   - /about.html
 ---
 
+In October 2023, I took on a 3-year project as lead of <a href="https://www.fisheries.noaa.gov/science-data/open-science-noaa-fisheries">NMFS Open Science</a>, which is helping adoption of Open Science and Open Data practices across NOAA Fisheries as part of a larger data modernization effort. I am also co-organizer of the Inter-agency R User Group (federal agencies) and <a href="https://nmfs-openscapes.github.io/">NMFS Openscapes</a>.  Since 2020, I have helped Openscapes lead Open Science team trainings at NOAA Fisheries across all our science centers and involving 300+ staff. Since 2018, I have also been involved in teaching data science in India with the Indian National Centre for Ocean Information Services (INCOIS) and International Training Centre for Operational Oceanography (ITCOocean). In September 2023, I taught a <a href="https://hackweek-itcoocean.github.io/2023-Cloudbook/">course and hackweek</a> at ITCOocean on using ocean remote-sensing data for fisheries management and research in the Indian Ocean and Bay of Bengal.
+
 Most of my research is on [GitHub](https://github.com/eeholmes) and organized into the following organizations:
 
 * Time series analysis [atsa-es](https://atsa-es.github.io)
@@ -26,8 +28,6 @@ My big current projects are
 -----
 
 My research is focused on stochastic processes and statistical models for complex multivariate, interacting systems. Much of what I do involves developing algorithms for fitting multivariate autoregressive state-space (MARSS) models to time-series data, which comes up in vector autoregressive state-space modeling, dynamic linear modeling, MAR(1) modeling, and dynamic factor analysis. I developed an EM algorithm for fitting a general constrained version of these models and develped the MARSS package for fitting such models. In my spare time, I've been working on predictive models of "multi-player" systems---I've been studying this with soccer match data. This is another application of my work on developing predictive models using 'bad' data. 
-
-I am part of a NWFSC research group working in the area of hierarchical modeling and inference. Group members include myself, [Eric Ward](https://ericward-noaa.github.io/), [Mark Scheuerell](http://faculty.washington.edu/scheuerl/), and [Jim Thorson](https://sites.google.com/site/thorsonresearch/), along with their post-docs and students. We develop statistical methods for ecological problems and apply these to resource and endangered species management questions. We collaborate a lot with folks at the University of Washington School for Aquatic and Fisheries Sciences (SAFS).
 
 <style>
 .column {
