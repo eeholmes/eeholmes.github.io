@@ -63,7 +63,7 @@ In my role as NMFS Open Science lead, I am working on a variety of efforts to su
 **Policy** I serve in the following capacities
 
 * NOAA Fisheries representative on the NOAA Public Access to Research Results working group.
-* A NOAA representative on the White House Office of Science and Technology subcommittee on Open Science. I am one of a few.
+* A NOAA representative on the White House Office of Science and Technology subcommittee on Open Science.
 * A NOAA Fisheries representative on the working group developing NOAA Open Source software policies
 * A representative on the NOAA Fisheries GitHub Governance Team
 
