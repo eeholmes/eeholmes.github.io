@@ -12,9 +12,11 @@ ul {
 }
 </style>
 
+* EE Holmes. Open Science adoption within organizations: lessons from NOAA Fisheries. University of Washington School of Aquatic and Fishery Sciences. April 4, 2024. [Video](https://www.youtube.com/watch?v=LG58Ja8P-wQ)
+
 * EE Holmes (organizer). NOAA Fisheries. A Year of Open Science Community Building at NOAA Fisheries. Year of Open Science Culminating Conference, March 21-22, 2024. [Video](https://youtu.be/n1VaV8f6qQE?si=KhlNGhhYL9oEg6NR) [Slides](https://osf.io/2kr4y)
 
-* EE Holmes. NOAA Fisheries. Building Bridges for Indian Ocean Rim Marine Scientists Across the “Big Data Geoscience” and Cloud –computing Divide. AGU Fall conference. Dec 12, 2023. [AGU Slides](2023_AGU_Holmes.pdf). Year of Open Science Culminating Conference Lightning version of talk, March 22, 2024. [YOS Video](https://youtu.be/wJUxwOd29uI?si=i-3eaOwtL2ej6MOs&t=1916) [YOS Slides](https://osf.io/uprb3)
+* EE Holmes. Building Bridges for Indian Ocean Rim Marine Scientists Across the “Big Data Geoscience” and Cloud –computing Divide. AGU Fall conference. Dec 12, 2023. [AGU Slides](2023_AGU_Holmes.pdf). Year of Open Science Culminating Conference Lightning version of talk, March 22, 2024. [YOS Video](https://youtu.be/wJUxwOd29uI?si=i-3eaOwtL2ej6MOs&t=1916) [YOS Slides](https://osf.io/uprb3)
 
 * EE Holmes. NOAA Fisheries Data Vision: Open Data and Open Science. LOE4 - Fully enable Open Science. [Abstract](https://2023julyesipmeeting.sched.com/event/1Nod1/noaa-fisheries-data-vision-open-data-and-open-science) &diams; [Video](https://youtu.be/ZA6jwLyuIRU?t=2467)
 
