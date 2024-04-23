@@ -114,6 +114,3 @@ rmd: true
 ```
 
 `pdf=TRUE` says to add a link to the PDF and Rmd file.  It will look for the pdf in `posts/pdfs/` and the Rmd in `posts/Rmd`.  You need to put the files there and they have to be called `[postname].pdf` and `[postname].Rmd`.  `rmd_to_gfm(filename, pdf=TRUE)` (the function is in posts/Rmd) will do this automatically from an Rmd file (in posts directory).
-
-
-
