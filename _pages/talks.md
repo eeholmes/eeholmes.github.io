@@ -12,11 +12,13 @@ ul {
 }
 </style>
 
+* J Lowndes, organizer. Supporting NASA Earthdata users in the Cloud: NASA Openscapes onboarding and “fledging”. ESIP Summer Meeting July 2024, Ashville, NC. I was a speaker. [Video](https://youtu.be/lZ9R8LjUcsY?si=sre6YI7OK5-u7mEJ) [Slides](https://docs.google.com/presentation/d/1-TiPN8bfY6iDL5EVcEuCQSjqFMs3jPSX2MlNWA6no2E/edit?usp=sharing). Some blogs on the event: [NASA blog](https://www.earthdata.nasa.gov/learn/blog/onboarding-fledging-and-beyond-openscapes-journey) [Openscapes blog](https://openscapes.org/blog/2024-08-30-esip-summer-2024/)
+
 * EE Holmes. Open Science adoption within organizations: lessons from NOAA Fisheries. University of Washington School of Aquatic and Fishery Sciences. April 4, 2024. [Video](https://www.youtube.com/watch?v=LG58Ja8P-wQ)
 
 * EE Holmes (organizer). NOAA Fisheries. A Year of Open Science Community Building at NOAA Fisheries. Year of Open Science Culminating Conference, March 21-22, 2024. [Video](https://youtu.be/n1VaV8f6qQE?si=KhlNGhhYL9oEg6NR) [Slides](https://osf.io/2kr4y)
 
-* EE Holmes. Building Bridges for Indian Ocean Rim Marine Scientists Across the “Big Data Geoscience” and Cloud –computing Divide. AGU Fall conference. Dec 12, 2023. [AGU Slides](2023_AGU_Holmes.pdf). Year of Open Science Culminating Conference Lightning version of talk, March 22, 2024. [YOS Video](https://youtu.be/wJUxwOd29uI?si=i-3eaOwtL2ej6MOs&t=1916) [YOS Slides](https://osf.io/uprb3)
+* EE Holmes. Building Bridges for Indian Ocean Rim Marine Scientists Across the “Big Data Geoscience” and Cloud–computing Divide. AGU Fall conference. Dec 12, 2023. [AGU Slides](2023_AGU_Holmes.pdf) [abstract](https://ui.adsabs.harvard.edu/abs/2023AGUFMED21A..04H/abstract). Year of Open Science Culminating Conference Lightning version of talk, March 22, 2024. [YOS Video](https://youtu.be/wJUxwOd29uI?si=i-3eaOwtL2ej6MOs&t=1916) [YOS Slides](https://osf.io/uprb3). [Poster](talks/OceanSciences_2024_poster.jpg) at Ocean Sciences 2024 meeting [abstract](https://agu.confex.com/agu/OSM24/meetingapp.cgi/Paper/1487021). [Poster](https://esip.figshare.com/articles/poster/10_Days_of_Biriyani_and_Coding_Building_Bridges_for_Indian_Ocean_Rim_Marine_Scientists_Across_the_Big_Data_Geoscience_and_Cloud-Computing_Divide/26351761?file=47854762) at the ESIP July 2024 meeting, Ashville, NC.
 
 * EE Holmes. NOAA Fisheries Data Vision: Open Data and Open Science. LOE4 - Fully enable Open Science. [Abstract](https://2023julyesipmeeting.sched.com/event/1Nod1/noaa-fisheries-data-vision-open-data-and-open-science) &diams; [Video](https://youtu.be/ZA6jwLyuIRU?t=2467)
 
