@@ -14,6 +14,12 @@ ul {
 
 * J Lowndes, organizer. Supporting NASA Earthdata users in the Cloud: NASA Openscapes onboarding and “fledging”. ESIP Summer Meeting July 2024, Ashville, NC. I was a speaker. [Video](https://youtu.be/lZ9R8LjUcsY?si=sre6YI7OK5-u7mEJ) [Slides](https://docs.google.com/presentation/d/1-TiPN8bfY6iDL5EVcEuCQSjqFMs3jPSX2MlNWA6no2E/edit?usp=sharing). Some blogs on the event: [NASA blog](https://www.earthdata.nasa.gov/learn/blog/onboarding-fledging-and-beyond-openscapes-journey) [Openscapes blog](https://openscapes.org/blog/2024-08-30-esip-summer-2024/)
 
+* EE Holmes. JuptyerHubs and containerization to streamline and accelerate science innovation: experiences with NOAA Fisheries pilots. NOAA Enterprise Data Management Workshop (EDMW) May 17, 2024. [Video](https://drive.google.com/file/d/16ZA0DzvYTvoUwu84cvSm_QKF_RwJHH3M/view?pli=1) jump to minute 55, [Slides](talks/EDMW_2024_Holmes.pdf).
+
+* EE Holmes, Matt Grossi, Emily Markowitz, Sunny Hospital. Introduction to using earth data in the cloud for scientific workflows. NOAA Enterprise Data Management Workshop (EDMW) May 15, 2024. [Info](https://2024noaaedmw.sched.com/event/1auQ5/3b-introduction-to-using-earth-data-in-the-cloud-for-scientific-workflows-180min-part-i).
+
+* J Fagan-Fry, J Fillingham, M Liddel, J Morgan and E Holmes. PARR2 Town Hall. NOAA Enterprise Data Management Workshop (EDMW) May 14, 2024. I gave a presentation on the NMFS PARR listening sessions [Slides](https://static.sched.com/hosted_files/2024noaaedmw/77/PARR2-TownHall_EDMW2024.pdf?_gl=1*1q1a6xe*_gcl_au*MTk5Mzg1MzU2MS4xNzI2Mjc0NTAy*FPAU*MTk5Mzg1MzU2MS4xNzI2Mjc0NTAy) [Video](https://drive.google.com/file/d/1yrYHATgsNOOSBbFAe0qKSKm_SZozc4zK/view).
+
 * EE Holmes. Open Science adoption within organizations: lessons from NOAA Fisheries. University of Washington School of Aquatic and Fishery Sciences. April 4, 2024. [Video](https://www.youtube.com/watch?v=LG58Ja8P-wQ)
 
 * EE Holmes (organizer). NOAA Fisheries. A Year of Open Science Community Building at NOAA Fisheries. Year of Open Science Culminating Conference, March 21-22, 2024. [Video](https://youtu.be/n1VaV8f6qQE?si=KhlNGhhYL9oEg6NR) [Slides](https://osf.io/2kr4y)
