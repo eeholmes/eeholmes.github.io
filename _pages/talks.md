@@ -12,6 +12,8 @@ ul {
 }
 </style>
 
+* S Sinha, Y Fang, EE Holmes. Developing daily gap-filled chlorophyll-a datasets using deep neural networks with co-located environmental variables. NOAA Science Seminar August 8, 2024. [https://doi.org/10.6084/m9.figshare.27936036.v1](https://doi.org/10.6084/m9.figshare.27936036.v1) [Slides](https://doi.org/10.6084/m9.figshare.27936036.v1).
+
 * J Lowndes, organizer. Supporting NASA Earthdata users in the Cloud: NASA Openscapes onboarding and “fledging”. ESIP Summer Meeting July 2024, Ashville, NC. I was a speaker. [Video](https://youtu.be/lZ9R8LjUcsY?si=sre6YI7OK5-u7mEJ) [Slides](https://docs.google.com/presentation/d/1-TiPN8bfY6iDL5EVcEuCQSjqFMs3jPSX2MlNWA6no2E/edit?usp=sharing). Some blogs on the event: [NASA blog](https://www.earthdata.nasa.gov/learn/blog/onboarding-fledging-and-beyond-openscapes-journey) [Openscapes blog](https://openscapes.org/blog/2024-08-30-esip-summer-2024/)
 
 * EE Holmes. JuptyerHubs and containerization to streamline and accelerate science innovation: experiences with NOAA Fisheries pilots. NOAA Enterprise Data Management Workshop (EDMW) May 17, 2024. [Video](https://drive.google.com/file/d/16ZA0DzvYTvoUwu84cvSm_QKF_RwJHH3M/view?pli=1) jump to minute 55, [Slides](talks/EDMW_2024_Holmes.pdf).
