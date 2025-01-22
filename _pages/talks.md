@@ -12,6 +12,10 @@ ul {
 }
 </style>
 
+* EE Holmes. 2025. NOAA Fisheries Data Modernization Strategy: Fully Enable Open Science. Presentation summarizing a variety of activities. Variations of this talk given at a variety of venues. https://doi.org/10.6084/m9.figshare.28259387.v1
+
+* Holmes, EE; Boettiger, C; Lopez Espinosa, L; Panda, Y (2025). py-rocket: A Docker image to promote cross-language (Python, R) collaboration across diverse user platforms for cloud computing in the earth sciences. https://doi.org/10.6084/m9.figshare.28169855.v4 Given at [AGU 2024](https://agu.confex.com/agu/agu24/meetingapp.cgi/Paper/1619232), [ESIP IT&I Mtg Video](https://www.youtube.com/watch?v=JBNSRNp-R04), and ESIP January 2025 Meeting.
+
 * S Sinha, Y Fang, EE Holmes. Developing daily gap-filled chlorophyll-a datasets using deep neural networks with co-located environmental variables. NOAA Science Seminar August 8, 2024. [https://doi.org/10.6084/m9.figshare.27936036.v1](https://doi.org/10.6084/m9.figshare.27936036.v1) [Slides](https://doi.org/10.6084/m9.figshare.27936036.v1).
 
 * J Lowndes, organizer. Supporting NASA Earthdata users in the Cloud: NASA Openscapes onboarding and “fledging”. ESIP Summer Meeting July 2024, Ashville, NC. I was a speaker. [Video](https://youtu.be/lZ9R8LjUcsY?si=sre6YI7OK5-u7mEJ) [Slides](https://docs.google.com/presentation/d/1-TiPN8bfY6iDL5EVcEuCQSjqFMs3jPSX2MlNWA6no2E/edit?usp=sharing). Some blogs on the event: [NASA blog](https://www.earthdata.nasa.gov/learn/blog/onboarding-fledging-and-beyond-openscapes-journey) [Openscapes blog](https://openscapes.org/blog/2024-08-30-esip-summer-2024/)
