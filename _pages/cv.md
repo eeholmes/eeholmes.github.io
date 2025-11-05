@@ -13,6 +13,6 @@ ul {
 }
 </style>
 
-- Test
+- [Full CV](/files/Holmes_CV.pdf)
 
-- Test
+- [1 page](/files/Holmes_CV_1pg.pdf)
