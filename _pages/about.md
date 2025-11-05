@@ -81,7 +81,7 @@ I am involved in hackweeks to help train and engage scientists with climate data
 * Aug 2024 UW-NASA EarthScience HackWeek (Seattle) - Helper and project lead on a machine-learning project.
 * Aug 2024 OceanHackWeek (Bigelow) - Organizer team and project lead for project on PACE ocean color data.
 
-**Open infrastruture for cloud computing and working with big data**
+**Open infrastructure for cloud computing and working with big data**
 
 Lots of cloud data is not that useful if it is not easy to use and people don't know how to use the toolsets. I work in this area by training people in JupyterHubs plus "Docker images for scientists" and participating in working groups to pick away at the barriers to entry into cloud computing.
 
