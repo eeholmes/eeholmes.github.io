@@ -4,6 +4,10 @@ permalink: /code/
 author_profile: true
 ---
 
+## Docker Images
+
+Holmes, E., Boettiger, C., Panda, Y., & López, L. (2025, April 28). nmfs-opensci/py-rocket-base: py-rocket-base v3.0.7 [Software]. Zenodo. https://doi.org/10.5281/zenodo.15293190 A containerized base environment providing Python, R, and geospatial tooling for reproducible scientific computing in Jupyter, RStudio, and VS Code.
+
 ## Multivariate time-series analysis
 
 Looking for R packages for time-series analysis ([MARSS](https://atsa-es.github.io/MARSS/), atsar, ...)? Head to our 
